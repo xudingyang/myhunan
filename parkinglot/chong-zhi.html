@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>充值</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/chong-zhi.css">
+    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/chong-zhi.js"></script>
+</head>
+<body>
+<div class="card-con">
+    <div class="card">
+        <div class="station-con">
+            <img src="images/avatar.png" width="50" height="50" alt="">
+            <div class="info">
+                <p class="station-name">智慧停车场VIP卡</p>
+                <div class="card-type">个人卡</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="box1">
+    <span>余额</span>
+    <em><i id="money">0</i>元</em>
+</div>
+<div class="box2">
+    <span>充值金额</span>
+    <input type="number" placeholder="输入充值金额" id="chongzhi_money">
+</div>
+<div class="box4">
+    <span>赠送金额</span>
+    <span class="youhui-money">90</span>
+</div>
+<div class="box3">
+    <p id="cz_huodong">当前正进行充值优惠活动，充的多送的多。点击查看<i>优惠规则</i></p>
+    <div class="huodong-list">
+        <ul>
+            <li class="huodong">1.充200送20</li>
+            <li class="huodong">2.充500送100</li>
+            <li class="huodong">3.充800送200</li>
+        </ul>
+    </div>
+</div>
+<div class="bot">
+    <button class="chongzhi-btn disable" disabled="disabled">充值</button>
+</div>
+</body>
+</html>

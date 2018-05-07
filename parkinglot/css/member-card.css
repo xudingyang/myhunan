@@ -1,0 +1,85 @@
+.card-con {
+    height: 246px;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 1px 1px 1px rgba(17,17,17,0.2);
+}
+.card {
+    width: 90%;
+    height: 188px;
+    background: #3acbb3;
+    border-radius: 6px;
+    position: relative;
+}
+.station-con {
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    height: 90px;
+    color: #fff;
+}
+.station-con img {
+    margin-right: 8px;
+    border-radius: 50%;
+}
+.station-name {
+    font-size: 20px;
+    font-family: SimHei;
+}
+.card-type {
+    margin-top: 3px;
+    font-size: 16px;
+}
+.card-id {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 16px;
+    color: #fff;
+}
+.tb {
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    height: 46px;
+    background: #fff;
+    border-top: 1px solid #dfdfe0;
+    font-size: 15px;
+    color: #666;
+}
+#jyjl {
+    border-bottom: 1px solid #dfdfe0;
+}
+.tb1 {
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+}
+.tb1 p {
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    display: flex;
+    align-items: center;
+}
+.tb1 p i {
+    color: #f54545;
+}
+.tb1 em {
+    margin-left: 4px;
+    background: #19c017;
+    color: #fff;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 10px;
+    font-size: 14px;
+    border-radius: 4px;
+}
