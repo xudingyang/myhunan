@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>车牌支付</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/car-number-pay-next.css">
+    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/car-number-pay-next.js"></script>
+</head>
+<body>
+<div class="fail-wrapper">
+    <div class="fail-panel">
+        <img src="images/fail.png" width="80" height="80">
+        <p>温馨提示</p>
+        <i>抱歉，该车未入场</i>
+    </div>
+</div>
+<div class="success-wrapper">
+    <div class="success-panel">
+        <p class="pay-title">收费信息</p>
+        <div class="pay-info">
+            <p><i>车牌号：</i><em>湘F12345</em></p>
+            <p><i>停车场：</i><em>汉林大厦停车场士大夫士大</em></p>
+            <p><i>入场时间：</i><em>2018-05-27 12:30:25</em></p>
+            <p><i>上一次结算：</i><em>2018-05-27 14:30:12</em></p>
+            <p><i>停车时间：</i><em>1小时26分</em></p>
+            <p class="total-count"><i>总金额：</i><em>¥100.00</em></p>
+            <p class="had-pay-count"><i>已结算金额：</i><em>¥80.00</em></p>
+            <p class="pay-count"><i>待支付金额：</i><em>¥20.00</em></p>
+            <p class="remark">(2018-05-07 23:45:00之后离场需再次缴费)</p>
+        </div>
+    </div>
+    <div class="pay-btn-panel">
+        <p class="wx-pay">微信支付</p>
+        <p class="idcard-pay">会员卡支付</p>
+    </div>
+</div>
+<div class="had-pay-wrapper">
+    <div class="had-pay-panel">
+        <img src="images/successimg.png" width="80" height="80">
+        <p>您已支付</p>
+        <i>2018-05-07 23:23:00之前<br>不需要再次缴费</i>
+    </div>
+    <div class="had-pay-btn">
+        <p>我知道了</p>
+    </div>
+</div>
+<div class="keyboard-modal">
+    <div class="keyboard-container">
+        <div class="pwd-con">
+            <div class="tip-tx">请输入密码</div>
+            <div class="pwd-tabs">
+                <ol>
+                    <li class="pwd"></li>
+                    <li class="pwd"></li>
+                    <li class="pwd"></li>
+                    <li class="pwd"></li>
+                    <li class="pwd"></li>
+                    <li class="pwd"></li>
+                </ol>
+            </div>
+        </div>
+        <table>
+            <tr>
+                <td class="num none-left-border" data-num="1">1</td>
+                <td class="num" data-num="2">2</td>
+                <td class="num none-right-border" data-num="3">3</td>
+            </tr>
+            <tr>
+                <td class="num none-left-border" data-num="4">4</td>
+                <td class="num" data-num="5">5</td>
+                <td class="num none-right-border" data-num="6">6</td>
+            </tr>
+            <tr>
+                <td class="num none-left-border" data-num="7">7</td>
+                <td class="num" data-num="8">8</td>
+                <td class="num none-right-border" data-num="9">9</td>
+            </tr>
+            <tr>
+                <td class="none-left-border none-bottom-border cancel-pay">取消</td>
+                <td class="num none-bottom-border" data-num="0">0</td>
+                <td class="del-icon none-bottom-border none-right-border js-del"><img class="icon" src="images/del@2x.png" width="28" height="21" alt=""></td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

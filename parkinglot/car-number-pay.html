@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>车牌支付</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/car-number-pay.css">
+    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/car-number-pay.js"></script>
+</head>
+<body>
+<div class="tx-wrapper">
+    <div>请输入完整车牌号码</div>
+    <p class="special-number">特殊车牌</p>
+    <p class="common-number">普通车牌</p>
+</div>
+<div class="input-wrapper">
+    <div>
+        <span class="js-choose-provice">粤</span>
+        <input type="text" placeholder="请输入车牌号码" id="js_common_input">
+    </div>
+</div>
+<div class="special-input-wrapper">
+    <input type="text" placeholder="请输入车牌号码" id="js_special_input">
+</div>
+<div class="next-btn-wrapper">
+    <p class="js-next">下一步</p>
+</div>
+<div class="car-history-wrapper">
+    <div class="history-tx">
+        <span>历史车牌</span>
+        <img src="images/clear_btn.png" width="25" height="25" id="clear_history">
+    </div>
+    <ul class="history-con">
+        <li class="car">湘F55555</li>
+        <li class="car">粤A55555</li>
+        <li class="car">京D55555</li>
+        <li class="car">浙F55555</li>
+        <li class="car">警55</li>
+        <li class="car">湘F55577775665</li>
+        <li class="car">湘F55555</li>
+        <li class="car">湘F55555</li>
+        <li class="car">湘F55555</li>
+    </ul>
+</div>
+<div class="modal-wrapper">
+    <div class="provice-con-wrapper">
+        <div class="place-box"></div>
+        <div class="provice-con">
+            <p>请输入车牌归属地</p>
+            <div class="provice-item-con">
+                <i class="provice-item">京</i>
+                <i class="provice-item">津</i>
+                <i class="provice-item">冀</i>
+                <i class="provice-item">晋</i>
+                <i class="provice-item">蒙</i>
+                <i class="provice-item">辽</i>
+                <i class="provice-item">吉</i>
+                <i class="provice-item">黑</i>
+            </div>
+            <div class="provice-item-con">
+                <i class="provice-item">沪</i>
+                <i class="provice-item">苏</i>
+                <i class="provice-item">浙</i>
+                <i class="provice-item">皖</i>
+                <i class="provice-item">闽</i>
+                <i class="provice-item">赣</i>
+                <i class="provice-item">鲁</i>
+                <i class="provice-item">豫</i>
+            </div>
+            <div class="provice-item-con">
+                <i class="provice-item">鄂</i>
+                <i class="provice-item">湘</i>
+                <i class="provice-item">粤</i>
+                <i class="provice-item">桂</i>
+                <i class="provice-item">琼</i>
+                <i class="provice-item">渝</i>
+                <i class="provice-item">川</i>
+                <i class="provice-item">贵</i>
+            </div>
+            <div class="provice-item-con">
+                <i class="provice-item">云</i>
+                <i class="provice-item">藏</i>
+                <i class="provice-item">陕</i>
+                <i class="provice-item">甘</i>
+                <i class="provice-item">青</i>
+                <i class="provice-item">宁</i>
+                <i class="provice-item">新</i>
+                <i class="provice-item"></i>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+.car-list {
+    padding: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    font-size: 16px;
+}
+
+li {
+    padding: 0 15px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #dfdfe0;
+}
+li:last-child {
+    border-bottom: none;
+}
+li i {
+    font-size: 14px;
+    color: #838383;
+    margin-right: 8px;
+}
+li em {
+    font-size: 14px;
+    color: #f23030;
+}
+.isdefault {
+    display: none;
+}
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.delete-modal {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-panel {
+    width: 80%;
+    border-radius: 6px;
+    background: #fff;
+}
+.modal-panel p {
+    font-size: 16px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+}
+.modal-panel p i {
+    font-weight: bold;
+    margin: 0 4px;
+}
+.modal-panel div {
+    height: 40px;
+    border-top: 1px solid #dfdfe0;
+    display: flex;
+    align-items: center;
+}
+.ok-btn,
+.cancel-btn {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+.cancel-btn {
+    color: #f23030;
+    border-right: 1px solid #dfdfe0;
+}
+.ok-btn {
+    color: #19c017;
+}

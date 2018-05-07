@@ -1,0 +1,107 @@
+.title-wrapper {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #000;
+}
+.tip-wrapper {
+    padding: 0 15px;
+}
+.input-wrapper {
+    margin-top: 20px;
+    height: 60px;
+    background: #fff;
+    border-top: 1px solid #dfdfe0;
+    border-bottom: 1px solid #dfdfe0;
+}
+.input-wrapper > div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.input-wrapper span {
+    flex: 0 0 66px;
+    width: 66px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 20px;
+    color: #ff793f;
+    border-right: 1px solid #efeff4;
+    text-align: center;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 1.5){
+    .input-wrapper span {
+        border-right: 0.5px solid #efeff4;
+    }
+}
+.input-wrapper input {
+    flex: 1;
+    border: none;
+    padding-left: 20px;
+    height: 36px;
+    font-size: 18px;
+}
+.input-wrapper input::-webkit-input-placeholder {
+    color: #aaa;
+}
+.btn-wrapper {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+}
+.sub-btn {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 88%;
+    border-radius: 4px;
+    font-size: 18px;
+    background: #19c017;
+    color: #fff;
+}
+.modal-wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    display: none;
+}
+.provice-con-wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.place-box {
+    flex: 1;
+}
+.provice-con {
+    background: #fff;
+    flex: 0 0 240px;
+    height: 240px;
+}
+.provice-con p {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    color: #ff793f;
+}
+.provice-item-con {
+    border-top: 1px solid #dfdfe0;
+    display: flex;
+}
+.provice-item {
+    flex: 1;
+    height: 46px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #dfdfe0;
+}
+.provice-item-con .provice-item:last-child {
+    border-right: none;
+}
