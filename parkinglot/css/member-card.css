@@ -83,3 +83,58 @@
     font-size: 14px;
     border-radius: 4px;
 }
+.tb2 {
+
+}
+.tb2 > i {
+}
+.tb2 > em {
+    margin-left: 8px;
+    font-weight: bold;
+}
+
+.active-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+}
+.modal-panel {
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+.modal-con {
+    background: #fff;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.modal-title {
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    border-bottom: 1px solid #dfdfe0;
+    position: relative;
+    font-size: 16px;
+}
+.modal-title > img {
+    position: absolute;
+    right: 7px;
+    top: 7px;
+}
+.modal-con > p {
+    padding: 3px 8px;
+}
+.modal-txt1 > i {
+    font-weight: bold;
+}
+.modal-btn {
+    height: 50px;
+    background: #19c017;
+    color: #fff;
+}

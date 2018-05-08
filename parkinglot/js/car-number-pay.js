@@ -100,7 +100,9 @@ $(function () {
     $('.provice-item').on('click', function () {
         var provice = $(this).text()
         currentProvice = provice
+        currentCarNumber = currentProvice + currentCarNumber.substring(1)
         $('.js-choose-provice').text(currentProvice)
         $('.modal-wrapper').hide()
+        alert(currentCarNumber)
     })
 })

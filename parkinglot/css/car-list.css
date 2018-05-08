@@ -94,3 +94,17 @@ li em {
 .ok-btn {
     color: #19c017;
 }
+.car-list{
+    padding-bottom: 65px;
+}
+.add-car-btn {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: #19c017;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+}
