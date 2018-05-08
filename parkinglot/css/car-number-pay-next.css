@@ -7,6 +7,8 @@
 .had-pay-panel,
 .fail-panel {
     background: #fff;
+    display: -webkit-flex;
+-webkit-flex-direction: column;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,6 +47,8 @@
 }
 .pay-info p {
     height: 36px;
+    display: -webkit-flex;
+    -webkit-align-items: center;
     display: flex;
     align-items: center;
 }
@@ -80,7 +84,12 @@ p.remark {
     color: #fff;
 }
 .idcard-pay {
-    margin-top: 20px;
+    margin-top: 15px;
+    background: #d8daff;
+    color: #7a87c8;
+}
+.other-idcard-pay {
+    margin-top: 15px;
     background: #d8daff;
     color: #7a87c8;
 }
@@ -96,92 +105,121 @@ p.remark {
     background: #19c017;
     color: #fff;
 }
-
-.keyboard-modal {
+.other-pay-modal {
     position: fixed;
-    z-index: 200;
-    top: 0;
-    bottom: 0;
-    right: 0;
     left: 0;
-    background: rgba(0,0,0,0.6);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10,10,10,.7);
     display: none;
 }
-table {
-    border-collapse: collapse;
-}
-.keyboard-container {
-    position: fixed;
-    z-index: 888;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 80%;
-    text-align: center;
-}
-.keyboard-container .pwd-con {
-    height: 50%;
-    background: #fff;
-}
-.pwd-con .tip-tx {
-    height: 50px;
-    line-height: 50px;
-    font-size: 20px;
-    border-bottom: 1px solid #dfdfe0;
-}
-.pwd-con .pwd-tabs {
+.modal-wrapper {
+    height: 100%;
+    width: 100%;
+    padding: 0 15px;
     display: -webkit-flex;
-    -webkit-justify-content: center;
+-webkit-justify-content: center;
+    -webkit-align-items: center;
     display: flex;
     justify-content: center;
-    margin-top: 15px;
+    align-items: center;
 }
-.pwd-tabs ol {
-    border: 1px solid #dfdfe0;
-}
-.pwd-tabs .pwd {
-    float: left;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    width: 50px;
-    font-size: 30px;
-    border-right: 1px solid #dfdfe0;
-}
-.pwd-tabs .pwd:last-child {
-    border-right: none;
-}
-.keyboard-container table {
+.other-pay-con {
     width: 100%;
-    height: 50%;
-}
-.keyboard-container td {
-    width: 33.3%;
-    height: 25%;
-    border: 1px solid #dfdfe0;
+    border-radius: 4px;
     background: #fff;
+    overflow: hidden;
 }
-.keyboard-container .none-left-border {
-    border-left: none;
+.other-pay-con input {
+    background: #efeff4;
+    border: none;
+    border-radius: 4px;
+    padding-left: 4px;
+    font-size: 15px;
+    height: 36px;
+    overflow: hidden;
 }
-.keyboard-container .none-right-border {
-    border-right: none;
+.other-pay-con input::-webkit-input-placeholder {
+    color: #838383;
+    font-size: 14px;
 }
-.keyboard-container .none-bottom-border {
-    border-bottom: none;
+.other-pay-title {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    border-bottom: 1px solid #dfdfe0;
+    position: relative;
 }
-.keyboard-container .del-icon {
-    border-right: none;
-    background: #e2e7eb;
+.other-pay-title > img {
+    position: absolute;
+    right: 5px;
+    top: 5px;
 }
-.keyboard-container .del-icon .icon {
-    display: inline-block;
-    vertical-align: middle;
+.other-number {
+    padding: 0 10px;
+    height: 50px;
+    display: -webkit-flex;
+-webkit-align-items: center;
+    display: flex;
+    align-items: center;
 }
-.keyboard-container .num {
-    font-size: 28px;
+.other-number > i {
+    margin-right: 8px;
 }
-.keyboard-container .cancel-pay {
-    background: #e2e7eb;
+.other-number > input {
+}
+.other-code {
+    padding: 0 10px;
+    height: 50px;
+    display: -webkit-flex;
+-webkit-align-items: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.green-btn {
+    position: absolute;
+    right: 10px;
+    top: 9px;
+    width: 80px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 3px;
+    text-align: center;
+    background: #19c017;
+    color: #fff;
+    font-size: 13px;
+    border: 1px solid #dfdfe0;
+}
+.gray-btn {
+    position: absolute;
+    right: 10px;
+    top: 9px;
+    width: 90px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 3px;
+    text-align: center;
+    background: #aaa;
+    color: #fff;
+    font-size: 12px;
+    border: 1px solid #dfdfe0;
+    display: none;
+}
+.other-code > i {
+    margin-right: 8px;
+}
+.other-code > input {
+    width: 100px;
+}
+.other-pay-btn {
+    border-top: 1px solid #dfdfe0;
+    height: 44px;
+    line-height: 44px;
+    background: #19c017;
+    color: #fff;
     font-size: 18px;
+    text-align: center;
 }

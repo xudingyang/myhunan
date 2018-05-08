@@ -24,72 +24,61 @@ $(function () {
     })
     // 点击会员卡支付
     $('.idcard-pay').on('click',function () {
-        var hadRegister = false
+        var hadRegister = true
         if (hadRegister) {
-            $('.keyboard-modal').show()
+            $('.mask').show()
+            setTimeout(function () {
+                $('.mask').hide()
+                location.href = 'car-number-pay-success.html'
+            },1000)
         } else {
             location.href = 'user-register.html'
         }
     })
+    // 点击他人会员卡支付
+    $('.other-idcard-pay').on('click',function () {
+        $('.other-pay-modal').show()
+    })
+    // 点击关闭按钮自
+    $('#close_other_modal').on('click',function () {
+        $('.other-pay-modal').hide()
+    })
+    // 点击他人支付按钮
+    $('.other-pay-btn').on('click',function () {
+        $('.other-pay-modal').hide()
+        $('.mask').show()
+        setTimeout(function () {
+            $('.mask').hide()
+            location.href = 'car-number-pay-success.html'
+        },1000)
+    })
 
 
-    // 密码输入
-    var pwdArr = []  // 存储密码的数组
-    var pwdStr = ''  // 字符串形式的密码
-    var pwdTabs = $('.pwd-con .pwd')   // 6个显示密码的格子
-    var timer2 = null
-    // 数字 按钮
-    $('.keyboard-container .num').on('click', function () {
-        if (pwdArr.length < 6) {
-            var dataNum = $(this).data('num')
-            if (typeof dataNum === 'number') {
-                pwdArr.push(dataNum)
-            }
+    // 验证按钮的倒计时
+    var timer = null
+    var DELAYTIME = 90
+    var delayTime = DELAYTIME
+    $('.green-btn').on('click', function () {
+        if ($('#js_tel').val().length != 11) {
+            alert('手机号错误')
         } else {
-            // 若超过6个数字，不做处理
-            return
-        }
-        for (var i = 0; i < pwdArr.length; i++) {
-            pwdTabs.eq(i).text('●')
-        }
-        console.log(pwdArr);
-        timer2 = setTimeout(function () {
-            if (pwdArr.length === 6) {
-                pwdStr = pwdArr.join('')
-                // 获取密码，发送请求，判断密码是否正确 .........................
+            $('.green-btn').hide()
+            $('.gray-btn').show()
+            $('.gray-btn').text(delayTime + '秒后重试')
 
-                // 密码是否正确
-                var isRight = false
-                if (isRight) {
-                    location.href = 'car-number-pay-success.html'
-                } else {
-                    alert('密码错误，请重新输入')
-                    pwdArr.length = 0
-                    pwdTabs.text('')
+            // 在这里发送验证码请求
+            // .......
+
+            timer = setInterval(function () {
+                delayTime--
+                $('.gray-btn').text(delayTime + '秒后重试')
+                if (delayTime < 1) {
+                    clearInterval(timer)
+                    $('.gray-btn').hide()
+                    $('.green-btn').show()
+                    delayTime = DELAYTIME
                 }
-            }
-        }, 1000)
-    })
-    // 删除 按钮  ●
-    $('.js-del').on('click', function () {
-        if (pwdArr.length < 1) {
-            return
+            }, 1000)
         }
-        pwdArr.pop()
-        for (var i = 0; i < pwdArr.length; i++) {
-            pwdTabs.eq(i).text('●')
-        }
-        for (var j = pwdArr.length; j < 6; j++) {
-            pwdTabs.eq(j).text('')
-        }
-    })
-    // 取消  按钮
-    $('.cancel-pay').on('click',function () {
-        $('.keyboard-modal').hide()
-        // 复原密码输入框
-        pwdArr.length = 0
-        pwdTabs.text('')
-        pwdStr = ''  // 第一次输入的密码
-        clearTimeout(timer2)
     })
 })

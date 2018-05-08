@@ -35,6 +35,7 @@
     <div class="pay-btn-panel">
         <p class="wx-pay">微信支付</p>
         <p class="idcard-pay">会员卡支付</p>
+        <p class="other-idcard-pay">他人会员卡代付</p>
     </div>
 </div>
 <div class="had-pay-wrapper">
@@ -47,43 +48,21 @@
         <p>我知道了</p>
     </div>
 </div>
-<div class="keyboard-modal">
-    <div class="keyboard-container">
-        <div class="pwd-con">
-            <div class="tip-tx">请输入密码</div>
-            <div class="pwd-tabs">
-                <ol>
-                    <li class="pwd"></li>
-                    <li class="pwd"></li>
-                    <li class="pwd"></li>
-                    <li class="pwd"></li>
-                    <li class="pwd"></li>
-                    <li class="pwd"></li>
-                </ol>
-            </div>
+<div class="other-pay-modal">
+    <div class="modal-wrapper">
+        <div class="other-pay-con">
+            <p class="other-pay-title">请输入会员卡号及验证码<img id="close_other_modal" src="images/close.png" width="30" height="30"></p>
+            <p class="other-number"><i>会员号</i><input id="js_tel" type="number" placeholder="输入他人手机号"></p>
+            <p class="other-code"><i>验证码</i><input id="js_code" type="number" placeholder="输入验证码"><em class="green-btn">发送验证码</em><em class="gray-btn">120秒后重试</em></p>
+            <p class="other-pay-btn"><i>支付</i></p>
         </div>
-        <table>
-            <tr>
-                <td class="num none-left-border" data-num="1">1</td>
-                <td class="num" data-num="2">2</td>
-                <td class="num none-right-border" data-num="3">3</td>
-            </tr>
-            <tr>
-                <td class="num none-left-border" data-num="4">4</td>
-                <td class="num" data-num="5">5</td>
-                <td class="num none-right-border" data-num="6">6</td>
-            </tr>
-            <tr>
-                <td class="num none-left-border" data-num="7">7</td>
-                <td class="num" data-num="8">8</td>
-                <td class="num none-right-border" data-num="9">9</td>
-            </tr>
-            <tr>
-                <td class="none-left-border none-bottom-border cancel-pay">取消</td>
-                <td class="num none-bottom-border" data-num="0">0</td>
-                <td class="del-icon none-bottom-border none-right-border js-del"><img class="icon" src="images/del@2x.png" width="28" height="21" alt=""></td>
-            </tr>
-        </table>
+    </div>
+</div>
+<div class="mask">
+    <div class="loading">
+        <img src="images/loading-spokes.svg" width="40" height="40" />
+        <br/>
+        <span class="text">正在请求，请稍候...</span>
     </div>
 </div>
 </body>
