@@ -103,6 +103,8 @@ i {
 .bot .right {
     float: right;
     height: 48px;
+    display: -webkit-flex;
+    -webkit-align-items: center;
     display: flex;
     align-items: center;
     font-size: 14px;
