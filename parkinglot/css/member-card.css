@@ -100,6 +100,7 @@
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,.5);
+    display: none;
 }
 .modal-panel {
     width: 100%;
@@ -133,8 +134,60 @@
 .modal-txt1 > i {
     font-weight: bold;
 }
-.modal-btn {
+.input-con {
+    padding: 0 10px;
     height: 50px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #dfdfe0;
+    border-bottom: 1px solid #dfdfe0;
+    position: relative;
+}
+.input-con > input {
+    margin-left: 6px;
+    width: 110px;
+    height: 36px;
+    border: none;
+    padding-left: 4px;
+    border-radius: 4px;
+    background: #efeff4;
+}
+.green-btn {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    width: 80px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 3px;
+    text-align: center;
     background: #19c017;
     color: #fff;
+    font-size: 13px;
+    border: 1px solid #dfdfe0;
+}
+.gray-btn {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    width: 90px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 3px;
+    text-align: center;
+    background: #aaa;
+    color: #fff;
+    font-size: 12px;
+    border: 1px solid #dfdfe0;
+    display: none;
+}
+.modal-btn {
+    margin-top: 10px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #19c017;
+    color: #fff;
+    font-size: 18px;
 }

@@ -39,8 +39,6 @@ body {
     align-items: center;
 }
 .input-wrapper span {
-    -webkit-flex: 0 0 66px;
-    flex: 0 0 66px;
     width: 66px;
     height: 36px;
     line-height: 36px;
@@ -62,8 +60,7 @@ body {
     border: 1px solid #dfdfe0;
 }
 .input-wrapper input {
-    -webkit-flex: 1;
-    flex: 1;
+    width: 200px;
     border: none;
     padding-left: 20px;
     height: 36px;
