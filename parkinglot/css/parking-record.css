@@ -22,5 +22,71 @@ body,html {
     text-align: center;
 }
 .wrapper {
-    
+    padding-bottom: 20px;
+}
+.month-title {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    font-size: 16px;
+}
+.month-record {
+    background: #fff;
+}
+.record {
+    padding: 0 15px;
+    height: 90px;
+    border-top: 1px solid #dfdfe0;
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    -webkit-align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 1.5){
+    .record {
+        border-top: 0.5px solid #dfdfe0;
+    }
+}
+.record:first-child {
+    border-top: none;
+}
+.record-time {
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    display: flex;
+    align-items: center;
+}
+.record-time .pay-method {
+    margin-right: 15px;
+    color: #fff;
+    font-size: 16px;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+}
+.method-number {
+    background: #6496d3;
+}
+.method-card {
+    background: #ff793f;
+}
+.pay-namber {
+    color: #222;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+.pay-time {
+    color: #838383;
+    font-size: 14px;
+}
+.record-money {
+    color: #000;
+    font-size: 16px;
+}
+.record-money > i {
+    margin-right: 3px;
 }

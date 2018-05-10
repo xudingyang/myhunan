@@ -1,0 +1,44 @@
+.wrapper {
+
+}
+.title {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+}
+.detail-con {
+    padding: 0 15px;
+    background: #fff;
+}
+.detail {
+    height: 36px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+.detail > i {
+    width: 80px;
+    text-align: right;
+    margin-right: 8px;
+    color: #838383;
+}
+.detail > em {
+    color: #666;
+}
+.confirm-btn-con {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.confirm-btn-con > i {
+    background: #19c017;
+    color: #fff;
+    font-size: 16px;
+    width: 88%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 2px;
+    border-radius: 4px;
+}
