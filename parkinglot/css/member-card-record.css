@@ -1,0 +1,104 @@
+.empty-wrapper {
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+.empty-con {
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 43px;
+}
+.empty-con .icon-ichaxun {
+    font-size: 90px;
+    color: #10aeff;
+}
+.empty-con .tip {
+    margin-top: 30px;
+    color: #333;
+    font-size: 18px;
+}
+.empty-con .tip1 {
+    margin-top: 5px;
+    color: #aaa;
+    font-size: 13px;
+}
+.empty-con .back-btn {
+    margin-top: 30px;
+    background: #04be02;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+    width: 82%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.bar-title {
+    padding: 2px 0 5px 15px;
+    font-size: 12px;
+    color: #838383;
+}
+.jilu-list {
+    border-top: 1px solid #dfdfe0;
+    border-bottom: 1px solid #dfdfe0;
+    padding: 0 15px;
+    background: #fff;
+}
+.item {
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid #dfdfe0;
+}
+.item:first-child {
+    border-top: none;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 1.5){
+    .item {
+        border-top-width: 0.5px;
+    }
+}
+.item img {
+    -webkit-flex: 0 0 34px;
+    flex: 0 0 34px;
+    width: 34px;
+    margin-right: 8px;
+}
+.item > div {
+    -webkit-flex: 1;
+    flex: 1;
+}
+.item-top {
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    color: #222;
+    font-size: 14px;
+}
+.item .type {
+    width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.money {
+    font-weight: 700;
+    font-size: 16px;
+}
+.item-bot {
+    color: #838383;
+    font-size: 13px;
+}
+.money.chongzhi {
+    color: #e8b423;
+}
