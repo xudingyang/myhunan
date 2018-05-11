@@ -2,9 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会员卡支付</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/member-card-pay.css">
+    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/member-card-pay.js"></script>
 </head>
 <body>
-
+<div class="fail-wrapper">
+    <div class="fail-panel">
+        <img src="images/fail.png" width="80" height="80">
+        <p>温馨提示</p>
+        <i>抱歉，该车未入场</i>
+    </div>
+</div>
+<div class="success-wrapper">
+    <div class="success-panel">
+        <p class="pay-title">收费信息</p>
+        <div class="pay-info">
+            <p><i>车牌号：</i><em>湘F12345</em></p>
+            <p><i>停车场：</i><em>汉林大厦停车场士大夫士大</em></p>
+            <p><i>入场时间：</i><em>2018-05-27 12:30:25</em></p>
+            <p><i>上一次结算：</i><em>2018-05-27 14:30:12</em></p>
+            <p><i>停车时间：</i><em>1小时26分</em></p>
+            <p class="total-count"><i>总金额：</i><em>¥100.00</em></p>
+            <p class="had-pay-count"><i>已结算金额：</i><em>¥80.00</em></p>
+            <p class="pay-count"><i>待支付金额：</i><em>¥20.00</em></p>
+            <p class="remark">(2018-05-07 23:45:00之后离场需再次缴费)</p>
+        </div>
+    </div>
+    <div class="pay-btn-panel">
+        <p class="wx-pay">微信支付</p>
+        <p class="idcard-pay">会员卡支付</p>
+    </div>
+</div>
+<div class="had-pay-wrapper">
+    <div class="had-pay-panel">
+        <img src="images/successimg.png" width="80" height="80">
+        <p>您已支付</p>
+        <i>2018-05-07 23:23:00之前<br>不需要再次缴费</i>
+    </div>
+    <div class="had-pay-btn">
+        <p>我知道了</p>
+    </div>
+</div>
+<div class="mask">
+    <div class="loading">
+        <img src="images/loading-spokes.svg" width="40" height="40" />
+        <br/>
+        <span class="text">正在请求，请稍候...</span>
+    </div>
+</div>
 </body>
 </html>

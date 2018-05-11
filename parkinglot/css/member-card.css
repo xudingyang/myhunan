@@ -148,6 +148,9 @@
     border-bottom: 1px solid #dfdfe0;
     position: relative;
 }
+.input-con1 {
+    border-bottom: none;
+}
 .input-con > input {
     margin-left: 6px;
     width: 110px;
@@ -156,6 +159,9 @@
     padding-left: 4px;
     border-radius: 4px;
     background: #efeff4;
+}
+.input-con1 > input {
+    width: 160px;
 }
 .green-btn {
     position: absolute;
