@@ -1,0 +1,79 @@
+
+.station-list ul {
+    padding-top: 20px;
+}
+.station {
+    margin-bottom: 14px;
+    padding: 0 15px;
+    height: 110px;
+    border-bottom: 1px solid #dedede;
+    border-top: 1px solid #dedede;
+    background: #fff;
+}
+.station-info {
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    -webkit-justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70px;
+    border-bottom: 1px solid #efefef;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 1.5) {
+    .station {
+        border-bottom: 0.5px solid #dedede;
+        border-top: 0.5px solid #dedede;
+    }
+    .station-info {
+        border-bottom: 0.5px solid #efefef;
+    }
+}
+.station-info .station-name {
+    margin-bottom: 4px;
+    color: #333;
+    font-size: 16px;
+    position: relative;
+}
+.station-name > i {
+    position: absolute;
+    right: 10px;
+    top: 2px;
+    color: #ff793f;
+    font-size: 16px;
+}
+.parking-space-count {
+    font-size: 14px;
+    color: #838383;
+    position: relative;
+}
+.parking-space-count > span {
+    position: absolute;
+    right: 10px;
+    height: 30px;
+    color: #19c017;
+    font-size: 16px;
+}
+
+.station-address {
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    overflow: hidden;
+}
+.station-address .icon-place {
+    font-size: 14px;
+    color: #15b374;
+}
+.station-address .address {
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    height: 100%;
+    font-size: 14px;
+    color: #a4a4a4;
+}
