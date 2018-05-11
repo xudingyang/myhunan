@@ -48,6 +48,7 @@ $(function () {
         } else {
             location.href = 'car-number-pay-next.html'
         }
+
     })
 
     // 点击删除历史记录按钮
@@ -89,6 +90,7 @@ $(function () {
             $('.js-choose-provice').text(currentProvice)
             $('#js_common_input').val(carNumber.substring(1))
         }
+        currentCarNumber = carNumber
     })
 
     // 点击弹出界面空白区域
