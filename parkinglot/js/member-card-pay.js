@@ -1,6 +1,15 @@
 $(function () {
     // 如果未注册
-    var hadRegistered = false
+    var hadRegistered = true
+    if (!hadRegistered) {
+        location.href = 'user-register.html'
+        return
+    }
+    // 如果未激活会员卡
+    var hadActiveMemberCard = true
+    if (!hadActiveMemberCard) {
+        location.href = 'member-card.html'
+    }
     // 如果未激活会员卡
     var state = 3
     if (1 === state) {
