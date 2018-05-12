@@ -1,0 +1,42 @@
+.title-wrapper {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+}
+.tickets-wrapper {
+    background: #fff;
+}
+.ticket {
+    height: 80px;
+    border-bottom: 1px solid #dfdfe0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 1.5){
+    .ticket {
+        border-bottom: 0.5px solid #dfdfe0;
+    }
+}
+.ticket:last-child {
+    border-bottom: none;
+}
+.ticket-info {
+    padding-left: 10px;
+}
+.recharge-btn {
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+}
+.recharge-btn i {
+    width: 50px;
+    height: 28px;
+    line-height: 28px;
+    background: #19c017;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+}
