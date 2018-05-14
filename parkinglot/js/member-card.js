@@ -3,7 +3,7 @@ $(function () {
     // 是否注册了
     var hadRegistered = true
     // 是否激活会员了
-    var hadActived = true
+    var hadActived = false
 
     // 如果没注册，直接跳到注册页面
     if (!hadRegistered) {
