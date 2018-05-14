@@ -91,13 +91,14 @@
     border-radius: 4px;
 }
 .tb2 {
-
-}
-.tb2 > i {
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 .tb2 > em {
-    margin-left: 8px;
     font-weight: bold;
+    color: #838383;
 }
 
 .active-modal {
