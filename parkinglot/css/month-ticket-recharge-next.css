@@ -1,0 +1,17 @@
+.info-wrapper {
+    background: #fff;
+}
+.info-wrapper p {
+    display: flex;
+    align-items: center;
+    min-height: 36px;
+    padding: 0 10px;
+}
+.info-wrapper p i {
+    flex: 0 0 66px;
+    width: 66px;
+}
+.car-number {
+    font-size: 16px;
+    color: #000;
+}
