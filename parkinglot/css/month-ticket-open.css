@@ -1,0 +1,54 @@
+
+.ticket {
+    padding: 10px;
+    background: #fff;
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    -webkit-align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.ticket:last-child {
+    margin-bottom: 0;
+}
+.info-con {
+    -webkit-flex: 1;
+    flex: 1;
+}
+.info-con > p{
+    display: -webkit-flex;
+    display: flex;
+    font-size: 14px;
+
+}
+.info-con i {
+    width: 56px;
+    -webkit-flex: 0 0 56px;
+    flex: 0 0 56px;
+}
+.info-con em {
+    -webkit-flex: 1;
+    flex: 1;
+}
+.oprate-con {
+    -webkit-flex: 0 0 40px;
+    flex: 0 0 40px;
+    width: 40px;
+    height: 100%;
+    text-align: right;
+}
+.oprate-con > i {
+    background: #19c017;
+    color: #fff;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 26px;
+    width: 40px;
+    border-radius: 3px;
+}
