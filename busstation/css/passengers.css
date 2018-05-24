@@ -15,6 +15,9 @@
 .passenger:last-child {
     border-bottom: none;
 }
+.p-info-con {
+
+}
 .p-oprate-con {
     display: flex;
 }
