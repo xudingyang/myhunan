@@ -1,0 +1,23 @@
+.input-wrapper {
+    background: #fff;
+    padding: 10px;
+}
+.input-wrapper > p {
+}
+
+.submit-wrapper {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.submit-wrapper i {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #19c017;
+    color: #fff;
+    font-size: 16px;
+    width: 88%;
+    border-radius: 4px;
+}
