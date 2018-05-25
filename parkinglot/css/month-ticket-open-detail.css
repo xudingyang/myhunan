@@ -7,6 +7,7 @@
     display: flex;
     align-items: center;
 }
+.car-list-con > i,
 .p-txt > i {
     margin-right: 8px;
     flex:  0 0 62px;
@@ -40,6 +41,40 @@
 }
 .p-txt1 > em {
     color: #ff793f;
+}
+.car-list-con {
+    min-height: 36px;
+    display: flex;
+    align-items: center;
+}
+.car-number-list span {
+    background: #19c017;
+    height: 26px;
+    font-size: 13px;
+    padding: 0 6px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    color: #fff;
+    float: left;
+    margin-right: 6px;
+    margin-bottom: 3px;
+}
+.add-car-btn {
+    float: left;
+    padding: 0 8px;
+    background: #dfdfe0;
+    color: #666;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.add-car-btn > img {
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
 }
 .submit-wrapper {
     height: 80px;
