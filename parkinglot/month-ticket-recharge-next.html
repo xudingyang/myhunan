@@ -3,58 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>续费月票</title>
+    <title>续租月票详情</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/month-ticket-recharge-next.css">
     <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
     <script src="js/month-ticket-recharge-next.js"></script>
 </head>
 <body>
-<div class="info-wrapper">
-    <p>
-        <i>车牌:</i>
-        <em class="car-number">湘F34567</em>
+<div class="input-wrapper">
+    <p class="p-txt">
+        <i>月票名:</i><em>汉林足浴月票</em>
     </p>
-    <p>
-        <i>停车场:</i>
-        <em>汉林足浴南广场1区停车场</em>
+    <p class="p-txt">
+        <i>停车场:</i><em>汉林足浴南区停车场</em>
     </p>
-    <p>
-        <i>月票价格:</i>
-        <em>20元每月</em>
+    <p class="p-txt">
+        <i>会员姓名:</i><em>张三</em>
     </p>
-</div>
-<div class="pay-wrapper">
-    <span>购买:</span>
-    <select>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-        <option value="9">9</option>
-        <option value="10">10</option>
-        <option value="11">11</option>
-        <option value="12">12</option>
-    </select>
-    个月
-</div>
-<div class="count-wrapper">
-    <span>待支付:</span>
-    <i>¥100.00元</i>
-</div>
-<div class="btn-wrapper">
-    <span class="js-confirm-buy">确认购买</span>
-</div>
-<div class="mask">
-    <div class="loading">
-        <img src="images/loading-spokes.svg" width="40" height="40" />
-        <br/>
-        <span class="text">正在请求，请稍候...</span>
+    <p class="p-txt">
+        <i>会员手机:</i><em>13566668888</em>
+    </p>
+    <div class="car-list-con">
+        <i>车牌列表:</i>
+        <div class="car-number-list">
+            <span>湘F12345</span>
+            <span>湘F12345</span>
+            <span>湘F12345</span>
+            <span>湘F12345</span>
+            <span>湘F12345</span>
+            <span>湘F12345</span>
+            <span>湘F12345</span>
+        </div>
     </div>
+    <p class="p-txt">
+        <i>续租时长:</i>
+        <select>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>个月
+    </p>
+    <p class="p-txt">
+        <i>月票价格:</i><em>60元/月</em>
+    </p>
+    <p class="p-txt p-txt1">
+        <i>总金额:</i><em>¥600.00</em>
+    </p>
+    <p class="p-txt p-txt1">
+        <i>到期时间:</i><em>2019-12-31 23:59:59</em>
+    </p>
 </div>
+<div class="submit-wrapper">
+    <i class="js-confirm-buy">确认续租</i>
+</div>
+
 </body>
 </html>
