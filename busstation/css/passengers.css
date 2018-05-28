@@ -16,12 +16,33 @@
     border-bottom: none;
 }
 .p-info-con {
-
+    font-size: 14px;
 }
+.p-name >i {
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 16px;
+}
+.p-name > em {
+    color: #666;
+}
+.p-card-number {
+    margin-top: 4px;
+    color: #666;
+}
+.p-card-number > i {
+    margin-right: 10px;
+}
+
 .p-oprate-con {
     display: flex;
 }
-
+.edit-img-con {
+    padding: 6px;
+}
+.delete-img-con {
+    padding: 6px;
+}
 
 
 
@@ -29,7 +50,7 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 50px;
+    height: 48px;
     font-size: 16px;
     color: #ff793f;
     background: #fff;

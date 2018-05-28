@@ -26,4 +26,15 @@ $(function () {
     $('.a-o-c-btn').on('click',function () {
         $('.add-other-car-modal').hide()
     })
+
+    // 选择购买时长，改变到期时间
+    $('#select_delta_time').on('change',function(){
+        var count = $(this).val()
+        var date = new Date()
+        var endTime = date.setMonth((date.getMonth() + parseInt(count)), date.getDate())
+        var endDate = new Date(endTime)
+        console.log(endDate.getFullYear() + '年');
+        console.log((endDate.getMonth() + 1) + '月');
+        console.log(endDate.getDate() + '日');
+    })
 })
