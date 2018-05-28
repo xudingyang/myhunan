@@ -7,6 +7,9 @@
 .passenger {
     height: 80px;
     border-bottom: 1px solid #dfdfe0;
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    -webkit-align-items: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,6 +38,7 @@
 }
 
 .p-oprate-con {
+    display: -webkit-flex;
     display: flex;
 }
 .edit-img-con {
@@ -54,6 +58,9 @@
     font-size: 16px;
     color: #ff793f;
     background: #fff;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
     display: flex;
     align-items: center;
     justify-content: center;
