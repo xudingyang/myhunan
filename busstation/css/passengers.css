@@ -22,6 +22,8 @@
     font-size: 14px;
 }
 .p-name {
+    display: -webkit-flex;
+    -webkit-align-items: center;
     display: flex;
     align-items: center;
 }
@@ -31,7 +33,7 @@
     font-size: 16px;
 }
 .p-name > span {
-    background: #f2f2f2;
+    background: #f0f0f0;
     padding: 2px 6px;
     font-size: 14px;
     border-radius: 4px;
@@ -59,9 +61,6 @@
 .delete-img-con {
     padding: 6px;
 }
-
-
-
 .add-btn {
     position: fixed;
     bottom: 0;
