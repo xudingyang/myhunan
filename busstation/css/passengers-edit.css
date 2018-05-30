@@ -32,6 +32,8 @@
     border-bottom: none;
 }
 .info select {
+    -webkit-flex: 1;
+    flex: 1;
     height: 32px;
     outline: none;
     font-size: 14px;
