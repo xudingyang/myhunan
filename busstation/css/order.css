@@ -1,0 +1,39 @@
+.tab-wrapper {
+    padding: 0 20px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+}
+.tab {
+    height: 52px;
+    line-height: 52px;
+    text-align: center;
+    flex: 1;
+    border-bottom: 3px solid #fff;
+}
+.tab.active {
+    border-bottom-color: #ff793f;
+}
+.order-list-wrapper {
+    margin-top: 6px;
+}
+.empty {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.empty > span {
+    margin-top: 20px;
+    font-size: 15px;
+}
+.all-wrapper .empty-con {
+    display: none;
+}
+.not-pay-wrapper {
+    display: none;
+}
+.not-use-wrapper {
+    display: none;
+}

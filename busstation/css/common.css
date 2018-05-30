@@ -12,6 +12,9 @@ body {
     background-color: #efeff4;
     -webkit-user-select: none;
 }
+body,html {
+    height: 100%;
+}
 li {
     list-style: none;
 }
