@@ -34,4 +34,9 @@ $(function () {
         $panelNotPay.hide()
         $panelNotUse.show()
     })
+
+    // 点击任意一个订单
+    $('.order-item').on('click',function () {
+        location.href = 'order-detail.html'
+    })
 })
