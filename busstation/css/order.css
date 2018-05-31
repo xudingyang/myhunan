@@ -1,6 +1,8 @@
 .tab-wrapper {
     padding: 0 20px;
     background: #fff;
+    display: -webkit-flex;
+    -webkit-align-items: center;
     display: flex;
     align-items: center;
 }
@@ -8,6 +10,7 @@
     height: 52px;
     line-height: 52px;
     text-align: center;
+    -webkit-flex: 1;
     flex: 1;
     border-bottom: 3px solid #fff;
 }
@@ -19,6 +22,10 @@
 }
 .empty {
     padding-top: 100px;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,6 +41,82 @@
 .not-pay-wrapper {
     display: none;
 }
+.not-pay-wrapper .empty-con {
+    display: none;
+}
 .not-use-wrapper {
     display: none;
+}
+.not-use-wrapper .empty-con {
+    display: none;
+}
+.order-item {
+    padding: 10px;
+    background: #fff;
+    margin-bottom: 6px;
+}
+.time-state {
+    height: 30px;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+}
+.time {
+    color: #222;
+}
+.state-not-pay {
+    color: #ff793f;
+}
+.state-not-use {
+    color: #19c017;
+}
+.state-cancel {
+    color: #838383;
+}
+.start-end {
+    position: relative;
+}
+.start-end > span {
+    position: absolute;
+    top: 6px;
+    right: 2px;
+    font-size: 15px;
+}
+.start-station,
+.end-station {
+    line-height: 33px;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    display: flex;
+    align-items: center;
+}
+.start-station {
+    margin-bottom: 4px;
+}
+.start-end i{
+    height: 20px;
+    line-height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    font-size: 12px;
+    margin-right: 2px;
+    text-align: center;
+}
+.start-end em {
+    height: 30px;
+    line-height: 32px;
+    font-size: 15px;
+    color: #666;
+}
+.start-station > i {
+    border: 1px solid #56d1c5;
+    color: #56d1c5;
+}
+.end-station > i {
+    border: 1px solid #ff793f;
+    color: #ff793f;
 }
