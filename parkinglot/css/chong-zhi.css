@@ -151,11 +151,6 @@ button {
     text-align: center;
     border-radius: 4px;
     color: #fff;
-}
-.chongzhi-btn.disable {
-    background: #d9d9d9;
-}
-.chongzhi-btn.active {
     background: #19c017;
 }
 
@@ -212,6 +207,9 @@ table {
 }
 .key-hide-con {
     background: #fff;
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    -webkit-align-items: center;
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -4,15 +4,16 @@ $(function () {
         $('.huodong-list').toggle(500)
     })
     var $btn = $('.chongzhi-btn')
-    $('#chongzhi_money').on('input',function () {
-        var money = $.trim($('#chongzhi_money').val())
-        if (parseFloat(money) > 0) {
-            $btn.addClass('active').removeClass('disable').removeAttr('disabled')
-        } else {
-            $btn.addClass('disable').removeClass('active').attr('disabled','disabled')
-        }
-    })
+    // $('#chongzhi_money').on('input',function () {
+    //     var money = $.trim($('#chongzhi_money').val())
+    //     if (parseFloat(money) > 0) {
+    //         $btn.addClass('active').removeClass('disable').removeAttr('disabled')
+    //     } else {
+    //         $btn.addClass('disable').removeClass('active').attr('disabled','disabled')
+    //     }
+    // })
     $btn.click(function () {
+        var str = $('#chongzhi_money').val()
         if (confirm('确定要充值'+str+'元?')) {
             location.href = "chong-zhi-success.html"
         } else {
@@ -23,7 +24,6 @@ $(function () {
 
     // 点击充值输入框，弹出键盘
     $('#chongzhi_money').click(function(){
-        console.log(11);
         $('.keyboard-modal').show()
     })
     // 点击键盘的隐藏按钮
@@ -31,5 +31,19 @@ $(function () {
         $('.keyboard-modal').hide()
     })
     // 点击键盘的数字
-
+    var moneyCountStr = ''
+    $('.num').on('click',function () {
+        var dataNum = $(this).data('num')
+        moneyCountStr = moneyCountStr + dataNum
+        console.log(moneyCountStr);
+        $('#chongzhi_money').val(moneyCountStr)
+    })
+    // 点完成键
+    $('.had-done').on('click',function () {
+        $('.keyboard-modal').hide()
+    })
+    $('.js-del').on('click',function () {
+        moneyCountStr = moneyCountStr.substring(0,moneyCountStr.length - 1)
+        $('#chongzhi_money').val(moneyCountStr)
+    })
 })
