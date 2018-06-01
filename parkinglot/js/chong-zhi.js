@@ -13,7 +13,6 @@ $(function () {
         }
     })
     $btn.click(function () {
-        var str = $.trim($('#chongzhi_money').val())
         if (confirm('确定要充值'+str+'元?')) {
             location.href = "chong-zhi-success.html"
         } else {
