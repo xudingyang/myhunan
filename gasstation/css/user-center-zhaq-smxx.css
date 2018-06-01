@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif;
+    font-size: 15px;
+    color: #333;
+    background-color: #fbf9fe;
+    -webkit-user-select: none;
+}
+body,html {
+    height: 100%;
+}
+li {
+    list-style: none;
+}
+i,em {
+    font-style: normal;
+}
+input {
+    outline-style: none;
+    border: none;
+}
+.title {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 15px;
+    color: #838383;
+    font-size: 13px;
+}
+.box {
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 15px;
+    font-size: 16px;
+}
+.name-con {
+    border-top: 1px solid #dfdfe0;
+    border-bottom: 1px solid #dfdfe0;
+}
+.name-con span {
+    -webkit-flex: 0 0 70px;
+    flex: 0 0 70px;
+    width: 70px;
+}
+.id-card-con {
+    border-bottom: 1px solid #dfdfe0;
+}
+.id-card-con span {
+    -webkit-flex: 0 0 70px;
+    flex: 0 0 70px;
+    width: 70px;
+}
+.box input {
+    -webkit-flex: 1;
+    flex: 1;
+    font-size: 16px;
+}
+.box input::-webkit-input-placeholder {
+    font-size: 16px;
+}
+.btn {
+    height: 40px;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.btn span {
+    height: 40px;
+    line-height: 40px;
+    width: 80%;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    background: #19c017;
+    border-radius: 5px;
+}

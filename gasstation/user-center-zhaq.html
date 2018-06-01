@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>账户安全</title>
+    <link rel="stylesheet" href="css/user-center-zhaq.css">
+    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+<script>
+    $(function () {
+        $('.shiming-info').on('click',function () {
+            location.href = 'user-center-zhaq-smxx.html'
+        })
+        $('.card-pwd').on('click',function () {
+            location.href = 'user-center-zhaq-kjymm.html'
+        })
+        $('.tel-con').on('click',function () {
+            location.href = 'user-center-zhaq-ggsjh.html'
+        })
+        $('.js-tel').text($('.js-tel').text().replace(/(\d{3})\d{4}(\d{4})/,'$1****$2'))
+    })
+</script>
+<div class="con">
+    <div class="tel-con">
+        <span>更改手机号</span>
+        <i class="js-tel">13012341234</i>
+    </div>
+    <div class="shiming-info">
+        <div class="top">
+            <span>实名信息</span>
+            <em class="unfinished">未完成登记</em>
+        </div>
+        <div class="bot">
+            为了保护您的资金安全与遵守国家法律规定，账户金额大于1000元人民币需要进行实名登记
+        </div>
+    </div>
+    <div class="card-pwd">
+        <div class="top">
+            <span>卡交易密码</span>
+            <em class="unfinished">未完成创建</em>
+        </div>
+        <div class="bot">
+            创建卡的交易密码，为每张卡创建交易密码<br/>
+            修改卡的交易密码，建议经常修改提升安全性
+        </div>
+    </div>
+</div>
+</body>
+</html>

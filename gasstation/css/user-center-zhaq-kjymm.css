@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif;
+    font-size: 15px;
+    color: #333;
+    background-color: #fbf9fe;
+    -webkit-user-select: none;
+}
+body,html {
+    height: 100%;
+}
+li {
+    list-style: none;
+}
+i,em {
+    font-style: normal;
+}
+button,input {
+    outline-style: none;
+}
+.con {
+    padding: 15px;
+}
+.title {
+    margin-bottom: 10px;
+    color: #838383;
+    font-size: 13px;
+}
+.card-con {
+    padding: 20px 15px;
+    color: #fff;
+    background: #3acbb3;
+    position: relative;
+    border-radius: 4px 4px 0 0;
+}
+.card-con .name {
+    font-family: SimHei;
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+.card-con .money {
+    font-size: 16px;
+}
+.card-con .btn {
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: right;
+}

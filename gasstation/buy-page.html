@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>购买</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/buy-page.css">
+    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/buy-page.js"></script>
+</head>
+<body>
+<div class="buy-panel">
+    <p class="title">请点击您要购买的油类</p>
+    <div class="oil-con">
+        <i class="qi-you current">汽油</i>
+        <i class="chai-you">柴油</i>
+        <i class="tian-ran-qi">天然气</i>
+    </div>
+    <div class="choose1 oil-confirm">
+        <div class="ch-box1">
+            <i>油类:</i>
+            <div class="ch-box-div"><span id="confirm_oil">汽油</span><span id="confirm_num">92#</span></div>
+        </div>
+        <em class="change-youhuiquan js-change-oil">更改<i>＞</i></em>
+    </div>
+    <div class="choose1 money-input-con">
+        <div class="pty-box">
+            <i>金额:</i>
+            <input id="money_count" type="number" placeholder="输入购买金额">
+        </div>
+    </div>
+    <div class="next-step-btn"><span><em id="buy_oil_count">10.50升</em><i id="curr_type">汽油</i>下一步</span></div>
+</div>
+<div class="buy-panel2">
+    <div class="title">支付方式和优惠券</div>
+    <div class="choose">
+        <div class="ch-box">
+            <i>支付方式:</i>
+            <div class="ch-box-div" id="pay_type">加油卡</div>
+        </div>
+        <em class="change-paytype">更改<i>＞</i></em>
+    </div>
+    <div class="choose choose-yhkq">
+        <div class="ch-box">
+            <i>优惠卡券:</i>
+            <div class="ch-box-div" id="pay_youhuiquan">满100减30好烦好烦好烦是打发斯蒂芬随时随地撒地方的萨芬第三方都是</div>
+        </div>
+        <em class="change-youhuiquan js-change-yhq">更改<i>＞</i></em>
+    </div>
+    <div class="bo1">
+        <div class="bo-box1">
+            <span>会员优惠<i>5</i></span>
+            <span>优惠卡<i>5</i></span>
+            <span class="gjs">共节省<i>10</i></span>
+        </div>
+    </div>
+    <div class="bo3">
+        <span>*您当前是<i>黄金会员</i>,可享受<em>xxx优惠</em>*</span>
+    </div>
+    <div class="bo2">*优惠券与加油卡同时只能使用一种*</div>
+    <div class="btn-cons">
+        <div class="pay-btn"><span>实际支付<em>90.00</em>，去支付</span></div>
+        <div class="back-pre-step"><span>返回上一步</span></div>
+    </div>
+</div>
+<div class="modal">
+    <div class="con">
+        <div class="modal-title">超出付款范围</div>
+        <p class="tip-text">请在<span class="station-name">岳阳楼石化巴陵加油站</span><i>&nbsp;1.00公里范围内付款</i></p>
+        <div class="bot-btns">
+            <span class="fl relocation-btn">更新定位</span>
+            <span class="fl go-station-btn">去油站</span>
+        </div>
+    </div>
+</div>
+<div class="oil-modal">
+    <div class="oil-modal-box">
+        <div class="oil-modal-con">
+            <div class="oil-modal-title">请选择您要购买的汽油</div>
+            <ul>
+                <li class="oil-m-item" data-num="98">98#</li>
+                <li class="oil-m-item" data-num="95">95#</li>
+                <li class="oil-m-item active" data-num="92">92#</li>
+                <li class="oil-m-item" data-num="0">0#</li>
+            </ul>
+            <div class="oil-btn-tabs">
+                <div class="oil-btn-cancel">取消</div>
+                <div class="oil-btn-ok">确定</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="yhq-modal">
+    <div class="yhq-box">
+        <div class="yhq-con">
+            <div class="oil-modal-title">本商品可使用优惠券如下</div>
+            <ul>
+                <li class="yhq-item">
+                    <i>满100减5上的地方收到防守打法sad发送地方撒打发斯蒂芬</i>
+                    <p>到期时间:&nbsp;<span>2017-12-12 12:23:34</span></p>
+                    <em>使用</em>
+                </li>
+                <li class="yhq-item">
+                    <i>满100减5哈哈哈</i>
+                    <p>到期时间:&nbsp;<span>2017-12-12 12:23:34</span></p>
+                    <em>使用</em>
+                </li>
+                <li class="yhq-item">
+                    <i>满100减5</i>
+                    <p>到期时间:&nbsp;<span>2017-12-12 12:23:34</span></p>
+                    <em>使用</em>
+                </li>
+                <li class="yhq-item">
+                    <i>满100减5</i>
+                    <p>到期时间:&nbsp;<span>2017-12-12 12:23:34</span></p>
+                    <em>使用</em>
+                </li>
+                <li class="yhq-item">
+                    <i>满100减5</i>
+                    <p>到期时间:&nbsp;<span>2017-12-12 12:23:34</span></p>
+                    <em>使用</em>
+                </li>
+                <li class="yhq-item">
+                    <i>满100减5</i>
+                    <p>到期时间:&nbsp;<span>2017-12-12 12:23:34</span></p>
+                    <em>使用</em>
+                </li>
+                <li class="yhq-item">
+                    <i>满100减5</i>
+                    <p>到期时间:&nbsp;<span>2017-12-12 12:23:34</span></p>
+                    <em>使用</em>
+                </li>
+                <li class="yhq-item">
+                    <i>满100减5</i>
+                    <p>到期时间:&nbsp;<span>2017-12-12 12:23:34</span></p>
+                    <em>使用</em>
+                </li>
+                <li class="yhq-item">
+                    <i>满100减5</i>
+                    <p>到期时间:&nbsp;<span>2017-12-12 12:23:34</span></p>
+                    <em>使用</em>
+                </li>
+                <li class="yhq-item">
+                    <i>满100减5</i>
+                    <p>到期时间:&nbsp;<span>2017-12-12 12:23:34</span></p>
+                    <em>使用</em>
+                </li>
+                <li class="yhq-item">
+                    <i>满100减5</i>
+                    <p>到期时间:&nbsp;<span>2017-12-12 12:23:34</span></p>
+                    <em>使用</em>
+                </li>
+                <li class="yhq-item">
+                    <i>满100减5</i>
+                    <p>到期时间:&nbsp;<span>2017-12-12 12:23:34</span></p>
+                    <em>使用</em>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="keyboard-modal">
+    <div class="keyboard-container">
+        <div class="pwd-con">
+            <div class="tip-tx">请输入密码</div>
+            <div class="pwd-tabs">
+                <ol>
+                    <li class="pwd"></li>
+                    <li class="pwd"></li>
+                    <li class="pwd"></li>
+                    <li class="pwd"></li>
+                    <li class="pwd"></li>
+                    <li class="pwd"></li>
+                </ol>
+            </div>
+        </div>
+        <table>
+            <tr>
+                <td class="num none-left-border" data-num="1">1</td>
+                <td class="num" data-num="2">2</td>
+                <td class="num none-right-border" data-num="3">3</td>
+            </tr>
+            <tr>
+                <td class="num none-left-border" data-num="4">4</td>
+                <td class="num" data-num="5">5</td>
+                <td class="num none-right-border" data-num="6">6</td>
+            </tr>
+            <tr>
+                <td class="num none-left-border" data-num="7">7</td>
+                <td class="num" data-num="8">8</td>
+                <td class="num none-right-border" data-num="9">9</td>
+            </tr>
+            <tr>
+                <td class="num none-left-border none-bottom-border kong"></td>
+                <td class="num none-bottom-border" data-num="0">0</td>
+                <td class="del-icon none-bottom-border none-right-border js-del"><img class="icon" src="images/del@2x.png" width="28" height="21" alt=""></td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="pty-modal">
+    <div class="pty-modal-box">
+        <div class="pty-modal-con">
+            <div class="pty-modal-title">请选择您要购买的汽油</div>
+            <ul>
+                <li class="pty-m-item active" data-num="0">加油卡</li>
+                <li class="pty-m-item" data-num="1">微信支付</li>
+                <li class="pty-m-item" data-num="2">积分</li>
+            </ul>
+            <div class="pty-btn-tabs">
+                <div class="pty-btn-cancel">取消</div>
+                <div class="pty-btn-ok">确定</div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

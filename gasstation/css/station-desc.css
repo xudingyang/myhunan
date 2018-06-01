@@ -1,0 +1,201 @@
+.station-info {
+    background: #fff;
+    margin-bottom: 15px;
+}
+.avatar-con {
+    height: 160px;
+    width: 100%;
+    background: url("../images/bg2.png") no-repeat;
+    background-size: cover;
+}
+.station-info .info {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 15px;
+}
+.pay-btn {
+    background: #19c017;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 5px 7px;
+}
+.info .name {
+    font-size: 16px;
+    color: #222;
+}
+.rating {
+    display: flex;
+    font-size: 14px;
+    color: #ff7147;
+}
+.stars {
+    margin-right: 6px;
+}
+.stars span {
+    font-size: 16px;
+}
+.location-con {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 54px;
+    border-top: 1px solid #dfdfe0;
+    border-bottom: 1px solid #dfdfe0;
+}
+.location-con .address {
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+}
+.location-con .icon-place {
+    color: #19c017;
+    font-size: 12px;
+}
+.location-con em {
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 200px;
+}
+@media screen and (max-width: 414px){
+    .location-con em {
+        width: 288px;
+    }
+}
+@media screen and (max-width: 375px){
+    .location-con em {
+        width: 240px;
+    }
+}
+@media screen and (max-width: 360px){
+    .location-con em {
+        width: 220px;
+    }
+}
+@media screen and (max-width: 320px){
+    .location-con em {
+        width: 196px;
+    }
+}
+.location-con .location-btn {
+    width: 92px;
+    height: 100%;
+    line-height: 54px;
+    color: #19c017;
+    font-size: 18px;
+    border-left: 1px solid #dfdfe0;
+    text-align: center;
+}
+.swiper-box-wrapper {
+    padding-bottom: 10px;
+    background: #fff;
+    border-top: 1px solid #dfdfe0;
+    border-bottom: 1px solid #dfdfe0;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 1.5){
+    .location-con {
+        border-top: 0.5px solid #dfdfe0;
+        border-bottom: 0.5px solid #dfdfe0;
+    }
+    .location-con .location-btn {
+        border-left: 0.5px solid #dfdfe0;
+    }
+    .swiper-box-wrapper {
+        border-top: 0.5px solid #dfdfe0;
+        border-bottom: 0.5px solid #dfdfe0;
+    }
+}
+.swiper-container {
+    height: 86px;
+}
+.swiper-slide {
+    display: flex;
+    padding-top: 25px;
+}
+.hd-item {
+    flex: 1;
+    border-left: 1px solid #dfdfe0;
+    height: 28px;
+    position: relative;
+}
+.hd-item:first-child {
+    border-left: none;
+}
+.hd-item span {
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    height: 18px;
+    line-height: 18px;
+    color: #222;
+}
+.hd-item em {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #838383;
+}
+.desc-tx {
+    font-size: 13px;
+    color: #777;
+    text-align: center;
+}
+.card-con {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    color: #19c017;
+    margin-top: 15px;
+    height: 44px;
+    background: #fff;
+    border-top: 1px solid #dfdfe0;
+    border-bottom: 1px solid #dfdfe0;
+}
+.card-con span {
+    margin-left: 5px;
+}
+.huodong {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: #fff;
+    border-top: 1px solid #dfdfe0;
+    border-bottom: 1px solid #dfdfe0;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 1.5){
+    .card-con {
+        border-top: 0.5px solid #dfdfe0;
+        border-bottom: 0.5px solid #dfdfe0;
+    }
+    .huodong {
+        border-top: 0.5px solid #dfdfe0;
+        border-bottom: 0.5px solid #dfdfe0;
+    }
+}
+.huodong span {
+    margin-left: 5px;
+}
+.huodong i {
+    color: #f43530;
+}
+.jifen-shangpin {
+    margin-top: 15px;
+    margin-top: 30px;
+    height: 44px;
+    line-height: 44px;
+    padding-left: 15px;
+    border-top: 1px solid #dfdfe0;
+    border-bottom: 1px solid #dfdfe0;
+    background: #fff;
+    font-size: 15px;
+}

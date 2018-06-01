@@ -1,0 +1,74 @@
+.total {
+    padding-left: 15px;
+    height: 50px;
+    line-height: 50px;
+    color: #838383;
+}
+.total i {
+    margin-left: 20px;
+    color: #19c017;
+}
+.item {
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    display: flex;
+    align-items: center;
+    height: 64px;
+    background: #fff;
+    border-top: 1px solid #dfdfe0;
+    border-bottom: 1px solid #dfdfe0;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 1.5){
+    .item {
+        border-top: 0.5px solid #dfdfe0;
+        border-bottom: 0.5px solid #dfdfe0;
+    }
+}
+.item .icon {
+    -webkit-flex: 0 0 64px;
+    flex: 0 0 64px;
+    width: 64px;
+    height: 64px;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item .info {
+    -webkit-flex: 1;
+    flex: 1;
+}
+.item .info .title {
+    font-size: 16px;
+    color: #333;
+}
+.item .info .bot {
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15px;
+}
+.bot span {
+    color: #777;
+}
+.bot i {
+    color: #f54545;
+}
+.bot em {
+    color: #555;
+}
+ul {
+    display: none;
+}
+.jifen-kong {
+    padding-top: 100px;
+    text-align: center;
+}
+.jifen-kong p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #999;
+}

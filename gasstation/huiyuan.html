@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/huiyuan.css">
+    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/huiyuan.js"></script>
+</head>
+<body>
+<div class="avatar-container">
+    <div class="avatar">
+        <img src="images/avatar.png" width="60" height="60" alt="">
+    </div>
+    <div class="user-info">
+        <p class="nick-name">阿凡达妹妹</p>
+        <p class="tel-number">13056747788</p>
+        <div class="score-money">
+            <p class="score-con">积分:&nbsp;<span class="score-num">0</span></p>
+            <p class="money-con">余额:&nbsp;<span class="money-num">0.00</span></p>
+        </div>
+    </div>
+</div>
+<div class="level-container">
+    <p class="text">再获取200积分即可升级到钻石会员</p>
+    <div class="score-level">
+        <div class="level-con">会员:&nbsp;<span class="level">黄金会员</span></div>
+        <div class="score-con">积分:&nbsp;<span class="score"><i class="current-score">500</i>/<i class="next-score">700</i></span></div>
+    </div>
+</div>
+<div class="tabs-container">
+    <ul id="tabs">
+        <li><i>白银会员</i></li>
+        <li class="active"><i>黄金会员</i></li>
+        <li><i>铂金会员</i></li>
+        <li><i>钻石会员</i></li>
+    </ul>
+    <div class="js-hy huiyuan-silver">
+        <p class="top">白银会员特权</p>
+        <p class="bot"><i>-&nbsp;</i>每升优惠<span class="silver-money">0.1</span>元</p>
+        <p class="hy-desc"><i class="iconfont icon-ichaxun"></i><em>会员说明</em></p>
+    </div>
+    <div class="js-hy huiyuan-gold">
+        <p class="top">黄金会员特权</p>
+        <p class="bot"><i>-&nbsp;</i>每升优惠<span class="silver-money">0.2</span>元</p>
+        <p class="hy-desc"><i class="iconfont icon-ichaxun"></i><em>会员说明</em></p>
+    </div>
+    <div class="js-hy huiyuan-platinum">
+        <p class="top">铂金会员特权</p>
+        <p class="bot"><i>-&nbsp;</i>每升优惠<span class="silver-money">0.3</span>元</p>
+        <p class="hy-desc"><i class="iconfont icon-ichaxun"></i><em>会员说明</em></p>
+    </div>
+    <div class="js-hy huiyuan-diamond">
+        <p class="top">钻石会员特权</p>
+        <p class="bot"><i>-&nbsp;</i>每升优惠<span class="silver-money">0.4</span>元</p>
+        <p class="hy-desc"><i class="iconfont icon-ichaxun"></i><em>会员说明</em></p>
+    </div>
+</div>
+<div class="score-rule-container">
+    <div class="rule-title">积分规则</div>
+    <div class="rule-con"><i>-&nbsp;</i><span class="rule">汽油1升积1份，柴油3升积1分，不满1升不积分</span></div>
+</div>
+<div class="scroe-record-container">
+    <span>积分记录</span><i>＞</i>
+</div>
+<div class="support-station-container">
+    <div class="support-title">支持的油站</div>
+    <ul>
+        <li class="station">
+            <div class="name-score">
+                <p class="station-name">巴陵事务所第一加油站</p>
+                <div class="station-rating">
+                    <span class="iconfont icon-pingfen star"></span>
+                    <span class="iconfont icon-pingfen star"></span>
+                    <span class="iconfont icon-pingfen star"></span>
+                    <span class="iconfont icon-pingfen star"></span>
+                    <span class="iconfont icon-xing star"></span>
+                    <span class="rating">5</span>
+                </div>
+                <div class="score-goods">
+                    积分商品
+                </div>
+            </div>
+            <div class="discount-acty">
+                <span class="iconfont icon-huodong1"></span>
+                <span class="huodong">一键加油最高优惠:0.01元/升</span>
+            </div>
+            <div class="station-address">
+                <span class="iconfont icon-place"></span>
+                <span class="address">岳阳市岳阳楼区翠碧山庄永和大道天安门广场</span>
+            </div>
+        </li>
+        <li class="station">
+            <div class="name-score">
+                <p class="station-name">巴陵事务所第一加油站</p>
+                <div class="station-rating">
+                    <span class="iconfont icon-pingfen star"></span>
+                    <span class="iconfont icon-pingfen star"></span>
+                    <span class="iconfont icon-pingfen star"></span>
+                    <span class="iconfont icon-pingfen star"></span>
+                    <span class="iconfont icon-xing star"></span>
+                    <span class="rating">5</span>
+                </div>
+            </div>
+            <div class="station-address">
+                <span class="iconfont icon-place"></span>
+                <span class="address">岳阳市岳阳楼区翠碧山庄永和大道天安门广场</span>
+            </div>
+        </li>
+        <li class="station">
+            <div class="name-score">
+                <p class="station-name">巴陵事务所第一加油站</p>
+                <div class="station-rating">
+                    <span class="iconfont icon-pingfen star"></span>
+                    <span class="iconfont icon-pingfen star"></span>
+                    <span class="iconfont icon-pingfen star"></span>
+                    <span class="iconfont icon-pingfen star"></span>
+                    <span class="iconfont icon-xing star"></span>
+                    <span class="rating">5</span>
+                </div>
+                <div class="score-goods">
+                    积分商品
+                </div>
+            </div>
+            <div class="discount-acty">
+                <span class="iconfont icon-huodong1"></span>
+                <span class="huodong">一键加油最高优惠:0.01元/升</span>
+            </div>
+            <div class="station-address">
+                <span class="iconfont icon-place"></span>
+                <span class="address">岳阳市岳阳楼区翠碧山庄永和大道天安门广场</span>
+            </div>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

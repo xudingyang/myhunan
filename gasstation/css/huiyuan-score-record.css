@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    background-color: #fbf9fe;
+    -webkit-user-select: none;
+}
+body,html {
+    height: 100%;
+}
+li {
+    list-style: none;
+}
+i,em {
+    font-style: normal;
+}
+.total-wrapper {
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: #fbf9fe;
+}
+.total-wrapper .total-score {
+    height: 25px;
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.total-wrapper div {
+    height: 25px;
+    line-height: 25px;
+}
+.total-wrapper .icon-huodong {
+    color: #19c017;
+    font-size: 22px;
+}
+.total-wrapper em {
+    position: relative;
+    top: -2px;
+    margin-left: 2px;
+    color: #838383;
+    font-size: 18px;
+}
+.empty-wrapper {
+    position: fixed;
+    top: 90px;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+}
+.empty-wrapper p {
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 16px;
+}
+.score-wrapper {
+    padding-top: 90px;
+    width: 100%;
+}
+.tip-con {
+    padding-left: 15px;
+    background: #eee;
+    height: 40px;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    -webkit-justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.tip-con .year {
+    color: #333;
+    font-size: 14px;
+}
+.score-wrapper .tip {
+    padding: 2px 15px;
+    color: #838383;
+    font-size: 12px;
+    color: #f54545;
+}
+.item {
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 0 15px;
+    height: 60px;
+    border-bottom: 1px solid #dfdfe0;
+}
+.item:first-child {
+    border-top: 1px solid #dfdfe0;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 1.5){
+    .item {
+        border-bottom: 0.5px solid #dfdfe0;
+    }
+    .item:first-child {
+        border-top: 0.5px solid #dfdfe0;
+    }
+}
+.item .lf {
+    flex: 1;
+}
+.item .store-name {
+    color: #333;
+    font-size: 14px;
+}
+.item .time {
+    font-size: 12px;
+    color: #838383;
+}
+.item .rg {
+    flex: 0 0 50px;
+    font-size: 30px;
+}

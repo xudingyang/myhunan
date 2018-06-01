@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>我的加油卡</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/jiayouka-wdjyk.css">
+    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/jiayouka-wdjyk.js"></script>
+</head>
+<body>
+<div class="card-con">
+    <div class="card">
+        <div class="station-con">
+            <img src="images/avatar.png" width="60" height="60" alt="">
+            <div class="info">
+                <p class="station-name">汉林石化VIP卡</p>
+                <div class="card-type">个人卡</div>
+            </div>
+        </div>
+        <div class="card-id">NO.<i>20171103123344</i></div>
+    </div>
+</div>
+<div class="tb tb1">
+    <span>卡交易</span>
+    <p>
+        <span>余额<i>0.00</i>元</span>
+        <em id="chongzhi_btn">充值</em>
+    </p>
+</div>
+<div class="tb" id="xgkjymm">
+    修改卡交易密码
+</div>
+<div class="tb" id="jyjl">
+    交易记录
+</div>
+<div class="bot">
+    <div class="lf" id="zcsp">支持商品</div>
+    <div class="rg" id="zcyz">支持油站(<i id="zhichi_station">3</i>)</div>
+</div>
+<div class="modal-support-goods">
+    <div class="modal-panel">
+        <i class="guanbi-btn js-guanbi1">×</i>
+        <p class="modal-title">支持商品</p>
+        <p class="you-pin">油品</p>
+        <div class="you">
+            <p>所有汽油</p>
+            <p>所有柴油</p>
+        </div>
+        <p class="fei-you-pin">非油品</p>
+        <div class="fei-you">
+            不支持非油品
+        </div>
+    </div>
+</div>
+<div class="modal-support-station">
+    <div class="modal-panel">
+        <i class="guanbi-btn js-guanbi2">×</i>
+        <p class="modal-title">支持油站</p>
+        <div class="modal-list">
+            <ul>
+                <li class="station">
+                    <div class="name-score">
+                        <p class="station-name">巴陵事务所第一加油站</p>
+                        <div class="station-rating">
+                            <span class="iconfont icon-pingfen star"></span>
+                            <span class="iconfont icon-pingfen star"></span>
+                            <span class="iconfont icon-pingfen star"></span>
+                            <span class="iconfont icon-pingfen star"></span>
+                            <span class="iconfont icon-xing star"></span>
+                            <span class="rating">5</span>
+                        </div>
+                    </div>
+                    <div class="discount-acty">
+                        <span class="iconfont icon-huodong1"></span>
+                        <span class="huodong">一键加油最高优惠:0.01元/升</span>
+                    </div>
+                    <div class="station-address">
+                        <span class="iconfont icon-place"></span>
+                        <span class="address">岳阳市岳阳楼区翠碧山庄永和大道天安门广场</span>
+                    </div>
+                </li>
+                <li class="station">
+                    <div class="name-score">
+                        <p class="station-name">巴陵事务所第一加油站</p>
+                        <div class="station-rating">
+                            <span class="iconfont icon-pingfen star"></span>
+                            <span class="iconfont icon-pingfen star"></span>
+                            <span class="iconfont icon-pingfen star"></span>
+                            <span class="iconfont icon-pingfen star"></span>
+                            <span class="iconfont icon-xing star"></span>
+                            <span class="rating">5</span>
+                        </div>
+                    </div>
+                    <div class="discount-acty">
+                        <span class="iconfont icon-huodong1"></span>
+                        <span class="huodong">一键加油最高优惠:0.01元/升</span>
+                    </div>
+                    <div class="station-address">
+                        <span class="iconfont icon-place"></span>
+                        <span class="address">岳阳市岳阳楼区翠碧山庄永和大道天安门广场</span>
+                    </div>
+                </li>
+                <li class="station">
+                    <div class="name-score">
+                        <p class="station-name">巴陵事务所第一加油站</p>
+                        <div class="station-rating">
+                            <span class="iconfont icon-pingfen star"></span>
+                            <span class="iconfont icon-pingfen star"></span>
+                            <span class="iconfont icon-pingfen star"></span>
+                            <span class="iconfont icon-pingfen star"></span>
+                            <span class="iconfont icon-xing star"></span>
+                            <span class="rating">5</span>
+                        </div>
+                    </div>
+                    <div class="discount-acty">
+                        <span class="iconfont icon-huodong1"></span>
+                        <span class="huodong">一键加油最高优惠:0.01元/升</span>
+                    </div>
+                    <div class="station-address">
+                        <span class="iconfont icon-place"></span>
+                        <span class="address">岳阳市岳阳楼区翠碧山庄永和大道天安门广场</span>
+                    </div>
+                </li>
+                <li class="station">
+                    <div class="name-score">
+                        <p class="station-name">巴陵事务所第一加油站</p>
+                        <div class="station-rating">
+                            <span class="iconfont icon-pingfen star"></span>
+                            <span class="iconfont icon-pingfen star"></span>
+                            <span class="iconfont icon-pingfen star"></span>
+                            <span class="iconfont icon-pingfen star"></span>
+                            <span class="iconfont icon-xing star"></span>
+                            <span class="rating">5</span>
+                        </div>
+                    </div>
+                    <div class="discount-acty">
+                        <span class="iconfont icon-huodong1"></span>
+                        <span class="huodong">一键加油最高优惠:0.01元/升</span>
+                    </div>
+                    <div class="station-address">
+                        <span class="iconfont icon-place"></span>
+                        <span class="address">岳阳市岳阳楼区翠碧山庄永和大道天安门广场</span>
+                    </div>
+                </li>
+                <li class="station">
+                    <div class="name-score">
+                        <p class="station-name">巴陵事务所第一加油站</p>
+                        <div class="station-rating">
+                            <span class="iconfont icon-pingfen star"></span>
+                            <span class="iconfont icon-pingfen star"></span>
+                            <span class="iconfont icon-pingfen star"></span>
+                            <span class="iconfont icon-pingfen star"></span>
+                            <span class="iconfont icon-xing star"></span>
+                            <span class="rating">5</span>
+                        </div>
+                    </div>
+                    <div class="discount-acty">
+                        <span class="iconfont icon-huodong1"></span>
+                        <span class="huodong">一键加油最高优惠:0.01元/升</span>
+                    </div>
+                    <div class="station-address">
+                        <span class="iconfont icon-place"></span>
+                        <span class="address">岳阳市岳阳楼区翠碧山庄永和大道天安门广场</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

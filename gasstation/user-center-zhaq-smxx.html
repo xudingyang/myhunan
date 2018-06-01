@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>实名信息</title>
+    <link rel="stylesheet" href="css/user-center-zhaq-smxx.css">
+    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+<script>
+    $(function () {
+        $('.btn').on('click',function () {
+            var name = $.trim($('#name').val())
+            var idNum = $.trim($('#id').val())
+            if (name.length < 1) {
+                alert('姓名不能为空')
+                return
+            }
+            if (idNum.length < 1 || idNum.length > 18) {
+                alert('身份证号码不正确')
+                return
+            } else {
+                if (!(/^\d{17}(\d|x|X)$/.test(idNum))) {
+                    alert('身份证号码不正确')
+                    return
+                }
+            }
+            location.href = 'success-page.html?op=' + encodeURIComponent('实名信息提交')
+        })
+    })
+</script>
+<div class="title">登记实名信息，可用于维护您的尊贵权益</div>
+<div class="box name-con">
+    <span>真实姓名</span>
+    <input type="text" placeholder="您身份证上的姓名" id="name">
+</div>
+<div class="box id-card-con">
+    <span>身份证号</span>
+    <input type="text" placeholder="您的身份证号码" id="id">
+</div>
+<div class="btn"><span>确认</span></div>
+</body>
+</html>

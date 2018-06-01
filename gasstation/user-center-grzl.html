@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>个人资料</title>
+    <link rel="stylesheet" href="css/user-center-grzl.css">
+    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/user-center-grzl.js"></script>
+</head>
+<body>
+<div class="title">会员信息</div>
+<div class="info-con">
+    <div class="info">
+        <label class="lf" for="name">姓名</label>
+        <input class="rg" type="text" placeholder="请输入姓名" id="name">
+    </div>
+    <div class="info">
+        <label class="lf" for="nickname">昵称</label>
+        <input class="rg" type="text" placeholder="昵称" id="nickname" value="默认值">
+    </div>
+    <div class="info">
+        <span class="lf">性别</span>
+        <div class="rg sex-con">
+            <label><input id="male_radio" type="radio" name="sex" value="male">男</label>
+            <label><input id="female_radio" type="radio" name="sex" value="female">女</label>
+        </div>
+    </div>
+    <div class="info">
+        <label class="lf" for="birthday">生日</label>
+        <input class="rg" type="text" placeholder="格式1980-12-30" id="birthday">
+    </div>
+    <div class="info">
+        <label class="lf" for="carnumber">车牌号</label>
+        <input class="rg" type="text" placeholder="例:湘F12345" id="carnumber">
+    </div>
+</div>
+<div class="btn"><span class="sub-btn">确认提交</span></div>
+</body>
+</html>

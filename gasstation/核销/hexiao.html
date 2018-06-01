@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>核对订单</title>
+    <link rel="stylesheet" href="hexiao.css">
+    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <script src="hexiao.js"></script>
+</head>
+<body>
+<div class="success-con">
+    <div class="success">
+        <img src="images/successimg.png" width="80" height="80" alt="">
+        <p class="txt">该订单已完成</p>
+        <div class="btn">确定</div>
+    </div>
+</div>
+<div class="hexin-con">
+    <div class="content">
+        <p class="title">请核对订单信息</p>
+        <div class="order-info">
+            <p class="item store-name">
+                <span class="name">商户名称</span>
+                <span class="con1">巴陵律师事务电饭感到反</span>
+            </p>
+            <p class="item oil-name">
+                <span class="name">油品种类</span>
+                <span class="con">
+                    <i id="cor_oil">92#汽油</i><em id="ch_oil">修改</em>
+                </span>
+            </p>
+            <p class="item order-money">
+                <span class="name">订单金额</span>
+                <span class="con">¥<span>99.99</span></span>
+            </p>
+            <p class="item order-time">
+                <span class="name">订单时间</span>
+                <span class="con">2017-09-19&nbsp;&nbsp;09:32:22</span>
+            </p>
+            <p class="item order-no">
+                <span class="name">订单编号</span>
+                <span class="con">12345676767676767</span>
+            </p>
+            <p class="item goods-con">
+                <span class="name">商品种类</span>
+                <span class="con">
+                    <i>超市商品</i><em id="goods_desc">商品详情</em>
+                </span>
+            </p>
+        </div>
+    </div>
+    <div class="btn">确定</div>
+</div>
+<div class="oil-modal">
+    <div class="oil-modal-box">
+        <div class="oil-modal-con">
+            <div class="oil-modal-title">请选择正确的油品</div>
+            <ul>
+                <li class="oil-m-item">98#汽油</li>
+                <li class="oil-m-item">95#汽油</li>
+                <li class="oil-m-item active">92#汽油</li>
+                <li class="oil-m-item">0#汽油</li>
+                <li class="oil-m-item">柴油</li>
+            </ul>
+            <div class="oil-btn-tabs">
+                <div class="oil-btn-cancel">取消</div>
+                <div class="oil-btn-ok">确定</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="goods-modal">
+    <div class="goods-modal-box">
+        <div class="goods-modal-con">
+            <div class="goods-modal-title">请核对商品</div>
+            <ul>
+                <li class="goods-item">
+                    <span class="g-name">400ml瓶装王老</span>
+                    <span class="g-p-info">
+                        <i class="g-count">数量<em>1</em></i>
+                        <i class="g-money">¥10.0</i>
+                    </span>
+                </li>
+                <li class="goods-item">
+                    <span class="g-name">400ml瓶装王老</span>
+                    <span class="g-p-info">
+                        <i class="g-count">数量<em>1</em></i>
+                        <i class="g-money">¥10.0</i>
+                    </span>
+                </li>
+                <li class="goods-item">
+                    <span class="g-name">400ml瓶装王老撒地方的是第三方士大夫沙发斯蒂芬萨芬撒打发斯蒂芬是打发斯蒂芬色的防守打法第三方都是范德萨发生大法师的法师法师</span>
+                    <span class="g-p-info">
+                        <i class="g-count">数量<em>1</em></i>
+                        <i class="g-money">¥10.0</i>
+                    </span>
+                </li>
+                <li class="goods-item">
+                    <span class="g-name">400ml瓶装王老撒地方的是第三方士大夫沙发斯蒂芬萨芬撒打发斯蒂芬是打发斯蒂芬色的防守打法第三方都是范德萨发生大法师的法师法师</span>
+                    <span class="g-p-info">
+                        <i class="g-count">数量<em>1</em></i>
+                        <i class="g-money">¥10.0</i>
+                    </span>
+                </li>
+                <li class="goods-item">
+                    <span class="g-name">400ml瓶装王老撒地方的是第三方士大夫沙发斯蒂芬萨芬撒打发斯蒂芬是打发斯蒂芬色的防守打法第三方都是范德萨发生大法师的法师法师</span>
+                    <span class="g-p-info">
+                        <i class="g-count">数量<em>1</em></i>
+                        <i class="g-money">¥10.0</i>
+                    </span>
+                </li>
+                <li class="goods-item">
+                    <span class="g-name">400ml瓶装王老撒地方的是第三方士大夫沙发斯蒂芬萨芬撒打发斯蒂芬是打发斯蒂芬色的防守打法第三方都是范德萨发生大法师的法师法师</span>
+                    <span class="g-p-info">
+                        <i class="g-count">数量<em>1</em></i>
+                        <i class="g-money">¥10.0</i>
+                    </span>
+                </li>
+                <li class="goods-item">
+                    <span class="g-name">400ml瓶装王老撒地方的是第三方士大夫沙发斯蒂芬萨芬撒打发斯蒂芬是打发斯蒂芬色的防守打法第三方都是范德萨发生大法师的法师法师</span>
+                    <span class="g-p-info">
+                        <i class="g-count">数量<em>1</em></i>
+                        <i class="g-money">¥10.0</i>
+                    </span>
+                </li>
+                <li class="goods-item">
+                    <span class="g-name">400ml瓶装王老撒地方的是第三方士大夫沙发斯蒂芬萨芬撒打发斯蒂芬是打发斯蒂芬色的防守打法第三方都是范德萨发生大法师的法师法师</span>
+                    <span class="g-p-info">
+                        <i class="g-count">数量<em>1</em></i>
+                        <i class="g-money">¥10.0</i>
+                    </span>
+                </li>
+                <li class="goods-item">
+                    <span class="g-name">400ml瓶装王老撒地方的是第三方士大夫沙发斯蒂芬萨芬撒打发斯蒂芬是打发斯蒂芬色的防守打法第三方都是范德萨发生大法师的法师法师</span>
+                    <span class="g-p-info">
+                        <i class="g-count">数量<em>1</em></i>
+                        <i class="g-money">¥10.0</i>
+                    </span>
+                </li>
+                <li class="goods-item">
+                    <span class="g-name">400ml瓶装王老撒地方的是第三方士大夫沙发斯蒂芬萨芬撒打发斯蒂芬是打发斯蒂芬色的防守打法第三方都是范德萨发生大法师的法师法师</span>
+                    <span class="g-p-info">
+                        <i class="g-count">数量<em>1</em></i>
+                        <i class="g-money">¥10.0</i>
+                    </span>
+                </li>
+                <li class="goods-item">
+                    <span class="g-name">400ml瓶装王老撒地方的是第三方士大夫沙发斯蒂芬萨芬撒打发斯蒂芬是打发斯蒂芬色的防守打法第三方都是范德萨发生大法师的法师法师</span>
+                    <span class="g-p-info">
+                        <i class="g-count">数量<em>1</em></i>
+                        <i class="g-money">¥10.0</i>
+                    </span>
+                </li>
+                <li class="goods-item">
+                    <span class="g-name">400ml瓶装王老撒地方的是第三方士大夫沙发斯蒂芬萨芬撒打发斯蒂芬是打发斯蒂芬色的防守打法第三方都是范德萨发生大法师的法师法师</span>
+                    <span class="g-p-info">
+                        <i class="g-count">数量<em>1</em></i>
+                        <i class="g-money">¥10.0</i>
+                    </span>
+                </li>
+                <li class="goods-item">
+                    <span class="g-name">400ml瓶装王老撒地方的是第三方士大夫沙发斯蒂芬萨芬撒打发斯蒂芬是打发斯蒂芬色的防守打法第三方都是范德萨发生大法师的法师法师</span>
+                    <span class="g-p-info">
+                        <i class="g-count">数量<em>1</em></i>
+                        <i class="g-money">¥10.0</i>
+                    </span>
+                </li>
+            </ul>
+            <div class="total-con">
+                <span>总价</span>
+                <i>¥90.50</i>
+            </div>
+            <div class="goods-btn-tabs">
+                <div class="goods-btn-ok">确认完毕</div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

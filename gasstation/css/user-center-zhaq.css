@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif;
+    font-size: 15px;
+    color: #333;
+    background-color: #fbf9fe;
+    -webkit-user-select: none;
+}
+body,html {
+    height: 100%;
+}
+li {
+    list-style: none;
+}
+i,em {
+    font-style: normal;
+}
+.con {
+    height: 100%;
+    padding: 15px 0;
+}
+.tel-con {
+    padding: 0 15px;
+    height: 40px;
+    border-top: 1px solid #dfdfe0;
+    border-bottom: 1px solid #dfdfe0;
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    -webkit-align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tel-con span {
+    color: #838383;
+}
+.tel-con i {
+    color: #333;
+}
+.shiming-info,
+.card-pwd {
+    margin-top: 15px;
+    padding: 10px 15px;
+    border-top: 1px solid #dfdfe0;
+    border-bottom: 1px solid #dfdfe0;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    -webkit-justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #fff;
+}
+.top {
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+}
+.top em {
+    font-size: 13px;
+}
+.top em.unfinished {
+    color: #f54545;
+}
+.top em.finished {
+    color: #19c017;
+}
+.top span {
+    color: #333;
+    font-size: 16px;
+}
+.bot {
+    margin-top: 4px;
+    color: #888;
+    font-size: 12px;
+}

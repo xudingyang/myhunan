@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif;
+    font-size: 15px;
+    color: #333;
+    background-color: #fbf9fe;
+    -webkit-user-select: none;
+}
+body,html {
+    height: 100%;
+}
+li {
+    list-style: none;
+}
+i,em {
+    font-style: normal;
+}
+input {
+    outline-style: none;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.title {
+    padding: 8px 15px 2px 15px;
+    color: #838383;
+    font-size: 13px;
+}
+.info-con {
+    padding: 0 15px;
+    background: #fff;
+    border-top: 1px solid #dfdfe0;
+    border-bottom: 1px solid #dfdfe0;
+}
+.info-con .info {
+    height: 48px;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #dfdfe0;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 1.5){
+    .info-con {
+        border-top: 0.5px solid #dfdfe0;
+        border-bottom: 0.5px solid #dfdfe0;
+    }
+    .info-con .info {
+        border-top: 0.5px solid #dfdfe0;
+    }
+}
+.info-con .info:first-child {
+    border-top: none;
+}
+.info-con .lf {
+    -webkit-flex: 0 0 70px;
+    flex: 0 0 70px;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    display: flex;
+    align-items: center;
+    padding-left: 2px;
+    font-size: 15px;
+}
+.info-con .rg {
+    -webkit-flex: 1;
+    flex: 1;
+    height: 30px;
+    border: none;
+    font-size: 15px;
+}
+.info-con input::-webkit-input-placeholder {
+    font-size: 15px;
+}
+.sex-con {
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+.sex-con label {
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    display: flex;
+    align-items: center;
+}
+.sex-con label:first-child {
+    margin-right: 10px;
+}
+.sex-con input {
+    border-color: #a8a8a8;
+}
+.btn {
+    margin-top: 20px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+}
+.btn span {
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    background: #19c017;
+    letter-spacing: 1px;
+}

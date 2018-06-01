@@ -1,0 +1,84 @@
+.tx {
+    padding: 15px;
+    font-size: 14px;
+    color: #838383;
+}
+.yz-con {
+    height: 46px;
+    background: #fff;
+    padding: 8px 15px;
+    border-top: 1px solid #dfdfe0;
+    border-bottom: 1px solid #dfdfe0;
+    font-size: 0;
+    position: relative;
+}
+.yz-con span {
+    display: inline-block;
+    margin-right: 10px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    color: #333;
+}
+.yz-btn {
+    position: absolute;
+    right: 0;
+    top: 8px;
+    right: 15px;
+    height: 30px;
+    width: 80px;
+    line-height: 30px;
+    font-size: 13px;
+    padding: 0 4px;
+    background: #19c017;
+    color: #fff;
+    border-radius: 3px;
+    border: 1px solid #dfdfe0;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 1.5){
+    .yz-btn {
+        border: 0.5px solid #dfdfe0;
+    }
+}
+.yz-btn.disable {
+    background: #ccc;
+}
+.yz-con input {
+    height: 30px;
+    padding-left: 2px;
+    font-size: 16px;
+    border: none;
+}
+.yz-con input::-webkit-input-placeholder {
+    color: #999;
+    font-size: 16px;
+}
+
+.sub-btn {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    font-size: 0;
+    text-align: center;
+    background: #fff;
+    padding-top: 6px;
+    border-top: 1px solid #dfdfe0;
+}
+.sub-btn button {
+    display: inline-block;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 80%;
+    height: 48px;
+    line-height: 48px;
+    background: #f7f7f7;
+    color: #ddd;
+    border-radius: 4px;
+    border: 1px solid #dfdfe0;
+}
+.sub-btn button.active {
+    background: #19c017;
+    color: #fff;
+}

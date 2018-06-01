@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>修改手机号</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/user-center-zhaq-ggsjh-xgsjh.css">
+    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/user-center-zhaq-ggsjh-xgsjh.js"></script>
+</head>
+<body>
+<div class="con">
+    <div class="tel-con">
+        <span>手机号</span>
+        <input type="number" placeholder="11位手机号" id="tel_num">
+    </div>
+    <div class="yz-con">
+        <span>验证码</span>
+        <input type="number" placeholder="6位验证码" id="yz_code">
+        <button class="yz-btn disable" disabled="disabled">获取验证码</button>
+    </div>
+    <div class="tip-txt">
+        <p class="p1">温馨提示:</p>
+        <p class="p2">1.为保障您的账号安全，变更重要信息需要身份验证</p>
+        <p class="p3">2.如有疑问请拨打人工客服电话 xxx-xxxxxxx</p>
+    </div>
+</div>
+<div class="sub-btn"><button id="sub_btn" disabled="disabled">确认修改</button></div>
+<div class="mask">
+    <div class="loading">
+        <img src="images/loading-spokes.svg" width="40" height="40" />
+        <br/>
+        <span class="text">正在请求，请稍候...</span>
+    </div>
+</div>
+</body>
+</html>

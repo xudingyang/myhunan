@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>卡交易密码</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/user-center-zhaq-kjymm2.css">
+    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/user-center-zhaq-kjymm2.js"></script>
+</head>
+<body>
+<div class="tel-wrapper">
+    <div class="con1">
+        <div class="title">您正在操作这张加油卡的交易密码，请校验身份</div>
+        <div class="card-con">
+            <div class="name"><span>岳阳楼石化</span>VIP卡</div>
+            <div class="money">余额&nbsp;¥<span>100.00</span>元</div>
+        </div>
+    </div>
+    <div class="tel-con">
+        <div class="tab1">
+            <span class="lf">手机号</span>
+            <span class="tel" id="tel_num">13007892345</span>
+        </div>
+        <div class="tab2">
+            <span>验证码</span>
+            <input type="number" placeholder="6位验证码" id="yz_code">
+            <button class="yz-btn">获取验证码</button>
+        </div>
+    </div>
+    <div class="sub-btn"><button id="sub_btn" disabled="disabled">提交</button></div>
+</div>
+<div class="mask">
+    <div class="loading">
+        <img src="images/loading-spokes.svg" width="40" height="40" />
+        <br/>
+        <span class="text">正在请求，请稍候...</span>
+    </div>
+</div>
+<div class="keyboard-modal">
+    <div class="keyboard-container">
+        <div class="pwd-con">
+            <div class="tip-tx">请输入密码</div>
+            <div class="pwd-tabs">
+                <ol>
+                    <li class="pwd"></li>
+                    <li class="pwd"></li>
+                    <li class="pwd"></li>
+                    <li class="pwd"></li>
+                    <li class="pwd"></li>
+                    <li class="pwd"></li>
+                </ol>
+            </div>
+        </div>
+        <table>
+            <tr>
+                <td class="num none-left-border" data-num="1">1</td>
+                <td class="num" data-num="2">2</td>
+                <td class="num none-right-border" data-num="3">3</td>
+            </tr>
+            <tr>
+                <td class="num none-left-border" data-num="4">4</td>
+                <td class="num" data-num="5">5</td>
+                <td class="num none-right-border" data-num="6">6</td>
+            </tr>
+            <tr>
+                <td class="num none-left-border" data-num="7">7</td>
+                <td class="num" data-num="8">8</td>
+                <td class="num none-right-border" data-num="9">9</td>
+            </tr>
+            <tr>
+                <td class="num none-left-border none-bottom-border kong"></td>
+                <td class="num none-bottom-border" data-num="0">0</td>
+                <td class="del-icon none-bottom-border none-right-border js-del"><img class="icon" src="images/del@2x.png" width="28" height="21" alt=""></td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif;
+    font-size: 15px;
+    color: #000;
+    background-color: #fbf9fe;
+    -webkit-user-select: none;
+}
+body,html {
+    height: 100%;
+    width: 100%;
+}
+li {
+    list-style: none;
+}
+i,em {
+    font-style: normal;
+}
+.empty-wrapper {
+    height: 100%;
+    width: 100%;
+    /*display: none;*/
+}
+.youhuiquan-wrapper {
+    display: none;
+}
+.empty-con {
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 43px;
+}
+.empty-con .icon-ichaxun {
+    font-size: 80px;
+    color: #10aeff;
+}
+.empty-con .tip {
+    margin-top: 30px;
+    color: #333;
+    font-size: 18px;
+}
+.empty-con .tip1 {
+    margin-top: 5px;
+    color: #aaa;
+    font-size: 13px;
+}
+.empty-con .back-btn {
+    margin-top: 30px;
+    background: #04be02;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+    width: 82%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.youhuiquan-wrapper .youhuiquan-list {
+    padding: 10px;
+}
+.youhuiquan-list .youhuiquan {
+    margin-bottom: 10px;
+    height: 125px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 1px rgba(0,0,0,.2);
+    box-shadow: 0 0 1px rgba(0,0,0,.2);
+    background: #efefef;
+}
+.youhuiquan .info {
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    height: 90px;
+}
+.youhuiquan .info .icon-youhuiquan {
+    margin-right: 15px;
+    margin-left: 2px;
+    font-size: 20px;
+    color: #ccc;
+}
+.youhuiquan .info .store-name {
+    font-size: 14px;
+    color: #ccc;
+}
+.youhuiquan .info .youhuiquan-count {
+    color: #ccc;
+    font-size: 24px;
+}
+.youhuiquan .time {
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    height: 35px;
+    font-size: 14px;
+    border-top: 1px dashed #e3e3e3;
+}
+.youhuiquan .time .duration {
+    color: #ccc;
+}
+.youhuiquan .time .enable-store {
+    color: #ccc;
+}
+
+.mask {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.4);
+    text-align: center;
+    color: #fff;
+    display: none;
+}
+.mask .loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -50px;
+    margin-left: -90px;
+    padding: 10px 0;
+    width: 180px;
+    border-radius: 20px;
+    background-color: rgba(17,17,17,.7);
+}
+.mask .loading .text {
+    font-size: 12px;
+}
