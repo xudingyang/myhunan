@@ -158,3 +158,67 @@ button {
 .chongzhi-btn.active {
     background: #19c017;
 }
+
+.keyboard-modal {
+    position: fixed;
+    z-index: 200;
+    height: 230px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0,0,0,0.6);
+    display: none;
+}
+table {
+    border-collapse: collapse;
+}
+.keyboard-container {
+    height: 200px;
+}
+.keyboard-container table {
+    height: 100%;
+    width: 100%;
+}
+.keyboard-container td {
+    width: 33.3%;
+    height: 25%;
+    border: 1px solid #dfdfe0;
+    background: #fff;
+    text-align: center;
+}
+.keyboard-container .none-left-border {
+    border-left: none;
+}
+.keyboard-container .none-right-border {
+    border-right: none;
+}
+.keyboard-container .none-bottom-border {
+    border-bottom: none;
+}
+.keyboard-container .del-icon {
+    border-right: none;
+    background: #e2e7eb;
+}
+.keyboard-container .del-icon .icon {
+    display: inline-block;
+    vertical-align: middle;
+}
+.keyboard-container .num {
+    font-size: 28px;
+}
+.keyboard-container .had-done {
+    background: #e2e7eb;
+    font-size: 18px;
+}
+.key-hide-con {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 30px;
+    color: #1296db;
+}
+.key-hide-con > span {
+    margin-right: 5px;
+}

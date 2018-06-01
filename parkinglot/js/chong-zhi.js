@@ -20,4 +20,17 @@ $(function () {
             // 取消,do nothing
         }
     })
+
+
+    // 点击充值输入框，弹出键盘
+    $('#chongzhi_money').click(function(){
+        console.log(11);
+        $('.keyboard-modal').show()
+    })
+    // 点击键盘的隐藏按钮
+    $('.key-hide-con').on('click',function(){
+        $('.keyboard-modal').hide()
+    })
+    // 点击键盘的数字
+
 })
