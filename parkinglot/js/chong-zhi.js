@@ -13,7 +13,7 @@ $(function () {
     //     }
     // })
     $btn.click(function () {
-        var str = $('#chongzhi_money').val()
+        var str = $('#money_count').text()
         if (confirm('确定要充值'+str+'元?')) {
             location.href = "chong-zhi-success.html"
         } else {
@@ -35,15 +35,20 @@ $(function () {
     $('.num').on('click',function () {
         var dataNum = $(this).data('num')
         moneyCountStr = moneyCountStr + dataNum
-        console.log(moneyCountStr);
-        $('#chongzhi_money').val(moneyCountStr)
+        $('#place_txt').hide()
+        $('#money_count').show().text(moneyCountStr)
     })
     // 点完成键
     $('.had-done').on('click',function () {
         $('.keyboard-modal').hide()
     })
+    // 点击删除
     $('.js-del').on('click',function () {
         moneyCountStr = moneyCountStr.substring(0,moneyCountStr.length - 1)
-        $('#chongzhi_money').val(moneyCountStr)
+        $('#money_count').text(moneyCountStr)
+        if (moneyCountStr.length < 1) {
+            $('#place_txt').show()
+            $('#money_count').text(moneyCountStr).hide()
+        }
     })
 })

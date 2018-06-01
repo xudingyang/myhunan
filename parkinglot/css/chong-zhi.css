@@ -73,7 +73,7 @@
     color: #838383;
     margin-right: 6px;
 }
-.box2 input {
+#chongzhi_money {
     -webkit-flex: 1;
     flex: 1;
     font-size: 16px;
@@ -81,10 +81,26 @@
     height: 30px;
     border: none;
     padding-left: 8px;
+    background: #fff;
+    border-radius: 3px;
 }
-.box2 input:placeholder-shown {
-    color: #838383;
-    font-size: 16px;
+#place_txt {
+    height: 100%;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    display: flex;
+    align-items: center;
+    color: #999;
+    font-size: 14px;
+}
+#money_count {
+    height: 100%;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    display: flex;
+    align-items: center;
+    color: #333;
+    font-size: 14px;
 }
 .box4 {
     display: -webkit-flex;
