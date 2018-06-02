@@ -54,8 +54,6 @@
         border-bottom-width: 0.5px;
     }
 }
-.passenger-name-type {
-}
 .passenger-name-type > i {
     font-size: 16px;
     margin-right: 8px;
@@ -71,9 +69,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.seat-count-price > p {
-
 }
 .seat-count-price > p > i {
     color: #999;
@@ -97,6 +92,7 @@
     align-items: center;
     justify-content: space-between;
     font-size: 15px;
+    border-bottom: 1px solid #dfdfe0;
 }
 .insurance-wrapper > p > i {
     color: #838383;
@@ -112,6 +108,14 @@
 .insurance-wrapper > div > img {
     margin-left: 3px;
 }
+.get-ticket-txt {
+    height: 40px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    color: #19c017;
+    font-size: 15px;
+}
 
 .order-info-wrapper {
     margin-top: 15px;
@@ -120,6 +124,9 @@
     border-top: 1px solid #dfdfe0;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 1.5){
+    .insurance-wrapper {
+        border-bottom-width: 0.5px;
+    }
     .order-info-wrapper {
         border-bottom: 0.5px solid #dfdfe0;
         border-top: 0.5px solid #dfdfe0;
@@ -152,6 +159,7 @@
     font-size: 15px;
     border-bottom: 1px solid #dfdfe0;
     border-top: 1px solid #dfdfe0;
+    margin-bottom: 20px;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 1.5){
     .order-time-info-wrapper {
