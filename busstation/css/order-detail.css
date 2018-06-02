@@ -16,6 +16,8 @@
 }
 .start-end {
     height: 34px;
+    display: -webkit-flex;
+    -webkit-align-items: center;
     display: flex;
     align-items: center;
     padding: 0 10px;
@@ -40,6 +42,9 @@
     padding: 0 10px;
     height: 60px;
     background: #fff;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    -webkit-justify-content: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -67,6 +72,9 @@
     font-size: 15px;
 }
 .seat-count-price {
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: space-between;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -101,6 +109,8 @@
 .order-info-wrapper >p {
     height: 40px;
     padding: 0 10px;
+    display: -webkit-flex;
+    -webkit-align-items: center;
     display: flex;
     align-items: center;
     font-size: 15px;
@@ -124,9 +134,17 @@
     border-bottom: 1px solid #dfdfe0;
     border-top: 1px solid #dfdfe0;
 }
+@media screen and (-webkit-min-device-pixel-ratio: 1.5){
+    .order-time-info-wrapper {
+        border-bottom: 0.5px solid #dfdfe0;
+        border-top: 0.5px solid #dfdfe0;
+    }
+}
 .order-time-info-wrapper > p {
     height: 28px;
     padding: 0 10px;
+    display: -webkit-flex;
+    -webkit-align-items: center;
     display: flex;
     align-items: center;
 }
@@ -136,4 +154,7 @@
 }
 .order-time-info-wrapper > p > em {
 
+}
+.o-t-i-w-money {
+    color: #ff793f;
 }
