@@ -12,6 +12,7 @@
 
 .ticket-info-wrapper {
     background: #fff;
+    border-bottom: 1px solid #dfdfe0;
 }
 .start-end {
     height: 34px;
@@ -31,4 +32,108 @@
 }
 .ticket-remark > i {
     margin-right: 5px;
+}
+.passengers-list {
+    margin-top: 5px;
+}
+.passenger {
+    padding: 0 10px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid #dfdfe0;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 1.5){
+    .ticket-info-wrapper {
+        border-bottom: 0.5px solid #dfdfe0;
+    }
+    .passenger {
+        border-bottom-width: 0.5px;
+    }
+}
+.passenger:last-child {
+    border-bottom: none;
+}
+.passenger-name-type {
+}
+.passenger-name-type > i {
+    font-size: 16px;
+    margin-right: 8px;
+}
+.passenger-name-type > em {
+    color: #999;
+    font-size: 15px;
+}
+.seat-count-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.seat-count-price > p {
+
+}
+.seat-count-price > p > i {
+    color: #999;
+    margin-right: 10px;
+    font-size: 15px;
+}
+.seat-count-price > p > em {
+    font-size: 15px;
+}
+.seat-count-price > span {
+    color: #ff793f;
+    font-size: 16px;
+}
+.order-info-wrapper {
+    margin-top: 15px;
+    background: #fff;
+    border-bottom: 1px solid #dfdfe0;
+    border-top: 1px solid #dfdfe0;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 1.5){
+    .order-info-wrapper {
+        border-bottom: 0.5px solid #dfdfe0;
+        border-top: 0.5px solid #dfdfe0;
+    }
+}
+.order-info-wrapper >p {
+    height: 40px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    border-bottom: 1px solid #dfdfe0;
+}
+.order-info-wrapper > p:last-child {
+    border-bottom: none;
+}
+.order-info-wrapper i {
+    margin-right: 10px;
+    color: #838383;
+}
+.order-info-wrapper em {
+
+}
+.order-time-info-wrapper {
+    padding: 4px 0;
+    margin-top: 15px;
+    background: #fff;
+    font-size: 15px;
+    border-bottom: 1px solid #dfdfe0;
+    border-top: 1px solid #dfdfe0;
+}
+.order-time-info-wrapper > p {
+    height: 28px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+.order-time-info-wrapper > p > i {
+    color: #838383;
+    margin-right: 10px;
+}
+.order-time-info-wrapper > p > em {
+
 }
