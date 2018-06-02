@@ -12,7 +12,6 @@
 
 .ticket-info-wrapper {
     background: #fff;
-    border-bottom: 1px solid #dfdfe0;
 }
 .start-end {
     height: 34px;
@@ -51,15 +50,9 @@
     border-bottom: 1px solid #dfdfe0;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 1.5){
-    .ticket-info-wrapper {
-        border-bottom: 0.5px solid #dfdfe0;
-    }
     .passenger {
         border-bottom-width: 0.5px;
     }
-}
-.passenger:last-child {
-    border-bottom: none;
 }
 .passenger-name-type {
 }
@@ -94,6 +87,32 @@
     color: #ff793f;
     font-size: 16px;
 }
+.insurance-wrapper {
+    padding: 0 10px;
+    height: 40px;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+}
+.insurance-wrapper > p > i {
+    color: #838383;
+    margin-right: 8px;
+}
+.insurance-wrapper > div {
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    display: flex;
+    align-items: center;
+    color: #999;
+}
+.insurance-wrapper > div > img {
+    margin-left: 3px;
+}
+
 .order-info-wrapper {
     margin-top: 15px;
     background: #fff;
@@ -151,9 +170,6 @@
 .order-time-info-wrapper > p > i {
     color: #838383;
     margin-right: 10px;
-}
-.order-time-info-wrapper > p > em {
-
 }
 .o-t-i-w-money {
     color: #ff793f;
