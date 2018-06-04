@@ -35,8 +35,12 @@ $(function () {
         $panelNotUse.show()
     })
 
-    // 点击任意一个订单
-    $('.order-item').on('click',function () {
+    // 点击待付款的订单
+    $('.order-item.state-need-pay').on('click',function () {
+        location.href = 'order-confirm.html'
+    })
+    // 点击其他订单
+    $('.order-item:not(.state-need-pay)').on('click',function () {
         location.href = 'order-detail.html'
     })
 })
