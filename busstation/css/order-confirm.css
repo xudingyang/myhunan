@@ -1,0 +1,118 @@
+.tip-wrapper {
+    height: 36px;
+    line-height: 36px;
+    padding: 0 10px;
+    background: #ff6648;
+    color: #fff;
+    font-size: 15px;
+}
+.tip-wrapper > i {
+    margin-left: 6px;
+}
+.ticket-info-wrapper {
+    background: #fff;
+    padding-bottom: 8px;
+}
+.start-end {
+    height: 34px;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 15px;
+    color: #000;
+}
+.start-end > img {
+    margin: 0 8px;
+}
+.ticket-remark {
+    padding: 0 10px;
+    font-size: 14px;
+    color: #999;
+}
+.ticket-remark > i {
+    margin-right: 5px;
+}
+.passengers-wrapper {
+    margin-top: 15px;
+    background: #fff;
+    padding: 8px;
+    display: -webkit-flex;
+    display: flex;
+}
+.passengers-wrapper > i {
+    color: #838383;
+    font-size: 15px;
+    -webkit-flex: 0 0 70px;
+    flex: 0 0 70px;
+    width: 70px;
+}
+.passengers-wrapper > p {
+    font-size: 15px;
+    -webkit-flex: 1;
+    flex: 1;
+}
+.contact-phone-wrapper,
+.get-ticket-wrapper {
+    margin-top: 15px;
+    background: #fff;
+    height: 38px;
+    padding: 0 10px;
+    font-size: 15px;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    display: flex;
+    align-items: center;
+}
+.contact-phone-wrapper > i,
+.get-ticket-wrapper > i {
+    color: #838383;
+    font-size: 15px;
+    -webkit-flex: 0 0 70px;
+    flex: 0 0 70px;
+    width: 70px;
+}
+.contact-phone-wrapper > em,
+.get-ticket-wrapper > em {
+    -webkit-flex: 1;
+    flex: 1;
+}
+.pay-info-wrapper {
+    margin-top: 15px;
+    padding: 15px 10px;
+    background: #fff;
+}
+.pay-money {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 4px;
+}
+.pay-tip {
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: #ff793f;
+    font-size: 15px;
+}
+.pay-btn {
+    margin-top: 10px;
+    background: #19c017;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 4px;
+}
+.cancel-btn {
+    margin-top: 18px;
+    background: #bbb;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 4px;
+}
