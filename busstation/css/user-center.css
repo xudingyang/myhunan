@@ -147,18 +147,11 @@ i {
     align-items: center;
     font-size: 14px;
 }
-.bot .right-desc {
+.bot .right-phone {
     margin-right: 8px;
     color: #2dc82c;
 }
-.bot .right-desc1 {
-    margin-right: 8px;
-    color: #333;
-}
-.bot .right-desc1 .count,
-.bot .right-desc1 .money {
-    color: #2dc82c;
-}
+
 .bot .right-arrow {
     -webkit-transform: scale(0.6,1.6);
     transform: scale(0.6,1.6);
