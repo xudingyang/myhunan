@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>二维码取票</title>
+    <link rel="stylesheet" href="css/common.css">
+    <style>
+        body {
+            background: #fff;
+        }
+        .qrcode-wrapper {
+            height: 100%;
+            display: -webkit-flex;
+            -webkit-flex-direction: column;
+            -webkit-align-items: center;
+            -webkit-justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .qrcode-wrapper > img {
+            margin-bottom: 20px;
+            width: 280px;
+            height: 280px;
+        }
+        .qrcode-wrapper > span {
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+<div class="qrcode-wrapper">
+    <img src="images/qr_txt.jpg">
+    <span>请将二维码对准取票机扫码器</span>
+</div>
+</body>
+</html>
