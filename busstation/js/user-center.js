@@ -20,12 +20,12 @@ $(function () {
     $('#cyck').on('click',function () {
         location.href = 'passengers.html'
     })
-    // 点击个人资料
-    $('#grzl').on('click',function () {
-        location.href = 'user-center-grzl.html'
-    })
-    // 点击账户安全
-    $('#zhaq').on('click',function () {
-        location.href = 'user-center-zhaq.html'
+    // 点击我的手机
+    $('#wdsj').on('click',function () {
+        if (hadSetPhone) {
+            location.href = 'phone-manage.html'
+        } else {
+            location.href = 'user-register.html'
+        }
     })
 })

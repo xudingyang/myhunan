@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手机号管理</title>
+    <link rel="stylesheet" href="css/common.css">
+    <style>
+        body {
+            background: #fff;
+        }
+        .phone-icon-wrapper {
+            height: 300px;
+            display: -webkit-flex;
+            -webkit-align-items: center;
+            -webkit-justify-content: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .phone-number-wrapper {
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            font-size: 16px;
+            color: #222;
+        }
+        .phone-number-wrapper > span {
+            margin-right: 8px;
+        }
+        .tip-wrapper {
+            margin-top: 10px;
+        }
+        .tip-wrapper > p {
+            padding: 0 15px;
+            display: -webkit-flex;
+            display: flex;
+            color: #838383;
+            margin-bottom: 6px;
+        }
+        .tip-wrapper > p > i {
+            margin-right: 3px;
+            padding-top: 2px;
+        }
+        .btn-wrapper {
+            padding-top: 30px;
+            display: -webkit-flex;
+            -webkit-justify-content: center;
+            display: flex;
+            justify-content: center;
+        }
+        .btn-wrapper > p {
+            height: 36px;
+            width: 120px;
+            background: #ff793f;
+            color: #fff;
+            font-size: 16px;
+            line-height: 36px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+    </style>
+    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+        $(function () {
+            var phone = '13899997777'
+            $('#phone_num').text(phone.replace(/(\d{3})\d{4}(\d{4})/, '$1****$2'))
+
+            $('#change_btn').click(function () {
+                location.href = 'phone-change.html'
+            })
+        })
+    </script>
+</head>
+<body>
+<div class="phone-icon-wrapper">
+    <img src="images/phone.png" width="200" height="240">
+</div>
+<div class="phone-number-wrapper">
+    <span>当前手机号:</span><i id="phone_num">13088889999</i>
+</div>
+<div class="tip-wrapper">
+    <p><i>1.</i><em>更换手机号不影响订单、常用乘客、车票及优惠券等信息。</em></p>
+    <p><i>2.</i><em>如需更换常用乘客的手机号，请到常用乘客信息中修改。</em></p>
+</div>
+<div class="btn-wrapper">
+    <p id="change_btn">更换手机号</p>
+</div>
+</body>
+</html>
