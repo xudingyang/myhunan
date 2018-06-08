@@ -1,0 +1,32 @@
+.recent-wrapper {
+    padding-top: 15px;
+}
+.recent-tx {
+    background: #fff;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 15px;
+    border-bottom: 1px solid #dfdfe0;
+    color: #999;
+    font-size: 15px;
+}
+.recent-con {
+    box-sizing: border-box;
+    height: 50px;
+    background: #fff;
+    padding: 10px 15px;
+}
+.recent-con span {
+    float: left;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 10px;
+    background: #f5f5f5;
+    border-radius: 4px;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 1.5){
+    .recent-tx {
+        border-bottom-width: 0.5px;
+    }
+}
