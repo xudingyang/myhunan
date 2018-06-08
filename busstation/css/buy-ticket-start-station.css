@@ -1,0 +1,31 @@
+
+.tip-wrapper {
+    padding-left: 15px;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    margin-bottom: 15px;
+}
+ul {
+    width: 100%;
+}
+li {
+    height: 36px;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    padding: 0 15px;
+    background: #fff;
+    border-top: 1px solid #dfdfe0;
+}
+li:last-child {
+    border-bottom: 1px solid #dfdfe0;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 1.5){
+    li {
+        border-width: 0.5px;
+    }
+}
