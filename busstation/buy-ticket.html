@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/buy-ticket.css">
     <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
     <script src="js/buy-ticket.js"></script>
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_234130_nem7eskcrkpdgqfr.css">
+    <script src="js/schedule.js"></script>
 </head>
 <body>
 <div class="info-wrapper">
@@ -36,8 +38,8 @@
             <img src="images/calendar.png" width="16" height="16">
             <span>出发日期</span>
         </div>
-        <div class="rg-con">
-            <span>2018-12-12<i>星期一</i></span>
+        <div class="rg-con js-trip-date">
+            <span><em id="date_str">2018-12-12</em><i id="week_str">星期一</i></span>
             <img src="images/more_btn.png" width="16" height="16">
         </div>
     </div>
@@ -46,7 +48,10 @@
     <p>查询班次</p>
 </div>
 <div class="date-modal-wrapper">
-    
+    <div class="date-modal">
+        <div id='schedule-box' class="boxshaw"></div>
+        <div><h3 id='h3Ele'></h3></div>
+    </div>
 </div>
 </body>
 </html>

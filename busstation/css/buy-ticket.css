@@ -4,6 +4,9 @@
 .info-wrapper > div {
     height: 60px;
     background: #fff;
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    -webkit-align-items: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,6 +20,8 @@
     }
 }
 .lf-con {
+    display: -webkit-flex;
+    -webkit-align-items: center;
     display: flex;
     align-items: center;
 }
@@ -25,6 +30,8 @@
     margin-left: 4px;
 }
 .rg-con {
+    display: -webkit-flex;
+    -webkit-align-items: center;
     display: flex;
     align-items: center;
     color: #222;
@@ -49,4 +56,101 @@
     text-align: center;
     border-radius: 4px;
     letter-spacing: 1px;
+}
+.date-modal-wrapper {
+    position: fixed;
+    background: rgba(0,0,0,.4);
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+.date-modal {
+    height: 100%;
+    width: 100%;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    -webkit-justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+#schedule-box{
+    width: 320px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 15px;
+    background: #fff;
+}
+.schedule-hd{
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    -webkit-align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 38px;
+    padding: 0 15px;
+    color: #1dbbff;
+    border-bottom: 1px solid #1dbbff;
+}
+.today{
+    -webkit-flex: 1;
+    flex: 1;
+    text-align: center;
+}
+.week-ul {
+    height: 30px;
+    line-height: 30px;
+}
+.ul-box{
+    overflow: hidden;
+}
+.ul-box > li{
+    float: left;
+    width: 14.28%;
+    text-align: center;
+    padding: 5px 0;
+}
+.other-month{
+    color: #bbb;
+}
+.current-month{
+    color: #333333;
+}
+.today-style{
+    border-radius: 50%;
+    background: #58d321;
+}
+.arrow{
+    cursor: pointer;
+}
+.dayStyle{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+}
+.current-month > .dayStyle:hover{
+    background: #00BDFF;
+    color: #ffffff;
+}
+.today-flag{
+    background: #00C2B1;
+    color: #fff;
+}
+.boxshaw{
+    box-shadow: 2px 2px 15px 2px #e3e3e3;
+}
+.selected-style {
+    /*background: #00BDFF;*/
+    /*color: #ffffff;*/
+}
+#h3Ele{
+    display: none;
+    text-align: center;
+    padding: 10px;
 }
