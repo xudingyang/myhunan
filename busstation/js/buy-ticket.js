@@ -11,7 +11,12 @@ $(function () {
     $('.js-trip-date').click(function () {
         $('.date-modal-wrapper').show()
     })
-
+    $('.date-modal').on('click',function () {
+        $('.date-modal-wrapper').hide()
+    })
+    $('#schedule-box').on('click',function (e) {
+        e.stopPropagation()
+    })
     // 日期控件
     var mySchedule = new Schedule({
         el: '#schedule-box',

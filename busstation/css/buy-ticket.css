@@ -64,6 +64,7 @@
     top: 0;
     height: 100%;
     width: 100%;
+    display: none;
 }
 .date-modal {
     height: 100%;
