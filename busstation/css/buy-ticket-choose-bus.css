@@ -1,3 +1,26 @@
+.date-wrapper {
+    height: 40px;
+    border-bottom: 1px solid #dfdfe0;
+    display: flex;
+    align-items: center;
+    color: #1dbbff;
+    font-size: 15px;
+    background: #f2f2f2;
+    padding: 0 15px;
+}
+
+.date-wrapper > p:nth-of-type(1) {
+    flex: 1;
+    text-align: left;
+}
+.date-wrapper > p:nth-of-type(3) {
+    flex: 1;
+    text-align: right;
+}
+.date-wrapper > p:nth-of-type(2) {
+    flex: 2;
+    text-align: center;
+}
 
 .date-modal-wrapper {
     position: fixed;

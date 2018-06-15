@@ -1,5 +1,8 @@
 $(function () {
 
+    $('#date_str').click(function () {
+        $('.date-modal-wrapper').show()
+    })
     $('.date-modal').on('click',function () {
         $('.date-modal-wrapper').hide()
     })
