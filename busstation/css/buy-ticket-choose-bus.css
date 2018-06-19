@@ -21,6 +21,15 @@
     flex: 2;
     text-align: center;
 }
+.ticket {
+    background: #fff;
+    padding: 15px;
+    border-bottom: 1px solid #dfdfe0;
+}
+.ticket:last-child {
+    border-bottom: none;
+}
+
 
 .date-modal-wrapper {
     position: fixed;

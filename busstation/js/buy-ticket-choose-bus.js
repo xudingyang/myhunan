@@ -1,6 +1,6 @@
 $(function () {
 
-    $('#date_str').click(function () {
+    $('.js-date_week').click(function () {
         $('.date-modal-wrapper').show()
     })
     $('.date-modal').on('click',function () {
@@ -9,7 +9,14 @@ $(function () {
     $('#schedule-box').on('click',function (e) {
         e.stopPropagation()
     })
+    // 点击前一天
+    $('.js-pre-day-btn').click(function () {
 
+    })
+    // 点击后一天
+    $('.js-next-day-btn').click(function () {
+
+    })
     var weeks = ['星期天', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六']
     var tmpDate = new Date()
     $('#date_str').text(tmpDate.getFullYear() + '-' + (tmpDate.getMonth() + 1) + '-' + tmpDate.getDate())
