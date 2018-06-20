@@ -23,12 +23,96 @@
 }
 .ticket {
     background: #fff;
-    padding: 15px;
+    padding: 6px 10px;
     border-bottom: 1px solid #dfdfe0;
 }
 .ticket:last-child {
     border-bottom: none;
 }
+.time-station {
+    display: flex;
+    align-items: center;
+    height: 28px;
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+}
+.time-station > p {
+    display: flex;
+    align-items: center;
+}
+.time-con {
+    width: 60px;
+}
+.station-con > img {
+    margin: 0 4px;
+}
+.coupon-info {
+    padding-left: 60px;
+    display: flex;
+}
+.coupon-info > p {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid #fa6648;
+    font-size: 14px;
+}
+.coupon-info i {
+    background: #fa6648;
+    color: #fff;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+.coupon-info em {
+    height: 20px;
+    line-height: 20px;
+    padding-left: 6px;
+    padding-right: 20px;
+    color: #838383;
+}
+.count-price-info {
+    display: flex;
+    justify-content: flex-end;
+    height: 36px;
+    align-items: center;
+}
+.rest-count {
+    font-size: 16px;
+    color: #999;
+    margin-right: 10px;
+}
+.full-price {
+    font-size: 15px;
+    color: #999;
+    margin-right: 10px;
+    text-decoration: line-through;
+}
+.discount-price {
+    font-size: 18px;
+    color: #fa6648;
+    font-weight: bold;
+}
+.discount-price > i {
+    margin-left: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .date-modal-wrapper {
