@@ -1,6 +1,8 @@
 .date-wrapper {
     height: 40px;
     border-bottom: 1px solid #dfdfe0;
+    display: -webkit-flex;
+    -webkit-align-items: center;
     display: flex;
     align-items: center;
     color: #1dbbff;
@@ -10,14 +12,17 @@
 }
 
 .date-wrapper > p:nth-of-type(1) {
+    -webkit-flex: 1;
     flex: 1;
     text-align: left;
 }
 .date-wrapper > p:nth-of-type(3) {
+    -webkit-flex: 1;
     flex: 1;
     text-align: right;
 }
 .date-wrapper > p:nth-of-type(2) {
+    -webkit-flex: 2;
     flex: 2;
     text-align: center;
 }
@@ -30,6 +35,8 @@
     border-bottom: none;
 }
 .time-station {
+    display: -webkit-flex;
+    -webkit-align-items: center;
     display: flex;
     align-items: center;
     height: 28px;
@@ -38,6 +45,7 @@
     font-weight: bold;
 }
 .time-station > p {
+    display: -webkit-flex;
     display: flex;
     align-items: center;
 }
@@ -49,9 +57,12 @@
 }
 .coupon-info {
     padding-left: 60px;
+    display: -webkit-flex;
     display: flex;
 }
 .coupon-info > p {
+    display: -webkit-flex;
+    -webkit-align-items: center;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -74,6 +85,8 @@
     color: #838383;
 }
 .count-price-info {
+    display: -webkit-flex;
+    -webkit-justify-content: flex-end;
     display: flex;
     justify-content: flex-end;
     height: 36px;
@@ -98,22 +111,6 @@
 .discount-price > i {
     margin-left: 2px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .date-modal-wrapper {
     position: fixed;
@@ -158,6 +155,7 @@
     flex: 1;
     text-align: center;
 }
+
 .week-ul {
     height: 30px;
     line-height: 30px;
@@ -200,13 +198,27 @@
 .today-flag{
     background: #00C2B1;
     color: #fff;
+    position: relative;
+    color: #00C2B1;
+}
+.today-flag:after {
+    display: table;
+    content: "今天";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    color: #fff;
+    z-index: 999;
+    font-size: 12px;
 }
 .boxshaw{
     box-shadow: 2px 2px 15px 2px #e3e3e3;
 }
 .selected-style {
-    /*background: #00BDFF;*/
-    /*color: #ffffff;*/
+    background: #00BDFF;
+    color: #ffffff;
 }
 #h3Ele{
     display: none;
