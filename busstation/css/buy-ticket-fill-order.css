@@ -1,0 +1,155 @@
+.tip-wrapper {
+    height: 36px;
+    line-height: 36px;
+    padding: 0 10px;
+    background: #ff6648;
+    color: #fff;
+    font-size: 15px;
+}
+.tip-wrapper > i {
+    margin-left: 6px;
+}
+.ticket-info-wrapper {
+    background: #fff;
+}
+.start-end {
+    height: 34px;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 15px;
+    color: #000;
+}
+.start-end > img {
+    margin: 0 8px;
+}
+.ticket-remark {
+    padding: 0 10px 6px 10px;
+    font-size: 14px;
+    color: #999;
+}
+.ticket-remark > i {
+    margin-right: 5px;
+}
+.ticket-rest-count {
+    height: 44px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 15px;
+    border-top: 1px solid #dfdfe0;
+    border-bottom: 1px solid #dfdfe0;
+}
+.ticket-rest-count > i {
+    color: #999;
+    margin-right: 10px;
+}
+.ticket-price-con {
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    font-size: 15px;
+}
+.ticket-price-con > p {
+    color: #19c017;
+    display: flex;
+    align-items: center;
+}
+.ticket-price-con > div {
+    color: #999;
+    display: flex;
+    align-items: center;
+}
+.ticket-price-con > div > em {
+    color: #ff793f;
+    font-size: 18px;
+    margin-left: 6px;
+}
+.passengers-wrapper {
+    margin-top: 15px;
+    padding: 0 10px;
+    background: #fff;
+}
+.passenger {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #dfdfe0;
+}
+.passenger-info {
+    flex: 1;
+}
+.p-name > i {
+    margin-right: 8px;
+    font-size: 15px;
+}
+.p-name > em {
+    color: #999;
+}
+.p-card-num {
+    margin-top: 2px;
+    color: #999;
+}
+.p-card-num > i {
+    margin-right: 8px;
+}
+.delete-btn {
+    flex: 0 0 40px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.add-passenger-btn {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #19c017;
+}
+.add-passenger-btn > i {
+    margin-left: 4px;
+    height: 30px;
+    line-height: 30px;
+}
+.phone-wrapper {
+    margin-top: 15px;
+    background: #fff;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 15px;
+}
+.phone-wrapper > i {
+    margin-left: 10px;
+    color: #000;
+}
+.insurance-wrapper {
+    height: 46px;
+    margin-top: 15px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.insurance-wrapper > span {
+    font-size: 15px;
+}
+.insurance-wrapper > p {
+    font-size: 14px;
+    color: #999;
+    display: flex;
+    align-items: center;
+}
+.insurance-wrapper img {
+    margin-left: 4px;
+}
