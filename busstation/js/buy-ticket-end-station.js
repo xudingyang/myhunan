@@ -2,7 +2,7 @@ $(function () {
     // 点击省
     $('.provice').on('click',function () {
         $('.provice-con').hide()
-        $('.city-con').show()
+        $('.city-con-box').show()
     })
 
     // 点击市
@@ -13,7 +13,7 @@ $(function () {
     // 点击车站
     $('.city-station').on('click',function () {
         $('.provice-con').show()
-        $('.city-con').hide()
+        $('.city-con-box').hide()
         location.href = 'buy-ticket.html'
     })
 })

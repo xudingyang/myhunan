@@ -57,7 +57,7 @@
     overflow: scroll;
 }
 .provice-con {
-    display: none;
+    /*display: none;*/
 }
 .provice {
     height: 50px;
@@ -70,6 +70,10 @@
     justify-content: space-between;
     padding: 0 15px;
     font-size: 16px;
+}
+.city-con-box {
+    display: none;
+    height: 100%;
 }
 .city-con {
     display: -webkit-flex;
