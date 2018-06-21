@@ -35,7 +35,12 @@ $(function () {
 
     })
 
-    // 日期控件
+    // 点击车票
+    $('.ticket').click(function () {
+        location.href = 'buy-ticket-fill-order.html'
+    })
+
+    // 日期控件初始化
     var mySchedule = new Schedule({
         el: '#schedule-box',
         // date: '2018-06-21',
