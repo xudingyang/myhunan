@@ -1,5 +1,9 @@
 $(function () {
 
+    // 点击添加乘客按钮
+    $('.add-passenger-btn').click(function () {
+        location.href = 'buy-ticket-add-passenger.html'
+    })
     // 点击提交订单按钮
     $('.submit-order-btn').click(function () {
         $('.mask').show()
