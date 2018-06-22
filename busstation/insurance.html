@@ -5,9 +5,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>乘车保险</title>
     <link rel="stylesheet" href="css/common.css">
-    <script src="js/buy-ticket-fill-order.js"></script>
+    <style>
+        .main {
+            padding-bottom: 65px;
+        }
+        .desc-wrapper {
+            height: 70px;
+            background: #fff;
+            display: -webkit-flex;
+            -webkit-align-items: center;
+            display: flex;
+            align-items: center;
+        }
+        .desc-lf {
+            -webkit-flex: 0 0 80px;
+            flex: 0 0 80px;
+            width: 80px;
+            text-align: center;
+            color: #ff793f;
+            font-size: 18px;
+        }
+        .desc-lf > i {
+            margin-left: 4px;
+        }
+        .desc-rg {
+            -webkit-flex: 1;
+            flex: 1;
+            font-size: 15px;
+        }
+        .desc-rg > p:nth-of-type(1) {
+            color: #222;
+            margin-bottom: 2px;
+            font-weight: 600;
+        }
+        .desc-rg > p:nth-of-type(2) {
+            color: #999;
+        }
+        .btn-wrapper {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 50px;
+            display: -webkit-flex;
+            display: flex;
+            border-top: 1px solid #dfdfe0;
+            font-size: 17px;
+        }
+        @media screen and (-webkit-device-pixel-ratio: 1.5){
+            .btn-wrapper {
+                border-top-width: 0.5px;
+            }
+        }
+        .btn-wrapper > i {
+            -webkit-flex: 1;
+            flex: 1;
+            background: #fff;
+            color: #ff793f;
+            display: -webkit-flex;
+            -webkit-align-items: center;
+            -webkit-justify-content: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .btn-wrapper > em {
+            -webkit-flex: 1;
+            flex: 1;
+            display: -webkit-flex;
+            -webkit-align-items: center;
+            -webkit-justify-content: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #ff793f;
+            color: #fff;
+        }
+        .insurance-text-wrapper {
+            margin-top: 15px;
+            background: #fff;
+            color: #222;
+            padding-bottom: 15px;
+        }
+        .insurance-text-wrapper > .i-t-title {
+            height: 44px;
+            line-height: 44px;
+            text-align: center;
+            font-size: 16px;
+        }
+        .insurance-text-wrapper > .i-t-k {
+            margin-bottom: 8px;
+            padding-left: 10px;
+        }
+        .insurance-text-wrapper > p {
+            padding: 0 10px;
+            font-size: 14px;
+            text-indent: 2em;
+        }
+    </style>
+    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 </head>
 <body>
-
+<div class="main">
+    <div class="desc-wrapper">
+        <div class="desc-lf">¥<i>3</i></div>
+        <div class="desc-rg">
+            <p>3万元乘车意外伤害保险(3元)</p>
+            <p>乘车保障，倍保安行</p>
+        </div>
+    </div>
+    <div class="insurance-text-wrapper">
+        <div class="i-t-title">乘车意外险</div>
+        <div class="i-t-k">投保须知:</div>
+        <p>尊敬的客户:</p>
+        <p>为了保障你的安全为了保障你的安全为了保障你的安全为了保障你的安全为了保障你的安全为了保障你的安全为了保障你的安全为了保障你的安全</p>
+        <p>为了保障你的安全为了保障你的安全为了保障你的安全为</p>
+        <p>为了保障你的安全为了保障你的安全为了保障你的安全为了保障你的安全为了保障你的安全为了为了保障你的安全为了保障你的安全为了保障你的安全为了保障你的安全为了保障你的安全保障你的安全为了保障你的安全为了保障你的安全</p>
+        <p>为了保障你的安全为了保障你的安全为了保障你的安全为了保障你的安全为了保障你的安全为了为了保障你的安全为了保障你的安全为了保障你的安全为了保障你的安全为了保障你的安全保障你的安全为了保障你的安全为了保障你的安全</p>
+        <p>为了保障你的安全为了保障你的安全为了保障你的安全为了保障你的安全为了保障你的安全为了为了保障你的安全为了保障你的安全为了保障你的安全为了保障你的安全为了保障你的安全保障你的安全为了保障你的安全为了保障你的安全</p>
+        <p>为了保障你的安全为了保障你的安全为了保障你的安全为了保障你的安全为了保障你的安全为了为了保障你的安全为了保障你的安全为了保障你的安全为了保障你的安全为了保障你的安全保障你的安全为了保障你的安全为了保障你的安全</p>
+        <p>为了保障你的安全为了保障你的安全为了保障你的安全为了保障你的安全为了保障你的安全为了为了保障你的安全为了保障你的安全为了保障你的安全为了保障你的安全为了保障你的安全保障你的安全为了保障你的安全为了保障你的安全</p>
+        <p>为了保障你的安全为了保障你的安全为了保障你的安全为了保障你的安全为了保障你的安全为了为了保障你的安全为了保障你的安全为了保障你的安全为了保障你的安全为了保障你的安全保障你的安全为了保障你的安全为了保障你的安全</p>
+        <p>为了保障你的安全为了保障你的安全为了保障你的安全为了保障你的安全为了保障你的安全为了为了保障你的安全为了保障你的安全为了保障你的安全为了保障你的安全为了保障你的安全保障你的安全为了保障你的安全为了保障你的安全</p>
+        <p>为了保障你的安全为了保障你的安全为了保障你的安全为了保障你的安全为了保障你的安全为了为了保障你的安全为了保障你的安全为了保障你的安全为了保障你的安全为了保障你的安全保障你的安全为了保障你的安全为了保障你的安全</p>
+    </div>
+</div>
+<div class="btn-wrapper">
+    <i class="js-dont-buy-insurance">不购买保险</i><em class="js-buy-insurance">购买保险</em>
+</div>
+<script>
+    $(function () {
+        $('.js-dont-buy-insurance').click(function () {
+            location.href = 'buy-ticket-fill-order.html'
+        })
+        $('.js-buy-insurance').click(function () {
+            location.href = 'buy-ticket-fill-order.html'
+        })
+    })
+</script>
 </body>
 </html>
