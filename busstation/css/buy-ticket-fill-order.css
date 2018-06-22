@@ -38,6 +38,8 @@ body {
 }
 .ticket-rest-count {
     height: 44px;
+    display: -webkit-flex;
+    -webkit-align-items: center;
     display: flex;
     align-items: center;
     padding: 0 10px;
@@ -51,6 +53,9 @@ body {
 }
 .ticket-price-con {
     height: 44px;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: space-between;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -59,11 +64,15 @@ body {
 }
 .ticket-price-con > p {
     color: #19c017;
+    display: -webkit-flex;
+    -webkit-align-items: center;
     display: flex;
     align-items: center;
 }
 .ticket-price-con > div {
     color: #999;
+    display: -webkit-flex;
+    -webkit-align-items: center;
     display: flex;
     align-items: center;
 }
@@ -78,6 +87,9 @@ body {
     background: #fff;
 }
 .passenger {
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: space-between;
     display: flex;
     height: 50px;
     align-items: center;
@@ -85,6 +97,7 @@ body {
     border-bottom: 1px solid #dfdfe0;
 }
 .passenger-info {
+    -webkit-flex: 1;
     flex: 1;
 }
 .p-name > i {
@@ -102,15 +115,22 @@ body {
     margin-right: 8px;
 }
 .delete-btn {
+    -webkit-flex: 0 0 40px;
     flex: 0 0 40px;
     height: 40px;
     width: 40px;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: flex-end;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 .add-passenger-btn {
     height: 50px;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,6 +146,8 @@ body {
     margin-top: 15px;
     background: #fff;
     height: 46px;
+    display: -webkit-flex;
+    -webkit-align-items: center;
     display: flex;
     align-items: center;
     padding: 0 10px;
@@ -139,6 +161,9 @@ body {
     height: 46px;
     margin-top: 15px;
     background: #fff;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: space-between;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -150,6 +175,8 @@ body {
 .insurance-wrapper > p {
     font-size: 14px;
     color: #999;
+    display: -webkit-flex;
+    -webkit-align-items: center;
     display: flex;
     align-items: center;
 }
@@ -163,11 +190,17 @@ body {
     right: 0;
     height: 50px;
     background: #fff;
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
     display: flex;
     justify-content: space-between;
     border-top: 1px solid #eee;
 }
 .total-money-detail {
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: space-between;
+    -webkit-flex: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -180,6 +213,8 @@ body {
     font-weight: 600;
 }
 .total-money-detail > p {
+    display: -webkit-flex;
+    -webkit-align-items: center;
     display: flex;
     align-items: center;
 }
@@ -189,10 +224,14 @@ body {
     font-size: 15px;
 }
 .submit-order-btn {
+    -webkit-flex: 0 0 100px;
     flex: 0 0 100px;
     width: 100px;
     background: #ff6648;
     height: 100%;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -212,6 +251,9 @@ body {
 .detail-modal {
     height: 100%;
     width: 100%;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -230,6 +272,9 @@ body {
 }
 .detail-con > div {
     height: 36px;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: space-between;
     display: flex;
     align-items: center;
     justify-content: space-between;
