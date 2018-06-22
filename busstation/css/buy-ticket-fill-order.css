@@ -1,3 +1,6 @@
+body {
+    padding-bottom: 65px;
+}
 .tip-wrapper {
     height: 36px;
     line-height: 36px;
@@ -152,4 +155,105 @@
 }
 .insurance-wrapper img {
     margin-left: 4px;
+}
+.total-wrapper {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #eee;
+}
+.total-money-detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    padding: 0 10px;
+}
+.total-money-detail > span {
+    font-size: 16px;
+    color: #ff793f;
+    font-weight: 600;
+}
+.total-money-detail > p {
+    display: flex;
+    align-items: center;
+}
+.total-money-detail > p > i {
+    margin-right: 3px;
+    color: #19c017;
+    font-size: 15px;
+}
+.submit-order-btn {
+    flex: 0 0 100px;
+    width: 100px;
+    background: #ff6648;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 15px;
+}
+.detail-modal-wrapper {
+    position: fixed;
+    z-index: 666;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    display: none;
+}
+.detail-modal {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.detail-con {
+    width: 300px;
+    background: #fff;
+    border-radius: 4px;
+}
+.detail-con > p {
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    font-size: 15px;
+    border-bottom: 1px solid #dfdfe0;
+}
+.detail-con > div {
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    font-size: 15px;
+}
+.detail-con > div > i {
+    color: #999;
+}
+.detail-con > div > em {
+    color: #000;
+}
+.detail-con > div > em.total-mark {
+    color: #ff793f;
+    font-weight: 600;
+}
+.detail-con > span {
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #ff793f;
+    letter-spacing: 1px;
+    font-size: 16px;
+    border-top: 1px solid #dfdfe0;
 }
