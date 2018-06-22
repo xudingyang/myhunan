@@ -4,6 +4,12 @@ $(function () {
     $('.add-passenger-btn').click(function () {
         location.href = 'buy-ticket-add-passenger.html'
     })
+
+    // 点击保险
+    $('.js-buy-insurance').click(function () {
+        location.href = 'insurance.html'
+    })
+
     // 点击提交订单按钮
     $('.submit-order-btn').click(function () {
         $('.mask').show()
