@@ -4,12 +4,331 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>优惠券</title>
-    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="font/iconfont.css">
     <link rel="stylesheet" href="css/coupon.css">
     <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
-
+    <script src="js/coupon.js"></script>
 </head>
 <body>
-优惠券
+<div class="main">
+    <div class="tab-wrapper">
+        <p class="tab-item tab-all tab-active">所有</p>
+        <p class="tab-item tab-used">已使用</p>
+        <p class="tab-item tab-outtime">已过期</p>
+    </div>
+    <div class="youhuiquan-wrapper youhuiquan-all">
+        <div class="empty-panel">
+            <div class="empty-con">
+                <span>没有可用的优惠券</span>
+                <img src="images/no-youhuiquan.png" width="127" height="147" alt="">
+            </div>
+        </div>
+        <div class="youhuiquan-con">
+            <ul class="youhuiquan-list">
+                <li class="youhuiquan">
+                    <div class="info">
+                        <span class="iconfont icon-youhuiquan"></span>
+                        <div class="name-count">
+                            <p class="store-name">平江县汽车站</p>
+                            <p class="youhuiquan-count">5元抵用券</p>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <div class="duration">
+                            截止日期: 2019-10-12
+                        </div>
+                        <div class="enable-store">满100元可用</div>
+                    </div>
+                </li>
+                <li class="youhuiquan">
+                    <div class="info">
+                        <span class="iconfont icon-youhuiquan"></span>
+                        <div class="name-count">
+                            <p class="store-name">平江县汽车站</p>
+                            <p class="youhuiquan-count">5元抵用券</p>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <div class="duration">
+                            截止日期: 2019-10-12
+                        </div>
+                        <div class="enable-store">满100元可用</div>
+                    </div>
+                </li>
+                <li class="youhuiquan">
+                    <div class="info">
+                        <span class="iconfont icon-youhuiquan"></span>
+                        <div class="name-count">
+                            <p class="store-name">平江县汽车站</p>
+                            <p class="youhuiquan-count">5元抵用券</p>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <div class="duration">
+                            截止日期: 2019-10-12
+                        </div>
+                        <div class="enable-store">满100元可用</div>
+                    </div>
+                </li>
+                <li class="youhuiquan">
+                    <div class="info">
+                        <span class="iconfont icon-youhuiquan"></span>
+                        <div class="name-count">
+                            <p class="store-name">平江县汽车站</p>
+                            <p class="youhuiquan-count">5元抵用券</p>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <div class="duration">
+                            截止日期: 2019-10-12
+                        </div>
+                        <div class="enable-store">满100元可用</div>
+                    </div>
+                </li>
+                <li class="youhuiquan">
+                    <div class="info">
+                        <span class="iconfont icon-youhuiquan"></span>
+                        <div class="name-count">
+                            <p class="store-name">平江县汽车站</p>
+                            <p class="youhuiquan-count">5元抵用券</p>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <div class="duration">
+                            截止日期: 2019-10-12
+                        </div>
+                        <div class="enable-store">满100元可用</div>
+                    </div>
+                </li>
+                <li class="youhuiquan">
+                    <div class="info">
+                        <span class="iconfont icon-youhuiquan"></span>
+                        <div class="name-count">
+                            <p class="store-name">平江县汽车站</p>
+                            <p class="youhuiquan-count">5元抵用券</p>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <div class="duration">
+                            截止日期: 2019-10-12
+                        </div>
+                        <div class="enable-store">满100元可用</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="youhuiquan-wrapper youhuiquan-used">
+        <div class="empty-panel">
+            <div class="empty-con">
+                <span>没有已使用的优惠券</span>
+                <img src="images/no-youhuiquan.png" width="127" height="147" alt="">
+            </div>
+        </div>
+        <div class="youhuiquan-con">
+            <ul class="youhuiquan-list">
+                <li class="youhuiquan">
+                    <div class="info">
+                        <span class="iconfont icon-youhuiquan state-gray-color"></span>
+                        <div class="name-count">
+                            <p class="store-name">平江县汽车站</p>
+                            <p class="youhuiquan-count">5元抵用券</p>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <div class="duration">
+                            截止日期: 2019-10-12
+                        </div>
+                        <div class="enable-store state-gray-color">满100元可用</div>
+                    </div>
+                </li>
+                <li class="youhuiquan">
+                    <div class="info">
+                        <span class="iconfont icon-youhuiquan state-gray-color"></span>
+                        <div class="name-count">
+                            <p class="store-name">平江县汽车站</p>
+                            <p class="youhuiquan-count">5元抵用券</p>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <div class="duration">
+                            截止日期: 2019-10-12
+                        </div>
+                        <div class="enable-store state-gray-color">满100元可用</div>
+                    </div>
+                </li>
+                <li class="youhuiquan">
+                    <div class="info">
+                        <span class="iconfont icon-youhuiquan state-gray-color"></span>
+                        <div class="name-count">
+                            <p class="store-name">平江县汽车站</p>
+                            <p class="youhuiquan-count">5元抵用券</p>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <div class="duration">
+                            截止日期: 2019-10-12
+                        </div>
+                        <div class="enable-store state-gray-color">满100元可用</div>
+                    </div>
+                </li>
+                <li class="youhuiquan">
+                    <div class="info">
+                        <span class="iconfont icon-youhuiquan state-gray-color"></span>
+                        <div class="name-count">
+                            <p class="store-name">平江县汽车站</p>
+                            <p class="youhuiquan-count">5元抵用券</p>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <div class="duration">
+                            截止日期: 2019-10-12
+                        </div>
+                        <div class="enable-store state-gray-color">满100元可用</div>
+                    </div>
+                </li>
+                <li class="youhuiquan">
+                    <div class="info">
+                        <span class="iconfont icon-youhuiquan state-gray-color"></span>
+                        <div class="name-count">
+                            <p class="store-name">平江县汽车站</p>
+                            <p class="youhuiquan-count">5元抵用券</p>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <div class="duration">
+                            截止日期: 2019-10-12
+                        </div>
+                        <div class="enable-store state-gray-color">满100元可用</div>
+                    </div>
+                </li>
+                <li class="youhuiquan">
+                    <div class="info">
+                        <span class="iconfont icon-youhuiquan state-gray-color"></span>
+                        <div class="name-count">
+                            <p class="store-name">平江县汽车站</p>
+                            <p class="youhuiquan-count">5元抵用券</p>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <div class="duration">
+                            截止日期: 2019-10-12
+                        </div>
+                        <div class="enable-store state-gray-color">满100元可用</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="youhuiquan-wrapper youhuiquan-outtime">
+        <div class="empty-panel">
+            <div class="empty-con">
+                <span>没有过期的优惠券</span>
+                <img src="images/no-youhuiquan.png" width="127" height="147" alt="">
+            </div>
+        </div>
+        <div class="youhuiquan-con">
+            <ul class="youhuiquan-list">
+                <li class="youhuiquan">
+                    <div class="info">
+                        <span class="iconfont icon-youhuiquan state-gray-color"></span>
+                        <div class="name-count">
+                            <p class="store-name">平江县汽车站</p>
+                            <p class="youhuiquan-count">5元抵用券</p>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <div class="duration">
+                            截止日期: 2019-10-12
+                        </div>
+                        <div class="enable-store state-gray-color">满100元可用</div>
+                    </div>
+                </li>
+                <li class="youhuiquan">
+                    <div class="info">
+                        <span class="iconfont icon-youhuiquan state-gray-color"></span>
+                        <div class="name-count">
+                            <p class="store-name">平江县汽车站</p>
+                            <p class="youhuiquan-count">5元抵用券</p>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <div class="duration">
+                            截止日期: 2019-10-12
+                        </div>
+                        <div class="enable-store state-gray-color">满100元可用</div>
+                    </div>
+                </li>
+                <li class="youhuiquan">
+                    <div class="info">
+                        <span class="iconfont icon-youhuiquan state-gray-color"></span>
+                        <div class="name-count">
+                            <p class="store-name">平江县汽车站</p>
+                            <p class="youhuiquan-count">5元抵用券</p>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <div class="duration">
+                            截止日期: 2019-10-12
+                        </div>
+                        <div class="enable-store state-gray-color">满100元可用</div>
+                    </div>
+                </li>
+                <li class="youhuiquan">
+                    <div class="info">
+                        <span class="iconfont icon-youhuiquan state-gray-color"></span>
+                        <div class="name-count">
+                            <p class="store-name">平江县汽车站</p>
+                            <p class="youhuiquan-count">5元抵用券</p>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <div class="duration">
+                            截止日期: 2019-10-12
+                        </div>
+                        <div class="enable-store state-gray-color">满100元可用</div>
+                    </div>
+                </li>
+                <li class="youhuiquan">
+                    <div class="info">
+                        <span class="iconfont icon-youhuiquan state-gray-color"></span>
+                        <div class="name-count">
+                            <p class="store-name">平江县汽车站</p>
+                            <p class="youhuiquan-count">5元抵用券</p>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <div class="duration">
+                            截止日期: 2019-10-12
+                        </div>
+                        <div class="enable-store state-gray-color">满100元可用</div>
+                    </div>
+                </li>
+                <li class="youhuiquan">
+                    <div class="info">
+                        <span class="iconfont icon-youhuiquan state-gray-color"></span>
+                        <div class="name-count">
+                            <p class="store-name">平江县汽车站</p>
+                            <p class="youhuiquan-count">5元抵用券</p>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <div class="duration">
+                            截止日期: 2019-10-12
+                        </div>
+                        <div class="enable-store state-gray-color">满100元可用</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="mask">
+    <div class="loading">
+        <img src="images/loading-spokes.svg" width="40" height="40" />
+        <br/>
+        <span class="text">正在请求，请稍候...</span>
+    </div>
+</div>
 </body>
 </html>
