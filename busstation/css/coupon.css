@@ -25,11 +25,15 @@ i,em {
 }
 .main {
     height: 100%;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
     display: flex;
     flex-direction: column;
 }
 .tab-wrapper {
+    -webkit-flex: 0 0 44px;
     flex: 0 0 44px;
+    display: -webkit-flex;
     display: flex;
     height: 44px;
     align-items: center;
@@ -37,6 +41,10 @@ i,em {
 }
 .tab-wrapper > p {
     height: 100%;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    -webkit-flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,6 +56,7 @@ p.tab-active {
     color: #ff793f;
 }
 .youhuiquan-wrapper {
+    -webkit-flex: 1;
     flex: 1;
 }
 
@@ -81,6 +90,10 @@ p.tab-active {
 }
 .empty-con {
     height: 100%;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    -webkit-flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
