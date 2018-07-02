@@ -22,15 +22,40 @@ i {
     height: 140px;
     background: url("../images/bg2.png");
     background-size: cover;
+    display: -webkit-flex;
+    display: flex;
 }
 .avatar-container .avatar {
-    float: left;
+    /*float: left;*/
+    -webkit-flex: 0 0 90px;
+    flex: 0 0 90px;
     width: 90px;
     padding: 22px 15px 0 15px;
 }
 .avatar-container .user-info {
-    float: left;
+    /*float: left;*/
+    -webkit-flex: 1;
+    flex: 1;
     padding-top: 30px;
+}
+.user-info-wrapper {
+    position: relative;
+}
+.synchronize-btn {
+    position: absolute;
+    z-index: 99;
+    bottom: 30px;
+    right: 20px;
+    width: 80px;
+    height: 30px;
+    font-size: 13px;
+    border-radius: 4px;
+    background: url("../images/btn_bg.png") center center  no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
 }
 .avatar-container .nick-name {
     color: #fff;
@@ -87,10 +112,11 @@ i {
     text-align: center;
 }
 .user-info-wrapper {
-    display: none;
+    /*display: none;*/
 }
 .user-info .jihuo-text {
     color: #333;
+    display: none;
 }
 .level-container {
     height: 70px;
