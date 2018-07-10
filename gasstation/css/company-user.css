@@ -5,6 +5,8 @@ ul {
     background: #fff;
 }
 li {
+    display: -webkit-flex;
+    -webkit-align-items: center;
     display: flex;
     align-items: center;
     padding: 10px;
@@ -14,6 +16,7 @@ li:last-child {
     border-bottom: none;
 }
 .li-lf {
+    -webkit-flex: 1;
     flex: 1;
     font-size: 15px;
 }
@@ -25,12 +28,16 @@ li:last-child {
     color: #888;
 }
 .li-rg {
+    -webkit-flex: 0 0 60px;
     flex: 0 0 60px;
     width: 60px;
     height: 40px;
     color: #f30213;
     font-size: 17px;
     letter-spacing: 2px;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: flex-end;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -46,6 +53,9 @@ li:last-child {
     letter-spacing: 1px;
     background: #19c017;
     color: #fff;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
     display: flex;
     align-items: center;
     justify-content: center;
