@@ -1,0 +1,95 @@
+.title-wrapper {
+    height: 50px;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 600;
+    background: #fff;
+    border-bottom: 1px solid #dfdfe0;
+}
+.info-wrapper {
+    padding: 10px;
+    background: #fff;
+}
+.info-wrapper > p {
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    height: 42px;
+    padding-right: 30px;
+}
+input {
+    border: none;
+    background: #f1f1f1;
+    border-radius: 4px;
+    height: 32px;
+    padding: 0 4px;
+}
+input::-webkit-input-placeholder {
+    color: #999;
+}
+.info-wrapper > p > span {
+    -webkit-flex: 0 0 70px;
+    flex: 0 0 70px;
+    width: 70px;
+}
+.user-name > input,
+.user-phone > input {
+    -webkit-flex: 1;
+    flex: 1;
+}
+.user-verification {
+    position: relative;
+}
+.user-verification > input {
+    width: 100px;
+}
+.user-verification > i {
+    height: 32px;
+    line-height: 32px;
+    padding: 0 8px;
+    position: absolute;
+    right: 30px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+.get-btn {
+    background: #19c017;
+    color: #fff;
+}
+.tip-btn {
+    display: none;
+    background: #ddd;
+    font-size: 12px;
+    color: #666;
+}
+.btn-wrapper {
+    margin-top: 30px;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-wrapper > p {
+    height: 40px;
+    border-radius: 4px;
+    background: #19c017;
+    color: #fff;
+    width: 88%;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
