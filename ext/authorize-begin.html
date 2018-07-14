@@ -11,7 +11,6 @@
             -webkit-tap-highlight-color: transparent;
             box-sizing: border-box;
         }
-
         body {
             position: relative;
             font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif;
@@ -20,25 +19,18 @@
             background-color: #fff;
             -webkit-user-select: none;
         }
-
         body, html {
             height: 100%;
         }
-        .icon-wrapper {
-            padding-top: 120px;
+        .btn-wrapper {
+            margin-top: 60px;
             display: -webkit-flex;
-            -webkit-justify-content: center;
             display: flex;
+            -webkit-justify-content: center;
             justify-content: center;
-            margin-bottom: 30px;
-        }
-        .tip-wrapper {
-            text-align: center;
-            font-size: 22px;
-            color: #3c98f6;
         }
         .btn-wrapper span {
-            width: 100%;
+            width: 160px;
             height: 40px;
             line-height: 40px;
             border-radius: 4px;
@@ -48,10 +40,33 @@
             font-size: 18px;
             letter-spacing: 2px;
         }
+        .tx1 {
+            padding-top: 70px;
+            color: #3c98f6;
+            font-size: 20px;
+            text-align: center;
+        }
+        .tx2 {
+            color: #3c98f6;
+            font-size: 16px;
+            text-align: center;
+            margin-top: 14px;
+        }
+        .tx3 {
+            margin-top: 30px;
+            padding: 0 30px;
+            font-size: 15px;
+            text-align: center;
+        }
+        .tx3 > span {
+            margin-right: 4px;
+        }
     </style>
 </head>
 <body>
-<div class="icon-wrapper"><img src="images/yes_ali.png" width="60" height="60"></div>
-<div class="tip-wrapper">授权成功</div>
+<div class="tx1">支付宝第三方</div>
+<div class="tx2">应用授权</div>
+<div class="tx3"><span>商户名称:</span>岳阳汉林公司水电费水电费水电费胜多负少的发的所发生的</div>
+<div class="btn-wrapper"><span>确认</span></div>
 </body>
 </html>
