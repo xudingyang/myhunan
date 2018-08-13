@@ -1,4 +1,4 @@
-// pages/order/order.js
+// pages/diandan/diandan.js
 Page({
 
   /**

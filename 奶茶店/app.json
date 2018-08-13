@@ -1,10 +1,9 @@
 {
   "pages": [
-    "pages/home/home",
+    "pages/diandan/diandan",    
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/order/order",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/qucha/qucha"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -12,15 +11,17 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "color": "#fa7400",
+    "color": "#bdbcbb",
+    "backgroundColor": "#413d3c",
+    "selectedColor": "#ffffff",
     "list": [
       {
-        "pagePath": "pages/home/home",
+        "pagePath": "pages/diandan/diandan",
         "text": "点单"
       },
       {
-        "pagePath": "pages/order/order",
-        "text": "订单"
+        "pagePath": "pages/qucha/qucha",
+        "text": "取茶"
       },
       {
         "pagePath": "pages/user/user",
