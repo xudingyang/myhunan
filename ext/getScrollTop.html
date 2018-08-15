@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body,html {
+            /*height: 2000px;*/
+        }
+        #box {
+            width: 400px;
+            height: 900px;
+            border: 1px solid #aaa;
+            text-align: center;
+            line-height: 900px;
+            font-size: 20px;
+        }
+        #if1 {
+            width: 900px;
+        }
+        #if2 {
+            width: 500px;
+            height: 1600px;
+        }
+    </style>
+    <script src="js/jquery1.11.3.min.js"></script>
+</head>
+<body>
+<iframe id="if1">
+    <iframe id="if2">
+        sfdd
+    </iframe>
+</iframe>
+<!--<div id="box">0</div>-->
+<script>
+    $(function () {
+        console.log(navigator);
+        // window.onscroll = function (e) {
+        //     console.log($(window).scrollTop());
+        // }
+    })
+</script>
+</body>
+</html>
