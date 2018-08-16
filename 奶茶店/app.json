@@ -1,8 +1,9 @@
 {
   "pages": [
-    "pages/diandan/diandan",    
-    "pages/index/index",
     "pages/user/user",
+    
+    "pages/diandan/diandan",
+    "pages/index/index",
     "pages/qucha/qucha"
   ],
   "window": {
@@ -17,15 +18,21 @@
     "list": [
       {
         "pagePath": "pages/diandan/diandan",
-        "text": "点单"
+        "text": "点单",
+        "iconPath": "images/diandan.png",
+        "selectedIconPath": "images/diandan_fill.png"
       },
       {
         "pagePath": "pages/qucha/qucha",
-        "text": "取茶"
+        "text": "取茶",
+        "iconPath": "images/qudan.png",
+        "selectedIconPath": "images/qudan_fill.png"
       },
       {
         "pagePath": "pages/user/user",
-        "text": "我的"
+        "text": "我的",
+        "iconPath": "images/user.png",
+        "selectedIconPath": "images/user_fill.png"
       }
     ]
   }
