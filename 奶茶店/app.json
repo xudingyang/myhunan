@@ -19,20 +19,20 @@
       {
         "pagePath": "pages/diandan/diandan",
         "text": "点单",
-        "iconPath": "images/diandan.png",
-        "selectedIconPath": "images/diandan_fill.png"
+        "iconPath": "images/tab/diandan.png",
+        "selectedIconPath": "images/tab/diandan_fill.png"
       },
       {
         "pagePath": "pages/qucha/qucha",
         "text": "取茶",
-        "iconPath": "images/qudan.png",
-        "selectedIconPath": "images/qudan_fill.png"
+        "iconPath": "images/tab/qudan.png",
+        "selectedIconPath": "images/tab/qudan_fill.png"
       },
       {
         "pagePath": "pages/user/user",
         "text": "我的",
-        "iconPath": "images/user.png",
-        "selectedIconPath": "images/user_fill.png"
+        "iconPath": "images/tab/user.png",
+        "selectedIconPath": "images/tab/user_fill.png"
       }
     ]
   }

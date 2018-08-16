@@ -1,3 +1,19 @@
-<!--pages/user/user.wxml-->
-<text>pages/user/user.wxml</text>
-我的
+<view class="userinfo">
+  <image wx:if="{{!hasUserInfo}}" class="userinfo-avatar" src="/images/avatar.png" mode="cover"></image>
+  <image wx:if="{{hasUserInfo}}" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+  <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+</view>
+<view class='menber-info'>
+  <view class='member-info-item'>
+    <image src='/images/icon/calloction.png'></image>
+    <text><text class='c-tx'>0</text>积分</text>
+  </view>
+  <view class='member-info-item'>
+    <image src='/images/icon/coupon.png'></image>
+    <text><text class='c-tx'>10</text>张优惠券</text>
+  </view>
+  <view class='member-info-item'>
+    <image src='/images/icon/coupon.png'></image>
+    <text><text class='c-tx'>3</text>张优惠券</text>
+  </view>
+</view>
