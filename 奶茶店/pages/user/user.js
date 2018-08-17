@@ -6,6 +6,9 @@ Page({
     hasUserInfo: false,
     hadBindPhone: false
   },
+  bindPhone: function () {
+
+  },
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({

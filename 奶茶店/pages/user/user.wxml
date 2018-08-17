@@ -9,7 +9,7 @@
     <image src='/images/icon/calloction.png'></image>
     <text><text class='c-tx'>0</text>积分</text>
   </view>
-  <view class='member-info-item'>
+  <view class='member-info-item' catchtap='checkCoupon'>
     <image src='/images/icon/coupon.png'></image>
     <text><text class='c-tx'>10</text>张优惠券</text>
   </view>
@@ -17,7 +17,7 @@
 
 <view class='bind-phone-con' wx:if='{{!hadBindPhone}}'>
   <text class='bind-tip'>绑定手机号后，获取更多权益</text>
-  <text class='bind-btn'>立即绑定</text>
+  <text class='bind-btn' catchtap='bindPhone'>立即绑定</text>
 </view>
 
 <view class='other-info'>

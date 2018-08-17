@@ -1,2 +1,7 @@
-<!--pages/diandan/diandan.wxml-->
-<text>pages/diandan/diandan.wxml</text>
+<view class='mask'>
+  <view class='mask-tip'>
+    <view class='mask-title'>提示</view>
+    <view class='mask-content'>当前城市还没有门店，敬请期待。</view>
+    <button>确定</button>
+  </view>
+</view>
