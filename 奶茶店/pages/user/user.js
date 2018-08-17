@@ -3,7 +3,8 @@ const app = getApp()
 Page({
   data: {
     userInfo: {},
-    hasUserInfo: false
+    hasUserInfo: false,
+    hadBindPhone: false
   },
   onLoad: function () {
     if (app.globalData.userInfo) {
