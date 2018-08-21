@@ -1,1 +1,40 @@
-/* pages/choose_store/choose_store.wxss */
+.top-input {
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+}
+.city-con {
+  width: 200rpx;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10rpx;
+}
+.city-con text {
+  margin-right: 16rpx;
+  color: #666;
+  font-size: 30rpx;
+}
+.city-con image {
+  width: 40rpx;
+  height: 16rpx;
+}
+.city-input-con {
+  width: 550rpx;
+  display: flex;
+  align-items: center;
+}
+.city-input {
+  box-sizing: border-box;
+  width: 420rpx;
+  background: #f7f7f7;
+  height: 62rpx;
+  border-radius: 6rpx;
+  padding: 0 10rpx;
+  border: 1rpx solid #efefef;
+}
+.city-input-con text {
+  margin-left: 20rpx;
+  font-size: 30rpx;
+  color: #d79f62;
+}
