@@ -1,7 +1,7 @@
-<view class='mask'>
+<view class='mask' wx:if='{{!localHasStore}}'>
   <view class='mask-tip'>
     <view class='mask-title'>提示</view>
     <view class='mask-content'>当前城市还没有门店！敬请期待。</view>
-    <button class='mask-btn' bindtap=''>确定</button>
+    <button class='mask-btn' bindtap='chooseStoreStill'>确定</button>
   </view>
 </view>

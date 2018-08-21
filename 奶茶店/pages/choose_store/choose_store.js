@@ -1,17 +1,13 @@
-// pages/diandan/diandan.js
+// pages/choose_store/choose_store.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    localHasStore: false
+  
   },
-  chooseStoreStill: function () {
-    wx.navigateTo({
-      url: '/pages/choose_store/choose_store'
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */

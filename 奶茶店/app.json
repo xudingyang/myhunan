@@ -1,10 +1,10 @@
 {
   "pages": [
     "pages/diandan/diandan",
-    
     "pages/user/user",
     "pages/index/index",
-    "pages/qucha/qucha"
+    "pages/qucha/qucha",
+    "pages/choose_store/choose_store"
   ],
   "window": {
     "backgroundTextStyle": "light",
