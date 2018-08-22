@@ -1,7 +1,15 @@
 page {
+  height: 100%;
+}
+.outer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 90rpx;
+  /* height: 100%; */
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
 .map-wrapper {
   height: 500rpx;
@@ -47,12 +55,70 @@ page {
   font-size: 30rpx;
   color: #d79f62;
 }
+
 .list-wrapper {
+  height: 0;
   flex: 1;
-  height: 100rpx;
+}
+.store {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1rpx solid #eee;
+}
+.store-con {
+  flex: 1;
+  padding: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #878787;
+}
+.store-name {
+  margin-bottom: 3px;
+  color: #000;
+  font-weight: 600;
+  font-size: 32rpx;
+}
+.store-name text {
+  margin-left: 6px;
+  font-weight: normal;
+  font-size: 26rpx;
+  padding: 0 4px;
+  border: 1rpx solid #555250;
+  border-radius: 6rpx;
+}
+.store-address {
+  line-height: 38rpx;  
+  font-weight: 500;
+  font-size: 24rpx;
+}
+.store-open-time {
+  font-weight: 500;  
+  font-size: 26rpx;
+}
+.store-open-time text {
+  margin-left: 6px;
+}
+.store-distance {
+  margin-left: 20rpx;
+  color: #909090;
+  font-size: 28rpx;
 }
 
 
+
+.select-con {
+  width: 50rpx;
+  flex: 0 0 50rpx;
+  display: flex;
+  align-items: center;
+  padding: 20rpx 20rpx 20rpx 0;
+}
+.select-con image {
+  width: 50rpx;
+  height: 50rpx;
+}
 .btn-wrapper {
   position: fixed;
   bottom: 0;
