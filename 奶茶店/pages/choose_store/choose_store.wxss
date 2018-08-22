@@ -1,3 +1,12 @@
+page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.map-wrapper {
+  height: 500rpx;
+  flex: 0 0 500rpx;
+}
 .top-input {
   height: 100rpx;
   display: flex;
@@ -37,4 +46,27 @@
   margin-left: 20rpx;
   font-size: 30rpx;
   color: #d79f62;
+}
+.list-wrapper {
+  flex: 1;
+  height: 100rpx;
+}
+
+
+.btn-wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: 4rpx 20rpx 10rpx 20rpx;
+}
+.btn-wrapper view{
+  height: 80rpx;
+  background: #413d3c;
+  color: #fff;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 32rpx;
+  border-radius: 8rpx;
 }

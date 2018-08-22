@@ -1,13 +1,22 @@
-<view class='top-input'>
-  <picker class='city-con' bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
-    <text>{{array[index]}}</text>
-    <image src='/images/icon/xiangxia.png'></image>
-  </picker>
-  <view class='city-input-con'>
-    <input class='city-input' placeholder='搜索' confirm-type='search' placeholder-style='font-size:30rpx;color:#aaa;'></input>
-    <text wx:if='{{!inputHasText}}'>取消</text>
-    <text wx:if='{{inputHasText}}'>搜索</text>
+<view class='map-wrapper'>
+  <view class='top-input'>
+    <picker class='city-con' bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <text>{{array[index]}}</text>
+      <image src='/images/icon/xiangxia.png'></image>
+    </picker>
+    <view class='city-input-con'>
+      <input class='city-input' placeholder='搜索' confirm-type='search' placeholder-style='font-size:30rpx;color:#aaa;'></input>
+      <text wx:if='{{!inputHasText}}'>取消</text>
+      <text wx:if='{{inputHasText}}'>搜索</text>
+    </view>
   </view>
+  <map id="myMap" style="width: 100%; height: 400rpx;" latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}" covers="{{covers}}" show-location></map>
 </view>
 
-<map id="myMap" style="width: 100%; height: 400rpx;" latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}" covers="{{covers}}" show-location></map>
+<view class='list-wrapper'>
+
+</view>
+
+<view class='btn-wrapper'>
+  <view>去点单</view>
+</view>
