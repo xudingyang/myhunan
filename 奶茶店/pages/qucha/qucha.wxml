@@ -1,2 +1,7 @@
-<!--pages/qucha/qucha.wxml-->
-<text>pages/qucha/qucha.wxml</text>
+<view class='empty-wrapper'>
+  <view>
+    <text class='tx1'>您今天还没有下单</text>
+    <text class='tx2'>赶快去选择一杯喜欢的饮品吧</text>
+    <view class='diandan-btn'>去点单</view>
+  </view>
+</view>

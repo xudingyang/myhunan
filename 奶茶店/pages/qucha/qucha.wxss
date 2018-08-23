@@ -1,1 +1,38 @@
-/* pages/qucha/qucha.wxss */
+page {
+  height: 100%;
+  background: #e7e7e7;  
+}
+.empty-wrapper {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 40rpx 30rpx;
+}
+.empty-wrapper > view {
+  height: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10rpx;
+}
+.tx1 {
+  color: #989898;
+  font-size: 30rpx;
+  margin-bottom: 14rpx;
+}
+.tx2 {
+  color: #989898;
+  font-size: 30rpx;
+}
+.diandan-btn {
+  margin-top: 140rpx;
+  width: 340rpx;
+  height: 70rpx;
+  text-align: center;
+  line-height: 70rpx;
+  font-size: 32rpx;
+  border-radius: 8rpx;
+  background: #413d3c;
+  color: #fff;
+}
