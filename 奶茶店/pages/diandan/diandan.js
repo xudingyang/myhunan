@@ -1,22 +1,29 @@
-// pages/diandan/diandan.js
 Page({
 
-  /**
-   * 页面的初始数据
-   */
   data: {
     localHasStore: false
   },
-  chooseStoreStill: function () {
-    wx.navigateTo({
-      url: '/pages/choose_store/choose_store'
-    })
-  },
-  /**
-   * 生命周期函数--监听页面加载
-   */
   onLoad: function (options) {
-  
+    if (!this.data.localHasStore) {
+      wx.showModal({
+        title: '提示',
+        content: '当前城市还没有门店！敬请期待。',
+        showCancel: false,
+        cancelText: '',
+        cancelColor: '',
+        confirmText: '确定',
+        confirmColor: '#d79f62',
+        success: function(res) {
+          if (res.confirm) {
+            wx.navigateTo({
+              url: '/pages/choose_store/choose_store'
+            })
+          }
+        },
+        fail: function(res) {},
+        complete: function(res) {},
+      })
+    }
   },
 
   /**
