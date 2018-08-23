@@ -64,58 +64,81 @@ Page({
       distance: 2,
       canDelivery: false,
       openTime: '10:00~22:00',
-        selected: false      
-      }, {
-        name: '汉林奶茶店33',
-        address: '湖南省岳阳市岳阳楼区岳阳大道翠碧山庄凯旋城市政府市政协黄鹤楼白沙广兴洲123号',
-        distance: 6,
-        canDelivery: true,
-        openTime: '10:00~22:00',
-        selected: false        
-      }, {
-        name: '汉林奶茶店44',
-        address: '市政府市政协黄鹤楼白沙广兴洲123号',
-        distance: 6,
-        canDelivery: false,
-        openTime: '10:00~22:00',
-        selected: true        
-      }, {
-        name: '汉林奶茶店55',
-        address: '湖南省岳阳市岳阳楼区岳阳大道',
-        distance: 6,
-        canDelivery: true,
-        openTime: '10:00~22:00',
-        selected: true        
-      }, {
-        name: '汉林奶茶店55',
-        address: '湖南省岳阳市岳阳楼区岳阳大道',
-        distance: 6,
-        canDelivery: true,
-        openTime: '10:00~22:00',
-        selected: false
-      }, {
-        name: '汉林奶茶店55',
-        address: '湖南省岳阳市岳阳楼区岳阳大道',
-        distance: 6,
-        canDelivery: true,
-        openTime: '10:00~22:00',
-        selected: false
-      }]
+      selected: false
+    }, {
+      name: '汉林奶茶店33',
+      address: '湖南省岳阳市岳阳楼区岳阳大道翠碧山庄凯旋城市政府市政协黄鹤楼白沙广兴洲123号',
+      distance: 6,
+      canDelivery: true,
+      openTime: '10:00~22:00',
+      selected: false
+    }, {
+      name: '汉林奶茶店44',
+      address: '市政府市政协黄鹤楼白沙广兴洲123号',
+      distance: 6,
+      canDelivery: false,
+      openTime: '10:00~22:00',
+      selected: false
+    }, {
+      name: '汉林奶茶店55',
+      address: '湖南省岳阳市岳阳楼区岳阳大道',
+      distance: 6,
+      canDelivery: true,
+      openTime: '10:00~22:00',
+      selected: false
+    }, {
+      name: '汉林奶茶店55',
+      address: '湖南省岳阳市岳阳楼区岳阳大道',
+      distance: 6,
+      canDelivery: true,
+      openTime: '10:00~22:00',
+      selected: false
+    }, {
+      name: '汉林奶茶店55',
+      address: '湖南省岳阳市岳阳楼区岳阳大道',
+      distance: 6,
+      canDelivery: true,
+      openTime: '10:00~22:00',
+      selected: false
+    }]
   },
-  selecteStore: function (e) {
+  selecteStore: function(e) {
     var selected = e.currentTarget.dataset.selected;
     var index = e.currentTarget.dataset.index;
     if (!selected) {
       var tmpStoreList = this.data.storeList.slice();
-      tmpStoreList[index].selected = true
+      for (let i = 0, iLength = tmpStoreList.length; i < iLength; i++) {
+        if (index === i) {
+          tmpStoreList[i].selected = true
+        } else {
+          tmpStoreList[i].selected = false
+        }
+      }
       this.setData({
         storeList: tmpStoreList
       })
-    } else {
-      var tmpStoreList = this.data.storeList.slice();
-      tmpStoreList[index].selected = false
-      this.setData({
-        storeList: tmpStoreList
+    }
+  },
+  placeOrder: function () {
+    let distance = 99;
+    if (distance > 50) {
+      wx.showModal({
+        title: '',
+        content: '您当前所在位置距离该门店较远，是否继续点单？',
+        showCancel: true,
+        cancelText: '取消',
+        cancelColor: '#333333',
+        confirmText: '确定',
+        confirmColor: '#d79f62',
+        success: function(res) {
+          if (res.confirm) {
+            wx.switchTab({
+              url: '/pages/diandan/diandan'
+            })
+          }
+        },
+        fail: function(res) {},
+        complete: function(res) {},
       })
     }
   },

@@ -39,5 +39,5 @@
 </view>
 
 <view class='btn-wrapper'>
-  <view>去点单</view>
+  <view catchtap='placeOrder'>去点单</view>
 </view>
