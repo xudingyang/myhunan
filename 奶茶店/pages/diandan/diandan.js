@@ -1,7 +1,7 @@
 Page({
 
   data: {
-    localHasStore: false
+    localHasStore: true
   },
   onLoad: function (options) {
     if (!this.data.localHasStore) {

@@ -1,0 +1,23 @@
+<view class='outer'>
+  <view class='choose-store-wrapper'>
+    <view>
+      <text class='change-store'>[换门店]</text>
+      <text class='store-name'>汉林奶茶店</text>
+      <text class='can-delivery'>可外送</text>
+    </view>
+    <view>
+      <text class='phone-address' decode='{{true}}'>联系电话:0730-8627567&nbsp;&nbsp;岳阳楼区湖南省岳阳大啊啊水电费第三方斯蒂芬斯蒂芬斯蒂芬色安抚道</text>
+    </view>
+  </view>
+  <view class='tea-wrapper'>
+
+    <view>sdf</view>
+
+    <view>sdf</view>
+    <view>sdf</view>
+    <view>sdf</view>
+    <view>sdf</view>
+
+    <view>哈哈</view>
+  </view>
+</view>
