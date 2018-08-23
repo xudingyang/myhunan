@@ -15,22 +15,23 @@
   </view>
 
   <scroll-view class='list-wrapper' scroll-y='true'>
-    <block wx:for='{{[1,2,3,4,5,6]}}'>
-      <view class='store'>
+    <block wx:for='{{storeList}}'>
+      <view class='store' data-selected='{{item.selected}}' data-index='{{index}}' catchtap='selecteStore'>
         <view class='store-con'>
           <view class='store-info'>
-            <view class='store-name'>岳阳汉林奶茶店
-              <text>可外送</text>
+            <view class='store-name'>{{item.name}}
+              <text wx:if='{{item.canDelivery}}'>可外送</text>
             </view>
-            <view class='store-address'>岳阳楼区岳阳大道汉林2路779号A栋2层10001室内设计放假放假放假积分</view>
+            <view class='store-address'>{{item.address}}</view>
             <view class='store-open-time'>营业时间
-              <text>10:00~22:00</text>
+              <text>{{item.openTime}}</text>
             </view>
           </view>
-          <view class='store-distance'>6km</view>
+          <view class='store-distance'>{{item.distance}}km</view>
         </view>
         <view class='select-con'>
-          <image src='/images/icon/selected.png'></image>
+          <image wx:if='{{item.selected}}' src='/images/icon/selected.png'></image>
+          <view wx:if='{{!item.selected}}'></view>
         </view>
       </view>
     </block>

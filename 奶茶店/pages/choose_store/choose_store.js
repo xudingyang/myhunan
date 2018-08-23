@@ -20,7 +20,7 @@ Page({
         color: '#000',
         fontSize: 20,
         padding: 6,
-        borderRadius: 4        
+        borderRadius: 4
       }
     }, {
       id: 2,
@@ -48,9 +48,76 @@ Page({
         color: '#000',
         fontSize: 20,
         padding: 6,
-        borderRadius: 4        
+        borderRadius: 4
       }
-    }]
+    }],
+    storeList: [{
+      name: '汉林奶茶店',
+      address: '湖南省岳阳市岳阳楼区岳阳大道翠碧山庄凯旋城市政府市政协黄鹤楼白沙广兴洲123号',
+      distance: 6,
+      canDelivery: true,
+      openTime: '10:00~22:00',
+      selected: true
+    }, {
+      name: '汉林奶茶店2',
+      address: '湖南省岳阳市岳阳楼区岳',
+      distance: 2,
+      canDelivery: false,
+      openTime: '10:00~22:00',
+        selected: false      
+      }, {
+        name: '汉林奶茶店33',
+        address: '湖南省岳阳市岳阳楼区岳阳大道翠碧山庄凯旋城市政府市政协黄鹤楼白沙广兴洲123号',
+        distance: 6,
+        canDelivery: true,
+        openTime: '10:00~22:00',
+        selected: false        
+      }, {
+        name: '汉林奶茶店44',
+        address: '市政府市政协黄鹤楼白沙广兴洲123号',
+        distance: 6,
+        canDelivery: false,
+        openTime: '10:00~22:00',
+        selected: true        
+      }, {
+        name: '汉林奶茶店55',
+        address: '湖南省岳阳市岳阳楼区岳阳大道',
+        distance: 6,
+        canDelivery: true,
+        openTime: '10:00~22:00',
+        selected: true        
+      }, {
+        name: '汉林奶茶店55',
+        address: '湖南省岳阳市岳阳楼区岳阳大道',
+        distance: 6,
+        canDelivery: true,
+        openTime: '10:00~22:00',
+        selected: false
+      }, {
+        name: '汉林奶茶店55',
+        address: '湖南省岳阳市岳阳楼区岳阳大道',
+        distance: 6,
+        canDelivery: true,
+        openTime: '10:00~22:00',
+        selected: false
+      }]
+  },
+  selecteStore: function (e) {
+    var selected = e.currentTarget.dataset.selected;
+    var index = e.currentTarget.dataset.index;
+    if (!selected) {
+      var tmpStoreList = this.data.storeList.slice();
+      tmpStoreList[index].selected = true
+      this.setData({
+        storeList: tmpStoreList
+      })
+    } else {
+      var tmpStoreList = this.data.storeList.slice();
+      tmpStoreList[index].selected = false
+      this.setData({
+        storeList: tmpStoreList
+      })
+    }
   },
   bindPickerChange: function(e) {
     console.log(this.data.array[e.detail.value])

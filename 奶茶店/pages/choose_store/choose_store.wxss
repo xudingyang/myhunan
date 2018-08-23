@@ -106,14 +106,18 @@ page {
   font-size: 28rpx;
 }
 
-
-
 .select-con {
   width: 50rpx;
   flex: 0 0 50rpx;
   display: flex;
   align-items: center;
   padding: 20rpx 20rpx 20rpx 0;
+}
+.select-con view {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  background: #efefef;
 }
 .select-con image {
   width: 50rpx;
