@@ -11,15 +11,23 @@
   </view>
   <view class='tea-wrapper'>
     <scroll-view class='tea-category' scroll-y='true'>
-    <block wx:for='{{teaList}}'>
-      <view class='{{item.selected ? "category category-selected" : "category" }}' catchtap='selectCatogary' data-index='{{index}}'>
-        <view class='category-tx1'>{{item.category_tx1}}<image wx:if='{{item.category_tx1.length < 4}}' lazy-load='true' src='{{item.categoryImage}}'></image></view>
-        <view class='category-tx2' wx:if='{{item.category_tx1.length > 3 && item.categoryImage}}'>{{item.category_tx2}}<image lazy-load='true' src='{{item.categoryImage}}'></image></view>
-      </view>
-    </block>
+      <block wx:for='{{teaList}}'>
+        <view class='{{item.selected ? "category category-selected" : "category" }}' catchtap='selectCatogary' data-index='{{index}}'>
+          <view class='category-tx1'>{{item.category_tx1}}
+            <image wx:if='{{item.category_tx1.length < 4}}' lazy-load='true' src='{{item.categoryImage}}'></image>
+          </view>
+          <view class='category-tx2' wx:if='{{item.category_tx1.length > 3 && item.categoryImage}}'>{{item.category_tx2}}
+            <image lazy-load='true' src='{{item.categoryImage}}'></image>
+          </view>
+        </view>
+      </block>
     </scroll-view>
     <scroll-view class='tea-items' scroll-y='true'>
-
+      <block wx:for='{{teaList}}'>
+        <view class='tea-item'>
+          <view class='tea-item-title'><text>{{item.category_tx1}}{{item.category_tx2}}</text><image src='{{item.categoryImage}}'></image></view>
+        </view>
+      </block>
     </scroll-view>
   </view>
 </view>
