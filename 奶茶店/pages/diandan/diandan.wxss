@@ -59,4 +59,36 @@ page {
 .tea-wrapper {
   flex: 1;
   height: 0;
+  display: flex;
+}
+.tea-category {
+  width: 160rpx;
+  height: 100%;
+  flex: 0 0 160rpx;
+  background: #f7f7f7;
+}
+.category {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12rpx 22rpx;
+  font-size: 24rpx;
+  color: #868686;
+}
+.category-selected {
+  background: #fff;
+  font-weight: 600;
+  color: #222;
+}
+.category > view {
+  display: flex;
+  align-items: center;
+  height: 34rpx;
+}
+.category image {
+  width: 30rpx;
+  height: 30rpx;
+}
+.tea-items {
+  flex: 1;
+  height: 100%;
 }
