@@ -89,7 +89,7 @@ page {
   flex-direction: column;
   justify-content: center;
   color: #868686;
-}
+} 
 
 .category-selected {
   background: #fff;
@@ -113,10 +113,8 @@ page {
   height: 100%;
 }
 
-.tea-item {
-}
-
 .tea-item-title {
+  margin-top: 6px;
   height: 60rpx;
   display: flex;
   align-items: center;
@@ -171,4 +169,44 @@ page {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+  margin: 10rpx 0;
+}
+.tea-price-size {
+  height: 70rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tea-price {
+  font-size: 32rpx;
+  font-weight: 700;
+}
+.tea-size {
+  font-size: 26rpx;
+  background: #413d3c;
+  color: #fff;
+  border-radius: 23rpx;
+  height: 46rpx;
+  width: 116rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.jia-jian {
+  height: 50rpx;
+  display: flex;
+  align-items: center;
+}
+.jian-hao-icon {
+  width: 48rpx;
+  height: 48rpx;
+}
+.jia-jian > text {
+  padding: 0 8px;
+  color: #222;
+  font-size: 32rpx;
+}
+.jia-hao-icon {
+  width: 48rpx;
+  height: 48rpx;
 }

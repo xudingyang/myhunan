@@ -16,7 +16,7 @@
           <view class='category-tx1'>{{item.category_tx1}}
             <image wx:if='{{item.category_tx1.length < 4}}' lazy-load='true' src='{{item.categoryImage}}'></image>
           </view>
-          <view class='category-tx2' wx:if='{{item.category_tx1.length > 3 && item.categoryImage}}'>{{item.category_tx2}}
+          <view class='category-tx2' wx:if='{{(item.category_tx1.length > 3 && item.categoryImage) || item.category_tx2.length}}'>{{item.category_tx2}}
             <image lazy-load='true' src='{{item.categoryImage}}'></image>
           </view>
         </view>
@@ -25,15 +25,27 @@
     <scroll-view class='tea-items' scroll-y='true'>
       <block wx:for='{{teaList}}'>
         <view class='tea-item'>
-          <view class='tea-item-title'><text>{{item.category_tx1}}{{item.category_tx2}}</text><image src='{{item.categoryImage}}'></image></view>
+          <view class='tea-item-title'>
+            <text>{{item.category_tx1}}{{item.category_tx2}}</text>
+            <image src='{{item.categoryImage}}'></image>
+          </view>
           <block wx:for='{{item.teaList}}'>
             <view class='tea'>
-              <view class='tea-icon'><image src='{{item.icon}}'></image></view>
+              <view class='tea-icon'>
+                <image src='{{item.icon}}'></image>
+              </view>
               <view class='tea-info'>
                 <text class='tea-name'>韩式珍珠奶茶</text>
                 <view class='tea-introduction'>{{item.introduction}}</view>
-                <view class='tea-price'><text class='tea-discount-price'>¥18</text><text class='tea-full-price'>¥20</text></view>
-                <view class='tea-size'>选规格</view>
+                <view class='tea-price-size'>
+                  <text class='tea-price'>¥20</text>
+                  <text class='tea-size' wx:if='{{item.size.length > 0}}'>选规格</text>
+                  <view class='jia-jian' wx:if='{{item.size.length < 1}}'>
+                    <image class='jian-hao-icon' src='/images/icon/jianhao.png'></image>
+                    <text>5</text>
+                    <image class='jia-hao-icon' src='/images/icon/jiahao.png'></image>
+                  </view>
+                </view>
               </view>
             </view>
           </block>
