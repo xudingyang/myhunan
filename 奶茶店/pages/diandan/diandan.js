@@ -8,6 +8,7 @@ Page({
       categoryImage: '/images/tea/putao.jpg',
       selected: true,
       teaList: [{
+        id: 1,
         name: '广东好喝的原味奶茶',
         icon: '/images/tea/tea.jpg',
         introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
@@ -75,6 +76,7 @@ Page({
           }
         ]
       }, {
+        id: 2,
         name: '广东好喝的原味奶茶',
         icon: '/images/tea/tea.jpg',
         introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
@@ -88,72 +90,13 @@ Page({
       categoryImage: '',
       selected: false,
       teaList: [{
+        id: 3,
         name: '广东好喝的原味奶茶',
         icon: '/images/tea/tea.jpg',
         introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
         price: '20',
-        count: 8,
-        size: [{
-            theme: '味道',
-            content: [{
-                name: '苦味',
-                selected: true
-              },
-              {
-                name: '甜味',
-                selected: false
-              }
-            ]
-          },
-          {
-            theme: '冰块',
-            content: [{
-                name: '加冰',
-                selected: false
-              },
-              {
-                name: '不加冰',
-                selected: false
-              },
-              {
-                name: '多加点冰',
-                selected: false
-              }
-            ]
-          },
-          {
-            theme: '温度',
-            content: [{
-                name: '常温',
-                selected: false
-              },
-              {
-                name: '加热',
-                selected: false
-              },
-              {
-                name: '冰冻',
-                selected: false
-              },
-              {
-                name: '多冰',
-                selected: false
-              },
-              {
-                name: '去冰',
-                selected: false
-              },
-              {
-                name: '少冰',
-                selected: false
-              },
-              {
-                name: '少冰',
-                selected: false
-              },
-            ]
-          }
-        ]
+        count: 0,
+        size: []
       }]
     }, {
       category_tx1: '韩式原味',
@@ -161,6 +104,7 @@ Page({
       categoryImage: '/images/tea/putao.jpg',
       selected: false,
       teaList: [{
+        id:4,
         name: '广东好喝的原味奶茶',
         icon: '/images/tea/tea.jpg',
         introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
@@ -228,6 +172,7 @@ Page({
           }
         ]
       }, {
+        id:5,
         name: '广东好喝的原味奶茶',
         icon: '/images/tea/tea.jpg',
         introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
@@ -295,6 +240,7 @@ Page({
           }
         ]
       }, {
+        id:6,
         name: '广东好喝的原味奶茶',
         icon: '/images/tea/tea.jpg',
         introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
@@ -368,6 +314,7 @@ Page({
       categoryImage: '/images/tea/putao.jpg',
       selected: false,
       teaList: [{
+        id:7,
         name: '广东好喝的原味奶茶',
         icon: '/images/tea/tea.jpg',
         introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
@@ -398,8 +345,6 @@ Page({
         complete: function(res) {},
       })
     }
-
-
   },
   selectCatogary: function(e) {
     let index = e.currentTarget.dataset.index;
@@ -415,10 +360,22 @@ Page({
       teaList: tmpTeaList
     })
   },
+  jianClick: function(e) {
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
+  },
+  jiaClick: function(e) {
+
+  },
+  /****************************************
+   *    工具函数
+   * *************************************/
+  // 根据id找到商品
+  findTeaIndex: function (teaId) {
+
+  },
+
+
+
   onReady: function() {
 
   },
