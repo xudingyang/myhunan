@@ -26,6 +26,17 @@
       <block wx:for='{{teaList}}'>
         <view class='tea-item'>
           <view class='tea-item-title'><text>{{item.category_tx1}}{{item.category_tx2}}</text><image src='{{item.categoryImage}}'></image></view>
+          <block wx:for='{{item.teaList}}'>
+            <view class='tea'>
+              <view class='tea-icon'><image src='{{item.icon}}'></image></view>
+              <view class='tea-info'>
+                <text class='tea-name'>韩式珍珠奶茶</text>
+                <view class='tea-introduction'>{{item.introduction}}</view>
+                <view class='tea-price'><text class='tea-discount-price'>¥18</text><text class='tea-full-price'>¥20</text></view>
+                <view class='tea-size'>选规格</view>
+              </view>
+            </view>
+          </block>
         </view>
       </block>
     </scroll-view>

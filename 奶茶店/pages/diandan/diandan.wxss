@@ -1,6 +1,7 @@
 page {
   height: 100%;
 }
+
 .outer {
   position: fixed;
   left: 0;
@@ -10,6 +11,7 @@ page {
   display: flex;
   flex-direction: column;
 }
+
 .choose-store-wrapper {
   background: #fff;
   flex: 0 0 110rpx;
@@ -17,16 +19,19 @@ page {
   width: 100%;
   box-sizing: border-box;
   padding: 0 20rpx;
-  box-shadow: 0 1px 2px #eee;
+  box-shadow: 0 1px 2px #efefef;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  z-index: 99;
 }
+
 .choose-store-wrapper > view:nth-of-type(1) {
   font-size: 32rpx;
   display: flex;
   align-items: center;
 }
+
 .choose-store-wrapper > view:nth-of-type(2) {
   margin-top: 3px;
   font-size: 24rpx;
@@ -34,13 +39,16 @@ page {
   font-weight: 500;
   line-height: 32rpx;
 }
+
 .change-store {
   color: #d79f62;
   margin-right: 6px;
 }
+
 .store-name {
   font-weight: 600;
 }
+
 .can-delivery {
   border: 1rpx solid #999;
   font-size: 23rpx;
@@ -49,6 +57,7 @@ page {
   border-radius: 6rpx;
   color: #625f5e;
 }
+
 .phone-address {
   display: inline-block;
   width: 100%;
@@ -56,55 +65,110 @@ page {
   overflow: hidden;
   white-space: nowrap;
 }
+
 .tea-wrapper {
   flex: 1;
   height: 0;
   display: flex;
 }
+
 .tea-category {
   width: 160rpx;
   height: 100%;
   flex: 0 0 160rpx;
   background: #f7f7f7;
 }
+
 .category {
   width: 100%;
   box-sizing: border-box;
   padding: 12rpx 22rpx;
   font-size: 26rpx;
+  min-height: 80rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   color: #868686;
 }
+
 .category-selected {
   background: #fff;
   font-weight: 600;
   color: #222;
 }
+
 .category > view {
   display: flex;
   align-items: center;
   height: 34rpx;
 }
+
 .category image {
   width: 30rpx;
   height: 30rpx;
 }
+
 .tea-items {
   flex: 1;
   height: 100%;
 }
-.tea-item {
 
+.tea-item {
 }
+
 .tea-item-title {
-  height: 40rpx;
+  height: 60rpx;
   display: flex;
   align-items: center;
   font-size: 24rpx;
   color: #222;
   padding: 0 22rpx;
 }
+
 .tea-item-title > image {
   margin-left: 1px;
   width: 30rpx;
   height: 30rpx;
+}
+
+.tea {
+  display: flex;
+}
+
+.tea-icon {
+  flex: 0 0 180rpx;
+  width: 180rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tea-icon > image {
+  width: 140rpx;
+  height: 140rpx;
+}
+
+.tea-info {
+  flex: 1;
+  padding-right: 20rpx;
+  width: 0;
+}
+
+.tea-name {
+  font-size: 28rpx;
+  color: #222;
+  font-weight: 500;
+}
+
+.tea-introduction {
+  font-size: 24rpx;
+  color: #8f8f8f;
+  width: 100%;
+  line-height: 32rpx;
+  height: 60rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
