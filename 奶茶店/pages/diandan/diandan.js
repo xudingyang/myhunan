@@ -2,16 +2,17 @@ Page({
 
   data: {
     localHasStore: true,
+    toView: 'tea_item_0',
+    scrollTop: 0,
     teaList: [{
       category_tx1: '韩式原',
       category_tx2: '',
-      categoryImage: '/images/tea/putao.jpg',
       selected: true,
       teaList: [{
         id: 1,
         name: '广东好喝的原味奶茶',
         icon: '/images/tea/tea.jpg',
-        introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
+        introduction: '广东的奶茶，原味的哦暗示法是否士大夫士大夫士大夫撒旦发的胜多负少二哥',
         price: '20',
         count: 8,
         size: [{
@@ -104,7 +105,7 @@ Page({
       categoryImage: '/images/tea/putao.jpg',
       selected: false,
       teaList: [{
-        id:4,
+        id: 4,
         name: '广东好喝的原味奶茶',
         icon: '/images/tea/tea.jpg',
         introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
@@ -172,7 +173,7 @@ Page({
           }
         ]
       }, {
-        id:5,
+        id: 5,
         name: '广东好喝的原味奶茶',
         icon: '/images/tea/tea.jpg',
         introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
@@ -240,7 +241,7 @@ Page({
           }
         ]
       }, {
-        id:6,
+        id: 6,
         name: '广东好喝的原味奶茶',
         icon: '/images/tea/tea.jpg',
         introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
@@ -314,7 +315,7 @@ Page({
       categoryImage: '/images/tea/putao.jpg',
       selected: false,
       teaList: [{
-        id:7,
+        id: 7,
         name: '广东好喝的原味奶茶',
         icon: '/images/tea/tea.jpg',
         introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
@@ -346,9 +347,17 @@ Page({
       })
     }
   },
+  // 点击顶部的换门店
+  changeStore: function() {
+    wx.navigateTo({
+      url: '/pages/choose_store/choose_store'
+    })
+  },
+  // 点击左边的类别
   selectCatogary: function(e) {
     let index = e.currentTarget.dataset.index;
     let tmpTeaList = this.data.teaList.slice();
+    let scrollTop = 0;
     for (let i = 0, iLength = tmpTeaList.length; i < iLength; i++) {
       if (i === index) {
         tmpTeaList[i].selected = true
@@ -356,22 +365,60 @@ Page({
         tmpTeaList[i].selected = false
       }
     }
+    scrollTop += 36;
     this.setData({
-      teaList: tmpTeaList
+      teaList: tmpTeaList,
+      toView: 'tea_item_' + index
     })
   },
+  // 点减号
   jianClick: function(e) {
-
+    let teaId = e.currentTarget.dataset.teaId;
+    let categoryIndex = this.findTeaIndex(teaId).categoryIndex;
+    let teaIndex = this.findTeaIndex(teaId).teaIndex;
+    let tmpCategoryTeaList = this.data.teaList.slice();
+    if (tmpCategoryTeaList[categoryIndex].teaList[teaIndex].count > 0) {
+      tmpCategoryTeaList[categoryIndex].teaList[teaIndex].count -= 1;
+    }
+    this.setData({
+      teaList: tmpCategoryTeaList
+    })
   },
+  // 点加号
   jiaClick: function(e) {
+    let teaId = e.currentTarget.dataset.teaId;
+    let categoryIndex = this.findTeaIndex(teaId).categoryIndex;
+    let teaIndex = this.findTeaIndex(teaId).teaIndex;
+    let tmpCategoryTeaList = this.data.teaList.slice();
+    tmpCategoryTeaList[categoryIndex].teaList[teaIndex].count += 1;
+    this.setData({
+      teaList: tmpCategoryTeaList
+    })
+  },
+  // 滑动右边的商品
+  teaListScroll: function(e) {
 
   },
+
   /****************************************
    *    工具函数
    * *************************************/
   // 根据id找到商品
-  findTeaIndex: function (teaId) {
-
+  findTeaIndex: function(teaId) {
+    let categoryIndex = 0;
+    let teaIndex = 0;
+    let categoryTeaList = this.data.teaList.slice();
+    for (let i = 0, iLength = categoryTeaList.length; i < iLength; i++) {
+      let teaList = categoryTeaList[i].teaList;
+      for (let j = 0, jLength = teaList.length; j < jLength; j++) {
+        if (teaList[j].id === teaId) {
+          return {
+            categoryIndex: i,
+            teaIndex: j
+          }
+        }
+      }
+    }
   },
 
 
