@@ -1,329 +1,15 @@
+let list = require('../../utils/teaList.js')
+
 Page({
 
   data: {
     localHasStore: true,
     toView: 'tea_item_0',
+    toCategoryView: 'category_item_0',
     scrollTop: 0,
-    teaList: [{
-      category_tx1: '韩式原',
-      category_tx2: '',
-      selected: true,
-      teaList: [{
-        id: 1,
-        name: '广东好喝的原味奶茶',
-        icon: '/images/tea/tea.jpg',
-        introduction: '广东的奶茶，原味的哦暗示法是否士大夫士大夫士大夫撒旦发的胜多负少二哥',
-        price: '20',
-        count: 8,
-        size: [{
-            theme: '味道',
-            content: [{
-                name: '苦味',
-                selected: true
-              },
-              {
-                name: '甜味',
-                selected: false
-              }
-            ]
-          },
-          {
-            theme: '冰块',
-            content: [{
-                name: '加冰',
-                selected: false
-              },
-              {
-                name: '不加冰',
-                selected: false
-              },
-              {
-                name: '多加点冰',
-                selected: false
-              }
-            ]
-          },
-          {
-            theme: '温度',
-            content: [{
-                name: '常温',
-                selected: false
-              },
-              {
-                name: '加热',
-                selected: false
-              },
-              {
-                name: '冰冻',
-                selected: false
-              },
-              {
-                name: '多冰',
-                selected: false
-              },
-              {
-                name: '去冰',
-                selected: false
-              },
-              {
-                name: '少冰',
-                selected: false
-              },
-              {
-                name: '少冰',
-                selected: false
-              },
-            ]
-          }
-        ]
-      }, {
-        id: 2,
-        name: '广东好喝的原味奶茶',
-        icon: '/images/tea/tea.jpg',
-        introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
-        price: '20',
-        count: 8,
-        size: []
-      }]
-    }, {
-      category_tx1: '草莓系列',
-      category_tx2: '奶茶',
-      categoryImage: '',
-      selected: false,
-      teaList: [{
-        id: 3,
-        name: '广东好喝的原味奶茶',
-        icon: '/images/tea/tea.jpg',
-        introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
-        price: '20',
-        count: 0,
-        size: []
-      }]
-    }, {
-      category_tx1: '韩式原味',
-      category_tx2: '苦奶茶',
-      categoryImage: '/images/tea/putao.jpg',
-      selected: false,
-      teaList: [{
-        id: 4,
-        name: '广东好喝的原味奶茶',
-        icon: '/images/tea/tea.jpg',
-        introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
-        price: '20',
-        count: 8,
-        size: [{
-            theme: '味道',
-            content: [{
-                name: '苦味',
-                selected: true
-              },
-              {
-                name: '甜味',
-                selected: false
-              }
-            ]
-          },
-          {
-            theme: '冰块',
-            content: [{
-                name: '加冰',
-                selected: false
-              },
-              {
-                name: '不加冰',
-                selected: false
-              },
-              {
-                name: '多加点冰',
-                selected: false
-              }
-            ]
-          },
-          {
-            theme: '温度',
-            content: [{
-                name: '常温',
-                selected: false
-              },
-              {
-                name: '加热',
-                selected: false
-              },
-              {
-                name: '冰冻',
-                selected: false
-              },
-              {
-                name: '多冰',
-                selected: false
-              },
-              {
-                name: '去冰',
-                selected: false
-              },
-              {
-                name: '少冰',
-                selected: false
-              },
-              {
-                name: '少冰',
-                selected: false
-              },
-            ]
-          }
-        ]
-      }, {
-        id: 5,
-        name: '广东好喝的原味奶茶',
-        icon: '/images/tea/tea.jpg',
-        introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
-        price: '20',
-        count: 8,
-        size: [{
-            theme: '味道',
-            content: [{
-                name: '苦味',
-                selected: true
-              },
-              {
-                name: '甜味',
-                selected: false
-              }
-            ]
-          },
-          {
-            theme: '冰块',
-            content: [{
-                name: '加冰',
-                selected: false
-              },
-              {
-                name: '不加冰',
-                selected: false
-              },
-              {
-                name: '多加点冰',
-                selected: false
-              }
-            ]
-          },
-          {
-            theme: '温度',
-            content: [{
-                name: '常温',
-                selected: false
-              },
-              {
-                name: '加热',
-                selected: false
-              },
-              {
-                name: '冰冻',
-                selected: false
-              },
-              {
-                name: '多冰',
-                selected: false
-              },
-              {
-                name: '去冰',
-                selected: false
-              },
-              {
-                name: '少冰',
-                selected: false
-              },
-              {
-                name: '少冰',
-                selected: false
-              },
-            ]
-          }
-        ]
-      }, {
-        id: 6,
-        name: '广东好喝的原味奶茶',
-        icon: '/images/tea/tea.jpg',
-        introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
-        price: '20',
-        count: 8,
-        size: [{
-            theme: '味道',
-            content: [{
-                name: '苦味',
-                selected: true
-              },
-              {
-                name: '甜味',
-                selected: false
-              }
-            ]
-          },
-          {
-            theme: '冰块',
-            content: [{
-                name: '加冰',
-                selected: false
-              },
-              {
-                name: '不加冰',
-                selected: false
-              },
-              {
-                name: '多加点冰',
-                selected: false
-              }
-            ]
-          },
-          {
-            theme: '温度',
-            content: [{
-                name: '常温',
-                selected: false
-              },
-              {
-                name: '加热',
-                selected: false
-              },
-              {
-                name: '冰冻',
-                selected: false
-              },
-              {
-                name: '多冰',
-                selected: false
-              },
-              {
-                name: '去冰',
-                selected: false
-              },
-              {
-                name: '少冰',
-                selected: false
-              },
-              {
-                name: '少冰',
-                selected: false
-              },
-            ]
-          }
-        ]
-      }]
-    }, {
-      category_tx1: '韩式奶茶',
-      category_tx2: '',
-      categoryImage: '/images/tea/putao.jpg',
-      selected: false,
-      teaList: [{
-        id: 7,
-        name: '广东好喝的原味奶茶',
-        icon: '/images/tea/tea.jpg',
-        introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
-        price: '20',
-        count: 8,
-        size: []
-      }]
-    }]
+    percent: 2,   // 当前设备1px对应的rpx值
+    teaListHeightArray: [],
+    teaList: list
   },
   onLoad: function(options) {
     if (!this.data.localHasStore) {
@@ -346,6 +32,15 @@ Page({
         complete: function(res) {},
       })
     }
+    let that = this;
+    wx.getSystemInfo({
+      success: function (res) {
+        // percent 为当前设备1px对应的rpx值
+        that.setData({
+            percent: 750 / res.windowWidth
+        })
+      }
+    })
   },
   // 点击顶部的换门店
   changeStore: function() {
@@ -365,7 +60,6 @@ Page({
         tmpTeaList[i].selected = false
       }
     }
-    scrollTop += 36;
     this.setData({
       teaList: tmpTeaList,
       toView: 'tea_item_' + index
@@ -395,9 +89,22 @@ Page({
       teaList: tmpCategoryTeaList
     })
   },
-  // 滑动右边的商品
+  // 滑动右边的商品列表
   teaListScroll: function(e) {
-
+    let scrollTop = e.detail.scrollTop;
+    let scrollTopRpx = scrollTop * this.data.percent;
+    let tmpArray = this.data.teaListHeightArray.slice();
+    let tmpHeight = 0;
+    let categoryIndex = 0;
+    for (let i = 0, iLength = tmpArray.length; i < iLength; i++) {
+      tmpHeight += tmpArray[i];
+      console.log(tmpHeight)
+      if (scrollTopRpx > tmpHeight) {
+        categoryIndex = i;
+        break;
+      }
+    }
+    console.log(categoryIndex)
   },
 
   /****************************************
@@ -431,7 +138,21 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function() {
-
+    let teaCategoryList = this.data.teaList.slice();
+    let teaListHeight = 0;
+    let tmpArray = [];
+    let titleHeight = 66;
+    for (let i = 0, iLength = teaCategoryList.length; i < iLength; i++) {
+      let teaArray = teaCategoryList[i].teaList;
+      let teaHeigth = 0;
+      for (let j = 0, jLength = teaArray.length; j < jLength; j++) {
+        teaHeigth += 182;
+      }
+      tmpArray[i] = teaHeigth + titleHeight;
+    }
+    this.setData({
+      teaListHeightArray: tmpArray
+    })
   },
 
   /**

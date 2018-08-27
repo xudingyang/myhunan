@@ -1,6 +1,8 @@
 {
   "pages": [
-    "pages/diandan/diandan",    
+    "pages/diandan/diandan",
+    
+    "pages/ext/ext",
     "pages/qucha/qucha",
     "pages/choose_store/choose_store",
     "pages/user/user",
