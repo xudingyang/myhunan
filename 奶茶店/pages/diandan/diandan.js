@@ -7,9 +7,10 @@ Page({
     toView: 'tea_item_0',
     toCategoryView: 'category_item_0',
     scrollTop: 0,
-    percent: 2,   // 当前设备1px对应的rpx值
+    percent: 2, // 当前设备1px对应的rpx值
     teaListHeightArray: [],
-    teaList: list
+    teaList: list,
+    categoryScrollTop: 0
   },
   onLoad: function(options) {
     if (!this.data.localHasStore) {
@@ -34,10 +35,10 @@ Page({
     }
     let that = this;
     wx.getSystemInfo({
-      success: function (res) {
+      success: function(res) {
         // percent 为当前设备1px对应的rpx值
         that.setData({
-            percent: 750 / res.windowWidth
+          percent: 750 / res.windowWidth
         })
       }
     })
@@ -93,18 +94,65 @@ Page({
   teaListScroll: function(e) {
     let scrollTop = e.detail.scrollTop;
     let scrollTopRpx = scrollTop * this.data.percent;
+    let tmpTeaList = this.data.teaList.slice();
+    if (scrollTopRpx < 70) {
+      return
+    }
     let tmpArray = this.data.teaListHeightArray.slice();
     let tmpHeight = 0;
     let categoryIndex = 0;
     for (let i = 0, iLength = tmpArray.length; i < iLength; i++) {
       tmpHeight += tmpArray[i];
+      console.log(scrollTopRpx) 
       console.log(tmpHeight)
-      if (scrollTopRpx > tmpHeight) {
+      if (i < iLength - 1 && scrollTopRpx > tmpHeight && scrollTopRpx < tmpHeight + tmpArray[i + 1]) {
         categoryIndex = i;
-        break;
+        // console.log(tmpHeight)
+        console.log('====================' + Date.now())
+        continue;
+      }
+    }
+    for (let j = 0, jLength = tmpTeaList.length; j < jLength; j++) {
+      if (j === categoryIndex) {
+        tmpTeaList[j].selected = true;
+      } else {
+        tmpTeaList[j].selected = false;
       }
     }
     console.log(categoryIndex)
+    // console.log(categoryIndex * 96)    
+    this.setData({
+      teaList: tmpTeaList,
+      categoryScrollTop: categoryIndex * 96,
+      toCategoryView: 'category_item_' + categoryIndex
+    })
+  },
+  teaListScrollTop: function() {
+    let tmpTeaList = this.data.teaList.slice();
+    let kLength = tmpTeaList.length;
+    for (let k = kLength - 1; k > 0; k--) {
+      tmpTeaList[k].selected = false;
+    }
+    tmpTeaList[0].selected = true;
+    this.setData({
+      teaList: tmpTeaList,
+      toCategoryView: 'category_item_0',
+      categoryScrollTop: 0
+    })
+  },
+  teaListScrollBottom: function() {
+    let tmpTeaList = this.data.teaList.slice();
+    let kLength = tmpTeaList.length;
+    for (let k = 0; k < kLength - 1; k++) {
+      tmpTeaList[k].selected = false;
+    }
+    tmpTeaList[kLength - 1].selected = true;
+    this.setData({
+      teaList: tmpTeaList,
+      toCategoryView: 'category_item_0',
+      categoryScrollTop: 96 * kLength
+    })
+    console.log(232333)
   },
 
   /****************************************

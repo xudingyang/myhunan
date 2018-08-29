@@ -1,4 +1,5 @@
 var list = require('../../utils/list.js')
+
 Page({
   data: {
     // 左侧点击类样式
@@ -24,6 +25,8 @@ Page({
       success: function (res) {
         // percent 为当前设备1rpx对应的px值
         var percent = res.windowWidth / 750;
+        console.log(res.windowHeight);
+        console.log(res.windowWidth);        
         that.setData({
           winHeight: res.windowHeight,
           right_titleHeight: Number(right_titleRpxHeight * percent),

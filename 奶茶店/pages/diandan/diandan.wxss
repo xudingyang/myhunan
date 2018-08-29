@@ -82,9 +82,9 @@ page {
 .category {
   width: 100%;
   box-sizing: border-box;
-  padding: 12rpx 22rpx;
+  padding: 0 22rpx;
+  height: 96rpx;
   font-size: 26rpx;
-  min-height: 80rpx;
   display: flex;
   flex-direction: column;
   justify-content: center;

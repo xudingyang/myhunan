@@ -312,7 +312,7 @@ let list = [{
     categoryImage: '/images/tea/putao.jpg',
     selected: false,
     teaList: [{
-      id: 4,
+      id: 7,
       name: '广东好喝的原味奶茶',
       icon: '/images/tea/tea.jpg',
       introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
@@ -380,7 +380,7 @@ let list = [{
         }
       ]
     }, {
-      id: 5,
+      id: 8,
       name: '广东好喝的原味奶茶',
       icon: '/images/tea/tea.jpg',
       introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
@@ -448,7 +448,7 @@ let list = [{
         }
       ]
     }, {
-      id: 6,
+      id: 9,
       name: '广东好喝的原味奶茶',
       icon: '/images/tea/tea.jpg',
       introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
@@ -523,7 +523,7 @@ let list = [{
     categoryImage: '/images/tea/putao.jpg',
     selected: false,
     teaList: [{
-      id: 4,
+      id: 10,
       name: '广东好喝的原味奶茶',
       icon: '/images/tea/tea.jpg',
       introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
@@ -591,7 +591,7 @@ let list = [{
         }
       ]
     }, {
-      id: 5,
+      id: 11,
       name: '广东好喝的原味奶茶',
       icon: '/images/tea/tea.jpg',
       introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
@@ -659,7 +659,7 @@ let list = [{
         }
       ]
     }, {
-      id: 6,
+      id:12,
       name: '广东好喝的原味奶茶',
       icon: '/images/tea/tea.jpg',
       introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
@@ -734,7 +734,7 @@ let list = [{
     categoryImage: '/images/tea/putao.jpg',
     selected: false,
     teaList: [{
-      id: 4,
+      id: 13,
       name: '广东好喝的原味奶茶',
       icon: '/images/tea/tea.jpg',
       introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
@@ -802,7 +802,7 @@ let list = [{
         }
       ]
     }, {
-      id: 5,
+      id: 14,
       name: '广东好喝的原味奶茶',
       icon: '/images/tea/tea.jpg',
       introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
@@ -870,7 +870,7 @@ let list = [{
         }
       ]
     }, {
-      id: 6,
+      id: 15,
       name: '广东好喝的原味奶茶',
       icon: '/images/tea/tea.jpg',
       introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
@@ -945,7 +945,7 @@ let list = [{
     categoryImage: '/images/tea/putao.jpg',
     selected: false,
     teaList: [{
-      id: 4,
+      id: 16,
       name: '广东好喝的原味奶茶',
       icon: '/images/tea/tea.jpg',
       introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
@@ -1013,7 +1013,7 @@ let list = [{
         }
       ]
     }, {
-      id: 5,
+      id: 17,
       name: '广东好喝的原味奶茶',
       icon: '/images/tea/tea.jpg',
       introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
@@ -1081,7 +1081,7 @@ let list = [{
         }
       ]
     }, {
-      id: 6,
+      id: 18,
       name: '广东好喝的原味奶茶',
       icon: '/images/tea/tea.jpg',
       introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
@@ -1156,7 +1156,7 @@ let list = [{
     categoryImage: '/images/tea/putao.jpg',
     selected: false,
     teaList: [{
-      id: 4,
+      id: 19,
       name: '广东好喝的原味奶茶',
       icon: '/images/tea/tea.jpg',
       introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
@@ -1224,7 +1224,7 @@ let list = [{
         }
       ]
     }, {
-      id: 5,
+      id: 20,
       name: '广东好喝的原味奶茶',
       icon: '/images/tea/tea.jpg',
       introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
@@ -1292,7 +1292,7 @@ let list = [{
         }
       ]
     }, {
-      id: 6,
+      id: 21,
       name: '广东好喝的原味奶茶',
       icon: '/images/tea/tea.jpg',
       introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
@@ -1367,7 +1367,7 @@ let list = [{
     categoryImage: '/images/tea/putao.jpg',
     selected: false,
     teaList: [{
-      id: 4,
+      id: 22,
       name: '广东好喝的原味奶茶',
       icon: '/images/tea/tea.jpg',
       introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
@@ -1435,7 +1435,7 @@ let list = [{
         }
       ]
     }, {
-      id: 5,
+      id: 23,
       name: '广东好喝的原味奶茶',
       icon: '/images/tea/tea.jpg',
       introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
@@ -1503,7 +1503,7 @@ let list = [{
         }
       ]
     }, {
-      id: 6,
+      id: 24,
       name: '广东好喝的原味奶茶',
       icon: '/images/tea/tea.jpg',
       introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
@@ -1578,7 +1578,7 @@ let list = [{
     categoryImage: '/images/tea/putao.jpg',
     selected: false,
     teaList: [{
-      id: 4,
+      id: 25,
       name: '广东好喝的原味奶茶',
       icon: '/images/tea/tea.jpg',
       introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
@@ -1646,7 +1646,7 @@ let list = [{
         }
       ]
     }, {
-      id: 5,
+      id: 26,
       name: '广东好喝的原味奶茶',
       icon: '/images/tea/tea.jpg',
       introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
@@ -1714,7 +1714,7 @@ let list = [{
         }
       ]
     }, {
-      id: 6,
+      id: 27,
       name: '广东好喝的原味奶茶',
       icon: '/images/tea/tea.jpg',
       introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
@@ -1789,7 +1789,7 @@ let list = [{
     categoryImage: '/images/tea/putao.jpg',
     selected: false,
     teaList: [{
-      id: 4,
+      id: 28,
       name: '广东好喝的原味奶茶',
       icon: '/images/tea/tea.jpg',
       introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
@@ -1857,7 +1857,7 @@ let list = [{
         }
       ]
     }, {
-      id: 5,
+      id: 29,
       name: '广东好喝的原味奶茶',
       icon: '/images/tea/tea.jpg',
       introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
@@ -1925,7 +1925,7 @@ let list = [{
         }
       ]
     }, {
-      id: 6,
+      id: 30,
       name: '广东好喝的原味奶茶',
       icon: '/images/tea/tea.jpg',
       introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
@@ -2000,7 +2000,7 @@ let list = [{
     categoryImage: '/images/tea/putao.jpg',
     selected: false,
     teaList: [{
-      id: 4,
+      id: 31,
       name: '广东好喝的原味奶茶',
       icon: '/images/tea/tea.jpg',
       introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
@@ -2068,7 +2068,7 @@ let list = [{
         }
       ]
     }, {
-      id: 5,
+      id: 32,
       name: '广东好喝的原味奶茶',
       icon: '/images/tea/tea.jpg',
       introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
@@ -2136,7 +2136,7 @@ let list = [{
         }
       ]
     }, {
-      id: 6,
+      id: 33,
       name: '广东好喝的原味奶茶',
       icon: '/images/tea/tea.jpg',
       introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
@@ -2211,7 +2211,7 @@ let list = [{
     categoryImage: '/images/tea/putao.jpg',
     selected: false,
     teaList: [{
-      id: 4,
+      id: 34,
       name: '广东好喝的原味奶茶',
       icon: '/images/tea/tea.jpg',
       introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
@@ -2279,7 +2279,7 @@ let list = [{
         }
       ]
     }, {
-      id: 5,
+      id: 35,
       name: '广东好喝的原味奶茶',
       icon: '/images/tea/tea.jpg',
       introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
@@ -2347,7 +2347,7 @@ let list = [{
         }
       ]
     }, {
-      id: 6,
+      id: 36,
       name: '广东好喝的原味奶茶',
       icon: '/images/tea/tea.jpg',
       introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',
@@ -2422,7 +2422,7 @@ let list = [{
     categoryImage: '/images/tea/putao.jpg',
     selected: false,
     teaList: [{
-      id: 7,
+      id: 37,
       name: '广东好喝的原味奶茶',
       icon: '/images/tea/tea.jpg',
       introduction: '广东的奶茶，原味的哦，很好喝的奶茶，哈哈哈哈是范德萨的法撒旦发送到范德萨发送到阿斯蒂芬阿诗丹顿发大水发地方',

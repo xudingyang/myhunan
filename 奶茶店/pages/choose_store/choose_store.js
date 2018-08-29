@@ -4,6 +4,8 @@ Page({
   data: {
     inputHasText: false,
     array: ['长沙市', '岳阳市', '湘潭市', '株洲市'],
+    searchReasultList: ['岳阳大学爱上大飒飒大师大师大师法水电费的说法是的第三方第三方的', '岳阳市政府', '岳阳东站', '岳阳东站', '岳阳东站', '岳阳东站', '岳阳东站', '岳阳东站', '岳阳东站', '岳阳东站', '岳阳东站', '岳阳东站', '岳阳东站', '岳阳东站', '岳阳东站', '岳阳东站', '岳阳', '岳阳', '岳阳', '岳阳', '岳阳', '岳阳', '岳阳', '岳阳', '岳阳', '岳阳', '岳阳', '岳阳', '岳阳', '岳阳', '岳阳', '岳阳', '岳阳', '岳阳', '岳阳', '岳阳'],
+    searchReasultListShow: true,
     index: 0,
     latitude: 23.099994,
     longitude: 113.324520,
@@ -102,6 +104,7 @@ Page({
       selected: false
     }]
   },
+  // 点击门店
   selecteStore: function(e) {
     var selected = e.currentTarget.dataset.selected;
     var index = e.currentTarget.dataset.index;
@@ -119,7 +122,8 @@ Page({
       })
     }
   },
-  placeOrder: function () {
+  // 选中门店后去点单
+  placeOrder: function() {
     let distance = 99;
     if (distance > 50) {
       wx.showModal({
@@ -136,7 +140,7 @@ Page({
               url: '/pages/diandan/diandan'
             })
           }
-        },
+        }, 
         fail: function(res) {},
         complete: function(res) {},
       })
@@ -146,6 +150,18 @@ Page({
     console.log(this.data.array[e.detail.value])
     this.setData({
       index: e.detail.value
+    })
+  },
+  // 点击搜索按钮
+  clickSearchBtn: function () {
+    this.setData({
+      searchReasultListShow: true
+    })
+  },
+  // 点击取消按钮
+  clickCancelBtn: function () {
+    this.setData({
+      searchReasultListShow: false
     })
   },
   /**

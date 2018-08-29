@@ -10,7 +10,8 @@
     </view>
   </view>
   <view class='tea-wrapper'>
-    <scroll-view class='tea-category' scroll-y='true' scroll-top='scrollTop' scroll-with-animation='true' scroll-into-view='{{toCategoryView}}'>
+  <!-- scroll-into-view='{{toCategoryView}}' -->
+    <scroll-view class='tea-category' scroll-y='true' scroll-top='scrollTop' scroll-with-animation='false' scrollTop='{{categoryScrollTop}}'>
       <block wx:for='{{teaList}}'>
         <view class='{{item.selected ? "category category-selected" : "category" }}' catchtap='selectCatogary' data-index='{{index}}' id='category_item_{{index}}'>
           <view class='category-tx1'>{{item.category_tx1}}</view>
@@ -18,7 +19,7 @@
         </view>
       </block>
     </scroll-view>
-    <scroll-view class='tea-items' scroll-y='true' scroll-into-view='{{toView}}' scroll-with-animation='true' bindscroll='teaListScroll'>
+    <scroll-view class='tea-items' scroll-y='true' scroll-into-view='{{toView}}' scroll-with-animation='true' bindscroll='teaListScroll' bindscrolltoupper='teaListScrollTop' lower-threshold='teaListScrollBottom'	upper-threshold='60'>
       <block wx:for='{{teaList}}'>
         <view class='tea-item' id='tea_item_{{index}}'>
           <view class='tea-item-title'>
