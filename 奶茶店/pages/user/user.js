@@ -9,6 +9,11 @@ Page({
   bindPhone: function () {
 
   },
+  checkCoupon: function () {
+    wx.navigateTo({
+      url: '/pages/coupon/coupon'
+    })
+  },
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({

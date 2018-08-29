@@ -1,0 +1,121 @@
+<!-- start 选择条件按钮  -->
+<view class='state-tab-wrapper'>
+  <view class='{{stateDaishiyong ? "state-tab-active" : ""}}' bindtap='clickDaishiyong'>待使用
+    <text>12</text>
+  </view>
+  <view class='{{stateYishiyong ? "state-tab-active" : ""}}' bindtap='clickYishiyong'>已使用
+    <text>12</text>
+  </view>
+  <view class='{{stateGuoqi ? "state-tab-active" : ""}}' bindtap='clickYiguoqi'>已过期
+    <text>12</text>
+  </view>
+</view>
+<!-- end 选择条件按钮  -->
+
+<!-- start 优惠券列表  -->
+<!-- 待使用  -->
+<scroll-view class='counpon-list-wrapper' wx:if="{{stateDaishiyong}}" scroll-y="true">
+  <view class='counpon-empty' wx:if="{{!hasDaishiyong}}">
+    <view>
+      <image src='/images/icon1/search.png'></image>
+    </view>
+    <view>没有可用的优惠券</view>
+    <view>点击底部领取更多优惠券吧</view>
+  </view>
+  <view class='counpon-list' wx:if='{{hasDaishiyong}}'>
+    <block wx:for='{{[1,2,3,4,4,4,4,4]}}'>
+      <view class='coupon' bindtap='lookCouponInfo'>
+        <view class='coupon-info'>
+          <view>
+            <view class='coupon-money daishiyong-color'>
+              <text>¥</text>
+              <text>30</text>
+            </view>
+            <view class='coupon-condition daishiyong-color'>满9999元可用</view>
+          </view>
+          <view>
+            <view class='coupon-name'>雀巢奶粉全品牌优惠各个地方广fdfdsfsdfds泛的券</view>
+            <view class='coupon-brand'>
+              <text>雅士利</text>
+              <text>雀巢</text>
+              <text>所有品牌</text>
+            </view>
+            <view class='use-date'>2018.03.07-2018.03.19</view>
+          </view>
+        </view>
+        <view class='use-coupon' catchtap='toUseCoupon'>去使用</view>
+      </view>
+    </block>
+  </view>
+</scroll-view>
+
+<!-- 已使用  -->
+<scroll-view class='counpon-list-wrapper' wx:if="{{stateYishiyong}}" scroll-y="true">
+  <view class='counpon-empty' wx:if="{{!hasYishiyong}}">
+    <view>
+      <image src='/images/icon1/search.png'></image>
+    </view>
+    <view>没有已使用的优惠券</view>
+    <view>点击底部领取更多优惠券吧</view>
+  </view>
+  <view class='counpon-list' wx:if='{{hasYishiyong}}'>
+    <block wx:for='{{[1,2,3,4,4,4,4,4]}}'>
+      <view class='coupon yishiyong-coupon' bindtap='lookCouponInfo'>
+        <view class='coupon-info'>
+          <view>
+            <view class='coupon-money yishiyong-color'>
+              <text>¥</text>
+              <text>30</text>
+            </view>
+            <view class='coupon-condition yishiyong-color'>满9999元可用</view>
+          </view>
+          <view>
+            <view class='coupon-name'>雀巢奶粉全品牌优惠各个地方广fdfdsfsdfds泛的券</view>
+            <view class='coupon-brand'>
+              <text>雅士利</text>
+              <text>雀巢</text>
+              <text>所有品牌</text>
+            </view>
+            <view class='use-date'>2018.03.07-2018.03.19</view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</scroll-view>
+
+<!-- 已过期  -->
+<scroll-view class='counpon-list-wrapper' wx:if="{{stateGuoqi}}" scroll-y="true">
+  <view class='counpon-empty' wx:if="{{!hasGuoqi}}">
+    <view>
+      <image src='/images/icon1/search.png'></image>
+    </view>
+    <view>没有已过期的优惠券</view>
+    <view>点击底部领取更多优惠券吧</view>
+  </view>
+  <view class='counpon-list' wx:if='{{hasGuoqi}}'>
+    <block wx:for='{{[1,2,3,4,4,4,4,4]}}'>
+      <view class='coupon yishiyong-coupon' bindtap='lookCouponInfo'>
+        <view class='coupon-info'>
+          <view>
+            <view class='coupon-money yishiyong-color'>
+              <text>¥</text>
+              <text>30</text>
+            </view>
+            <view class='coupon-condition yishiyong-color'>满9999元可用</view>
+          </view>
+          <view>
+            <view class='coupon-name'>雀巢奶粉全品牌优惠各个地方广fdfdsfsdfds泛的券</view>
+            <view class='coupon-brand'>
+              <text>雅士利</text>
+              <text>雀巢</text>
+              <text>所有品牌</text>
+            </view>
+            <view class='use-date'>2018.03.07-2018.03.19</view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</scroll-view>
+<!-- end 优惠券列表  -->

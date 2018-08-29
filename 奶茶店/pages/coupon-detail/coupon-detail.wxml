@@ -1,0 +1,128 @@
+<!-- 待使用优惠券  -->
+<view class='counpon-list' wx:if='{{daiShiYong}}'>
+  <!-- 优惠券内容  -->
+  <view class='coupon'>
+    <view class='coupon-info'>
+      <view>
+        <view class='coupon-money daishiyong-color'>
+          <text>¥</text>
+          <text>30</text>
+        </view>
+        <view class='coupon-condition daishiyong-color'>满9999元可用</view>
+      </view>
+      <view>
+        <view class='coupon-name'>雀巢奶粉全品牌优惠各个地方广fdfdsfsdfds泛的券</view>
+        <view class='coupon-brand'>
+          <text>雅士利</text>
+          <text>雀巢</text>
+          <text>所有品牌</text>
+        </view>
+        <view class='use-date'>2018.03.07-2018.03.19</view>
+      </view>
+    </view>
+    <view class='coupon-description'>
+      <view>
+        <text class='desc1'>说明</text>
+        <text class='desc2'>仅可购买指定商品水电费分公司的范德萨范德萨发士大夫士大夫三大士大夫士大夫</text>
+      </view>
+      <view>
+        <text class='desc1'>可叠加</text>
+        <text class='desc2'>不可叠加</text>
+      </view>
+      <view>
+        <text class='desc1'>券编号</text>
+        <text class='desc2'>12345678</text>
+      </view>
+    </view>
+  </view>
+
+  <view class='qu-dian-dan' bindtap='clickDianDan'>
+    <text>去点单</text>
+  </view>
+</view>
+
+<!-- 已使用  -->
+<view class='counpon-list' wx:if='{{yiShiYong}}'>
+  <!-- 优惠券内容  -->
+  <view class='coupon yishiyong-coupon'>
+    <view class='coupon-info'>
+      <view>
+        <view class='coupon-money yishiyong-color'>
+          <text>¥</text>
+          <text>30</text>
+        </view>
+        <view class='coupon-condition yishiyong-color'>满9999元可用</view>
+      </view>
+      <view>
+        <view class='coupon-name'>雀巢奶粉全品牌优惠各个地方广fdfdsfsdfds泛的券</view>
+        <view class='coupon-brand'>
+          <text>雅士利</text>
+          <text>雀巢</text>
+          <text>所有品牌</text>
+        </view>
+        <view class='use-date'>2018.03.07-2018.03.19</view>
+      </view>
+    </view>
+    <view class='coupon-description'>
+      <view>
+        <text class='desc1'>说明</text>
+        <text class='desc2'>仅可购买指定商品水电费分公司的范德萨范德萨发士大夫士大夫三大士大夫士大夫</text>
+      </view>
+      <view>
+        <text class='desc1'>券编号</text>
+        <text class='desc2'>12345678</text>
+      </view>
+    </view>
+  </view>
+  <!-- 使用情况  -->
+  <view class='shiyong-info'>
+    <view>您已使用这张优惠券</view>
+    <view>
+      <text>使用时间</text>2018.03.07 22:19:20</view>
+  </view>
+</view>
+
+<!-- 已过期  -->
+<view class='counpon-list' wx:if='{{yiGuoQi}}'>
+  <!-- 优惠券内容  -->
+  <view class='coupon yishiyong-coupon'>
+    <view class='coupon-info'>
+      <view>
+        <view class='coupon-money yishiyong-color'>
+          <text>¥</text>
+          <text>30</text>
+        </view>
+        <view class='coupon-condition yishiyong-color'>满9999元可用</view>
+      </view>
+      <view>
+        <view class='coupon-name'>雀巢奶粉全品牌优惠各个地方广fdfdsfsdfds泛的券</view>
+        <view class='coupon-brand'>
+          <text>雅士利</text>
+          <text>雀巢</text>
+          <text>所有品牌</text>
+        </view>
+        <view class='use-date'>2018.03.07-2018.03.19</view>
+      </view>
+    </view>
+    <view class='coupon-description'>
+      <view>
+        <text class='desc1'>说明</text>
+        <text class='desc2'>仅可购买指定商品水电费分公司的范德萨范德萨发士大夫士大夫三大士大夫士大夫</text>
+      </view>
+      <view>
+        <text class='desc1'>券编号</text>
+        <text class='desc2'>12345678</text>
+      </view>
+    </view>
+  </view>
+  <!-- 使用情况  -->
+  <view class='shiyong-info'>
+    <view>该优惠券已过期</view>
+    <view>
+      <text>过期时间</text>2018.03.07 22:19:20</view>
+  </view>
+  <!-- 删除按钮  -->
+  <view class='delete-coupon'>
+    <text bindtap='deleteCoupon'>删除该优惠券</text>
+  </view>
+</view>
