@@ -70,13 +70,13 @@
             <view class='coupon-condition yishiyong-color'>满9999元可用</view>
           </view>
           <view>
-            <view class='coupon-name'>雀巢奶粉全品牌优惠各个地方广fdfdsfsdfds泛的券</view>
-            <view class='coupon-brand'>
+            <view class='coupon-name yishiyong-color'>雀巢奶粉全品牌优惠各个地方广fdfdsfsdfds泛的券</view>
+            <view class='coupon-brand yishiyong-color'>
               <text>雅士利</text>
               <text>雀巢</text>
               <text>所有品牌</text>
             </view>
-            <view class='use-date'>2018.03.07-2018.03.19</view>
+            <view class='use-date yishiyong-color'>2018.03.07-2018.03.19</view>
           </view>
         </view>
       </view>
@@ -105,13 +105,13 @@
             <view class='coupon-condition yishiyong-color'>满9999元可用</view>
           </view>
           <view>
-            <view class='coupon-name'>雀巢奶粉全品牌优惠各个地方广fdfdsfsdfds泛的券</view>
-            <view class='coupon-brand'>
+            <view class='coupon-name yishiyong-color'>雀巢奶粉全品牌优惠各个地方广fdfdsfsdfds泛的券</view>
+            <view class='coupon-brand yishiyong-color'>
               <text>雅士利</text>
               <text>雀巢</text>
               <text>所有品牌</text>
             </view>
-            <view class='use-date'>2018.03.07-2018.03.19</view>
+            <view class='use-date yishiyong-color'>2018.03.07-2018.03.19</view>
           </view>
         </view>
       </view>

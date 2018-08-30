@@ -4,11 +4,11 @@ Page({
   data: {
     inputHasText: false,
     array: ['长沙市', '岳阳市', '湘潭市', '株洲市'],
-    searchReasultList: ['岳阳大学爱上大飒飒大师大师大师法水电费的说法是的第三方第三方的', '岳阳市政府', '岳阳东站', '岳阳东站', '岳阳东站', '岳阳东站', '岳阳东站', '岳阳东站', '岳阳东站', '岳阳东站', '岳阳东站', '岳阳东站', '岳阳东站', '岳阳东站', '岳阳东站', '岳阳东站', '岳阳', '岳阳', '岳阳', '岳阳', '岳阳', '岳阳', '岳阳', '岳阳', '岳阳', '岳阳', '岳阳', '岳阳', '岳阳', '岳阳', '岳阳', '岳阳', '岳阳', '岳阳', '岳阳', '岳阳'],
-    searchReasultListShow: true,
+    searchReasultList: [],
+    searchReasultListShow: false,
     index: 0,
     latitude: 23.099994,
-    longitude: 113.324520,
+    longitude: 113.328620,
     markers: [{
       id: 1,
       latitude: 23.099994,
@@ -29,7 +29,9 @@ Page({
       latitude: 23.099994,
       longitude: 113.328620,
       name: '毛毛奶茶',
-      iconPath: '/images/location.png',
+        iconPath: '/images/location.png',
+      width: 40,
+      height: 40,
       callout: {
         content: '首都奶茶',
         color: '#000',
@@ -59,55 +61,71 @@ Page({
       distance: 6,
       canDelivery: true,
       openTime: '10:00~22:00',
-      selected: true
+      selected: true,
+      latitude: 23.099994,
+      longitude: 113.324520
     }, {
       name: '汉林奶茶店2',
       address: '湖南省岳阳市岳阳楼区岳',
       distance: 2,
       canDelivery: false,
       openTime: '10:00~22:00',
-      selected: false
+      selected: false,
+      latitude: 23.109994,
+      longitude: 113.325520
     }, {
       name: '汉林奶茶店33',
       address: '湖南省岳阳市岳阳楼区岳阳大道翠碧山庄凯旋城市政府市政协黄鹤楼白沙广兴洲123号',
       distance: 6,
       canDelivery: true,
       openTime: '10:00~22:00',
-      selected: false
+      selected: false,
+      latitude: 23.099994,
+      longitude: 113.344520
     }, {
       name: '汉林奶茶店44',
       address: '市政府市政协黄鹤楼白沙广兴洲123号',
       distance: 6,
       canDelivery: false,
       openTime: '10:00~22:00',
-      selected: false
+      selected: false,
+      latitude: 23.099994,
+      longitude: 113.324520
     }, {
       name: '汉林奶茶店55',
       address: '湖南省岳阳市岳阳楼区岳阳大道',
       distance: 6,
       canDelivery: true,
       openTime: '10:00~22:00',
-      selected: false
+      selected: false,
+      latitude: 23.099994,
+      longitude: 113.324520
     }, {
       name: '汉林奶茶店55',
       address: '湖南省岳阳市岳阳楼区岳阳大道',
       distance: 6,
       canDelivery: true,
       openTime: '10:00~22:00',
-      selected: false
+      selected: false,
+      latitude: 23.099994,
+      longitude: 113.324520
     }, {
       name: '汉林奶茶店55',
       address: '湖南省岳阳市岳阳楼区岳阳大道',
       distance: 6,
       canDelivery: true,
       openTime: '10:00~22:00',
-      selected: false
+      selected: false,
+      latitude: 23.099994,
+      longitude: 113.324520
     }]
   },
   // 点击门店
   selecteStore: function(e) {
     var selected = e.currentTarget.dataset.selected;
     var index = e.currentTarget.dataset.index;
+    var latitude = e.currentTarget.dataset.item.latitude;
+    var longitude = e.currentTarget.dataset.item.longitude;
     if (!selected) {
       var tmpStoreList = this.data.storeList.slice();
       for (let i = 0, iLength = tmpStoreList.length; i < iLength; i++) {
@@ -118,7 +136,9 @@ Page({
         }
       }
       this.setData({
-        storeList: tmpStoreList
+        storeList: tmpStoreList,
+        latitude: latitude,
+        longitude: longitude
       })
     }
   },
@@ -140,12 +160,13 @@ Page({
               url: '/pages/diandan/diandan'
             })
           }
-        }, 
+        },
         fail: function(res) {},
         complete: function(res) {},
       })
     }
   },
+  // 选择城市
   bindPickerChange: function(e) {
     console.log(this.data.array[e.detail.value])
     this.setData({
@@ -153,16 +174,29 @@ Page({
     })
   },
   // 点击搜索按钮
-  clickSearchBtn: function () {
+  clickSearchBtn: function() {
     this.setData({
       searchReasultListShow: true
     })
   },
   // 点击取消按钮
-  clickCancelBtn: function () {
+  clickCancelBtn: function() {
     this.setData({
       searchReasultListShow: false
     })
+  },
+  listenSearchInput: function(e) {
+    var value = e.detail.value;
+    console.log(value.length)
+    if (value.length === 0) {
+      this.setData({
+        inputHasText: false
+      })
+    } else {
+      this.setData({
+        inputHasText: true
+      })
+    }
   },
   /**
    * 生命周期函数--监听页面加载

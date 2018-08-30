@@ -12,7 +12,7 @@ page {
   height: 70rpx;
   background: #fff;
   font-size: 30rpx;
-  color: #666;
+  color: #aaa;
   border-bottom: 1px solid #efefef;
 }
 
@@ -21,7 +21,7 @@ page {
   text-align: center;
 }
 .state-tab-active {
-  color: #f23030;
+  color: #eea14e;
 }
 .state-tab text {
   margin-left: 4px;
@@ -32,7 +32,6 @@ page {
   flex: 1;
   height: 0;
 }
-
 .counpon-empty {
   height: 100%;
   display: flex;
@@ -60,7 +59,7 @@ page {
   padding: 30rpx 20rpx 20rpx 20rpx;
 }
 .coupon {
-  border-top: 10rpx solid #53c7ca;
+  border-top: 10rpx solid #625f5e;
   border-radius: 10rpx;
   background: #fff;
   position: relative;  
@@ -127,7 +126,7 @@ page {
   height: 74rpx;
   line-height: 74rpx;
   text-align: center;
-  color: #f23030;
+  color: #eea14e;
   font-size: 32rpx;
 }
 .use-coupon::after,
@@ -147,11 +146,11 @@ page {
   right: -10rpx;
 }
 .daishiyong-color {
-  color: #53c7ca;
+  color: #625f5e;
 }
 .yishiyong-coupon {
-  border-top: 10rpx solid #979797;  
+  border-top: 10rpx solid #ddd;  
 }
 .yishiyong-color {
-  color: #999999;
+  color: #ddd;
 }

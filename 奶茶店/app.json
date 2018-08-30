@@ -1,13 +1,14 @@
 {
   "pages": [
-    "pages/choose_store/choose_store",
-    
     "pages/coupon-detail/coupon-detail",
+    
     "pages/coupon/coupon",    
-    "pages/diandan/diandan",    
+    "pages/choose_store/choose_store",    
     "pages/ext/ext",
     "pages/qucha/qucha",
     "pages/user/user",
+    "pages/diandan/diandan",
+    
     "pages/index/index"
   ],
   "window": {

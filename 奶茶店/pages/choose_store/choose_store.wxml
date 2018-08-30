@@ -6,14 +6,17 @@
         <image src='/images/icon/xiangxia.png'></image>
       </picker>
       <view class='city-input-con'>
-        <input class='city-input' placeholder='搜索' confirm-type='search' placeholder-style='font-size:30rpx;color:#aaa;'></input>
+        <input class='city-input' placeholder='搜索' confirm-type='search' placeholder-style='font-size:30rpx;color:#aaa;' bindinput='listenSearchInput'></input>
         <text wx:if='{{!inputHasText}}' catchtap='clickCancelBtn'>取消</text>
         <text wx:if='{{inputHasText}}' catchtap='clickSearchBtn'>搜索</text>
       </view>
       <scroll-view class='search-list' scroll-y='true' wx:if='{{searchReasultListShow}}'>
-        <block wx:for='{{searchReasultList}}'>
-          <view class='search-reasult' catchtap='placeOrder'>{{item}}</view>         
-        </block>
+        <view wx:if='{{searchReasultList.length < 1}}'>无搜索结果</view>
+        <view wx:if='{{searchReasultList.length > 0}}'>
+          <block wx:for='{{searchReasultList}}'>
+            <view class='search-reasult' catchtap='placeOrder'>{{item}}</view>
+          </block>
+        </view>
       </scroll-view>
     </view>
     <map id="myMap" style="width: 100%; height: 400rpx;" latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}" covers="{{covers}}" show-location></map>
@@ -21,7 +24,7 @@
 
   <scroll-view class='list-wrapper' scroll-y='true'>
     <block wx:for='{{storeList}}'>
-      <view class='store' data-selected='{{item.selected}}' data-index='{{index}}' catchtap='selecteStore'>
+      <view class='store' data-selected='{{item.selected}}' data-index='{{index}}' catchtap='selecteStore' data-item='{{item}}'>
         <view class='store-con'>
           <view class='store-info'>
             <view class='store-name'>{{item.name}}
