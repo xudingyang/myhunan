@@ -4,7 +4,7 @@ Page({
   data: {
     userInfo: {},
     hasUserInfo: false,
-    hadBindPhone: false
+    hadBindPhone: false,
   },
   bindPhone: function () {
 
