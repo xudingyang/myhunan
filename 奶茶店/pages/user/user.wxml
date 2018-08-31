@@ -20,17 +20,40 @@
   <text class='bind-btn' catchtap='bindPhone'>立即绑定</text>
 </view>
 
-<view class='other-info'>
-  <text>我的信息</text>
-  <view><text>完善信息</text><image src='/images/icon/more.png'></image></view>
-</view>
+<view class='other-info-wrapper'>
+  <view class='other-info'>
+    <text>我的信息</text>
+    <view>
+      <text>完善信息</text>
+      <image src='/images/icon/more.png'></image>
+    </view>
+  </view>
 
-<view class='other-info'>
-  <text>历史订单</text>
-  <view><image src='/images/icon/more.png'></image></view>
-</view>
+  <view class='other-info' catchtap='checkOrderList'>
+    <text>历史订单</text>
+    <view>
+      <image src='/images/icon/more.png'></image>
+    </view>
+  </view>
 
-<view class='other-info'>
-  <text>会员须知</text>
-  <view><image src='/images/icon/more.png'></image></view>
+  <view class='other-info' catchtap='checkAddress'>
+    <text>收货地址</text>
+    <view>
+      <image src='/images/icon/more.png'></image>
+    </view>
+  </view>
+
+  <view class='other-info'>
+    <text>会员须知</text>
+    <view>
+      <image src='/images/icon/more.png'></image>
+    </view>
+  </view>
+
+  <view class='other-info' catchtap=''>
+    <text>订单中心</text>
+    <view>
+      <image src='/images/icon/more.png'></image>
+    </view>
+  </view>
 </view>

@@ -2,14 +2,21 @@
   "pages": [
     "pages/user/user",
     
-    "pages/coupon-detail/coupon-detail",
+    "pages/user-register/user-register",
     
-    "pages/coupon/coupon",    
-    "pages/choose_store/choose_store",    
+    "pages/order/order",
+    "pages/user-chongzhi/user-chongzhi",
+    "pages/user-address/user-address",
+    "pages/user-address-edit/user-address-edit",
+    "pages/user-chongzhi-record/user-chongzhi-record",
+    "pages/user-telphone-change/user-telphone-change",
+    "pages/user-telphone-change-next/user-telphone-change-next",
+    "pages/coupon-detail/coupon-detail",
+    "pages/coupon/coupon",
+    "pages/choose_store/choose_store",
     "pages/ext/ext",
     "pages/qucha/qucha",
     "pages/diandan/diandan",
-    
     "pages/index/index"
   ],
   "window": {

@@ -42,6 +42,16 @@ Page({
       })
     }
   },
+  checkOrderList: function () {
+    wx.navigateTo({
+      url: '/pages/order/order'
+    })
+  },
+  checkAddress: function () {
+    wx.navigateTo({
+      url: '/pages/user-address/user-address?pagename=user'
+    })
+  },
   getUserInfo: function (e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo

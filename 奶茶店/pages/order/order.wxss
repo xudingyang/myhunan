@@ -1,0 +1,69 @@
+page {
+  background: #f7f7f7;
+}
+.order-list {
+  background: #fff;
+  padding: 0 20rpx;
+}
+.order {
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #dfdfdf;
+}
+.state-name-state {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px; 
+  font-size: 30rpx; 
+}
+.store-name {
+  flex: 1;
+}
+.order-state {
+  flex: 0 0 100rpx;
+  width: 100rpx;
+  color: #df9b52;
+  text-align: right;
+}
+.goods {
+  font-size: 26rpx;
+  display: flex;  
+  margin-bottom: 4px;
+}
+.goods > text:nth-of-type(1) {
+  flex: 0 0 130rpx;
+  width: 130rpx;
+}
+.goods > text:nth-of-type(2) {
+  flex: 1;
+  padding-right: 90rpx;
+  box-sizing: border-box;
+}
+.order-number {
+  font-size: 26rpx;
+  color: #aaa;
+}
+.order-number > text {
+  margin-right: 10px;
+}
+.order-time-price {
+  display: flex;
+  justify-content: space-between;
+}
+.order-time {
+  font-size: 26rpx;
+  color: #aaa;
+}
+.order-time > text {
+  margin-right: 10px;
+}
+.order-price {
+  font-size: 28rpx;
+}
+
+.end-tip {
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #aaa;
+}

@@ -74,15 +74,18 @@ page {
   color: #fff;
   border: 1rpx solid #be905e;
 }
-.other-info {
+.other-info-wrapper {
   margin-top: 20rpx;
+}
+.other-info {
   padding: 0 20rpx;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 90rpx;
-  font-size: 30rpx;
+  height: 80rpx;
+  font-size: 28rpx;
   background: #fff;
+  border-bottom: 1rpx solid #eee;
 }
 .other-info > text {
   color: #000;

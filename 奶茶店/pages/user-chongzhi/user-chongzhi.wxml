@@ -1,0 +1,46 @@
+<view class='step1' wx:if='{{step1}}'>
+  <form bindsubmit='goNext'>
+    <view class='title'></view>
+    <view class='input-con'>
+      <text>充值金额</text>
+      <input placeholder='输入金额' focus='true' name='currentmoney' maxlength='5' type='number' value='{{inputMoney}}'></input>
+    </view>
+    <view class='btn-con'>
+      <button formType='submit'>下一步</button>
+    </view>
+  </form>
+  <view class='activity-con'>
+    <view class='ac-title'>充值活动</view>
+    <block>
+      <view class='ac-item'>1.充100送20。是的范德董事长范德萨范德萨发大水范德萨范德萨发是的发送到</view>
+      <view class='ac-item'>2.充800送50。法师打发士大夫的撒飞洒的范德萨范德萨发</view>
+      <view class='ac-item'>3.充1000送100。</view>
+    </block>
+  </view>
+</view>
+
+<view class='step2' wx:if='{{step2}}'>
+  <view class='title'></view>
+  <view class='step2-con'>
+    <view class='step2-item'>
+      <text>支付金额:</text>
+      <text>{{currentMoney}}</text>
+    </view>
+    <view class='step2-item'>
+      <text>赠送金额:</text>
+      <text>100</text>
+    </view>
+    <view class='step2-btn'>
+      <text catchtap='pay'>确认支付{{currentMoney}}元</text>
+    </view>
+    <view class='step2-btn step2-btn2'>
+      <text catchtap='backStep1'>返回上一步</text>
+    </view>
+  </view>
+</view>
+
+<view class='step3' wx:if='{{step3}}'>
+  <view class='icon'><icon type='success' size='80'></icon></view>
+  <view class='text'>恭喜，充值{{currentMoney}}元成功</view>
+  <view class='step3-btn' catchtap='goBack'><view class='back-txt'>返回</view></view>
+</view>

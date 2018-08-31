@@ -1,0 +1,92 @@
+page {
+  background: #f5f5f5;
+  padding-bottom: 140rpx;
+}
+.address {
+  background: #fff;
+  margin-top: 26rpx;
+  padding: 0 20rpx;  
+}
+
+.info {
+  padding: 20rpx 0;
+}
+.name-tel {
+  font-size: 32rpx;
+  color: #000;
+}
+.tel {
+  margin-left: 10px;
+}
+.txt {
+  margin-top: 4px;
+  font-size: 28rpx;
+  line-height: 34rpx;
+  color: #838383;
+}
+.oprate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1rpx solid #efefef;
+  height: 80rpx;
+  font-size: 30rpx;
+  color: #555;
+}
+.choose {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.choose image {
+  margin-right: 4px;
+  width: 40rpx;
+  height: 40rpx;
+}
+.delete-edit {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.edit {
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+  height: 100%;  
+}
+.delete {
+  display: flex;
+  align-items: center;
+  height: 100%;  
+}
+.delete-edit image {
+  margin-right: 2px;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+
+.add-btn {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80rpx;
+  padding: 30rpx 60rpx;
+}
+.add-txt {
+  height: 100%;
+  color: #fff;
+  background: #413d3c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.add-txt > image {
+  width: 44rpx;
+  height: 44rpx;
+  margin-right: 8px;
+}
+.add-txt > text {
+  font-size: 36rpx;  
+}

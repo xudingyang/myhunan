@@ -1,0 +1,28 @@
+<view class='outer'>
+  <view class='order-list'>
+    <block wx:for='{{[1,1,1,1,1,1,1,1,1,1]}}'>
+      <view class='order'>
+        <view class='state-name-state'>
+          <view class='store-name'>进口进口胜多负少的</view>
+          <view class='order-state'>已完成</view>
+        </view>
+        <view class='goods'>
+          <text>购买商品:</text>
+          <text>珍珠奶茶圣诞节了开发见识到了开房记录开始打积分了科室登记弗兰克斯大家弗兰克的设计费</text>
+        </view>
+        <view class='order-number'>
+          <text>订单编号:</text>
+          <text>232323234343434343</text>
+        </view>
+        <view class='order-time-price'>
+          <view class='order-time'>
+            <text>下单时间:</text>
+            <text>2018-12-19 14:29:29</text>
+          </view>
+          <view class='order-price'>¥12.00</view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class='end-tip'>没有更多订单了</view>
+</view>

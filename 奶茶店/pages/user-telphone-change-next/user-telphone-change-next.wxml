@@ -1,0 +1,19 @@
+<view class='tip-txt'>注意：您正在更换绑定的手机号</view>
+<form bindsubmit='submitTelphone'>
+  <view class='info'>
+    <view class='title'>输入新手机号</view>
+    <view class='info-item'>
+      <text>新号码</text>
+      <input placeholder='新的手机号' type='number' placeholder-style='font-size:34rpx;color:#aaa;' name='telphone' maxlength='11' bindinput='listenTelphoneInput'></input>
+    </view>
+    <view class='info-item'>
+      <text>验证码</text>
+      <input placeholder='验证码' placeholder-style='font-size:34rpx;color:#aaa;' name='verificationcode' maxlength='6' type='number'></input>
+      <view class='verificationcode' wx:if='{{!sending}}' catchtap='sendVerificationCode'>发送验证码</view>
+      <view class='verificationcode sending' wx:if='{{sending}}'>{{restTime}}秒后可再次发送</view>
+    </view>
+  </view>
+  <view class='ok-btn'>
+    <button formType='submit'>绑定新手机号</button>
+  </view>
+</form>
