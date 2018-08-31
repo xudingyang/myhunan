@@ -4,10 +4,10 @@ page {
 .tip-txt {
   height: 70rpx;
   line-height: 70rpx;
-  background: #fad2d5;
   font-size: 32rpx;
   padding: 0 20rpx;
-  color: #f76260;
+  color: #fff;
+  background: #be9262;
 }
 .title {
   height: 80rpx;
@@ -45,9 +45,9 @@ page {
   height: 60rpx;
   line-height: 60rpx;
   padding: 0 8rpx;
-  color: #f23030;
+  color: #be9262;
   border-radius: 6rpx;
-  border: 1px solid #f23030;
+  border: 1px solid #be9262;
   font-size: 28rpx;
   text-align: center;
 }
@@ -65,7 +65,7 @@ page {
 }
 .ok-btn button {
   height: 90rpx;
-  background: #f23030;
+  background: #be9262;
   color: #fff;
   display: flex;
   align-items: center;

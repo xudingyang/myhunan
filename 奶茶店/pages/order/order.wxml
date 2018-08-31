@@ -1,14 +1,15 @@
 <view class='outer'>
   <view class='order-list'>
     <block wx:for='{{[1,1,1,1,1,1,1,1,1,1]}}'>
-      <view class='order'>
+      <view class='order' catchtap='checkOrderDetail'>
         <view class='state-name-state'>
-          <view class='store-name'>进口进口胜多负少的</view>
-          <view class='order-state'>已完成</view>
+          <view class='store-name'>巴陵风味奶茶店</view>
+          <view class='order-state state-finished' wx:if='{{!1>0}}'>已完成</view>
+          <view class='order-state state-unfinished' wx:if='{{1>0}}'>已取消</view>          
         </view>
         <view class='goods'>
           <text>购买商品:</text>
-          <text>珍珠奶茶圣诞节了开发见识到了开房记录开始打积分了科室登记弗兰克斯大家弗兰克的设计费</text>
+          <text>珍珠奶茶、珍珠奶茶、珍珠奶茶、珍珠奶茶、珍珠奶茶、珍珠奶茶、珍珠奶茶</text>
         </view>
         <view class='order-number'>
           <text>订单编号:</text>

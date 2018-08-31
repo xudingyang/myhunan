@@ -1,4 +1,4 @@
-<view class='tip-txt'>注意：您正在更换绑定的手机号</view>
+
 <form bindsubmit='submitTelphone'>
   <view class='info'>
     <view class='title'>换绑新手机号之前，需要验证原手机号</view>

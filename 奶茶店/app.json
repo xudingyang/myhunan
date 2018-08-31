@@ -1,15 +1,13 @@
 {
   "pages": [
-    "pages/user/user",
-    
-    "pages/user-register/user-register",
-    
     "pages/order/order",
+    "pages/user/user",
+    "pages/user-telphone-change/user-telphone-change",
+    "pages/user-register/user-register",
     "pages/user-chongzhi/user-chongzhi",
     "pages/user-address/user-address",
     "pages/user-address-edit/user-address-edit",
     "pages/user-chongzhi-record/user-chongzhi-record",
-    "pages/user-telphone-change/user-telphone-change",
     "pages/user-telphone-change-next/user-telphone-change-next",
     "pages/coupon-detail/coupon-detail",
     "pages/coupon/coupon",
@@ -17,7 +15,8 @@
     "pages/ext/ext",
     "pages/qucha/qucha",
     "pages/diandan/diandan",
-    "pages/index/index"
+    "pages/index/index",
+    "pages/order-detail/order-detail"
   ],
   "window": {
     "backgroundTextStyle": "light",

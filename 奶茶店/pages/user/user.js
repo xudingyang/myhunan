@@ -42,14 +42,22 @@ Page({
       })
     }
   },
+  // 点击  历史订单
   checkOrderList: function () {
     wx.navigateTo({
       url: '/pages/order/order'
     })
   },
+  // 点击收货地址
   checkAddress: function () {
     wx.navigateTo({
       url: '/pages/user-address/user-address?pagename=user'
+    })
+  },
+  // 点击  绑定手机
+  bindPhone: function () {
+    wx.navigateTo({
+      url: '/pages/user-telphone-change/user-telphone-change'
     })
   },
   getUserInfo: function (e) {

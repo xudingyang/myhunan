@@ -17,12 +17,18 @@ page {
 }
 .store-name {
   flex: 1;
+  font-weight: 500;
 }
 .order-state {
   flex: 0 0 100rpx;
   width: 100rpx;
-  color: #df9b52;
   text-align: right;
+}
+.state-finished {
+  color: #df9b52;
+}
+.state-unfinished {
+  color: #aaa;
 }
 .goods {
   font-size: 26rpx;
@@ -58,6 +64,7 @@ page {
 }
 .order-price {
   font-size: 28rpx;
+  font-weight: 500;
 }
 
 .end-tip {

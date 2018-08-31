@@ -1,4 +1,4 @@
-// pages/order/order.js
+// pages/order-detail/order-detail.js
 Page({
 
   /**
@@ -7,11 +7,7 @@ Page({
   data: {
   
   },
-  checkOrderDetail: function(){
-    wx.navigateTo({
-      url: '/pages/order-detail/order-detail'
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */

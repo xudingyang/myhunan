@@ -43,13 +43,6 @@
     </view>
   </view>
 
-  <view class='other-info'>
-    <text>会员须知</text>
-    <view>
-      <image src='/images/icon/more.png'></image>
-    </view>
-  </view>
-
   <view class='other-info' catchtap=''>
     <text>订单中心</text>
     <view>
