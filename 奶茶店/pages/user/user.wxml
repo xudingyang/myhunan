@@ -21,7 +21,7 @@
 </view>
 
 <view class='other-info-wrapper'>
-  <view class='other-info'>
+  <view class='other-info' catchtap='checkUserInfo'>
     <text>我的信息</text>
     <view>
       <text>完善信息</text>

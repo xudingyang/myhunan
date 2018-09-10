@@ -6,9 +6,6 @@ Page({
     hasUserInfo: false,
     hadBindPhone: false,
   },
-  bindPhone: function () {
-
-  },
   checkCoupon: function () {
     wx.navigateTo({
       url: '/pages/coupon/coupon'
@@ -58,6 +55,12 @@ Page({
   bindPhone: function () {
     wx.navigateTo({
       url: '/pages/user-register/user-register'
+    })
+  },
+  // 点击  我的信息
+  checkUserInfo: function () {
+    wx.navigateTo({
+      url: '/pages/user-info/user-info'
     })
   },
   getUserInfo: function (e) {

@@ -1,0 +1,49 @@
+<view class='avatar-wrapper'>
+  <view class='avatar-icon'>
+    <open-data type="userAvatarUrl"></open-data>
+  </view>
+  <view class='nick-name'>
+    <open-data type="userNickName"></open-data>
+  </view>
+</view>
+<form bindsubmit="formSubmit">
+  <view class='info-wrapper'>
+    <view class='info-item'>
+      <text class='info-tx'>昵称</text>
+      <view class='info-con'>
+        <input placeholder-style='color:#aaa;' placeholder='输入昵称' name='username'></input>
+      </view>
+    </view>
+    <view class='info-item'>
+      <text class='info-tx'>手机号</text>
+      <view class='info-con info-con-phone'>
+        <input placeholder-style='color:#aaa;' type='number' maxlength='11' placeholder='输入手机号' name='telphone'></input>
+        <view wx:if='{{hadRegister}}' class='change-phone-btn' catchtap='changePhone'>更换手机</view>
+        <view wx:if='{{!hadRegister}}' class='bind-phone-btn' catchtap='bindPhone'>绑定手机</view>
+      </view>
+    </view>
+    <view class='info-item'>
+      <text class='info-tx'>性别</text>
+      <view class='info-con'>
+        <radio-group class="radio-group" bindchange="radioChange" name='gender'>
+          <label class="sex-radio" wx:for="{{items}}">
+            <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+          </label>
+        </radio-group>
+      </view>
+    </view>
+    <view class='info-item'>
+      <text class='info-tx'>生日</text>
+      <view class='info-con'>
+        <picker mode="date" value="{{date}}" start="1900-01-01" end="{{endDate}}" bindchange="bindDateChange" name='birthday'>
+          <view class="picker">
+            <text class='picker-tip' hidden='{{date.length > 0}}'>输入生日信息，保存后不可修改</text>{{date}}
+          </view>
+        </picker>
+      </view>
+    </view>
+  </view>
+  <view class='submit-btn'>
+    <button formType="submit">保存</button>
+  </view>
+</form>
