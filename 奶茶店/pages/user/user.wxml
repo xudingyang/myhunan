@@ -5,9 +5,13 @@
 </view>
 
 <view class='menber-info'>
-  <view class='member-info-item'>
+  <view class='member-info-item' catchtap='checkJifen'>
     <image src='/images/icon/calloction.png'></image>
     <text><text class='c-tx'>0</text>积分</text>
+  </view>
+  <view class='member-info-item' catchtap='checkRestMoney'>
+    <image src='/images/icon/bank_card.png'></image>
+    <text><text class='c-tx'>100</text>余额</text>
   </view>
   <view class='member-info-item' catchtap='checkCoupon'>
     <image src='/images/icon/coupon.png'></image>
@@ -24,7 +28,7 @@
   <view class='other-info' catchtap='checkUserInfo'>
     <text>我的信息</text>
     <view>
-      <text>完善信息</text>
+      <text>联系方式</text>
       <image src='/images/icon/more.png'></image>
     </view>
   </view>

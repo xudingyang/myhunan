@@ -60,7 +60,19 @@ Page({
   // 点击  我的信息
   checkUserInfo: function () {
     wx.navigateTo({
-      url: '/pages/user-info/user-info'
+      url: '/pages/user-member/user-member'
+    })
+  },
+  // 点击   余额
+  checkRestMoney: function () {
+    wx.navigateTo({
+      url: '/pages/user-chongzhi/user-chongzhi'
+    })
+  },
+  // 点击   积分
+  checkJifen: function () {
+    wx.navigateTo({
+      url: '/pages/user-jifen-record/user-jifen-record'
     })
   },
   getUserInfo: function (e) {
