@@ -57,7 +57,7 @@ Page({
   // 点击  绑定手机
   bindPhone: function () {
     wx.navigateTo({
-      url: '/pages/user-telphone-change/user-telphone-change'
+      url: '/pages/user-register/user-register'
     })
   },
   getUserInfo: function (e) {

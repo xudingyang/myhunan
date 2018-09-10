@@ -4,8 +4,9 @@
       <view class='order' catchtap='checkOrderDetail'>
         <view class='state-name-state'>
           <view class='store-name'>巴陵风味奶茶店</view>
-          <view class='order-state state-finished' wx:if='{{!1>0}}'>已完成</view>
-          <view class='order-state state-unfinished' wx:if='{{1>0}}'>已取消</view>          
+          <view class='order-state state-finished' wx:if='{{1>0}}'>已完成</view>
+          <view class='order-state state-unfinished' wx:if='{{!1>0}}'>已取消</view>   
+          <view class='order-state state-making' wx:if='{{!1>0}}'>制作中</view>       
         </view>
         <view class='goods'>
           <text>购买商品:</text>
