@@ -1,7 +1,8 @@
 {
   "pages": [
-    "pages/user-address/user-address",
     "pages/user-address-edit/user-address-edit",
+    
+    "pages/user-address/user-address",
     "pages/user/user",
     "pages/user-member/user-member",
     "pages/user-jifen-record/user-jifen-record",

@@ -1,1 +1,88 @@
-/* pages/user-address-add/user-address-add.wxss */
+page {
+  background: #f5f5f5;
+}
+.info-wrapper {
+  background: #fff;
+  border-top: 1px solid #efefef;
+  font-size: 28rpx;
+}
+.user-name {
+  padding: 0 20rpx;
+  border-bottom: 1rpx solid #eee;
+}
+.name {
+  display: flex;
+  height: 90rpx;
+  box-sizing: border-box;
+  align-items: center;
+  border-bottom: 1rpx solid #eee;
+}
+.name > text {
+  flex: 0 0 130rpx;
+}
+.name > input {
+  flex: 1;
+}
+.gender {
+  height: 90rpx;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding-left: 130rpx;
+}
+.radio{
+  margin-right: 8px;
+}
+.info-item {
+  padding: 0 20rpx;
+  height: 90rpx;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid #eee;
+}
+.info-item > text {
+  width: 130rpx;
+  flex: 0 0 130rpx;
+}
+.info-item > input {
+  flex: 1;
+}
+.input-placeholder {
+  color: #bbb;
+}
+
+.choose-con {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.choose-con input {
+  flex: 1;
+}
+.choose-con image {
+  height: 36rpx;
+  width: 36rpx;
+  flex: 0 0 36rpx;
+}
+.ok-btn {
+  margin-top: 20rpx;
+  height: 90rpx;
+  padding: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ok-btn button {
+  height: 100%;
+  width: 100%;
+  background: #d4a470;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 38rpx;
+  letter-spacing: 2px;
+  border-radius: 8rpx;
+}

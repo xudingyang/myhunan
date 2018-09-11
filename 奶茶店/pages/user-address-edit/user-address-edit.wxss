@@ -3,46 +3,71 @@ page {
 }
 .info-wrapper {
   background: #fff;
-  padding: 0 20rpx;
   border-top: 1px solid #efefef;
+  font-size: 28rpx;
 }
-.info-wrapper > view {
-  height: 100rpx;
+.user-name {
+  padding: 0 20rpx;
+  border-bottom: 1rpx solid #eee;
+}
+.name {
+  display: flex;
+  height: 90rpx;
+  box-sizing: border-box;
+  align-items: center;
+  border-bottom: 1rpx solid #eee;
+}
+.name > text {
+  flex: 0 0 130rpx;
+}
+.name > input {
+  flex: 1;
+}
+.gender {
+  height: 90rpx;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
-  font-size: 32rpx;
-  border-bottom: 1rpx solid #efefef;
+  padding-left: 130rpx;
 }
-.info-wrapper > view:last-child {
-  border: none;
-}
-.info-wrapper > view > text {
-  color: #838383;
+.radio{
   margin-right: 8px;
 }
-.info-wrapper > view > input {
+.info-item {
+  padding: 0 20rpx;
+  height: 90rpx;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid #eee;
+}
+.info-item > text {
+  width: 130rpx;
+  flex: 0 0 130rpx;
+}
+.info-item > input {
   flex: 1;
-  padding-left: 10rpx;
-  height: 60rpx;
 }
 .input-placeholder {
-  color: #afafaf;
+  color: #bbb;
 }
-.region {
-  position: relative;
+
+.choose-con {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.region picker {
+.choose-con input {
   flex: 1;
 }
-.region image {
-  position: absolute;
-  right: 10rpx;
-  width: 40rpx;
-  height: 40rpx;
+.choose-con image {
+  height: 36rpx;
+  width: 36rpx;
+  flex: 0 0 36rpx;
 }
-
-
 .ok-btn {
+  margin-top: 20rpx;
   height: 90rpx;
   padding: 30rpx;
   display: flex;
@@ -52,7 +77,7 @@ page {
 .ok-btn button {
   height: 100%;
   width: 100%;
-  background: #413d3c;
+  background: #d4a470;
   color: #fff;
   display: flex;
   justify-content: center;
