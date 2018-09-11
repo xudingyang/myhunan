@@ -2,5 +2,15 @@
   <view class='avatar-icon'>
     <open-data type="userAvatarUrl"></open-data>
   </view>
-  <view class='shop-name'><text>门店:</text>岳阳汉林奶茶店打算单身积分</view>
+  <view class='shop-name'>
+    <text>门店:</text>岳阳汉林奶茶店打算单身积分</view>
+</view>
+<view class='tong-ji'>
+  <view class='tong-ji-title'>今日统计</view>
+  <view class='tong-ji-tabs'>
+    <view class='jyje'>交易金额</view>
+    <view class='yhje'>优惠金额</view>
+    <view class='ssje'>实收金额</view>
+  </view>
+
 </view>
