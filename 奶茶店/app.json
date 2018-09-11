@@ -1,8 +1,9 @@
 {
   "pages": [
+    "pages/shop-order-center-detail/shop-order-center-detail",
+    "pages/shop-order-center/shop-order-center",
     "pages/user-address-add/user-address-add",
     "pages/user-address-edit/user-address-edit",
-    
     "pages/user-address/user-address",
     "pages/user/user",
     "pages/user-member/user-member",

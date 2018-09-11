@@ -1,0 +1,74 @@
+page {
+  background: #f7f7f7;
+}
+.top-tip {
+  height: 110rpx;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 24rpx;
+  background: #00a84f;
+}
+.split-line {
+  width: 2px;
+  height: 36rpx;
+  background: #fff;
+}
+.tip-order-number {
+  color: #fff;
+  margin-left: 10px;
+  font-size: 30rpx;
+  height: 36rpx;
+  line-height: 36rpx;
+}
+.tip-order-number > text {
+  margin-right: 4px;
+}
+.order-info {
+  background: #fff;
+  padding: 0 24rpx;
+  font-size: 28rpx;
+}
+.info-title {
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid #eee;
+}
+.info-con {
+  padding: 20rpx 0;
+}
+.info-item {
+  min-height: 70rpx;
+  display: flex;
+  align-items: center;
+}
+.info-con-lf {
+  color: #888;
+  flex: 0 0 160rpx;
+  width: 160rpx;
+}
+.info-con-rg {
+  flex: 1;
+}
+.order-price {
+  color: #d38c40;
+  font-weight: 600;
+  font-size: 30rpx;
+}
+.ok-btn {
+  margin-top: 20px;
+  height: 90rpx;
+  padding: 0 24rpx;
+}
+.ok-btn > view {
+  background: #00a84f;
+  color: #fff;
+  font-size: 32rpx;
+  letter-spacing: 1px;
+  height: 100%;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
