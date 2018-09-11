@@ -1,6 +1,10 @@
 Page({
 
   data: {
+    name: '老张',
+    telphone: '13344445555',
+    address: '岳阳大道',
+    houseNumber: 'A栋801',
     items: [{
         name: 'male',
         value: '先生',
@@ -13,7 +17,7 @@ Page({
     ]
   },
 
-  chooseAddress: function(){
+  getLocation: function(){
     console.log(12)
   },
 

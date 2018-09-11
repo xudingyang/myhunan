@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/user-address-add/user-address-add",
     "pages/user-address-edit/user-address-edit",
     
     "pages/user-address/user-address",
@@ -20,8 +21,7 @@
     "pages/qucha/qucha",
     "pages/diandan/diandan",
     "pages/index/index",
-    "pages/order-detail/order-detail",
-    "pages/user-address-add/user-address-add"
+    "pages/order-detail/order-detail"
   ],
   "window": {
     "backgroundTextStyle": "light",

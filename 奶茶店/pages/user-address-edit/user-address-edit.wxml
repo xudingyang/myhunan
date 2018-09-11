@@ -3,7 +3,7 @@
     <view class='user-name'>
       <view class='name'>
         <text>联系人</text>
-        <input placeholder='输入联系人姓名' name='username'></input>
+        <input placeholder='输入联系人姓名' name='username' value='{{name}}'></input>
       </view>
       <view class='gender'>
         <radio-group class="radio-group" bindchange="radioChange" name='gender'>
@@ -15,15 +15,15 @@
     </view>
     <view class='info-item'>
       <text>手机号</text>
-      <input placeholder='输入手机号' type='number' name='telphone' maxlength='11'></input>
+      <input placeholder='输入手机号' type='number' name='telphone' maxlength='11' value='{{telphone}}'></input>
     </view>
     <view class='info-item choose-address'>
       <text>收货地址</text>
-      <view class='choose-con' catchtap='chooseAddress'><input placeholder='点击选择地址' disabled='true' name='address_txt' ></input><image src='/images/icon/rg_arrow.png'></image></view>
+      <view class='choose-con' catchtap='getLocation'><input placeholder='点击选择地址' disabled='true' name='address_txt' value='{{address}}'></input><image src='/images/icon/rg_arrow.png'></image></view>
     </view>
     <view class='info-item'>
       <text>门牌号</text>
-      <input placeholder='例如:B座6栋801'></input>
+      <input placeholder='例如:B座6栋801' value='{{houseNumber}}'></input>
     </view>
   </view>
   <view class='ok-btn'>
