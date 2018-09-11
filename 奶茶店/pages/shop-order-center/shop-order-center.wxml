@@ -1,2 +1,6 @@
-<!--pages/shop-order-center/shop-order-center.wxml-->
-<text>pages/shop-order-center/shop-order-center.wxml</text>
+<view class='avatar-wrapper'>
+  <view class='avatar-icon'>
+    <open-data type="userAvatarUrl"></open-data>
+  </view>
+  <view class='shop-name'><text>门店:</text>岳阳汉林奶茶店打算单身积分</view>
+</view>
