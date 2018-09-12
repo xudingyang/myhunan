@@ -1,23 +1,28 @@
-// pages/shop-order-center-month-order/shop-order-center-month-order.js
 Page({
 
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    dateStr: '',
+    endDate: '',
+    storeArray: ['汉林1号店', '汉林2号店', '汉林2号店', '汉林2号店', '汉林2号店']
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
+  bindDateChange: function (e) {
+    var value = e.detail.value;
+    this.setData({
+      dateStr: value + '年'
+    })
+  },
   onLoad: function (options) {
+    var now = new Date();
+    var year = now.getFullYear();
+    var endDate = year;
 
+    this.setData({
+      endDate: endDate,
+      dateStr: year + '年'
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
   onReady: function () {
 
   },

@@ -1,1 +1,121 @@
-/* pages/shop-order-center-month-order/shop-order-center-month-order.wxss */
+page {
+  background: #f1f1f1;
+}
+.top-bar {
+  height: 80rpx;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1rpx solid #eee;
+  border-top: 1rpx solid #eee;
+}
+.top-tx {
+  font-size: 32rpx;
+  font-weight: 400;
+}
+.store-choose-btn {
+  height: 40rpx;
+  position: absolute;
+  left: 24rpx;
+  top: 20rpx;
+  color: #00a84f;
+  display: flex;
+  align-items: center;
+}
+.top-choose-btn {
+  height: 40rpx;
+  position: absolute;
+  right: 24rpx;
+  top: 20rpx;
+  color: #00a84f;
+  display: flex;
+  align-items: center;
+}
+.store-choose-btn > text,
+.top-choose-btn > text {
+  font-size: 32rpx;
+  margin-left: 3px;  
+}
+.store-choose-btn > image,
+.top-choose-btn > image {
+  width: 40rpx;
+  height: 40rpx;
+}
+.order-list {
+  padding: 80rpx 40rpx 40rpx 40rpx;
+}
+.order {
+  box-sizing: border-box;
+  border-left: 6rpx solid #00a84f;
+  border-bottom: 1rpx solid #dfdfdf;
+  border-right: 1rpx solid #dfdfdf;
+  border-top: 1rpx solid #dfdfdf;  
+  margin-top: 30rpx;
+  border-radius: 2px;
+}
+.store-name-con {
+  height: 140rpx;
+  background: #fff;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #dfdfdf;
+  display: flex;
+}
+.date-con {
+  flex:  0 0 160rpx;
+  width: 160rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00a84f;
+  font-size: 48rpx;
+}
+.store-name-type {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.s-name {
+  font-size: 30rpx;
+  color: #3d3d3d;
+  margin-bottom: 3px;
+}
+.s-type {
+  font-size: 26rpx;
+  color: #adadad;
+}
+.total-money-con {
+  height: 56rpx;
+  background: #f7f7f7;
+  display: flex;
+  align-items: center;
+}
+.total-money-con > view {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 40rpx;
+}
+.total-money-con > view > image {
+  width: 36rpx;
+  height: 36rpx;
+  margin-right: 10px;
+}
+.total-money-con > view > text {
+  font-size: 28rpx;
+  color: #3d3d3d;
+}
+.bi-shu {
+  border-right: 1rpx solid #dfdfdf;
+}
+.jin-e {
+}

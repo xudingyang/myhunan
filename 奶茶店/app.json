@@ -1,5 +1,8 @@
 {
   "pages": [
+    "pages/shop-order-center-month-order/shop-order-center-month-order",
+    "pages/shop-order-center-day-order/shop-order-center-day-order",
+    
     "pages/shop-order-center-latest-order/shop-order-center-latest-order",
     "pages/shop-order-center/shop-order-center",
     "pages/shop-order-center-detail/shop-order-center-detail",
@@ -23,9 +26,7 @@
     "pages/qucha/qucha",
     "pages/diandan/diandan",
     "pages/index/index",
-    "pages/order-detail/order-detail",
-    "pages/shop-order-center-day-order/shop-order-center-day-order",
-    "pages/shop-order-center-month-order/shop-order-center-month-order"
+    "pages/order-detail/order-detail"
   ],
   "window": {
     "backgroundTextStyle": "light",
