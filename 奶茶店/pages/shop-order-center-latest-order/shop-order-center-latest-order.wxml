@@ -1,0 +1,24 @@
+<view class='outer' wx:if='{{1<0}}'>
+  <block wx:for='{{[1,1,1,1,1,1,1]}}'>
+    <view class='order'>
+      <view class='order-lf'>
+        <image src='/images/icon/wx_guitai.png'></image>
+        <view class='order-info'>
+          <view class='shop-name'>汉林奶茶店</view>
+          <view class='order-type'>外卖订单</view>
+          <view class='order-time'>2018-12-12 23:23:23</view>
+        </view>
+      </view>
+      <view class='order-rg'>
+        <text class='order-state'>已支付</text>
+        <text class='order-money'>¥60.00</text>
+      </view>
+    </view>
+  </block>
+</view>
+<view class='empty' wx:if='{{1>0}}'>
+  <view class='empty-con'>
+    <image src='/images/icon/empty@2x.png'></image>
+    <text>没有符合该条件的订单</text>
+  </view>
+</view>

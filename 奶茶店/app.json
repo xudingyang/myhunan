@@ -1,7 +1,7 @@
 {
   "pages": [
+    "pages/shop-order-center-latest-order/shop-order-center-latest-order",
     "pages/shop-order-center/shop-order-center",
-    
     "pages/shop-order-center-detail/shop-order-center-detail",
     "pages/user-address-add/user-address-add",
     "pages/user-address-edit/user-address-edit",
@@ -23,7 +23,9 @@
     "pages/qucha/qucha",
     "pages/diandan/diandan",
     "pages/index/index",
-    "pages/order-detail/order-detail"
+    "pages/order-detail/order-detail",
+    "pages/shop-order-center-day-order/shop-order-center-day-order",
+    "pages/shop-order-center-month-order/shop-order-center-month-order"
   ],
   "window": {
     "backgroundTextStyle": "light",
