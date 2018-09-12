@@ -1,16 +1,78 @@
-<view class='avatar-wrapper'>
-  <view class='avatar-icon'>
-    <open-data type="userAvatarUrl"></open-data>
+<view class='bg-wrapper'>
+  <view class='bg-white'></view>
+  <view class='bg-icon'>
+    <image src='/images/bg@2x.png'></image>
   </view>
-  <view class='shop-name'>
-    <text>门店:</text>岳阳汉林奶茶店打算单身积分</view>
-</view>
-<view class='tong-ji'>
-  <view class='tong-ji-title'>今日统计</view>
-  <view class='tong-ji-tabs'>
-    <view class='jyje'>交易金额</view>
-    <view class='yhje'>优惠金额</view>
-    <view class='ssje'>实收金额</view>
+  <view class='info-con'>
+    <view class='avatar-wrapper'>
+      <view class='avatar-icon'>
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <view class='shop-name'>
+        <text>门店:</text>岳阳汉林奶茶店打算单身积分
+      </view>
+      <view class='online-name'>
+        <text>管理员:</text>好听的微信名
+      </view>
+    </view>
   </view>
-
 </view>
+<view class='tongji-tabs'>
+  <view class='tongji-tab'>
+    <text class='tongji-count'>¥666</text>
+    <text class='tongji-name'>昨日收款额</text>
+  </view>
+  <view class='tongji-tab'>
+    <text class='tongji-count'>66</text>
+    <text class='tongji-name'>今日订单数</text>
+  </view>
+  <view class='tongji-tab'>
+    <text class='tongji-count'>¥666</text>
+    <text class='tongji-name'>今日收款额</text>
+  </view>
+</view>
+<view class='goumai-tongji'>
+  <view class='goumai-title'>
+    <text>购买订单统计</text>
+  </view>
+  <view class='goumai-items'>
+    <view class='goumai-item'>
+      <image src='/images/icon/wx_zxdd@2x.png'></image>
+      <text>最新订单</text>
+      <image src='/images/icon/rg_arrow_green.png'></image>
+    </view>
+    <view class='goumai-item'>
+      <image src='/images/icon/wx_rtj@2x.png'></image>
+      <text>日统计订单</text>
+      <image src='/images/icon/rg_arrow_green.png'></image>
+    </view>
+    <view class='goumai-item'>
+      <image src='/images/icon/wx_ytj@2x.png'></image>
+      <text>月统计订单</text>
+      <image src='/images/icon/rg_arrow_green.png'></image>
+    </view>
+  </view>
+</view>
+<view class='goumai-tongji'>
+  <view class='goumai-title'>
+    <text>充值订单统计</text>
+  </view>
+  <view class='goumai-items'>
+    <view class='goumai-item'>
+      <image src='/images/icon/wx_zxdd@2x.png'></image>
+      <text>最新订单</text>
+      <image src='/images/icon/rg_arrow_green.png'></image>
+    </view>
+    <view class='goumai-item'>
+      <image src='/images/icon/wx_rtj@2x.png'></image>
+      <text>日统计订单</text>
+      <image src='/images/icon/rg_arrow_green.png'></image>
+    </view>
+    <view class='goumai-item'>
+      <image src='/images/icon/wx_ytj@2x.png'></image>
+      <text>月统计订单</text>
+      <image src='/images/icon/rg_arrow_green.png'></image>
+    </view>
+  </view>
+</view>
+<view class='chognzhi-tongji'></view>

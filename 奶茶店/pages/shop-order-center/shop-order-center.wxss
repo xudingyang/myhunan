@@ -1,16 +1,51 @@
 page {
   background: #f7f7f7;
+  padding-bottom: 30rpx;
+}
+
+.bg-wrapper {
+  width: 750rpx;
+  height: 415rpx;
+  position: relative;
+}
+.bg-white {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 44;
+  left: 0;
+  top: 0;
+}
+.bg-icon {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 55;
+  left: 0;
+  top: 0;
+}
+.bg-icon image {
+  width: 100%;
+  height: 100%;
+}
+.info-con {
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .avatar-wrapper {
-  height: 340rpx;
-  background: #fff;
-  margin-bottom: 20rpx;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #fff;
+  margin-bottom: 20rpx;
+  color: #fff;
 }
 
 .avatar-icon {
@@ -29,6 +64,83 @@ page {
   padding: 0 20rpx;
   font-size: 30rpx;
 }
+.online-name > text,
 .shop-name > text {
   margin-right: 4px;
+}
+.online-name {
+  margin-top: 8px;
+  padding: 0 20rpx;
+  font-size: 30rpx;
+}
+.tongji-tabs {
+  display: flex;
+  align-items: center;
+  font-size: 30rpx;
+  height: 150rpx;
+  background: #fff;
+  padding: 0 20rpx;
+}
+.tongji-tab {
+  flex: 1;
+  border-right: 1rpx solid #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tongji-tab:last-child {
+  border: none;
+}
+.tongji-count {
+  color: #00a84f;
+}
+.tongji-name {
+  font-size: 28rpx;
+  margin-top: 2px;
+}
+.goumai-tongji {
+  margin-top: 20rpx;
+  background: #fff;
+}
+.goumai-title {
+  height: 69rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx;
+  border-bottom: 1rpx solid #eee;
+}
+.goumai-title > text {
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 26rpx;
+  padding-left: 10px;
+  border-left: 2px solid #00a84f;
+}
+.goumai-items {
+  padding: 0 20rpx;
+}
+.goumai-item {
+  height: 95rpx;
+  border-bottom: 1rpx solid #eee;
+  display: flex;
+  align-items: center;
+  font-size: 30rpx;
+  color: #555;
+  position: relative;
+}
+.goumai-items .goumai-item:last-child {
+  border: none;
+}
+.goumai-item > image:nth-of-type(1) {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 8px;
+}
+.goumai-item > image:nth-of-type(2) {
+  width: 38rpx;
+  height: 38rpx;
+  position: absolute;
+  right: 0;
+  top: 28rpx; 
 }
