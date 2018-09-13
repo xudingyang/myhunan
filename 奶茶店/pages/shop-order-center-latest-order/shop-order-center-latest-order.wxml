@@ -1,4 +1,4 @@
-<view class='outer' wx:if='{{1<0}}'>
+<view class='outer' wx:if='{{1>0}}'>
   <block wx:for='{{[1,1,1,1,1,1,1]}}'>
     <view class='order'>
       <view class='order-lf'>
@@ -16,7 +16,7 @@
     </view>
   </block>
 </view>
-<view class='empty' wx:if='{{1>0}}'>
+<view class='empty' wx:if='{{1<0}}'>
   <view class='empty-con'>
     <image src='/images/icon/empty@2x.png'></image>
     <text>没有符合该条件的订单</text>
