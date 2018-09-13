@@ -4,7 +4,7 @@
 </view>
 <view class='detail-wrapper' wx:if='{{showDetailPanel}}'>
   <view class='outer' wx:if='{{hadOrderList}}'>
-    <block wx:for='{{[1,1,1,1,1,1,1,1,1,1,1,1,1,1]}}'>
+    <block wx:for='{{[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]}}'>
       <view class='order'>
         <view class='order-lf'>
           <image src='/images/icon/wx_guitai.png'></image>
@@ -29,8 +29,56 @@
   </view>
 </view>
 <view class='total-wrapper' wx:if='{{!showDetailPanel}}'>
-  <view class='total-con'>
-    <view class='total-item'><text>门店</text></view>
+  <view class='total-con' wx:if='{{hadOrderList}}'>
+    <block wx:for='{{[1,1,1,1,1,1,1,1,1,1,1,1,1]}}'>
+      <view class='total-item'>
+        <view class='total-shop-name'>岳阳汉林1号店</view>
+        <view class='total-time'>8月12日</view>
+        <view class='total-waimai'>
+          <view class='total-xianshang-title'>你好，线上订单统计如下:</view>
+          <view class='total-xiansahng-wrapper'>
+            <view class='total-xiansahng-zonge'><text>订单总额:</text><text>¥600</text></view>
+            <view class='total-xiansahng-zonge'><text>订单笔数:</text><text>10</text></view>
+          </view>
+          <view class='total-xiansahng-wrapper'>
+            <view class='total-xiansahng-zonge'><text>优惠金额:</text><text>¥60</text></view>
+            <view class='total-xiansahng-zonge total-xiansahng-shishou'><text>实收金额:</text><text>¥600</text></view>
+          </view>
+          <view class='total-xiansahng-split'></view>
+        </view>
+        <view class='total-waimai'>
+            <view class='total-xianshang-title'>你好，外卖订单统计如下:</view>        
+          <view class='total-xiansahng-wrapper'>
+            <view class='total-xiansahng-zonge'><text>订单总额:</text><text>¥600</text></view>
+            <view class='total-xiansahng-zonge'><text>订单笔数:</text><text>10</text></view>            
+          </view>
+          <view class='total-xiansahng-wrapper'>
+            <view class='total-xiansahng-zonge'><text>优惠金额:</text><text>¥60</text></view>
+            <view class='total-xiansahng-zonge total-xiansahng-shishou'><text>实收金额:</text><text>¥600</text></view>            
+          </view>
+          <view class='total-xiansahng-split'></view>          
+        </view>
+        <view class='total-waimai'>
+          <view class='total-xianshang-title'>你好，外卖订单统计如下:</view>        
+          <view class='total-xiansahng-wrapper'>
+            <view class='total-xiansahng-zonge'><text>订单总额:</text><text>¥600</text></view>
+            <view class='total-xiansahng-zonge'><text>订单笔数:</text><text>10</text></view>            
+          </view>
+          <view class='total-xiansahng-wrapper'>
+            <view class='total-xiansahng-zonge'><text>优惠金额:</text><text>¥60</text></view>
+            <view class='total-xiansahng-zonge total-xiansahng-shishou'><text>实收金额:</text><text>¥600</text></view>            
+          </view>
+        </view>
+        <view class='total-count'>
+          <view>
+            <text>总订单笔数:</text><text>400笔</text>
+          </view>
+          <view>
+            <text>总收款金额:</text><text>¥6000</text>
+          </view>
+        </view>
+      </view>
+    </block>
   </view>
   <view class='empty' wx:if='{{!hadOrderList}}'>
     <view class='empty-con'>

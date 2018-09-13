@@ -1,6 +1,5 @@
 page {
-  height: 100%;
-  width: 100%;
+  background: #f5f5f5;
 }
 .tabs {
   position: fixed;
@@ -34,7 +33,83 @@ page {
   height: 100%;
   width: 100%;
   box-sizing: border-box;
-  padding: 84rpx 20rpx 40rpx 20rpx;
+  padding: 84rpx 0 20rpx 0;
+}
+.total-wrapper {
+  background: #f1f1f1;
+}
+.total-con {
+  padding: 20rpx;
+}
+.total-item {
+  margin-bottom: 26rpx;
+  background: #fff;
+  border-radius: 6px;
+  padding: 20rpx 0;
+  box-shadow: 1px 1px 3px #ddd;
+}
+.total-item:last-child {
+  margin-bottom: 0;
+}
+.total-shop-name {
+  font-size: 34rpx;
+  height: 44rpx;
+  line-height: 44rpx;
+  font-weight: 500;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+.total-time {
+  color: #999;
+  font-size: 28rpx;
+  margin-bottom: 20rpx;  
+  border-bottom: 1px solid #eee;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+.total-waimai {
+  /* padding-top: 16rpx; */
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+.total-xianshang-title {
+  font-size: 30rpx;
+  margin-bottom: 10rpx;
+}
+.total-xiansahng-wrapper {
+  display: flex;
+}
+.total-xiansahng-zonge {
+  font-size: 30rpx;
+  flex: 1;
+}
+.total-xiansahng-zonge > text:nth-of-type(1) {
+  margin-right: 6px;
+}
+.total-xiansahng-shishou {
+}
+.total-count {
+  border-top: 1px solid #eee;
+  padding: 20rpx 20rpx 0 20rpx;
+}
+.total-count > view {
+  font-size: 30rpx;
+  font-weight: 600;
+}
+.total-count > view > text:nth-of-type(1) {
+  margin-right: 10px;
+}
+.total-xiansahng-split {
+  height: 1px;
+  background: #e7e7e7;
+  margin: 0 40rpx;
+  margin-top: 16rpx;
+}
+
+
+.outer {
+  background: #fff;
+  padding: 0 20rpx;
 }
 .order {
   display: flex;
@@ -87,11 +162,10 @@ page {
   font-size: 32rpx;
 }
 .empty {
-  height: 100%;
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  padding-top: 150px;
 }
 .empty-con {
   display: flex;
