@@ -47,7 +47,7 @@ page {
   border-radius: 8rpx;
   width: 100%;
   height: 100%;
-  background: #413d3c;
+  background: #c5894a;
   color: #fff;
   font-size: 36rpx;
 }
@@ -103,7 +103,7 @@ page {
   align-items: center;
   justify-content: center;
   color: #fff;
-  background: #413d3c;
+  background: #c5894a;
   border-radius: 10rpx;
   font-size: 36rpx;
 }
