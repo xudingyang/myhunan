@@ -3,11 +3,23 @@ Page({
 
   data: {
     // yxd    zzz    kqc
-    state: 'kqc'
+    state: 'zzz',
+    showModal: true,
+    hadTeaList: false
   },
   placeOrder: function () {
     wx.switchTab({
       url: '/pages/diandan/diandan'
+    })
+  },
+  closeModalPanel: function () {
+    this.setData({
+      showModal: false
+    })
+  },
+  lookTeaList: function () {
+    this.setData({
+      showModal: true
     })
   },
   onLoad: function (options) {

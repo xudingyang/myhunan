@@ -242,3 +242,97 @@ page {
 .order-time > view > text:nth-of-type(1) {
   margin-right: 8px;
 }
+.modal-wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, .3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-panel {
+  width: 590rpx;
+  min-height: 664rpx;
+  background: #fff;
+  border-radius: 6px;
+}
+.modal-title {
+  height: 86rpx;
+  line-height: 86rpx;
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 30rpx;
+  position: relative;
+}
+.modal-title > text {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 86rpx;
+  width: 86rpx;
+  font-size: 60rpx;
+  color: #808080;
+}
+.modal-con {
+  padding: 56rpx;
+}
+.modal-con-tx1 {
+  text-align: center;
+  font-size: 28rpx;
+}
+.modal-con-tx1 > text {
+  color:#dba871;
+  margin:0 3px;
+}
+.modal-con-tx2 {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.modal-con-tx2 > view {
+  width: 150rpx;
+  flex: 0 0 150rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #47484c;
+}
+.modal-con-tx2 > text {
+  flex: 1;
+  height: 1px;
+  background: #e8e8e8;
+}
+.tea-number-list {
+  margin-top: 8px;
+  overflow: hidden;
+}
+.tea-number-list > text {
+  float: left;
+  margin-right: 26rpx;
+  width: 100rpx;
+  font-size: 30rpx;
+  text-align: center;
+  height: 50rpx;
+  line-height: 50rpx;
+  color: #222;
+}
+.tea-number-list > text:nth-of-type(4n) {
+  margin-right: 0;
+}
+.tea-number-list > text:last-child {
+  color: #dba871;
+  font-weight: 600;
+}
+.tea-number-list-empty {
+  height: 400rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #dba871;  
+  font-size: 30rpx;
+  line-height: 44rpx;
+}

@@ -10,7 +10,7 @@
     <block wx:for='{{[1,1,1,1,1,1,1,1]}}'>
       <view class='order'>
         <view class='order-number-con'>
-          <view class='order-number-title'>取茶号<view class='look-number-btn'>查看排号</view></view>
+          <view class='order-number-title'>取茶号<view class='look-number-btn' catchtap='lookTeaList'>查看排号</view></view>
           <view class='order-number-num'>9078</view>
           <view class='order-number-state'>
             <view class='order-state-icon'>
@@ -28,7 +28,8 @@
               <text class='order-state-tx-gray'>可取茶</text>         
             </view>            
           </view>
-          <view class='order-number-tip'>请等候取茶通知，凭此页至门店取茶</view>          
+          <view class='order-number-tip' hidden='{{state === "kqc"}}'>请等候取茶通知，凭此页至门店取茶</view>
+          <view class='order-number-tip' wx:if='{{state === "kqc"}}'>请凭此页到店取茶</view>                          
         </view>
         <view class='order-detail-con'>
           <view class='shop-name-address'>
@@ -69,4 +70,22 @@
       </view>
     </block>
   </scroll-view>
+</view>
+<view class='modal-wrapper' wx:if='{{showModal}}'>
+  <view class='modal-panel'>
+    <view class='modal-title'>岳阳汉林奶茶店<text catchtap='closeModalPanel'>×</text></view>
+    <view class='modal-con'>
+      <view class='modal-con-tx1' wx:if='{{hadTeaList}}'>您前面还有<text>5</text>笔订单在制作中</view>
+      <view class='modal-con-tx2' wx:if='{{hadTeaList}}'><text></text><view>制作列表</view><text></text></view>
+      <view class='tea-number-list' wx:if='{{hadTeaList}}'>
+        <block wx:for='{{[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,11,1,1,1,1]}}'>
+          <text>6789</text>
+        </block>
+      </view>
+      <view class='tea-number-list-empty' wx:if='{{!hadTeaList}}'>
+        <view>您的茶饮已经制作完成啦</view>
+        <view>请尽快到门店取茶哦</view>
+      </view>
+    </view>
+  </view>
 </view>
