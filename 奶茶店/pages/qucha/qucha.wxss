@@ -33,6 +33,164 @@ page {
   line-height: 70rpx;
   font-size: 32rpx;
   border-radius: 8rpx;
-  background: #413d3c;
+  background: #c5894a;
   color: #fff;
+}
+.order-wrapper {
+  height: 100%;
+  background: #e7e7e7;
+}
+.order-scroll-view {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 38rpx;
+}
+.order {
+  margin-bottom: 38rpx;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 1px 1px 2px #ddd;
+}
+.order:last-child {
+  margin-bottom: 0;
+}
+.order-number-con {
+  background: #fff;
+  padding: 34rpx;
+  box-shadow: 0 1px 1px #ddd;
+}
+.order-number-title {
+  font-size: 30rpx;
+  text-align: center;
+  height: 50rpx;
+  line-height: 50rpx;
+  position: relative;
+}
+.look-number-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 60rpx;
+  line-height: 60rpx;
+  width: 150rpx;
+  text-align: center;
+  background: #dba871;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 28rpx;
+}
+.order-number-num {
+  margin-top: 10rpx;
+  font-size: 44rpx;
+  height: 44rpx;
+  line-height: 44rpx;
+  text-align: center;
+}
+.order-number-state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.order-state-icon {
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 24rpx;
+  width: 100rpx;
+  margin-right: 6px;
+}
+.order-state-icon > image {
+  height: 60rpx;
+  width: 60rpx;
+  margin-bottom: 5px;
+}
+.order-state-tx-gray {
+  color: #cccccc;
+}
+.order-state-line {
+  width: 84rpx;
+  height: 0;
+  border-top: 1px dashed #cccccc;
+}
+.order-number-tip {
+  color: #e8b58a;
+  font-size: 28rpx;
+  text-align: center;
+  margin-top: 10px;
+}
+.order-detail-con {
+  background: #f7f7f7;
+}
+.order-detail-split {
+  height: 24rpx;
+  padding: 0 46rpx;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.order-detail-split > view {
+  height: 2rpx;
+  width: 100%;
+  background: #eeeeee;
+}
+.order-detail-split::after,
+.order-detail-split::before {
+  position: absolute;
+  content: " ";
+  top: 0;
+  width: 24rpx;
+  height: 24rpx;
+  border-radius: 50%;
+  background: #e5e5e5;
+}
+.order-detail-split::after {
+  left: -12rpx;
+}
+.order-detail-split::before {
+  right: -12rpx;
+}
+.shop-name-address {
+  display: flex;
+  align-items: center;
+  padding: 40rpx 46rpx 26rpx 46rpx;
+}
+.shop-info {
+  flex: 1;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+.shop-name {
+  font-size: 32rpx;
+  color: #000;
+  margin-bottom: 4px;
+}
+.shop-address {
+  font-size: 24rpx;
+  line-height: 30rpx;
+  color: #8d8d8d;
+}
+.shop-btns {
+  display: flex;
+  justify-content: space-between;
+  width: 192rpx;
+  flex: 0 0 192rpx;
+}
+.shop-btns > view {
+  width: 96rpx; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.shop-btns image {
+  height: 66rpx;
+  width: 66rpx;
+}
+.shop-btns text {
+  margin-top: 4px;
+  font-size: 22rpx;
+  color: #8a8a8a;
 }

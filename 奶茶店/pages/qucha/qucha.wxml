@@ -1,7 +1,69 @@
-<view class='empty-wrapper'>
+<view class='empty-wrapper' wx:if='{{1<0}}'>
   <view>
     <text class='tx1'>您今天还没有下单</text>
     <text class='tx2'>赶快去挑选喜欢的饮品吧</text>
     <view class='diandan-btn' catchtap='placeOrder'>去点单</view>
   </view>
+</view>
+<view class='order-wrapper' wx:if='{{1>0}}'>
+  <scroll-view class='order-scroll-view' scroll-y='true'>
+    <block wx:for='{{[1,1,1,1,1,1,1,1]}}'>
+      <view class='order'>
+        <view class='order-number-con'>
+          <view class='order-number-title'>取茶号<view class='look-number-btn'>查看排号</view></view>
+          <view class='order-number-num'>9078</view>
+          <view class='order-number-state'>
+            <view class='order-state-icon'>
+              <image src='/images/icon/myorder_gray.png'></image>   
+              <text class='order-state-tx-gray'>已下单</text>
+            </view>
+            <view class='order-state-line'></view>
+            <view class='order-state-icon'>
+              <image src='/images/icon/zhizuozhong_gray.png'></image>  
+              <text class='order-state-tx-gray'>制作中</text>            
+            </view>
+            <view class='order-state-line'></view>            
+            <view class='order-state-icon'>
+              <image src='/images/icon/jycg_gray.png'></image>                
+              <text class='order-state-tx-gray'>可取茶</text>         
+            </view>            
+          </view>
+          <view class='order-number-tip'>请等候取茶通知，凭此页至门店取茶</view>          
+        </view>
+        <view class='order-detail-con'>
+          <view class='shop-name-address'>
+            <view class='shop-info'>
+              <view class='shop-name'>汉林奶茶店</view>
+              <view class='shop-address'>岳阳大道12路撒旦法水电费第三方士大夫士大夫士大夫的水电费水电费</view>
+            </view>
+            <view class='shop-btns'>
+              <view><image src='/images/icon/dianhua2.png'></image><text>联系门店</text></view>
+              <view><image src='/images/icon/daohang2.png'></image><text>到这去</text></view>
+            </view>
+          </view>
+          <view class='order-detail-split'><view></view></view>
+          <view class='order-goods-price'>
+            <view class='order-goods'>
+              <view>
+                <view class='goods-name-remark'>
+                  <view class='goods-name'>珍珠奶茶</view>
+                  <view class='goods-remark'>不要加冰</view>
+                </view>
+                <view class='goods-price-count'>
+                  <text>×1</text><text>¥2.00</text>
+                </view>
+              </view>
+            </view>
+            <view class='total-count'>
+              <view><text>合计</text><text>¥60.00</text></view>
+            </view>
+          </view>      
+          <view class='order-detail-split'><view></view></view>
+          <view class='order-time'>
+            下单时间
+          </view>          
+        </view>
+      </view>
+    </block>
+  </scroll-view>
 </view>
