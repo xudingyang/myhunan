@@ -2,7 +2,8 @@
 Page({
 
   data: {
-  
+    // yxd    zzz    kqc
+    state: 'kqc'
   },
   placeOrder: function () {
     wx.switchTab({

@@ -176,11 +176,11 @@ page {
 .shop-btns {
   display: flex;
   justify-content: space-between;
-  width: 192rpx;
-  flex: 0 0 192rpx;
+  width: 190rpx;
+  flex: 0 0 190rpx;
 }
 .shop-btns > view {
-  width: 96rpx; 
+  width: 95rpx; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -193,4 +193,52 @@ page {
   margin-top: 4px;
   font-size: 22rpx;
   color: #8a8a8a;
+}
+.order-goods-con{
+  padding: 18rpx 46rpx;
+  box-sizing: border-box;
+}
+.order-goods {
+  display: flex;
+  align-items: center;
+}
+.goods-name-remark {
+  flex: 1;
+}
+.goods-name{
+  font-size: 28rpx;
+  padding-right: 10rpx;
+  box-sizing: border-box;
+}
+.goods-remark {
+  font-size: 26rpx;
+  color: #8a8a8a;
+}
+.goods-price-count {
+  width: 190rpx;
+  flex: 0 0 190rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size: 28rpx;
+  color: #000;
+}
+.total-count-con {
+  padding: 14rpx 46rpx 10rpx 46rpx;
+  box-sizing: border-box;
+}
+.total-count {
+  padding-top: 18rpx;
+  box-sizing: border-box;
+  border-top: 1rpx dotted #ddd;  
+  font-size: 28rpx;
+  display: flex;
+  justify-content: space-between;  
+}
+.order-time {
+  padding: 10rpx 46rpx 16rpx 46rpx;
+  font-size: 26rpx;
+  color: #8c8c8c;  
+}
+.order-time > view > text:nth-of-type(1) {
+  margin-right: 8px;
 }
