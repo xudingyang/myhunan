@@ -216,3 +216,67 @@ page {
   width: 48rpx;
   height: 48rpx;
 }
+.modal-introduction {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1001;
+  background: rgba(0, 0, 0, .4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-introduction-con {
+  width: 590rpx;
+  height: 674rpx;
+  background: #fafafa;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+.close-modal-introduction {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 80rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 80rpx;
+  color: #888;
+}
+.modal-goods-icon {
+  height: 416rpx;
+  display: flex;
+  justify-content: center;
+  padding-top: 46rpx;
+  box-sizing: border-box;
+  background: #fff;
+}
+.modal-goods-icon image {
+  width: 340rpx;
+  height: 340rpx; 
+}
+.modal-introduction-txt {
+  padding: 20rpx 30rpx;
+}
+.modal-introduction-txt > view:nth-of-type(1) {
+  font-size: 30rpx;
+  font-weight: 600;
+}
+.modal-introduction-txt > view:nth-of-type(2) {
+  font-size: 28rpx;
+  color: #949494;
+}
+.modal-introduction-price {
+  height: 60rpx;
+  background: yellow;
+  font-size: 30rpx;
+  padding-left: 30rpx;
+  font-weight: 600;    
+}
+.modal-introduction-price > text {
+  margin-right: 5px;
+}

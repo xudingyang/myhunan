@@ -28,7 +28,7 @@
           <block wx:for='{{item.teaList}}'>
             <view class='tea'>
               <view class='tea-icon'>
-                <image lazy-load='true' src='{{item.icon}}'></image>
+                <image lazy-load='true' src='{{item.icon}}' catchtap='clickGoodsIcon'></image>
               </view>
               <view class='tea-info'>
                 <view class='tea-name'>{{item.name}}</view>
@@ -50,3 +50,15 @@
     </scroll-view>
   </view>
 </view>
+<view class='modal-introduction' wx:if='{{showModalIntroduction}}'>
+  <view class='modal-introduction-con'>
+    <text class='close-modal-introduction' catchtap='closeModalIntroduction'>×</text>
+    <view class='modal-goods-icon'><image src='/images/tea/tea.jpg'></image></view>
+    <view class='modal-introduction-txt'>
+      <view>岳阳珍珠奶茶</view>
+      <view>很好喝很甜哈哈哈吉林省的房间里时代峻峰绿卡的设计费林科大输积分唠嗑的撒酒疯雷克萨点击分类读书卡</view>
+    </view>
+    <view class='modal-introduction-price'><text>¥</text>23.00</view>
+  </view>
+</view>
+<view class='modal-size'></view>

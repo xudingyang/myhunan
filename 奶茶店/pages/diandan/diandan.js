@@ -10,7 +10,8 @@ Page({
     percent: 2, // 当前设备1px对应的rpx值
     teaListHeightArray: [],
     teaList: list,
-    categoryScrollTop: 0
+    categoryScrollTop: 0,
+    showModalIntroduction: true
   },
   onLoad: function(options) {
     if (!this.data.localHasStore) {
@@ -154,7 +155,18 @@ Page({
     })
     console.log(232333)
   },
-
+  // 点击商品图片
+  clickGoodsIcon: function (){
+    this.setData({
+      showModalIntroduction: true
+    })
+  },
+  // 关闭商品介绍界面
+  closeModalIntroduction: function(){
+    this.setData({
+      showModalIntroduction: false
+    })
+  },
   /****************************************
    *    工具函数
    * *************************************/

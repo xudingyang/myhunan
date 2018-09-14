@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/diandan/diandan",
+    
     "pages/qucha/qucha",
     
     "pages/user-chongzhi-record/user-chongzhi-record",
@@ -29,7 +31,6 @@
     "pages/coupon/coupon",
     "pages/choose_store/choose_store",
     "pages/ext/ext",
-    "pages/diandan/diandan",
     "pages/index/index",
     "pages/order-detail/order-detail",
     "pages/shop-order-center-month-order-detail/shop-order-center-month-order-detail"
