@@ -10,7 +10,7 @@
     </view>
   </view>
   <view class='tea-wrapper'>
-  <!-- scroll-into-view='{{toCategoryView}}' -->
+    <!-- scroll-into-view='{{toCategoryView}}' -->
     <scroll-view class='tea-category' scroll-y='true' scroll-top='scrollTop' scroll-with-animation='false' scrollTop='{{categoryScrollTop}}'>
       <block wx:for='{{teaList}}'>
         <view class='{{item.selected ? "category category-selected" : "category" }}' catchtap='selectCatogary' data-index='{{index}}' id='category_item_{{index}}'>
@@ -19,7 +19,7 @@
         </view>
       </block>
     </scroll-view>
-    <scroll-view class='tea-items' scroll-y='true' scroll-into-view='{{toView}}' scroll-with-animation='true' bindscroll='teaListScroll' bindscrolltoupper='teaListScrollTop' lower-threshold='teaListScrollBottom'	upper-threshold='60'>
+    <scroll-view class='tea-items' scroll-y='true' scroll-into-view='{{toView}}' scroll-with-animation='true' bindscroll='teaListScroll' bindscrolltoupper='teaListScrollTop' lower-threshold='teaListScrollBottom' upper-threshold='60'>
       <block wx:for='{{teaList}}'>
         <view class='tea-item' id='tea_item_{{index}}'>
           <view class='tea-item-title'>
@@ -28,14 +28,14 @@
           <block wx:for='{{item.teaList}}'>
             <view class='tea'>
               <view class='tea-icon'>
-                <image lazy-load='true' src='{{item.icon}}' catchtap='clickGoodsIcon'></image>
+                <image lazy-load='true' src='{{item.icon}}' catchtap='clickGoodsIcon' data-tea-id='{{item.id}}'></image>
               </view>
               <view class='tea-info'>
                 <view class='tea-name'>{{item.name}}</view>
                 <view class='tea-introduction'>{{item.introduction}}</view>
                 <view class='tea-price-size'>
                   <text class='tea-price'>¥20</text>
-                  <text class='tea-size' wx:if='{{item.size.length > 0}}' catchtap='chooseSizeBtn'>选规格</text>
+                  <text class='tea-size' wx:if='{{item.size.length > 0}}' catchtap='chooseSizeBtn' data-tea-id='{{item.id}}'>选规格</text>
                   <view class='jia-jian' wx:if='{{item.size.length < 1}}'>
                     <image class='jian-hao-icon' src='/images/icon/jianhao.png' catchtap='jianClick' data-tea-id='{{item.id}}' wx:if='{{item.count > 0}}'></image>
                     <text wx:if='{{item.count > 0}}'>{{item.count}}</text>
@@ -53,12 +53,17 @@
 <view class='modal-introduction' wx:if='{{showModalIntroduction}}'>
   <view class='modal-introduction-con'>
     <text class='close-modal-introduction' catchtap='closeModalIntroduction'>×</text>
-    <view class='modal-goods-icon'><image src='/images/tea/tea.jpg'></image></view>
+    <view class='modal-goods-icon'>
+      <image src='/images/tea/tea.jpg'></image>
+    </view>
     <view class='modal-introduction-txt'>
       <view>岳阳珍珠奶茶</view>
       <view>很好喝很甜哈哈哈吉林省的房间里时代峻峰绿卡的设计费林科大输积分唠嗑的撒酒疯雷克萨点击分类读书卡</view>
     </view>
-    <view class='modal-introduction-price'><text>¥</text>23.00<view catchtap='chooseSizeBtn'>选规格</view></view>
+    <view class='modal-introduction-price'>
+      <text>¥</text>23.00
+      <view catchtap='chooseSizeBtn' data-tea-id='{{modalTeaId}}'>选规格</view>
+    </view>
   </view>
 </view>
 <view class='modal-size' wx:if='{{showModalSize}}'>
@@ -78,7 +83,26 @@
       </block>
     </scroll-view>
     <view class='size-item-price-con'>
-
+      <view class='size-item-price'>
+        <view class='s-i-p-1'>
+          <text>¥</text>
+          <text>22</text>
+        </view>
+        <view class='s-i-p-2'>加冰，热一点水电费水电费水电费</view>
+      </view>
+      <view class='add-cart-btn' wx:if='{{modalTeaCount < 1}}'>
+        <view catchtap='addCartBtn' data-tea-id='{{modalTeaId}}'>
+          <image src='/images/icon/cart_white.png'></image>
+          <text>加入购物袋</text>
+        </view>
+      </view>
+      <view class='add-cart-btn2' wx:if='{{modalTeaCount > 0}}'>
+        <view class='jia-jian'>
+          <image class='jian-hao-icon' src='/images/icon/jianhao.png' catchtap='jianClick' data-tea-id='{{modalTeaId}}'></image>
+          <text>{{modalTeaCount}}</text>
+          <image class='jia-hao-icon' src='/images/icon/jiahao.png' catchtap='jiaClick' data-tea-id='{{modalTeaId}}'></image>
+        </view>
+      </view>
     </view>
   </view>
 </view>

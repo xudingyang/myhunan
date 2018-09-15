@@ -58,7 +58,9 @@ Page({
           { text: '常温哈哈', checked: false }
         ]
       } 
-    ]
+    ],
+    modalTeaId: '',
+    modalTeaCount: ''
   },
   onLoad: function(options) {
     if (!this.data.localHasStore) {
@@ -146,7 +148,8 @@ Page({
       tmpCategoryTeaList[categoryIndex].teaList[teaIndex].count -= 1;
     }
     this.setData({
-      teaList: tmpCategoryTeaList
+      teaList: tmpCategoryTeaList,
+      modalTeaCount: tmpCategoryTeaList[categoryIndex].teaList[teaIndex].count      
     })
   },
   // 点加号
@@ -157,7 +160,8 @@ Page({
     let tmpCategoryTeaList = this.data.teaList.slice();
     tmpCategoryTeaList[categoryIndex].teaList[teaIndex].count += 1;
     this.setData({
-      teaList: tmpCategoryTeaList
+      teaList: tmpCategoryTeaList,
+      modalTeaCount: tmpCategoryTeaList[categoryIndex].teaList[teaIndex].count
     })
   },
   // 滑动右边的商品列表
@@ -225,9 +229,14 @@ Page({
     console.log(232333)
   },
   // 点击商品图片
-  clickGoodsIcon: function (){
+  clickGoodsIcon: function (e){
+    var teaId = e.currentTarget.dataset.teaId;
+    var obj = this.findTeaIndex(teaId);
+    var teaCount = (this.data.teaList[obj.categoryIndex].teaList)[obj.teaIndex].count
     this.setData({
-      showModalIntroduction: true
+      showModalIntroduction: true,
+      modalTeaId: teaId,
+      modalTeaCount: teaCount
     })
   },
   // 关闭商品介绍界面
@@ -245,9 +254,26 @@ Page({
     })
   },
   // 点击选规格
-  chooseSizeBtn: function(){
+  chooseSizeBtn: function(e){
+    var teaId = e.currentTarget.dataset.teaId;    
+    var obj = this.findTeaIndex(teaId);
+    var teaCount = (this.data.teaList[obj.categoryIndex].teaList)[obj.teaIndex].count
     this.setData({
-      showModalSize: true
+      showModalSize: true,
+      modalTeaId: teaId,
+      modalTeaCount: teaCount
+    })
+  },
+  // 加入购物袋
+  addCartBtn: function(e){
+    let teaId = e.currentTarget.dataset.teaId;
+    let categoryIndex = this.findTeaIndex(teaId).categoryIndex;
+    let teaIndex = this.findTeaIndex(teaId).teaIndex;
+    let tmpCategoryTeaList = this.data.teaList.slice();
+    tmpCategoryTeaList[categoryIndex].teaList[teaIndex].count += 1;
+    this.setData({
+      teaList: tmpCategoryTeaList,
+      modalTeaCount: tmpCategoryTeaList[categoryIndex].teaList[teaIndex].count
     })
   },
   /****************************************
@@ -270,16 +296,6 @@ Page({
       }
     }
   },
-
-
-
-  onReady: function() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
   onShow: function() {
     let teaCategoryList = this.data.teaList.slice();
     let teaListHeight = 0;
@@ -297,7 +313,9 @@ Page({
       teaListHeightArray: tmpArray
     })
   },
+  onReady: function () {
 
+  },
   /**
    * 生命周期函数--监听页面隐藏
    */
