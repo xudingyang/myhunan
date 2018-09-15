@@ -1,0 +1,10 @@
+<view class='outer'>
+  <view class='image-con'>
+    <image src='/images/icon/bdmdxx.png'></image>  
+  </view>
+  <view class='store-info'>
+    <view class='item store-name'><text>商户:</text><view>岳阳汉林奶茶店</view></view>
+    <view class='item bind-state'><text>状态:</text><view>未绑定</view></view>
+  </view>
+  <view class='bind-btn'><text>绑定</text></view>
+</view>

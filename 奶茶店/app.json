@@ -1,8 +1,8 @@
 {
   "pages": [
-    "pages/order-detail/order-detail",
-    
+    "pages/bind-store/bind-store",
     "pages/home/home",
+    "pages/order-detail/order-detail",
     "pages/diandan/diandan",
     "pages/qucha/qucha",
     "pages/user-chongzhi-record/user-chongzhi-record",
