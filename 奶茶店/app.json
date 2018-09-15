@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/home/home",
     "pages/diandan/diandan",
     "pages/qucha/qucha",
     "pages/user-chongzhi-record/user-chongzhi-record",
@@ -27,8 +28,7 @@
     "pages/ext/ext",
     "pages/index/index",
     "pages/order-detail/order-detail",
-    "pages/shop-order-center-month-order-detail/shop-order-center-month-order-detail",
-    "pages/home/home"
+    "pages/shop-order-center-month-order-detail/shop-order-center-month-order-detail"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -41,8 +41,8 @@
     "selectedColor": "#ffffff",
     "list": [
       {
-        "pagePath": "pages/diandan/diandan",
-        "text": "点单",
+        "pagePath": "pages/home/home",
+        "text": "首页",
         "iconPath": "images/tab/diandan.png",
         "selectedIconPath": "images/tab/diandan_fill.png"
       },

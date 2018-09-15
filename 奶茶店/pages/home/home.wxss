@@ -1,1 +1,35 @@
-/* pages/home/home.wxss */
+page {
+}
+.banner-wrapper {
+  height: 600rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner-wrapper > view {
+  width: 640rpx;
+  height: 520rpx;
+  border-radius: 6rpx;
+  overflow: hidden;
+}
+.banner-wrapper image {
+  width: 640rpx;
+  height: 520rpx;
+}
+.diandan-btn-con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.diandan-btn {
+  height: 80rpx;
+  width: 640rpx;
+  background: #e69b4c;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36rpx;
+  font-weight: 600;
+  letter-spacing: 3px;
+}

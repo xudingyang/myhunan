@@ -1,2 +1,8 @@
-<!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<view class='banner-wrapper'>
+  <view>
+    <image src='/images/cat_avatar.jpg'></image>  
+  </view>
+</view>
+<view class='diandan-btn-con'>
+  <button class='diandan-btn' open-type='getUserInfo'>自助点单</button>
+</view>
