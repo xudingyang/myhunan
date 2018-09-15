@@ -6,3 +6,15 @@
 <view class='diandan-btn-con'>
   <button class='diandan-btn' open-type='getUserInfo'>自助点单</button>
 </view>
+<view class='coupon-btn-con'>
+  <button class='coupon-btn' open-type='getUserInfo'>优惠券</button>
+</view>
+<!-- <view class='modal-coupon-wrapper'>
+  <view class='modal-coupon'>
+    <view class='modal-banner-con'>
+      <image src='/images/cat_avatar.jpg'></image>
+      <button class='diandan-btn2' open-type='getUserInfo'>自助点单</button>
+    </view>
+    <view class='modal-close-btn'><image src='/images/icon/close_white.png'></image></view>
+  </view>
+</view> -->

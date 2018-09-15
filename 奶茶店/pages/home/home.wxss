@@ -33,3 +33,61 @@ page {
   font-weight: 600;
   letter-spacing: 3px;
 }
+.coupon-btn-con {
+  margin-top: 20px;
+}
+.coupon-btn {
+  background: #e69b4c;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  box-shadow: 0px 3px 6px #888;
+}
+/* .modal-coupon-wrapper {
+  position: fixed;z-index: 999;
+  background: rgba(0, 0, 0, .6);
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-coupon {
+  height: 500rpx;
+  width: 540rpx;
+}
+.modal-banner-con {
+  width: 540rpx;
+  height: 400rpx;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+.modal-banner-con > image {
+  width: 540rpx;
+  height: 400rpx;
+}
+.diandan-btn2 {
+  position: absolute;
+  bottom: 0;
+  left: 70rpx;
+  width: 400rpx;
+}
+.modal-close-btn {
+  padding-top: 40rpx;
+  box-sizing: border-box;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+}
+.modal-close-btn > image {
+  height: 80rpx;
+  width: 80rpx;
+} */

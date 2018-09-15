@@ -1,9 +1,11 @@
 {
   "pages": [
-    "pages/bind-store/bind-store",
-    "pages/home/home",
-    "pages/order-detail/order-detail",
     "pages/diandan/diandan",
+    
+    "pages/home/home",
+    
+    "pages/bind-store/bind-store",
+    "pages/order-detail/order-detail",
     "pages/qucha/qucha",
     "pages/user-chongzhi-record/user-chongzhi-record",
     "pages/user/user",
