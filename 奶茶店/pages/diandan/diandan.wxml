@@ -35,7 +35,7 @@
                 <view class='tea-introduction'>{{item.introduction}}</view>
                 <view class='tea-price-size'>
                   <text class='tea-price'>¥20</text>
-                  <text class='tea-size' wx:if='{{item.size.length > 0}}'>选规格</text>
+                  <text class='tea-size' wx:if='{{item.size.length > 0}}' catchtap='chooseSizeBtn'>选规格</text>
                   <view class='jia-jian' wx:if='{{item.size.length < 1}}'>
                     <image class='jian-hao-icon' src='/images/icon/jianhao.png' catchtap='jianClick' data-tea-id='{{item.id}}' wx:if='{{item.count > 0}}'></image>
                     <text wx:if='{{item.count > 0}}'>{{item.count}}</text>
@@ -58,7 +58,27 @@
       <view>岳阳珍珠奶茶</view>
       <view>很好喝很甜哈哈哈吉林省的房间里时代峻峰绿卡的设计费林科大输积分唠嗑的撒酒疯雷克萨点击分类读书卡</view>
     </view>
-    <view class='modal-introduction-price'><text>¥</text>23.00</view>
+    <view class='modal-introduction-price'><text>¥</text>23.00<view catchtap='chooseSizeBtn'>选规格</view></view>
   </view>
 </view>
-<view class='modal-size'></view>
+<view class='modal-size' wx:if='{{showModalSize}}'>
+  <view class='modal-size-con'>
+    <text class='close-modal-introduction' catchtap='closeModalSize'>×</text>
+    <view class='modal-size-title'>珍珠奶茶</view>
+    <scroll-view class='modal-size-list' scroll-y='true'>
+      <block wx:for='{{teaSizeList}}'>
+        <view class='modal-size-item' data-item-index='{{index}}' catchtap='clickSizeItem'>
+          <view class='size-item-title'>{{item.title}}</view>
+          <view class='size-item-con'>
+            <block wx:for='{{item.content}}'>
+              <text class='{{item.checked ? "sieze-item-text size-item-active" : "sieze-item-text"}}' data-text-index='{{index}}'>{{item.text}}</text>
+            </block>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+    <view class='size-item-price-con'>
+
+    </view>
+  </view>
+</view>

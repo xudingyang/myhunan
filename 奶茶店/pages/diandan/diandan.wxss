@@ -216,6 +216,7 @@ page {
   width: 48rpx;
   height: 48rpx;
 }
+.modal-size,
 .modal-introduction {
   position: fixed;
   top: 0;
@@ -228,6 +229,7 @@ page {
   align-items: center;
   justify-content: center;
 }
+.modal-size-con,
 .modal-introduction-con {
   width: 590rpx;
   height: 674rpx;
@@ -235,6 +237,10 @@ page {
   border-radius: 6px;
   overflow: hidden;
   position: relative;
+}
+.modal-size-con {
+  height: 706rpx;
+  background: #fff;
 }
 .close-modal-introduction {
   position: absolute;
@@ -260,7 +266,7 @@ page {
   height: 340rpx; 
 }
 .modal-introduction-txt {
-  padding: 20rpx 30rpx;
+  padding: 20rpx 30rpx 0 30rpx;
 }
 .modal-introduction-txt > view:nth-of-type(1) {
   font-size: 30rpx;
@@ -271,12 +277,72 @@ page {
   color: #949494;
 }
 .modal-introduction-price {
-  height: 60rpx;
-  background: yellow;
+  height: 80rpx;
   font-size: 30rpx;
   padding-left: 30rpx;
   font-weight: 600;    
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 .modal-introduction-price > text {
   margin-right: 5px;
+}
+.modal-introduction-price > view {
+  position: absolute;
+  right: 20rpx;
+  top: 14rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 52rpx;
+  width: 120rpx;
+  font-size: 24rpx;
+  border-radius: 52rpx;
+  background: #dfa76e;
+  color: #fff;
+}
+.modal-size-title {
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 30rpx;
+}
+.modal-size-list {
+  height: 478rpx;
+  box-sizing: border-box;
+  padding: 0 20rpx;
+}
+.modal-size-item {
+
+}
+.size-item-title {
+  font-size: 28rpx;
+  color: #9a9a9a;
+  margin-bottom: 4px;
+}
+.size-item-con {
+  overflow: hidden;
+}
+.sieze-item-text {
+  float: left;
+  margin-right: 12rpx;
+  margin-bottom: 5px;
+  border: 1px solid #c9c9c9;
+  font-size: 26rpx;
+  height: 52rpx;
+  line-height: 52rpx;
+  padding: 0 28rpx;
+  border-radius: 26rpx;
+  color: #868686;
+}
+.size-item-active {
+  background: #dba775;
+  color: #fff;
+}
+.size-item-price-con {
+  height: 128rpx;
+  box-sizing: border-box;
+  border-top: 1rpx solid #f1f1f1;
+  background: #f7f7f7;
 }

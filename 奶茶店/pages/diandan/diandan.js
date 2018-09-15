@@ -11,7 +11,54 @@ Page({
     teaListHeightArray: [],
     teaList: list,
     categoryScrollTop: 0,
-    showModalIntroduction: true
+    showModalIntroduction: false,
+    showModalSize: true,
+    teaSizeList: [
+      {
+        title: '温度1',
+        content: [
+          { text: '常温哈哈', checked: false},
+          { text: '加冰', checked: true },
+          { text: '多冰', checked: false },
+          { text: '少放点冰', checked: false },
+          { text: '常温哈哈', checked: false },
+          { text: '常温哈哈', checked: false }          
+        ]
+      },
+      {
+        title: '温度2',
+        content: [
+          { text: '常温哈哈', checked: false },
+          { text: '加冰', checked: true },
+          { text: '多冰', checked: false },
+          { text: '少放点冰', checked: false },
+          { text: '常温哈哈', checked: false },
+          { text: '常温哈哈', checked: false }
+        ]
+      },
+      {
+        title: '温度3',
+        content: [
+          { text: '常温哈哈', checked: false },
+          { text: '加冰', checked: true },
+          { text: '多冰', checked: false },
+          { text: '少放点冰', checked: false },
+          { text: '常温哈哈', checked: false },
+          { text: '常温哈哈', checked: false }
+        ]
+      },
+      {
+        title: '温度4',
+        content: [
+          { text: '常温哈哈', checked: false },
+          { text: '加冰', checked: true },
+          { text: '多冰', checked: false },
+          { text: '少放点冰', checked: false },
+          { text: '常温哈哈', checked: false },
+          { text: '常温哈哈', checked: false }
+        ]
+      } 
+    ]
   },
   onLoad: function(options) {
     if (!this.data.localHasStore) {
@@ -44,6 +91,28 @@ Page({
       }
     })
   },
+  clickSizeItem: function(e){
+    var itemIndex = parseInt(e.currentTarget.dataset.itemIndex);
+    var textIndex = parseInt(e.target.dataset.textIndex);
+    if (itemIndex >= 0 && textIndex >= 0) {
+      let tmpTeaSizeList = this.data.teaSizeList.slice();
+      for (let i = 0, iLength = tmpTeaSizeList.length; i < iLength; i++) {
+        if (i === itemIndex) {
+          let textList = tmpTeaSizeList[i].content;
+          for (let j = 0, jLength = textList.length; j < jLength; j++) {
+            if (j === textIndex) {
+              textList[j].checked = true
+            } else {
+              textList[j].checked = false              
+            }
+          }
+        }
+      }
+      this.setData({
+        teaSizeList: tmpTeaSizeList
+      })
+    }
+  }, 
   // 点击顶部的换门店
   changeStore: function() {
     wx.navigateTo({
@@ -164,7 +233,21 @@ Page({
   // 关闭商品介绍界面
   closeModalIntroduction: function(){
     this.setData({
-      showModalIntroduction: false
+      showModalIntroduction: false,
+      showModalSize: false
+    })
+  },
+  // 关闭选择规则界面
+  closeModalSize: function(){
+    this.setData({
+      showModalIntroduction: false,
+      showModalSize: false
+    })
+  },
+  // 点击选规格
+  chooseSizeBtn: function(){
+    this.setData({
+      showModalSize: true
     })
   },
   /****************************************

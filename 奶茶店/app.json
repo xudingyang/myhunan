@@ -1,16 +1,10 @@
 {
   "pages": [
     "pages/diandan/diandan",
-    
     "pages/qucha/qucha",
-    
     "pages/user-chongzhi-record/user-chongzhi-record",
-    
     "pages/user/user",
-    
-    
     "pages/shop-order-center-day-order-detail/shop-order-center-day-order-detail",
-    
     "pages/shop-order-center/shop-order-center",
     "pages/shop-order-center-latest-order/shop-order-center-latest-order",
     "pages/shop-order-center-month-order/shop-order-center-month-order",
@@ -33,7 +27,8 @@
     "pages/ext/ext",
     "pages/index/index",
     "pages/order-detail/order-detail",
-    "pages/shop-order-center-month-order-detail/shop-order-center-month-order-detail"
+    "pages/shop-order-center-month-order-detail/shop-order-center-month-order-detail",
+    "pages/home/home"
   ],
   "window": {
     "backgroundTextStyle": "light",
