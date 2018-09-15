@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/order-detail/order-detail",
+    
     "pages/home/home",
     "pages/diandan/diandan",
     "pages/qucha/qucha",
@@ -27,7 +29,6 @@
     "pages/choose_store/choose_store",
     "pages/ext/ext",
     "pages/index/index",
-    "pages/order-detail/order-detail",
     "pages/shop-order-center-month-order-detail/shop-order-center-month-order-detail"
   ],
   "window": {

@@ -1,2 +1,50 @@
-<!--pages/order-detail/order-detail.wxml-->
-<text>pages/order-detail/order-detail.wxml</text>
+
+<view class='order-wrapper'>
+  <scroll-view class='order-scroll-view' scroll-y='true'>
+      <view class='order'>
+        <view class='order-state-con'>
+          <view class='order-state-txt'>订单已完成</view>
+          <view class='order-state-tip'>请等候取茶通知，凭此页至门店取茶</view>
+          <view class='order-state-diandan'>
+            <view class='diandan-btn'>去点单</view>
+          </view>
+        </view>
+        <view class='order-detail-con'>
+          <view class='shop-name-address'>
+            <view class='shop-info'>
+              <view class='shop-name'>汉林奶茶店</view>
+              <view class='shop-address'>岳阳大道12路撒旦法水电费第三方士大夫士大夫士大夫的水电费水电费</view>
+            </view>
+            <view class='shop-btns'>
+              <view><image src='/images/icon/dianhua2.png'></image><text>联系门店</text></view>
+              <view><image src='/images/icon/daohang2.png'></image><text>到这去</text></view>
+            </view>
+          </view>
+          <view class='order-detail-split'><view></view></view>
+          <view class='order-goods-price'>
+            <view class='order-goods-con'>
+              <block wx:for='{{[1,1,1]}}'>
+              <view class='order-goods'>
+                  <view class='goods-name-remark'>
+                  <view class='goods-name'>珍珠奶茶是大幅度的是否</view>
+                  <view class='goods-remark'>不要加冰</view>
+                </view>
+                <view class='goods-price-count'>
+                  <text>×1</text><text>¥2.00</text>
+                </view>
+              </view>
+              </block>
+            </view>
+            <view class='total-count-con'>
+              <view class='total-count'><text>合计</text><text>¥60.00</text></view>
+            </view>
+          </view>      
+          <view class='order-detail-split'><view></view></view>
+          <view class='order-time'>
+            <view><text>下单时间:</text><text>2018-12-12 12:12:12</text></view>
+            <view><text>订单编号:</text><text>20343434345423289</text></view>            
+          </view>          
+        </view>
+      </view>
+  </scroll-view>
+</view>
