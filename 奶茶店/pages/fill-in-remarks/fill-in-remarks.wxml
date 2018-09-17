@@ -1,0 +1,15 @@
+<form bindsubmit="formSubmit">
+  <view class='input-wrapper'>
+    <textarea placeholder-style='color:#aaa;font-size:28rpx;' maxlength='50' placeholder='请填写备注信息' value='{{remarksTxt}}' bindinput='listenTextarea'></textarea>
+    <view class='letter-count'>{{wordCount}}/50</view>
+  </view>
+  <view class='words-list'>
+    <view class='words-list-title'>快捷标签</view>
+    <view class='words-list-items'>
+      <block wx:for='{{wordsList}}'>
+        <text catchtap='clickWordItem' data-txt='{{item}}'>{{item}}</text>
+      </block>
+    </view>
+  </view>
+   <button class='sub-btn' style='border: none;' formType="submit">完成</button>
+</form>
