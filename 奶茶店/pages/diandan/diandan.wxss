@@ -260,7 +260,7 @@ page {
 }
 .tea-size {
   font-size: 26rpx;
-  background: #413d3c;
+  background: #d89d5f;
   color: #fff;
   border-radius: 23rpx;
   height: 46rpx;
