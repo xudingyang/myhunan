@@ -11,7 +11,78 @@ page {
   display: flex;
   flex-direction: column;
 }
-
+.cart-btn-wrapper {
+  height: 100rpx;
+  box-sizing: border-box;
+  flex: 0 0 100rpx;
+  background: #e7e7e7;
+  border-top: 1rpx solid #e3e3e3;
+  display: flex;
+  position: relative;
+}
+.cart-tongji-info {
+  flex: 1;
+}
+.cart-jiesuan-btn {
+  background: #dba871;
+  width: 200rpx;
+  flex: 0 0 200rpx;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34rpx;
+}
+.cart-tongji-info {
+  position: relative;
+}
+.cart-tongji-money {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-right: 30rpx;
+  font-size: 34rpx;
+  font-weight: 600;
+}
+.cart-tongji-icon {
+  position: absolute;
+  z-index: 777;
+  left: 30rpx;
+  top: -10rpx;
+  background: #fff;
+  height: 80rpx;
+  width: 120rpx;
+  border-radius: 40rpx;
+  padding: 0 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cart-tongji-icon view {
+  position: absolute;
+  background: #d79f62;
+  right: 20rpx;
+  top: -14rpx;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22rpx;
+  height: 40rpx;
+  width: 40rpx;
+  border-radius: 50%;
+}
+.cart-tongji-icon image {
+  height: 40rpx;
+  width: 40rpx;
+}
+.cart-tongji-icon text {
+  color: #333;
+  font-size: 26rpx;
+}
 .choose-store-wrapper {
   background: #fff;
   flex: 0 0 110rpx;
@@ -404,4 +475,99 @@ page {
   font-size: 28rpx;
   height: 40rpx;
   line-height: 40rpx;
+}
+
+.modal-cart-list {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 100rpx;
+  background: rgba(0, 0, 0, .4);
+  z-index: 666;
+}
+.modal-cart-list-con {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 530rpx;
+}
+.con-title {
+  background: #f7f7f7;
+  height: 70rpx;
+  display: flex;
+  align-items: center;
+  padding-left: 30rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+.con-title > image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 6px;
+}
+.con-list {
+  background: #fff;
+  height: 460rpx;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+.con-tea{
+  border-bottom: 1rpx solid #eee;
+  display: flex;
+  align-items: center;
+}
+.con-info-price {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+}
+.con-info {
+  flex: 1;
+  width: 0;
+  padding-right: 8px;
+  box-sizing: border-box;
+}
+.con-info-name {
+  font-size: 28rpx;
+  width: 100%;
+}
+.con-info-remark{
+  margin-top: 2px;
+  font-size: 26rpx;
+  color: #777;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.con-price{
+  font-size: 32rpx;
+  width: 80rpx;
+  flex: 0 0 80rpx;
+}
+.jia-jian1 {
+  flex: 0 0 150rpx;
+  width: 150rpx;
+  height: 50rpx;
+  display: flex;
+  align-items: center;
+}
+.jian-hao-icon {
+  width: 48rpx;
+  height: 48rpx;
+}
+.jia-jian1 > text {
+  width: 54rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #222;
+  font-size: 32rpx;
+}
+.jia-hao-icon {
+  width: 48rpx;
+  height: 48rpx;
 }

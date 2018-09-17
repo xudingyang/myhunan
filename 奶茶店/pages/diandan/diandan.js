@@ -12,7 +12,7 @@ Page({
     teaList: list,
     categoryScrollTop: 0,
     showModalIntroduction: false,
-    showModalSize: true,
+    showModalSize: false,
     teaSizeList: [
       {
         title: '温度1',
@@ -60,7 +60,41 @@ Page({
       } 
     ],
     modalTeaId: '',
-    modalTeaCount: ''
+    modalTeaCount: '',
+    showCartList: true,
+    cartList: [
+      {
+        id:1,
+        name:'珍珠奶茶的设计费德生科技发大水口富家大室李开复就丢失了看风景的史111',
+        remark:'水电费水电费水电费水电费胜多负少的发第三方',
+        totalMoney: 56,
+        count: 8
+      }, {
+        id: 2,
+        name: '珍珠奶茶的设计费德生科技发大水口富家大室李开复就丢失了看风景的史222',
+        remark: '水电费水电费水电费水电费胜多负少的发第三方',
+        totalMoney: 56,
+        count: 8
+      }, {
+        id: 3,
+        name: '珍珠奶茶的设计费德生科技发大水口富家大室李开复就丢失了看风景的史333',
+        remark: '水电费水电费水电费水电费胜多负少的发第三方',
+        totalMoney: 56,
+        count: 8
+      }, {
+        id: 4,
+        name: '珍珠奶茶的设计费德生科技发大水口富家大室李开复就丢失了看风景的史莱444',
+        remark: '水电费水电费水电费水电费胜多负少的发第三方',
+        totalMoney: 56,
+        count: 8
+      }, {
+        id: 5,
+        name: '珍珠奶茶的设计费德生科技发大水口富家大室李开复就丢失了看风景的史555',
+        remark: '水电费水电费水电费水电费胜多负少的发第三方',
+        totalMoney: 56,
+        count: 8
+      }
+    ]
   },
   onLoad: function(options) {
     if (!this.data.localHasStore) {
@@ -274,6 +308,57 @@ Page({
     this.setData({
       teaList: tmpCategoryTeaList,
       modalTeaCount: tmpCategoryTeaList[categoryIndex].teaList[teaIndex].count
+    })
+  },
+  // 点击底下的购物袋按钮
+  clickCartListBtn: function(){
+    if (this.data.showCartList) {
+      this.setData({
+        showCartList: false
+      })
+    } else {
+      this.setData({
+        showCartList: true
+      })
+    }
+  },
+  // 点击购物袋商品列表弹出层
+  clickCartListModal: function (){
+    this.setData({
+      showCartList: false
+    })
+  },
+  // 点击  清空购物袋  按钮
+  clearCartList: function(){
+    this.setData({
+      cartList: []
+    })
+  },
+  cartJianClick: function(e){
+    var index = e.currentTarget.dataset.index;
+    var tmpCartList = this.data.cartList.slice();
+    for (let i = 0, iLength = tmpCartList.length; i < iLength; i++){
+      if (i === index) {
+        tmpCartList[i].count > 0 ? tmpCartList[i].count-- : tmpCartList[i].count
+        if (tmpCartList[i].count === 0) {
+          tmpCartList.splice(index,1)
+        }
+      }
+    }
+    this.setData({
+      cartList: tmpCartList
+    })
+  },
+  cartJiaClick: function(e){
+    var index = e.currentTarget.dataset.index;
+    var tmpCartList = this.data.cartList.slice();
+    for (let i = 0, iLength = tmpCartList.length; i < iLength; i++) {
+      if (i === index) {
+        tmpCartList[i].count++
+      }
+    }
+    this.setData({
+      cartList: tmpCartList
     })
   },
   /****************************************

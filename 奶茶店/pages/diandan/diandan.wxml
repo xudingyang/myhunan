@@ -10,7 +10,6 @@
     </view>
   </view>
   <view class='tea-wrapper'>
-    <!-- scroll-into-view='{{toCategoryView}}' -->
     <scroll-view class='tea-category' scroll-y='true' scroll-top='scrollTop' scroll-with-animation='false' scrollTop='{{categoryScrollTop}}'>
       <block wx:for='{{teaList}}'>
         <view class='{{item.selected ? "category category-selected" : "category" }}' catchtap='selectCatogary' data-index='{{index}}' id='category_item_{{index}}'>
@@ -48,6 +47,42 @@
         </view>
       </block>
     </scroll-view>
+  </view>
+  <view class='cart-btn-wrapper' wx:if='{{cartList.length > 0}}'>
+    <view class='cart-tongji-info'>
+      <view class='cart-tongji-icon' catchtap='clickCartListBtn'>
+        <image src='/images/icon/gouwudai_black.png'></image>
+        <text>购物袋</text>
+        <view>7</view>
+      </view>
+      <view class='cart-tongji-money'>¥99</view>
+    </view>
+    <view class='cart-jiesuan-btn'>结算</view>
+    <view class='modal-cart-list' wx:if='{{showCartList}}' catchtap='clickCartListModal'>
+      <view class='modal-cart-list-con'>
+        <view class='con-title' catchtap='clearCartList'>
+          <image src='/images/icon/delete.png'></image>清空购物袋
+        </view>
+        <scroll-view class='con-list' scroll-y='true' catchtap>
+          <block wx:for='{{cartList}}'>
+            <view class='con-tea'>
+              <view class='con-info-price'>
+                <view class='con-info'>
+                  <view class='con-info-name'>{{item.name}}</view>
+                  <view class='con-info-remark'>{{item.remark}}</view>
+                </view>
+                <view class='con-price'>¥{{item.totalMoney}}</view>
+              </view>
+              <view class='jia-jian1'>
+                <image class='jian-hao-icon' src='/images/icon/jianhao.png' catchtap='cartJianClick' data-index='{{index}}'></image>
+                <text>{{item.count}}</text>
+                <image class='jia-hao-icon' src='/images/icon/jiahao.png' catchtap='cartJiaClick' data-index='{{index}}'></image>
+              </view>
+            </view>
+          </block>
+        </scroll-view>
+      </view>
+    </view>
   </view>
 </view>
 <view class='modal-introduction' wx:if='{{showModalIntroduction}}'>

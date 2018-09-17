@@ -1,12 +1,10 @@
 {
   "pages": [
     "pages/diandan/diandan",
-    
     "pages/home/home",
-    
     "pages/bind-store/bind-store",
     "pages/order-detail/order-detail",
-    "pages/qucha/qucha",
+    "pages/qucha/qucha", 
     "pages/user-chongzhi-record/user-chongzhi-record",
     "pages/user/user",
     "pages/shop-order-center-day-order-detail/shop-order-center-day-order-detail",
