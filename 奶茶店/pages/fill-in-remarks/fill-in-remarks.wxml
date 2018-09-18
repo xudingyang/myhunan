@@ -1,6 +1,6 @@
 <form bindsubmit="formSubmit">
   <view class='input-wrapper'>
-    <textarea placeholder-style='color:#aaa;font-size:28rpx;' maxlength='50' placeholder='请填写备注信息' value='{{remarksTxt}}' bindinput='listenTextarea'></textarea>
+    <textarea name='remarksTxt' placeholder-style='color:#aaa;font-size:28rpx;' maxlength='50' placeholder='请填写备注信息' value='{{remarksTxt}}' bindinput='listenTextarea'></textarea>
     <view class='letter-count'>{{wordCount}}/50</view>
   </view>
   <view class='words-list'>
@@ -11,5 +11,5 @@
       </block>
     </view>
   </view>
-   <button class='sub-btn' style='border: none;' formType="submit">完成</button>
+  <button class='sub-btn' style='border: none;' formType="submit">完成</button>
 </form>

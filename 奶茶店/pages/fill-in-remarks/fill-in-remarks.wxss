@@ -55,4 +55,5 @@ textarea {
 }
 button::after {
   border: none;
+  border-top: 1rpx solid #ddd;  
 }

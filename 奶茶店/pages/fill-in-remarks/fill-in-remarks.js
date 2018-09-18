@@ -7,22 +7,24 @@ Page({
   },
   listenTextarea: function (e){
     var txt = e.detail.value;
-    var remarksTxt = this.data.remarksTxt + txt;
     this.setData({
-      remarksTxt: remarksTxt,
-      wordCount: remarksTxt.length
+      remarksTxt: txt,
+      wordCount: txt.length
     })
   },
   formSubmit: function(e) {
-
+    console.log(e.detail.value.remarksTxt)
   },
   clickWordItem: function(e){
     var remarksTxt = this.data.remarksTxt;
-    if (remarksTxt.length >= 50) {
+    var txt = e.currentTarget.dataset.txt;
+    if ((remarksTxt + txt).length > 50) {
+      this.setData({
+        wordCount: remarksTxt.length
+      })
       return
     }
-    var txt = e.currentTarget.dataset.txt;
-    remarksTxt = remarksTxt + txt;
+    remarksTxt = remarksTxt + txt;    
     this.setData({
       remarksTxt: remarksTxt,
       wordCount: remarksTxt.length
