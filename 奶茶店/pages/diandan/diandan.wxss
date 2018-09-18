@@ -545,8 +545,8 @@ page {
 }
 .con-price{
   font-size: 32rpx;
-  width: 80rpx;
-  flex: 0 0 80rpx;
+  width: 100rpx;
+  flex: 0 0 100rpx;
 }
 .jia-jian1 {
   flex: 0 0 150rpx;
