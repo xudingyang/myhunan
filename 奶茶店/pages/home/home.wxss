@@ -6,13 +6,17 @@ page {
   align-items: center;
   justify-content: center;
 }
-.banner-wrapper > view {
+swiper {
   width: 640rpx;
   height: 520rpx;
-  border-radius: 6rpx;
+  border-radius: 8rpx;
   overflow: hidden;
 }
-.banner-wrapper image {
+swiper-item {
+  width: 640rpx;
+  height: 520rpx;
+}
+swiper-item image {
   width: 640rpx;
   height: 520rpx;
 }
