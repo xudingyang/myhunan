@@ -1,0 +1,79 @@
+<view class='wrapper1'>
+  <view class='store-name'>岳阳汉林奶茶店
+    <image src='/images/icon/more.png'></image>
+  </view>
+  <view class='store-tip'>您距离当前门店5000米以上，请确认下单门店</view>
+  <view class='order-type'>
+    <view class='{{orderType === "zq" ? "selected-state" : "normal-state"}}' catchtap='chooseMenDianZiQu'>
+      <image src='{{orderType === "zq" ? "/images/icon/md_yellow.png" : "/images/icon/md_black.png"}}'></image>
+      <text>门店自取</text>
+    </view>
+    <view wx:if='{{supportWaimai}}' class='{{orderType === "wm" ? "selected-state" : "normal-state"}}' catchtap='chooseWaiMai'>
+      <image src='{{orderType === "wm" ? "/images/icon/waimai_yellow.png" : "/images/icon/waimai_balck.png"}}'></image>
+      <text>外卖配送</text>
+    </view>
+    <view wx:if='{{!supportWaimai}}' class='not-support-waimai'>
+      <image src='/images/icon/waimai_gray.png'></image>
+      <text>外卖配送</text>
+    </view>
+  </view>
+  <view class='tip-txt' wx:if='{{orderType === "zq"}}'>您选择了到店自取，请注意饮品制作进度</view>
+  <view class='tip-txt' wx:if='{{orderType === "wm"}}'>您选择了外卖配送，请保持手机畅通</view>  
+</view>
+<view class='wrapper2'>
+  <view class='ziqu-user-info' wx:if='{{orderType === "zq"}}'>
+    <image src='/images/icon/cellphone.png'></image>
+    <input maxlength='11' placeholder='为确保能通知您取茶，请预留手机号' placeholder-style='font-size:26rpx;color:#999;'></input>
+    <view>自动填写</view>
+  </view>
+  <view class='waimai-user-info' wx:if='{{orderType === "wm"}}'>
+    <view class='choose-address-btn' catchtap='selecteAddress' wx:if='{{!hadSelectedAddress}}'>
+      <text>请选择收货地址</text><image src='/images/icon/more.png'></image>
+    </view>
+    <view class='choose-addrss-con' catchtap='selecteAddress' wx:if='{{hadSelectedAddress}}'>
+      <view>
+        <view class='address-txt'>岳阳大道翡翠湾12楼阿斯顿发</view>
+        <view class='address-person'>收货人：刘能(先生）<text>13344445555</text></view>
+      </view>
+      <image src='/images/icon/more.png'></image>
+    </view>
+  </view>
+</view>
+<view class='wrapper3'>
+  <view class='mx-title'>商品明细</view>
+  <view class='mx-tea-list'>
+    <block wx:for='{{[1,1,1]}}'>
+      <view class='mx-tea-item'>
+        <view>
+          <view class='tea-name'>珍珠奶茶</view>
+          <view class='tea-size'>加冰，多加点冰加冰，多加点冰加冰，多加点冰加冰，多加点冰</view>
+        </view>
+        <view>
+          <view class='tea-count'>x 2</view>
+          <view class='tea-money'>¥59.00</view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class='diliver-cost'>
+    <text>配送费</text>
+    <view>¥5</view>
+  </view>
+  <view class='order-coupon'>
+    <text>优惠券</text>
+    <view>满100减10哈哈哈进口进口即可将科技快捷键可进口进口金块</view>
+    <image src='/images/icon/more.png'></image>
+  </view>
+  <view class='order-total'>
+    <view>共3件商品，小计:<text>¥56</text>，优惠:<text>¥5</text>，需支付:<text>¥51</text></view>
+  </view>
+</view>
+<view class='wrapper4'>
+  <text>备注</text>
+  <view>多加点冰，不打包，哈哈哈哈或或奥术大师大所大所多撒大所大所</view>
+  <image src='/images/icon/more.png'></image>
+</view>
+<view class='wrapper5'>
+  <text>¥51</text>
+  <view>支付</view>
+</view>

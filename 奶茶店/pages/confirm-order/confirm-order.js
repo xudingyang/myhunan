@@ -1,10 +1,26 @@
-// pages/confirm-order/confirm-order.js
 Page({
 
-  /**
-   * 页面的初始数据
-   */
   data: {
+    // 是否支持外卖
+    supportWaimai: true,
+    // 订单类型 wm      zq
+    orderType: 'wm',
+    hadSelectedAddress: true
+  },
+  // 点击 门店自取
+  chooseMenDianZiQu: function(){
+    this.setData({
+      orderType: 'zq'
+    })
+  },
+  // 点击 外卖配送
+  chooseWaiMai: function(){
+    this.setData({
+      orderType: 'wm'
+    })
+  },
+  // 点击地址
+  selecteAddress: function(){
 
   },
 

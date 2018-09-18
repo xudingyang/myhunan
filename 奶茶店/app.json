@@ -1,11 +1,10 @@
 {
   "pages": [
-    "pages/diandan/diandan",
     
     "pages/confirm-order/confirm-order",
     
     "pages/home/home",
-    
+    "pages/diandan/diandan",    
     
     "pages/fill-in-remarks/fill-in-remarks",
     "pages/bind-store/bind-store",
