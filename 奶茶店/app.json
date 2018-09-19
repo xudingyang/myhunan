@@ -1,10 +1,11 @@
 {
   "pages": [
+    "pages/home/home",
+    
     "pages/diandan/diandan",
     
     "pages/confirm-order/confirm-order",
     
-    "pages/home/home",
     
     "pages/fill-in-remarks/fill-in-remarks",
     "pages/bind-store/bind-store",
@@ -41,9 +42,10 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "color": "#bdbcbb",
-    "backgroundColor": "#413d3c",
-    "selectedColor": "#ffffff",
+    "color": "#b7b7b7",
+    "backgroundColor": "#f7f7f7",
+    "selectedColor": "#0c0c0c",
+    "borderStyle": "black",
     "list": [
       {
         "pagePath": "pages/home/home",
