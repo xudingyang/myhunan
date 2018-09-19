@@ -9,11 +9,12 @@ Page({
     scrollTop: 0,
     percent: 2, // 当前设备1px对应的rpx值
     teaListHeightArray: [],
+    teaTotalHeigthArray: [],
     teaList: list,
     categoryScrollTop: 0,
     showModalIntroduction: false,
     showModalSize: false,
-    teaSizeList: [
+    teaSizeList: [ 
       {
         title: '温度1',
         content: [
@@ -61,7 +62,7 @@ Page({
     ],
     modalTeaId: '',
     modalTeaCount: '',
-    showCartList: true,
+    showCartList: false,
     cartList: [
       {
         id:1,
@@ -155,23 +156,6 @@ Page({
       url: '/pages/choose_store/choose_store'
     })
   },
-  // 点击左边的类别
-  selectCatogary: function(e) {
-    let index = e.currentTarget.dataset.index;
-    let tmpTeaList = this.data.teaList.slice();
-    let scrollTop = 0;
-    for (let i = 0, iLength = tmpTeaList.length; i < iLength; i++) {
-      if (i === index) {
-        tmpTeaList[i].selected = true
-      } else {
-        tmpTeaList[i].selected = false
-      }
-    }
-    this.setData({
-      teaList: tmpTeaList,
-      toView: 'tea_item_' + index
-    })
-  },
   // 点减号
   jianClick: function(e) {
     let teaId = e.currentTarget.dataset.teaId;
@@ -198,28 +182,41 @@ Page({
       modalTeaCount: tmpCategoryTeaList[categoryIndex].teaList[teaIndex].count
     })
   },
+  // 点击左边的类别
+  selectCatogary: function (e) {
+    let index = e.currentTarget.dataset.index;
+    let tmpTeaList = this.data.teaList.slice();
+    let scrollTop = 0;
+    for (let i = 0, iLength = tmpTeaList.length; i < iLength; i++) {
+      if (i === index) {
+        tmpTeaList[i].selected = true
+      } else {
+        tmpTeaList[i].selected = false
+      }
+    }
+    this.setData({
+      teaList: tmpTeaList,
+      toView: 'tea_item_' + index
+    })
+  },
   // 滑动右边的商品列表
   teaListScroll: function(e) {
     let scrollTop = e.detail.scrollTop;
     let scrollTopRpx = scrollTop * this.data.percent;
     let tmpTeaList = this.data.teaList.slice();
+    let tmpArray = this.data.teaListHeightArray.slice();
+    let teaTotalHeigthArray = this.data.teaTotalHeigthArray.slice();
     if (scrollTopRpx < 70) {
       return
     }
-    let tmpArray = this.data.teaListHeightArray.slice();
     let tmpHeight = 0;
     let categoryIndex = 0;
     for (let i = 0, iLength = tmpArray.length; i < iLength; i++) {
-      tmpHeight += tmpArray[i];
-      console.log(scrollTopRpx) 
-      console.log(tmpHeight)
-      if (i < iLength - 1 && scrollTopRpx > tmpHeight && scrollTopRpx < tmpHeight + tmpArray[i + 1]) {
-        categoryIndex = i;
-        // console.log(tmpHeight)
-        console.log('====================' + Date.now())
-        continue;
+      if (scrollTopRpx > teaTotalHeigthArray[i]) {
+        categoryIndex = i + 1;
       }
     }
+    
     for (let j = 0, jLength = tmpTeaList.length; j < jLength; j++) {
       if (j === categoryIndex) {
         tmpTeaList[j].selected = true;
@@ -227,12 +224,9 @@ Page({
         tmpTeaList[j].selected = false;
       }
     }
-    console.log(categoryIndex)
-    // console.log(categoryIndex * 96)    
     this.setData({
       teaList: tmpTeaList,
-      categoryScrollTop: categoryIndex * 96,
-      toCategoryView: 'category_item_' + categoryIndex
+      categoryScrollTop: (categoryIndex - 1) * 96
     })
   },
   teaListScrollTop: function() {
@@ -244,23 +238,12 @@ Page({
     tmpTeaList[0].selected = true;
     this.setData({
       teaList: tmpTeaList,
-      toCategoryView: 'category_item_0',
+      // toCategoryView: 'category_item_0',
       categoryScrollTop: 0
     })
   },
   teaListScrollBottom: function() {
-    let tmpTeaList = this.data.teaList.slice();
-    let kLength = tmpTeaList.length;
-    for (let k = 0; k < kLength - 1; k++) {
-      tmpTeaList[k].selected = false;
-    }
-    tmpTeaList[kLength - 1].selected = true;
-    this.setData({
-      teaList: tmpTeaList,
-      toCategoryView: 'category_item_0',
-      categoryScrollTop: 96 * kLength
-    })
-    console.log(232333)
+
   },
   // 点击商品图片
   clickGoodsIcon: function (e){
@@ -394,7 +377,16 @@ Page({
       }
       tmpArray[i] = teaHeigth + titleHeight;
     }
+    let teaTotalHeigthArray = [];
+    for (let k = 0, kLength = tmpArray.length; k < kLength; k++) {
+      let tmpTotalHeight = 0;
+      for (let m = 0; m <= k; m++) {
+        tmpTotalHeight += tmpArray[m]
+      }
+      teaTotalHeigthArray[k] = tmpTotalHeight
+    }
     this.setData({
+      teaTotalHeigthArray: teaTotalHeigthArray,
       teaListHeightArray: tmpArray
     })
   },

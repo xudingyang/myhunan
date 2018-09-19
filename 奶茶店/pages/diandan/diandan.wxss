@@ -185,13 +185,14 @@ page {
 }
 
 .tea-item-title {
-  margin-top: 6px;
+  /* margin-top: 6rpx; */
   height: 60rpx;
   display: flex;
   align-items: center;
   font-size: 24rpx;
   color: #222;
   padding: 0 22rpx;
+  padding-top: 6rpx;
 }
 
 .tea-item-title > image {
@@ -268,6 +269,21 @@ page {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+.tea-size > text {
+  position: absolute;
+  right: -10rpx;
+  top: -15rpx;
+  height: 36rpx;
+  width: 36rpx;
+  border: 1rpx solid #fff;
+  border-radius: 50%;
+  background: #d89d5f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24rpx;
 }
 .jia-jian {
   height: 50rpx;

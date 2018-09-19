@@ -18,7 +18,7 @@
         </view>
       </block>
     </scroll-view>
-    <scroll-view class='tea-items' scroll-y='true' scroll-into-view='{{toView}}' scroll-with-animation='true' bindscroll='teaListScroll' bindscrolltoupper='teaListScrollTop' lower-threshold='teaListScrollBottom' upper-threshold='60'>
+    <scroll-view class='tea-items' scroll-y='true' scroll-into-view='{{toView}}' scroll-with-animation='true' bindscroll='teaListScroll' bindscrolltoupper='teaListScrollTop' bindscrolltolower='teaListScrollBottom' lower-threshold='200' upper-threshold='60'>
       <block wx:for='{{teaList}}'>
         <view class='tea-item' id='tea_item_{{index}}'>
           <view class='tea-item-title'>
@@ -34,7 +34,10 @@
                 <view class='tea-introduction'>{{item.introduction}}</view>
                 <view class='tea-price-size'>
                   <text class='tea-price'>¥20</text>
-                  <text class='tea-size' wx:if='{{item.size.length > 0}}' catchtap='chooseSizeBtn' data-tea-id='{{item.id}}'>选规格</text>
+
+                  <!-- <text class='tea-size' wx:if='{{item.size.length > 0}}' catchtap='chooseSizeBtn' data-tea-id='{{item.id}}'>选规格</text> -->
+                  <view class='tea-size' wx:if='{{item.size.length > 0}}' catchtap='chooseSizeBtn' data-tea-id='{{item.id}}'>选规格 <text>2</text></view>
+                  
                   <view class='jia-jian' wx:if='{{item.size.length < 1}}'>
                     <image class='jian-hao-icon' src='/images/icon/jianhao.png' catchtap='jianClick' data-tea-id='{{item.id}}' wx:if='{{item.count > 0}}'></image>
                     <text wx:if='{{item.count > 0}}'>{{item.count}}</text>
