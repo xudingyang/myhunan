@@ -32,7 +32,6 @@
     "pages/coupon-detail/coupon-detail",
     "pages/coupon/coupon",
     "pages/choose_store/choose_store",
-    "pages/ext/ext",
     "pages/index/index",
     "pages/shop-order-center-month-order-detail/shop-order-center-month-order-detail"
   ],
