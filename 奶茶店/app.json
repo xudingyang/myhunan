@@ -1,8 +1,9 @@
 {
   "pages": [
+    "pages/home/home",
+    
     "pages/diandan/diandan",
     
-    "pages/home/home",
     "pages/store-list/store-list",    
     "pages/zhuotai-diancan/zhuotai-diancan",
     "pages/confirm-order/confirm-order",
