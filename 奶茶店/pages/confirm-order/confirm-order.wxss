@@ -200,6 +200,7 @@ page {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  text-align: right;
 }
 .order-coupon image {
   flex: 0 0 40rpx;

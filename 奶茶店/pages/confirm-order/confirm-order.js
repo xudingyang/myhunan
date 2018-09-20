@@ -21,7 +21,9 @@ Page({
   },
   // 点击地址
   selecteAddress: function(){
-
+    wx.navigateTo({
+      url: '/pages/user-address/user-address'
+    })
   },
   // 填写备注
   writeRemarks: function(){
@@ -29,7 +31,6 @@ Page({
       url: '/pages/fill-in-remarks/fill-in-remarks'
     })
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
