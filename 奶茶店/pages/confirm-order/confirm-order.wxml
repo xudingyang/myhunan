@@ -68,7 +68,7 @@
     <view>共3件商品，小计:<text>¥56</text>，优惠:<text>¥5</text>，需支付:<text>¥51</text></view>
   </view>
 </view>
-<view class='wrapper4'>
+<view class='wrapper4' catchtap='writeRemarks'>
   <text>备注</text>
   <view>多加点冰，不打包，哈哈哈哈或或奥术大师大所大所多撒大所大所</view>
   <image src='/images/icon/more.png'></image>

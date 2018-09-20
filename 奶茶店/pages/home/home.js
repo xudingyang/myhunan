@@ -7,14 +7,17 @@ Page({
   data: {
 
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
 
   },
-
+  dianDanClick: function() {
+    wx.navigateTo({
+      url: '/pages/choose_store/choose_store'
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

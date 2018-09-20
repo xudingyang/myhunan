@@ -14,6 +14,9 @@ Page({
   },
   formSubmit: function(e) {
     console.log(e.detail.value.remarksTxt)
+    wx.navigateBack({
+      delta: 1,
+    })
   },
   clickWordItem: function(e){
     var remarksTxt = this.data.remarksTxt;
@@ -30,6 +33,7 @@ Page({
       wordCount: remarksTxt.length
     })
   },
+
   /**
    * 生命周期函数--监听页面加载
    */

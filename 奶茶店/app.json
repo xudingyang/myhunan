@@ -1,12 +1,11 @@
 {
   "pages": [
-    "pages/home/home",
-    
     "pages/diandan/diandan",
     
+    "pages/home/home",
+    "pages/store-list/store-list",    
+    "pages/zhuotai-diancan/zhuotai-diancan",
     "pages/confirm-order/confirm-order",
-    
-    
     "pages/fill-in-remarks/fill-in-remarks",
     "pages/bind-store/bind-store",
     "pages/order-detail/order-detail",

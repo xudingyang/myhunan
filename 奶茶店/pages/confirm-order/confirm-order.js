@@ -23,6 +23,12 @@ Page({
   selecteAddress: function(){
 
   },
+  // 填写备注
+  writeRemarks: function(){
+    wx.navigateTo({
+      url: '/pages/fill-in-remarks/fill-in-remarks'
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载

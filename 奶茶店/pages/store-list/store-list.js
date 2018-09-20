@@ -29,7 +29,7 @@ Page({
       latitude: 23.099994,
       longitude: 113.328620,
       name: '毛毛奶茶',
-        iconPath: '/images/location.png',
+      iconPath: '/images/location.png',
       width: 40,
       height: 40,
       callout: {
@@ -121,7 +121,7 @@ Page({
     }]
   },
   // 点击门店
-  selecteStore: function(e) {
+  selecteStore: function (e) {
     var selected = e.currentTarget.dataset.selected;
     var index = e.currentTarget.dataset.index;
     var latitude = e.currentTarget.dataset.item.latitude;
@@ -143,7 +143,7 @@ Page({
     }
   },
   // 选中门店后去点单
-  placeOrder: function() {
+  placeOrder: function () {
     let distance = 99;
     if (distance > 50) {
       wx.showModal({
@@ -154,38 +154,38 @@ Page({
         cancelColor: '#333333',
         confirmText: '确定',
         confirmColor: '#d79f62',
-        success: function(res) {
+        success: function (res) {
           if (res.confirm) {
-            wx.navigateTo({
+            wx.switchTab({
               url: '/pages/diandan/diandan'
             })
           }
         },
-        fail: function(res) {},
-        complete: function(res) {},
+        fail: function (res) { },
+        complete: function (res) { },
       })
     }
   },
   // 选择城市
-  bindPickerChange: function(e) {
+  bindPickerChange: function (e) {
     console.log(this.data.array[e.detail.value])
     this.setData({
       index: e.detail.value
     })
   },
   // 点击搜索按钮
-  clickSearchBtn: function() {
+  clickSearchBtn: function () {
     this.setData({
       searchReasultListShow: true
     })
   },
   // 点击取消按钮
-  clickCancelBtn: function() {
+  clickCancelBtn: function () {
     this.setData({
       searchReasultListShow: false
     })
   },
-  listenSearchInput: function(e) {
+  listenSearchInput: function (e) {
     var value = e.detail.value;
     console.log(value.length)
     if (value.length === 0) {
@@ -201,56 +201,56 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function(options) {
+  onLoad: function (options) {
 
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function() {
+  onReady: function () {
 
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function() {
+  onShow: function () {
 
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function() {
+  onHide: function () {
 
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function() {
+  onUnload: function () {
 
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function() {
+  onPullDownRefresh: function () {
 
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function() {
+  onReachBottom: function () {
 
   },
 
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function() {
+  onShareAppMessage: function () {
 
   }
 })

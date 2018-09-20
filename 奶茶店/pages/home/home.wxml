@@ -6,8 +6,8 @@
   </swiper>
 </view>
 <view class='diandan-btn-con'>
-  <button class='diandan-btn' open-type='getUserInfo'>自助点单</button>
+  <button class='diandan-btn' open-type='getUserInfo' catchtap='dianDanClick'>自助点单</button>
 </view>
 <view class='coupon-btn-con'>
-  <button class='coupon-btn' open-type='getUserInfo'>优惠券</button>
+  <image src='/images/tea/tea.jpg'></image>
 </view>

@@ -14,16 +14,16 @@ Page({
     categoryScrollTop: 0,
     showModalIntroduction: false,
     showModalSize: false,
-    teaSizeList: [ 
+    teaSizeList: [
       {
         title: '温度1',
         content: [
-          { text: '常温哈哈', checked: false},
+          { text: '常温哈哈', checked: false },
           { text: '加冰', checked: true },
           { text: '多冰', checked: false },
           { text: '少放点冰', checked: false },
           { text: '常温哈哈', checked: false },
-          { text: '常温哈哈', checked: false }          
+          { text: '常温哈哈', checked: false }
         ]
       },
       {
@@ -58,16 +58,16 @@ Page({
           { text: '常温哈哈', checked: false },
           { text: '常温哈哈', checked: false }
         ]
-      } 
+      }
     ],
     modalTeaId: '',
     modalTeaCount: '',
     showCartList: false,
     cartList: [
       {
-        id:1,
-        name:'珍珠奶茶的设计费德生科技发大水口富家大室李开复就丢失了看风景的史111',
-        remark:'水电费水电费水电费水电费胜多负少的发第三方',
+        id: 1,
+        name: '珍珠奶茶的设计费德生科技发大水口富家大室李开复就丢失了看风景的史111',
+        remark: '水电费水电费水电费水电费胜多负少的发第三方',
         totalMoney: 566,
         count: 8
       }, {
@@ -97,7 +97,7 @@ Page({
       }
     ]
   },
-  onLoad: function(options) {
+  onLoad: function (options) {
     if (!this.data.localHasStore) {
       wx.showModal({
         title: '提示',
@@ -107,20 +107,20 @@ Page({
         cancelColor: '',
         confirmText: '确定',
         confirmColor: '#d79f62',
-        success: function(res) {
+        success: function (res) {
           if (res.confirm) {
             wx.navigateTo({
               url: '/pages/choose_store/choose_store'
             })
           }
         },
-        fail: function(res) {},
-        complete: function(res) {},
+        fail: function (res) { },
+        complete: function (res) { },
       })
     }
     let that = this;
     wx.getSystemInfo({
-      success: function(res) {
+      success: function (res) {
         // percent 为当前设备1px对应的rpx值
         that.setData({
           percent: 750 / res.windowWidth
@@ -128,7 +128,7 @@ Page({
       }
     })
   },
-  clickSizeItem: function(e){
+  clickSizeItem: function (e) {
     var itemIndex = parseInt(e.currentTarget.dataset.itemIndex);
     var textIndex = parseInt(e.target.dataset.textIndex);
     if (itemIndex >= 0 && textIndex >= 0) {
@@ -140,7 +140,7 @@ Page({
             if (j === textIndex) {
               textList[j].checked = true
             } else {
-              textList[j].checked = false              
+              textList[j].checked = false
             }
           }
         }
@@ -149,15 +149,15 @@ Page({
         teaSizeList: tmpTeaSizeList
       })
     }
-  }, 
+  },
   // 点击顶部的换门店
-  changeStore: function() {
+  changeStore: function () {
     wx.navigateTo({
       url: '/pages/choose_store/choose_store'
     })
   },
   // 点减号
-  jianClick: function(e) {
+  jianClick: function (e) {
     let teaId = e.currentTarget.dataset.teaId;
     let categoryIndex = this.findTeaIndex(teaId).categoryIndex;
     let teaIndex = this.findTeaIndex(teaId).teaIndex;
@@ -167,11 +167,11 @@ Page({
     }
     this.setData({
       teaList: tmpCategoryTeaList,
-      modalTeaCount: tmpCategoryTeaList[categoryIndex].teaList[teaIndex].count      
+      modalTeaCount: tmpCategoryTeaList[categoryIndex].teaList[teaIndex].count
     })
   },
   // 点加号
-  jiaClick: function(e) {
+  jiaClick: function (e) {
     let teaId = e.currentTarget.dataset.teaId;
     let categoryIndex = this.findTeaIndex(teaId).categoryIndex;
     let teaIndex = this.findTeaIndex(teaId).teaIndex;
@@ -200,7 +200,7 @@ Page({
     })
   },
   // 滑动右边的商品列表
-  teaListScroll: function(e) {
+  teaListScroll: function (e) {
     let scrollTop = e.detail.scrollTop;
     let scrollTopRpx = scrollTop * this.data.percent;
     let tmpTeaList = this.data.teaList.slice();
@@ -216,7 +216,7 @@ Page({
         categoryIndex = i + 1;
       }
     }
-    
+
     for (let j = 0, jLength = tmpTeaList.length; j < jLength; j++) {
       if (j === categoryIndex) {
         tmpTeaList[j].selected = true;
@@ -229,7 +229,7 @@ Page({
       categoryScrollTop: (categoryIndex - 1) * 96
     })
   },
-  teaListScrollTop: function() {
+  teaListScrollTop: function () {
     let tmpTeaList = this.data.teaList.slice();
     let kLength = tmpTeaList.length;
     for (let k = kLength - 1; k > 0; k--) {
@@ -242,11 +242,11 @@ Page({
       categoryScrollTop: 0
     })
   },
-  teaListScrollBottom: function() {
+  teaListScrollBottom: function () {
 
   },
   // 点击商品图片
-  clickGoodsIcon: function (e){
+  clickGoodsIcon: function (e) {
     var teaId = e.currentTarget.dataset.teaId;
     var obj = this.findTeaIndex(teaId);
     var teaCount = (this.data.teaList[obj.categoryIndex].teaList)[obj.teaIndex].count
@@ -257,22 +257,22 @@ Page({
     })
   },
   // 关闭商品介绍界面
-  closeModalIntroduction: function(){
+  closeModalIntroduction: function () {
     this.setData({
       showModalIntroduction: false,
       showModalSize: false
     })
   },
   // 关闭选择规则界面
-  closeModalSize: function(){
+  closeModalSize: function () {
     this.setData({
       showModalIntroduction: false,
       showModalSize: false
     })
   },
   // 点击选规格
-  chooseSizeBtn: function(e){
-    var teaId = e.currentTarget.dataset.teaId;    
+  chooseSizeBtn: function (e) {
+    var teaId = e.currentTarget.dataset.teaId;
     var obj = this.findTeaIndex(teaId);
     var teaCount = (this.data.teaList[obj.categoryIndex].teaList)[obj.teaIndex].count
     this.setData({
@@ -282,7 +282,7 @@ Page({
     })
   },
   // 加入购物袋
-  addCartBtn: function(e){
+  addCartBtn: function (e) {
     let teaId = e.currentTarget.dataset.teaId;
     let categoryIndex = this.findTeaIndex(teaId).categoryIndex;
     let teaIndex = this.findTeaIndex(teaId).teaIndex;
@@ -294,7 +294,7 @@ Page({
     })
   },
   // 点击底下的购物袋按钮
-  clickCartListBtn: function(){
+  clickCartListBtn: function () {
     if (this.data.showCartList) {
       this.setData({
         showCartList: false
@@ -306,25 +306,25 @@ Page({
     }
   },
   // 点击购物袋商品列表弹出层
-  clickCartListModal: function (){
+  clickCartListModal: function () {
     this.setData({
       showCartList: false
     })
   },
   // 点击  清空购物袋  按钮
-  clearCartList: function(){
+  clearCartList: function () {
     this.setData({
       cartList: []
     })
   },
-  cartJianClick: function(e){
+  cartJianClick: function (e) {
     var index = e.currentTarget.dataset.index;
     var tmpCartList = this.data.cartList.slice();
-    for (let i = 0, iLength = tmpCartList.length; i < iLength; i++){
+    for (let i = 0, iLength = tmpCartList.length; i < iLength; i++) {
       if (i === index) {
         tmpCartList[i].count > 0 ? tmpCartList[i].count-- : tmpCartList[i].count
         if (tmpCartList[i].count === 0) {
-          tmpCartList.splice(index,1)
+          tmpCartList.splice(index, 1)
         }
       }
     }
@@ -332,7 +332,7 @@ Page({
       cartList: tmpCartList
     })
   },
-  cartJiaClick: function(e){
+  cartJiaClick: function (e) {
     var index = e.currentTarget.dataset.index;
     var tmpCartList = this.data.cartList.slice();
     for (let i = 0, iLength = tmpCartList.length; i < iLength; i++) {
@@ -344,17 +344,11 @@ Page({
       cartList: tmpCartList
     })
   },
-  // 结算按钮
-  jieSuanClick:function(){
-    wx.navigateTo({
-      url: '/pages/confirm-order/confirm-order'
-    })
-  },
   /****************************************
    *    工具函数
    * *************************************/
   // 根据id找到商品
-  findTeaIndex: function(teaId) {
+  findTeaIndex: function (teaId) {
     let categoryIndex = 0;
     let teaIndex = 0;
     let categoryTeaList = this.data.teaList.slice();
@@ -370,7 +364,7 @@ Page({
       }
     }
   },
-  onShow: function() {
+  onShow: function () {
     let teaCategoryList = this.data.teaList.slice();
     let teaListHeight = 0;
     let tmpArray = [];
@@ -402,35 +396,35 @@ Page({
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function() {
+  onHide: function () {
 
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function() {
+  onUnload: function () {
 
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function() {
+  onPullDownRefresh: function () {
 
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function() {
+  onReachBottom: function () {
 
   },
 
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function() {
+  onShareAppMessage: function () {
 
   }
 })

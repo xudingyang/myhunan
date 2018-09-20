@@ -52,6 +52,19 @@ swiper-item image {
   color: #fff;
   box-shadow: 0px 3px 6px #888;
 }
+
+.coupon-btn-con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.coupon-btn-con image {
+  width: 640rpx;
+  height: 320rpx;
+  border-radius: 6rpx;
+}
+
+
 /* .modal-coupon-wrapper {
   position: fixed;z-index: 999;
   background: rgba(0, 0, 0, .6);
