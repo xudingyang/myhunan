@@ -64,47 +64,50 @@ swiper-item image {
   border-radius: 6rpx;
 }
 
-
-/* .modal-coupon-wrapper {
-  position: fixed;z-index: 999;
-  background: rgba(0, 0, 0, .6);
+.shou-quan-modal {
+  position: fixed;
   left: 0;
+  right: 0;
   top: 0;
   bottom: 0;
-  right: 0;
+  background: rgba(0, 0, 0, .4);
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.modal-coupon {
-  height: 500rpx;
-  width: 540rpx;
-}
-.modal-banner-con {
-  width: 540rpx;
-  height: 400rpx;
-  border-radius: 4px;
+.modal-con {
+  background: #fff;
+  width: 600rpx;
+  border-radius: 14rpx 14rpx 6rpx 6rpx;
   overflow: hidden;
-  position: relative;
 }
-.modal-banner-con > image {
-  width: 540rpx;
-  height: 400rpx;
+.modal-title {
+  height: 90rpx;
+  font-size: 34rpx;
+  text-align: center;
+  line-height: 90rpx;
 }
-.diandan-btn2 {
-  position: absolute;
-  bottom: 0;
-  left: 70rpx;
-  width: 400rpx;
+.modal-text {
+  box-sizing: border-box;    
+  width: 100%;
+  padding: 26rpx 32rpx;
+  font-size: 32rpx;
+  border-top: 1rpx solid #eee;
+  border-bottom: 1rpx solid #eee;
+  color: #888;
 }
-.modal-close-btn {
-  padding-top: 40rpx;
-  box-sizing: border-box;
-  height: 100rpx;
+.modal-btn-con {
+  height: 90rpx;
+}
+.modal-btn {
+  color: #29b929;
+  font-size: 32rpx;
+  background: #fff;
+  height: 100%;
   display: flex;
+  align-items: center;
   justify-content: center;
 }
-.modal-close-btn > image {
-  height: 80rpx;
-  width: 80rpx;
-} */
+.modal-btn::after {
+  border: none;
+}

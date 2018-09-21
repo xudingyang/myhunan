@@ -11,3 +11,12 @@
 <view class='coupon-btn-con'>
   <image src='/images/tea/tea.jpg'></image>
 </view>
+<view class='shou-quan-modal'>
+  <view class='modal-con'>
+    <view class='modal-title'>获取微信授权信息</view>
+    <view class='modal-text'>
+      微信登录需要获取您的用户信息,请前往设置
+    </view>
+    <view class='modal-btn-con'><button class='modal-btn' open-type='getUserInfo'>去设置</button></view>
+  </view>
+</view>
