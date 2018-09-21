@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/home/home",    
     "pages/ji-fen-gui-ze/ji-fen-gui-ze",
     "pages/user-jifen-record/user-jifen-record",
-    "pages/home/home",
     "pages/diandan/diandan",
     "pages/store-list/store-list",
     "pages/zhuotai-diancan/zhuotai-diancan",
