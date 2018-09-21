@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/user-jifen-record/user-jifen-record",
+    
     "pages/home/home",
     
     "pages/diandan/diandan",
@@ -23,7 +25,6 @@
     "pages/user-address-edit/user-address-edit",
     "pages/user-address/user-address",
     "pages/user-member/user-member",
-    "pages/user-jifen-record/user-jifen-record",
     "pages/user-chongzhi/user-chongzhi",
     "pages/user-info/user-info",
     "pages/order/order",

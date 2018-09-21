@@ -1,4 +1,4 @@
-<block wx:for='{{recordList}}'>
+<!-- <block wx:for='{{recordList}}'>
   <view class='item' bindtap='orderDetail'>
     <view class='reason'>
       <view class='time'>
@@ -11,4 +11,27 @@
   </view>
 </block>
 <view class="loading-more" wx:if="{{!loadComplete}}">正在载入更多...</view>
-<view class="loading-complete" wx:if="{{loadComplete}}">没有更多了</view>
+<view class="loading-complete" wx:if="{{loadComplete}}">没有更多了</view> -->
+
+
+<view class='jifen-total'>
+  <text>12</text>
+  <view>我的积分</view>
+</view>
+<view class='jifen-list'>
+  <view class='list-title'>近期积分记录
+    <text>积分规则</text>
+  </view>
+  <block wx:for='{{recordList}}'>
+    <view class='item'>
+      <view class='item-lf'>
+        <view>消费<text>{{item.money}}</text></view>
+        <view>{{item.name}}</view>
+        <view>{{item.time}}</view>
+      </view>
+      <view class='iteml-rg item-add' wx:if='{{item.add}}'>+{{item.count}}</view>
+      <view class='iteml-rg item-subtract' wx:if='{{!item.add}}'>-{{item.count}}</view>      
+    </view>
+  </block>
+  <view class='list-end'>没有更多记录了~</view>
+</view>
