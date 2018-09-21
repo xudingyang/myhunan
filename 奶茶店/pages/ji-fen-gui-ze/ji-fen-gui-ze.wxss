@@ -1,0 +1,15 @@
+page {
+  padding-bottom: 30rpx;
+}
+.wrapper {
+  padding: 0 30rpx;
+  margin-bottom: 30rpx;
+}
+.title {
+  font-size: 30rpx;
+  margin-bottom: 4px;
+}
+.content {
+  font-size: 26rpx;
+  color: #666;
+}

@@ -88,7 +88,11 @@ Page({
   onLoad: function (options) {
 
   },
-
+  clickJiFenGuiZe: function(){
+    wx.navigateTo({
+      url: '/pages/ji-fen-gui-ze/ji-fen-gui-ze'
+    })
+  },
   /**
   * 页面上拉触底事件的处理函数
   */
