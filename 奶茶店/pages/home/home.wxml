@@ -11,7 +11,7 @@
 <view class='coupon-btn-con'>
   <image src='/images/tea/tea.jpg'></image>
 </view>
-<view class='shou-quan-modal'>
+<view class='shou-quan-modal' wx:if='{{1<0}}'>
   <view class='modal-con'>
     <view class='modal-title'>获取微信授权信息</view>
     <view class='modal-text'>
