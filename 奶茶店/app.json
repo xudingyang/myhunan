@@ -1,8 +1,7 @@
 {
   "pages": [
-    "pages/fill-in-remarks/fill-in-remarks",
-    
     "pages/home/home",    
+    "pages/fill-in-remarks/fill-in-remarks",
     "pages/ji-fen-gui-ze/ji-fen-gui-ze",
     "pages/user-jifen-record/user-jifen-record",
     "pages/diandan/diandan",
