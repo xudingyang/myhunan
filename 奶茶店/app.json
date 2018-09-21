@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/fill-in-remarks/fill-in-remarks",
+    
     "pages/home/home",    
     "pages/ji-fen-gui-ze/ji-fen-gui-ze",
     "pages/user-jifen-record/user-jifen-record",
@@ -7,7 +9,6 @@
     "pages/store-list/store-list",
     "pages/zhuotai-diancan/zhuotai-diancan",
     "pages/confirm-order/confirm-order",
-    "pages/fill-in-remarks/fill-in-remarks",
     "pages/bind-store/bind-store",
     "pages/order-detail/order-detail",
     "pages/qucha/qucha",

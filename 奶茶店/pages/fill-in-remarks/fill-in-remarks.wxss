@@ -47,11 +47,12 @@ textarea {
   padding: 0 28rpx;
 }
 .sub-btn {
+  margin: 20rpx;
   height: 90rpx;
-  color: #e9a76b;
+  color: #fff;
   font-size: 34rpx;
   letter-spacing: 1px;
-  background: #fff;
+  background: #e9a76b;
 }
 button::after {
   border: none;
