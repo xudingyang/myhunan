@@ -1,0 +1,112 @@
+<import src='user-login/user-login-template' />
+
+<view class='user-container'>
+
+  <view class='user-info-wrapper'>
+    <view class='user-info'>
+      <view class='avatar-con'>
+        <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
+      </view>
+      <view class='info-con'>
+        <view class='nick-name'>{{userInfo.nickName}}</view>
+        <view class='tel-num'>手机号:
+          <text>{{telNum ? telNum : "未绑定"}}</text>
+        </view>
+        <view class='level-info'>
+          <image wx:if='{{levelPic}}' src='{{levelPic}}'></image>
+          <text>{{levelName}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='order-wrapper'>
+    <view class='order-type' catchtap='lookNotPayOrder'>
+      <image src='/images/icon/need_pay.png'></image>
+      <text>待付款</text>
+    </view>
+    <view class='order-type' catchtap='loockSendingOrder'>
+      <image src='/images/icon/sending.png'></image>
+      <text>待收货</text>
+    </view>
+    <view class='order-type' catchtap='lookWillSendOrder'>
+      <image src='/images/icon/befor_send.png'></image>
+      <text>待发货</text>
+    </view>
+    <view class='order-type' catchtap='loockChangeOrder'>
+      <image src='/images/icon/back_order.png'></image>
+      <text>退换/售后</text>
+    </view>
+    <view class='order-type all-order' catchtap='lookAllOrder'>
+      <view class='right-arrow'></view>
+      <image src='/images/icon/all_order.png'></image>
+      <text>全部订单</text>
+    </view>
+  </view>
+
+  <view class='tab-con personal-info'>
+    <view bindtap='checkMyCounpon'>
+      <text class='tx'>我的优惠券</text>
+      <view class='rg'>
+        <text><text class='rg-num'>23</text>张</text>
+        <image class='rg-icon' src='/images/icon/rg_arrow.png'></image>
+      </view>
+    </view>
+    <view bindtap='checkMyCollection'>
+      <text class='tx'>我的收藏</text>
+      <view class='rg'>
+        <text><text class='rg-num'>23</text>件</text>
+        <image class='rg-icon' src='/images/icon/rg_arrow.png'></image>
+      </view>
+    </view>
+    <view bindtap='checkMemberInfo'>
+      <text class='tx'>会员信息</text>
+      <view class='rg'>
+        <text class='rg-num'>黄金会员</text>
+        <image class='rg-icon' src='/images/icon/rg_arrow.png'></image>
+      </view>
+    </view>
+  </view>
+
+  <view class='tab-con safe-wrapper'>
+    <view bindtap='checkAddress'>
+      <text class='tx'>收货地址</text>
+      <view class='rg'>
+        <text class='rg-num'>查看</text>
+        <image class='rg-icon' src='/images/icon/rg_arrow.png'></image>
+      </view>
+    </view>
+    <view>
+      <text class='tx'>绑定手机</text>
+      <view class='rg'>
+        <text class='rg-num' wx:if='{{!isRegister}}' bindtap='bindTelphone'>绑定</text>
+        <text class='rg-num' wx:if='{{isRegister}}' bindtap='changeTelphone'>修改</text>
+        <image class='rg-icon' src='/images/icon/rg_arrow.png'></image>
+      </view>
+    </view>
+     <view>
+      <text class='tx'>密码管理</text>
+      <view class='rg'>
+        <text class='rg-num' wx:if='{{!hadSetPassword}}' bindtap='managePassword'>未设置</text>
+        <text class='rg-num' wx:if='{{hadSetPassword}}' bindtap='managePassword'>修改</text>
+        <image class='rg-icon' src='/images/icon/rg_arrow.png'></image>
+      </view>
+    </view> 
+  </view>
+
+  <view class='tab-con about-wrapper'>
+    <view bindtap='contactUs'>
+      <text class='tx'>联系我们</text>
+      <view class='rg'>
+        <image class='rg-icon' src='/images/icon/rg_arrow.png'></image>
+      </view>
+    </view>
+    <view bindtap='techSupport'>
+      <text class='tx'>技术支持</text>
+      <view class='rg'>
+        <image class='rg-icon' src='/images/icon/rg_arrow.png'></image>
+      </view>
+    </view>
+  </view>
+
+</view>

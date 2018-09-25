@@ -1,0 +1,28 @@
+<view class='page-container'>
+  <view class='search-container'>
+    <view class='search' catchtap='goSearchPage'>
+      <image src='/images/icon/search.png' class='search-icon'></image>
+      <text>搜索喜欢的商品</text>
+    </view>
+  </view>
+  <view class='category-container'>
+    <view class='category-tab'>
+      <scroll-view scroll-y="true">
+        <block wx:for='{{categoryTabs}}'>
+          <view class='{{item.isActive ? "tab-item-active" : "tab-item"}}' data-index='{{index}}' catchtap='clickCategorytab'>{{item.tx}}</view>
+        </block>
+      </scroll-view>
+    </view>
+    <view class='category-content'>
+      <scroll-view scroll-y="true">
+        <view class='category-title'>手机数码</view>
+        <block wx:for='{{goods}}'>
+          <view class='item' catchtap='clickCategoryItem'>
+            <image src='{{item.pic}}' lazy-load='true'></image>
+            <text>{{item.name}}</text>
+          </view>
+        </block>
+      </scroll-view>
+    </view>
+  </view>
+</view>

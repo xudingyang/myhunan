@@ -1,0 +1,38 @@
+<view class='goods-list' wx:if='{{hasCollection}}'>
+  <block wx:for='{{[1,2,3,3,3,4]}}'>
+    <view class='item'>
+      <image src='/images/good/naifen1.jpg' lazy-load='true'></image>
+      <text>雅士利精装婴幼儿奶粉哇啊哈哈很好喝哈哈哈哈或或或或或地方地方</text>
+      <view>
+        <view class='money-con'>
+          <text>¥</text>66.00</view>
+        <view class='add-cart' catchtap='addCart'>
+          <image src='/images/icon/add_cart_red.png' lazy-load='true'></image>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+<view class='empty-goods' wx:if='{{!hasCollection}}'>没有收藏的商品，快去挑选满意的商品吧！</view>
+
+<view class='invalid-goods-list' wx:if='{{invalidGoodsList.length>0}}'>
+  <view>
+    <text>以下商品已失效</text>
+    <text catchtap='clearAllInvalidGoods' class='clear-invalid'>清空所有失效商品</text>
+  </view>
+  <view>
+    <block wx:for='{{invalidGoodsList}}'>
+      <view class='invalid-item'>
+        <view class='invalid-bg' catchlongtap='longtapInvalidItem' wx:if='{{!item.deleteInvalidBtnShow}}' data-index='{{index}}'><view>失效</view><view>长按删除</view></view>
+        <view class='invalid-bg invalid-bg2' wx:if='{{item.deleteInvalidBtnShow}}' catchtouchend='clickInvalidBg' data-index='{{index}}'><text class='del-inv-btn' data-index='{{index}}' catchtouchend='deleteInvalidItem'>删除</text></view>
+        <image src='/images/good/naifen1.jpg' lazy-load='true'></image>
+        <text class='invalid-name'>{{item.name}}</text>
+        <view class='delte-invalid'>
+          <view class='money-con'>
+            <text>¥</text>66.00
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

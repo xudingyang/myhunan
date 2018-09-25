@@ -1,0 +1,132 @@
+<view class='info-wrapper'>
+  <swiper indicator-dots='true' indicator-active-color='#f23030' circular='true'>
+    <swiper-item>
+      <image class='goods-img' src='/images/good/naifen1.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image class='goods-img' src='/images/good/naifen1.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image class='goods-img' src='/images/good/naifen1.jpg'></image>
+    </swiper-item>
+  </swiper>
+  <view class='goods-name'>
+    <block wx:for='{{keywords}}'>
+      <text>【{{item}}】</text>
+    </block>
+    {{name}}
+  </view>
+  <view class='activity'>
+    <block wx:for='{{activities}}'>
+      <text>【{{item}}】</text>
+    </block>
+  </view>
+  <view class='goods-price'>
+    <text>¥</text>{{price}}
+  </view>
+</view>
+
+<view class='goods-size'>
+  <view class='size-title'>
+    <text>已选</text>
+    <text>{{hadSelectedTxt}}</text>
+    <view catchtap='spreadSizeBox'>
+      <image src='{{sizeSpread ? "/images/icon/to_down.png" : "/images/icon/to_up.png"}}'></image>
+    </view>
+  </view>
+
+  <view class='size-con' wx:if='{{sizeSpread}}'>
+    <block wx:for='{{goodsSize}}'>
+      <view class='size-item' catchtap='selectSizeItem' data-item-index='{{index}}'>
+        <view>{{item.sizeName}}</view>
+        <view>
+          <block wx:for='{{item.sizeContent}}'>
+            <text data-text-index='{{index}}' class='{{item.selected? "size-item-text size-item-active" : "size-item-text"}}'>{{item.itemname}}</text>
+          </block>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <view class='goods-count' wx:if='{{sizeSpread}}'>
+    <text>数量</text>
+    <view class='add-btn-con'>
+      <view class='jian-hao' catchtap='clickSubtraction'>
+        <image hidden='{{goodsCount>1}}' src='/images/icon1/jianhao_gray.png'></image>
+        <image hidden='{{goodsCount<2}}' src='/images/icon1/jianhao_black.png'></image>
+      </view>
+      <text class='num'>{{goodsCount}}</text>
+      <view class='jia-hao' catchtap='clickAdd'>
+        <image src='/images/icon1/add_black.png'></image>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='goods-info'>
+  <view class='info-title'>规格参数</view>
+  <view class='info'>
+    <view>
+      <text class='space-line'></text>
+      <text>包装清单</text>
+      <text class='space-line'></text>
+    </view>
+    <view class='qingdan'>配方奶粉 800g*1 勺子*1</view>
+  </view>
+  <view class='info'>
+    <view>
+      <text class='space-line'></text>
+      <text>商品参数</text>
+      <text class='space-line'></text>
+    </view>
+    <view class='goods-canshu'>
+      <block wx:for='{{goodsInfo}}'>
+        <view>
+          <text>{{item.name}}:</text>
+          <text>{{item.content}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class='info'>
+    <view>
+      <text class='space-line'></text>
+      <text>商品介绍</text>
+      <text class='space-line'></text>
+    </view>
+    <view class='goods-tupian'>
+      <image lazy-load='true' mode='widthFix' src='/images/good/naifen1.jpg'></image>
+      <image lazy-load='true' mode='widthFix' src='/images/good/naifen1.jpg'></image>
+      <image lazy-load='true' mode='widthFix' src='/images/good/naifen1.jpg'></image>
+      <image lazy-load='true' mode='widthFix' src='/images/lunbo/lunbo1.jpg'></image>
+    </view>
+  </view>
+</view>
+
+<view class='control-wrapper'>
+  <view class='ctl-lf'>
+    <view class='lfb' catchtap='goHomePage'>
+      <image src='/images/tab/home.png '></image>
+      <text>首页</text>
+    </view>
+    <view class='lfb' catchtap='collectGoods'>
+      <image src='{{isCollected ? "/images/icon/shoucang_full.png" : "/images/icon/shoucang.png"}}'></image>
+      <text class='{{isCollected? "collected" : " "}}'>收藏</text>
+    </view>
+    <view class='lfb cart-btn' bindtap='goCartPage'>
+      <image src='/images/icon/cart_gray.png'></image>
+      <text>购物车</text>
+      <view class='cart-count'>45</view>
+    </view>
+  </view>
+  <view class='trl-rg'>
+    <view class='{{isSoldOut? "sold-out" : "rgb"}}' catchtap='addCart'>
+      加入购物车
+    </view>
+    <view class='{{isSoldOut? "sold-out1" : "rgb"}}' catchtap='buy'>
+      <text wx:if='{{!isSoldOut}}'>立即购买</text>
+      <text wx:if='{{isSoldOut}}'>已售罄</text>
+    </view>
+  </view>
+
+</view>

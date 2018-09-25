@@ -1,0 +1,8 @@
+<view class='empty' wx:if='{{empty}}'><text>当前没有优惠活动</text><text>请随时关注商城动态</text></view>
+<view class='activity'>
+  <image src='/images/good/naifen1.jpg' mode='widthFix'></image>
+  <image src='/images/good/naifen1.jpg' mode='widthFix'></image>
+  <image src='/images/good/naifen1.jpg' mode='widthFix'></image>
+  <image src='/images/good/naifen1.jpg' mode='widthFix'></image>
+  
+</view>

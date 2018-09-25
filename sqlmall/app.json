@@ -1,0 +1,83 @@
+{
+  "pages": [
+    "pages/home/home",    
+    "pages/babyInfo/babyInfo",
+    "pages/order-detail/order-detail",
+    "pages/order-center/order-center",
+    "pages/user-register/user-register",
+    "pages/order-detail-notpay/order-detail-notpay",
+    "pages/cart/cart",
+    "pages/cart-choose-gift/cart-choose-gift",
+    "pages/cart-add-goods/cart-add-goods",
+    "pages/user-member/user-member",
+    "pages/user-collection/user-collection",
+    "pages/user-telphone-change-next/user-telphone-change-next",
+    "pages/user-telphone-change/user-telphone-change",
+    "pages/user-address-edit/user-address-edit",
+    "pages/user-address/user-address",
+    "pages/test/test",
+    "pages/user/user",
+    "pages/category/category",
+    "pages/search/search",
+    "pages/coupon/coupon",
+    "pages/coupon-get/coupon-get",
+    "pages/coupon-detail/coupon-detal",
+    "pages/coupon-goods-list/coupon-goods-list",
+    "pages/user-tech-support/tech-support",
+    "pages/user-contact-us/contact-us",
+    "pages/user-member-rule/user-member-rule",
+    "pages/user-jifen-record/user-jifen-record",
+    "pages/user-chongzhi/user-chongzhi",
+    "pages/user-password/user-password",
+    "pages/user-password-set/user-password-set",
+    "pages/user-pwd-set-next/user-pwd-set-next",
+    "pages/user-chongzhi-record/user-chongzhi-record",
+    "pages/home-hot-goods/home-hot-goods",
+    "pages/activity-center/activity-center",
+    "pages/home-recommend-goods/home-recommend-goods",
+    "pages/order-xiadan/order-xiadan",
+    "pages/order-xiadan-coupon/order-xiadan-coupon",
+    "pages/order-xiadan-success/order-xiadan-success",
+    "pages/goods-detail/goods-detail",
+    "pages/order-shou-hou/order-shou-hou",
+    "pages/order-shou-hou-detail/order-shou-hou-detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "思其乐网上商城",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "borderStyle": "black",
+    "position": "bottom",
+    "color": "#999",
+    "selectedColor": "#f23030",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/tab/home.png",
+        "selectedIconPath": "images/tab/home_fill.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "images/tab/category.png",
+        "selectedIconPath": "images/tab/category_fill.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "images/tab/cart.png",
+        "selectedIconPath": "images/tab/cart_fill.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "images/tab/user.png",
+        "selectedIconPath": "images/tab/user_fill.png"
+      }
+    ]
+  }
+}

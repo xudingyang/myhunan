@@ -1,0 +1,6 @@
+<view class='success'>
+  <view class='icon'><icon type='success' size='80'></icon></view>
+  <view class='text'>恭喜，下单成功！</view>
+  <view class='text2'>您可以在订单中心查看订单详情。</view>  
+  <view class='success-btn' catchtap='goBack'><view class='back-txt'>返回</view></view>
+</view>

@@ -1,0 +1,20 @@
+<view class='title'>当前可以选择 <text>{{maxGiftCount}}</text> 件赠品</view>
+<view>
+  <block wx:for='{{list}}'>
+    <view class='goods' style='{{item.style}}'>
+      <view class='choose-btn'>
+        <image catchtap='selectGoods' src='{{item.selected? "/images/icon/addr_checked.png" : "/images/icon/addr_unchecked.png"}}' data-goods-index='{{index}}'></image>
+      </view>
+      <view class='info'>
+        <image class='goods-icon' src='{{item.imgUrl}}' lazy-load='true'></image>
+        <view>
+          <view class='name-size'>
+            <view class='goods-name'>{{item.name}}</view>
+            <view class='goods-size'>{{item.size}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+<view class='confirm-btn' catchtap='backCart'>选好了，返回购物车</view>

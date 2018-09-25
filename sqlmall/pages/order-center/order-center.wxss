@@ -1,0 +1,266 @@
+page {
+  background: #f5f5f5;
+  padding-bottom: 15px;
+}
+.tab-wrapper {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90rpx;
+  display: flex;
+  background: #fff;
+  border-bottom: 1rpx solid #e5e5e5;
+  border-top: 1rpx solid #e5e5e5;
+}
+.tab {
+  flex: 1;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30rpx;
+}
+.tab.active {
+  color: #f23030;
+  border-bottom: 2px solid #f23030;
+}
+.order-list-wrapper {
+  padding-top: 92rpx;
+}
+.order {
+  margin-top: 30rpx;
+  background: #fff;
+}
+.order:first-child {
+  margin-top: 0;
+}
+.order-number {
+  height: 80rpx;
+  box-sizing: border-box;
+  font-size: 28rpx;
+  border-bottom: 1rpx solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20rpx;
+}
+.order-number > view:nth-of-type(1) > text {
+  margin-right: 6px;
+  color: #838383;
+}
+.order-number > view:nth-of-type(2) {
+  color: #838383;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.order-number > view:nth-of-type(2) image {
+  width: 44rpx;
+  height: 44rpx;
+}
+.order-number > view:nth-of-type(2) text {
+  font-size: 28rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.order-state-money {
+  height: 120rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20rpx;
+  font-size: 28rpx;
+  position: relative;
+}
+.order-state-money > view {
+  color: #838383;
+}
+.order-state-money > view:nth-of-type(1) {
+  margin-bottom: 2px;
+}
+.order-state {
+  margin-left: 8px;
+  color: #333;    
+}
+.order-state.not-pay {
+  color: #f23030;  
+}
+.order-money {
+  margin-left: 8px;
+  color: #333;  
+}
+.pay-btn {
+  position: absolute;
+  height: 60rpx;
+  width: 140rpx;
+  line-height: 60rpx;
+  text-align: center;
+  top: 30rpx;
+  right: 20rpx;
+  background: #f23030;
+  color: #fff;
+  font-size: 30rpx;
+  border-radius: 4px;
+}
+.goods-list {
+  border-top: 1rpx solid #e5e5e5;
+}
+.zp-goods-list {
+  background: #dfdfdf;
+}
+.goods {
+  padding: 0 20rpx;
+  height: 190rpx;
+  display: flex;
+  align-items: center;
+}
+.goods > image {
+  flex: 0 0 150rpx;
+  width: 150rpx;
+  height: 150rpx;
+  margin-right: 8px;
+}
+.goods > view {
+  flex: 1;
+  font-size: 28rpx;  
+}
+.goods-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.goods-count {
+  margin-top: 2px;
+  color: #838383;
+}
+.goods-count > text:nth-of-type(2) {
+  margin-left: 40px;
+
+}
+
+.pay-modal {
+  position: fixed;
+  z-index: 1111;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .5);
+}
+.pay-modal > view {
+  position: absolute;
+  bottom: 100rpx;
+  left: 50%;
+  margin-left: -330rpx;
+  width: 660rpx;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 20rpx 40rpx 40rpx 20rpx;
+}
+.pay-modal-title {
+  font-size: 30rpx;
+  text-align: center;
+}
+.pay-modal-wx {
+  margin-top: 10px;
+  width: 100%;
+  height: 90rpx;
+  background: #1aad19;
+  color: #fff;
+  text-align: center;
+  line-height: 90rpx;
+  border-radius: 4px;
+  font-size: 32rpx;
+}
+.pay-modal-card {
+  margin-top: 20px;
+  width: 100%;
+  height: 90rpx;
+  background: #d8daff;
+  color: #7a87c8;
+  text-align: center;
+  line-height: 90rpx;
+  border-radius: 4px;
+  font-size: 32rpx;  
+}
+.pay-modal-title image {
+  position: absolute;
+  width: 56rpx;
+  height: 56rpx;
+  right: 8rpx;
+  top: 8rpx;
+}
+.pay-panel {
+  position: fixed;
+  z-index: 2222;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, .5);
+}
+.count-panel {
+  overflow: hidden;
+  margin: 80rpx auto;
+  border-radius: 6px;
+  width: 500rpx;
+  background: #fff;
+}
+.pay-title {
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30rpx;
+  position: relative;  
+  border-bottom: 1rpx solid #efefef;
+}
+.pay-title image {
+  position: absolute;
+  left: 20rpx;
+  top: 20rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+.pay-money {
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50rpx;
+  border-bottom: 1rpx solid #efefef;
+}
+.pay-money > text {
+  font-size: 30rpx;
+  margin-right: 6px;
+}
+.pay-pwd {
+  height: 120rpx;
+  display: flex;
+  align-items: center;
+}
+.pay-pwd text {
+  padding-left: 20rpx;
+  flex: 0 0 100rpx;
+  font-size: 30rpx;
+}
+.pay-pwd input {
+  padding-left: 20rpx;
+  width: 340rpx;
+  height: 70rpx;
+  background: #efefef;
+  border-radius: 6rpx;
+}
+.pay-panel button {
+  border-radius: 0;
+  background: #1aad19;
+  color: #fff;
+  font-size: 36rpx;
+  letter-spacing: 2px;
+}

@@ -1,0 +1,26 @@
+<form bindsubmit='submitAddress'>
+  <view class='info-wrapper'>
+    <view class='name'>
+      <text>收货人:</text>
+      <input placeholder='收货人姓名' name='name' value='{{name}}'></input>
+    </view>
+    <view class='tel'>
+      <text>联系方式:</text>
+      <input placeholder='收货人手机或电话' type='number' name='tel' value='{{tel}}'></input>
+    </view>
+    <view class='region'>
+      <text>所在地区:</text>
+      <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}" name='region'>
+        <view class="picker">{{region[0]}}{{region[1]}}{{region[2]}}</view>
+      </picker>
+      <image src='/images/icon/rg_arrow.png'></image>
+    </view>
+    <view class='detail-address'>
+      <text>详细地址:</text>
+      <input placeholder='街道、楼号、村、组等' maxlength='40' name='detailAddress' value='{{detailAddress}}'></input>
+    </view>
+  </view>
+  <view class='ok-btn'>
+    <button formType='submit'>确认</button>
+  </view>
+</form>

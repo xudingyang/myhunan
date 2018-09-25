@@ -1,0 +1,25 @@
+page {
+  background: #f5f5f5;
+  height: 100%;
+}
+.empty {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 32rpx;
+  color: #838383;
+}
+.empty > text:nth-of-type(1) {
+  margin-bottom: 4px;
+}
+
+.activity {
+  height: 100%;
+  width: 100%;
+}
+.activity image {
+  width: 100%;
+}

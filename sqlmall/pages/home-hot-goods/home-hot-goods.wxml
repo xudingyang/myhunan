@@ -1,0 +1,89 @@
+
+<!-- 搜索商品结果列表面板  -->
+<view class='search-goods-result'>
+  <view class='sort-reason-wrapper'>
+    <view class='{{zongheActive ? "active" : ""}}' bindtap='clickZongHe'>综合</view>
+    <view class='{{xiaoliangActive ? "active" : ""}}' bindtap='clickXiaoLiang'>销量</view>
+    <view class='sort-price' bindtap='clickAscend'>
+      <text class='{{priceActive ? "active" : ""}}'>价格</text>
+      <view class='price-icon'>
+        <image src='{{priceAscendActive ? "/images/icon1/xiangshang.png" : "/images/icon1/xiangshang_gray.png"}}'></image>
+        <image src='{{priceDescendActive ? "/images/icon1/xiangxia.png" : "/images/icon1/xiangxia_gray.png"}}'></image>
+      </view>
+    </view>
+    <view class='sort-shaixuan' bindtap='clickShaiXuan'>
+      <text class='{{shaiXuan ? "active" : " "}}'>筛选</text>
+      <image src='{{shaiXuan ? "/images/icon1/shaixuan_red.png" : "/images/icon1/shaixuan.png"}}'></image>
+    </view>
+  </view>
+  <scroll-view class='goods-list' scroll-y="true" bindscrolltolower='loadMoreGoods'>
+    <block wx:for="{{goodsList}}">
+      <view class='goods-item' catchtap='goGoodsDetail'>
+        <view class='godds-item-img'>
+          <image class='goods-icon' src='/images/good/naifen1.jpg'></image>
+        </view>
+        <view class='godds-item-info'>
+          <view class='goods-name'> 美素佳儿（Friso）金装幼儿配方奶粉 3段（1-3岁幼儿适用）900克（荷兰原装进口）</view>
+          <view class='goods-level'>规格:
+            <text>900g</text>
+          </view>
+          <view class='sale-activity'>
+            <text class='activity-name'>满88包邮</text>
+            <text class='activity-name'>满300减200</text>
+            <text class='activity-name'>8.9折</text>
+            <text class='activity-name'>会员8.9折</text>            
+          </view>
+          <view class='price-count'>
+            <view class='goods-price'>
+              <text class='rmb-symbol'>¥</text>9999</view>
+            <view class='goods-sale-count'>
+              <text>3478</text>人购买</view>
+            <view class='add-cart-con' catchtap='addCart'>
+              <image class='add-cart-icon' src='/images/icon/add_cart.png'></image>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+    <view class="loading-more" wx:if="{{!loadComplete}}">正在载入更多...</view>
+    <view class="loading-complete" wx:if="{{loadComplete}}">没有更多了</view>
+  </scroll-view>
+</view>
+
+<!-- 筛选弹出层  -->
+<view class='shaixuan-modal-wrapper' catchtap='clickModal' wx:if='{{shaiXuanModalShow}}'>
+  <scroll-view class='shaixuan-con' scroll-y='true'>
+    <view class='shaixuan-title'>选择筛选条件</view>
+    <view class='shaixuan-item'>
+      <view class='item-title'>分类</view>
+      <view class='item-con'>
+        <block wx:for='{{shaiXuanCategory}}'>
+          <text class='{{item.checked ? "shaixuan-item-active" : " "}}' data-index='{{index}}' catchtap='clickCategoryItem'>{{item.name}}</text>
+        </block>
+      </view>
+    </view>
+    <view class='shaixuan-item'>
+      <view class='item-title'>
+        <text>品牌</text>
+        <text catchtap='huanyipi'>换一批</text>
+      </view>
+      <view class='item-con'>
+        <block wx:for='{{shaiXuanPinPai}}'>
+          <text class='{{item.checked ? "shaixuan-item-active" : " "}}' data-index='{{index}}' catchtap='clickBrandItem'>{{item.name}}</text>
+        </block>
+      </view>
+    </view>
+    <view class='shaixuan-item'>
+      <view class='item-title'>价格区间</view>
+      <view class='item-con'>
+        <block wx:for='{{priceRange}}'>
+          <text class='{{item.checked ? "shaixuan-item-active" : " "}}' data-index='{{index}}' catchtap='clickPriceItem'>{{item.name}}</text>
+        </block>
+      </view>
+    </view>
+  </scroll-view>
+  <view class='confirm-btn'>
+    <view catchtap='clickShaiXuanCancel'>取消</view>
+    <view catchtap='clickShaiXuanYes'>确定</view>
+  </view>
+</view>

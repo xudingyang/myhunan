@@ -1,0 +1,17 @@
+<view class='coupon-list' wx:if='{{!empty}}'>
+  <block wx:for='{{[1,2,3,4,5,6]}}'>
+    <view class='coupon'>
+      <image src='/images/good/naifen1.jpg'></image>
+      <view class='counpon-info'>
+        <view class='title'>雅士利婴幼儿奶粉900克一罐电饭锅电饭锅地方是个电饭锅是的广东省分公司电饭锅</view>
+        <view class='time'><text>过期时间:</text>2018-03-30 23:59:59</view>
+        <view class='money-con'>
+          <view class='money'><text>¥</text>60</view>
+          <view class='condition'>满600可用</view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+<view class='empty' wx:if='{{empty}}'>暂无可领取的优惠券</view>
+<view class='get-btn' catchtap='getAllCounpon'><text wx:if='{{!empty}}'>一键领取</text><text wx:if='{{empty}}'>返回</text></view>

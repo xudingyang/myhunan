@@ -1,0 +1,121 @@
+<view class='empty-address' catchtap='addAddress' wx:if='{{!hadSetAddress}}'>
+  <text>+ 添加地址</text>
+</view>
+<view class='address-wrapper' catchtap='chooseAddress' wx:if='{{hadSetAddress}}'>
+  <view class='name-tel'>
+    <text>{{username}}</text>
+    <text>{{usertel}}</text>
+  </view>
+  <view class='address-txt'>
+    <text>湖南省岳阳市岳阳楼区岳阳大道翠碧山庄珍珠山120号A栋801号99层123456房间邮政编码没有地址倒是有</text>
+  </view>
+  <view class='addr-arrow'>
+    <text>></text>
+  </view>
+  <view class='addr-bdb'>
+    <block wx:for='{{[1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7,8,9,1]}}'>
+      <text></text>
+    </block>
+  </view>
+</view>
+
+<view class='goods-wrapper'>
+  <view class='title'>您选购了如下商品</view>
+  <view class='goods-list'>
+    <block wx:for='{{[1]}}'>
+      <view class='goods'>
+        <view class='goods-icon'>
+          <image src='/images/good/naifen1.jpg' lazy-load='true'></image>
+        </view>
+        <view class='goods-info'>
+          <view class='goods-name'>机啊可视对讲弗利萨点击分类看电视剧阿弗莱克睡大觉分类考试大姐夫了双方就爱上了房间圣诞快乐</view>
+          <view class='goods-size'>900g/灌装，3段，10岁第三方多岁的感受到给对方是个符合地方发鬼地方个地方郭德纲的鬼地方个地方官的三个</view>
+          <view class='price-count'>
+            <view class='goods-price'>
+              <text>¥</text>99.00</view>
+            <view class='goods-count'>x 1</view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class='zp-goods-list'>
+    <block wx:for='{{[1]}}'>
+      <view class='zp-goods'>
+        <view class='zp-goods-icon'>
+          <image src='/images/good/naifen1.jpg' lazy-load='true'></image>
+        </view>
+        <view class='zp-goods-info'>
+          <view class='zp-goods-name'>机啊可视对讲弗利萨点击分类看电视剧阿弗莱克睡大觉分类考试大姐夫了双方就爱上了房间圣诞快乐</view>
+          <view class='zp-goods-size'>900g/灌装，3段，10岁第三方多岁的感受到给对方是个符合地方发鬼地方个地方郭德纲的鬼地方个地方官的三个</view>
+          <view class='zp-txt-count'>
+            <view class='zp-txt'>赠品</view>
+            <view class='zp-goods-count'>x 1</view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+
+<view class='coupon-wrapper'>
+  <view class='coupon'>
+    <view class='cp-lf'>优惠券</view>
+    <view class='cp-rg' catchtap='chooseCoupon'>
+      <text>{{hasCoupon ? defaulCounpon : "无优惠券"}}</text>
+      <image src='/images/icon/rg_arrow.png'></image>
+    </view>
+  </view>
+</view>
+
+<view class='money-wrapper'>
+  <view class='money-item'>
+    <view class='total-count'>
+      <text>商品金额</text>
+      <view>¥19919.20</view>
+    </view>
+    <view class='other-count'>
+      <text>立减</text>
+      <view>- ¥1000</view>
+    </view>
+    <view class='other-count'>
+      <text>运费</text>
+      <view>+ ¥20.00</view>
+    </view>
+    <view class='other-count'>
+      <text>优惠券</text>
+      <view>- ¥200.00</view>
+    </view>
+  </view>
+  <view class='total-con'>
+    <text>实付金额:</text>
+    <text>¥2999.80</text>
+  </view>
+  <view class='pay-wrapper'>
+    <view class='wx-pay'>
+      <text catchtap='wxPay'>微信支付</text>
+    </view>
+    <view class='mb-pay'>
+      <text catchtap='memberPay'>会员卡余额支付</text>
+    </view>
+  </view>
+</view>
+
+<!-- 余额支付界面  -->
+<view class='pay-panel' wx:if='{{memberPwdPanelShow}}'>
+  <form bindsubmit='confirmmemberPwd'>
+    <view class='count-panel'>
+      <view class='pay-title'>
+        <image src='/images/icon/clear.png' catchtap='closeMemberPwdPanel'></image>
+        <text>请输入会员卡密码</text>
+      </view>
+      <view class='pay-money'>
+        <text>¥</text>2999</view>
+      <view class='pay-pwd'>
+        <text>密码</text>
+        <input focus='true' name='userpwd'></input>
+      </view>
+      <button formType='submit'>确认</button>
+    </view>
+  </form>
+</view>

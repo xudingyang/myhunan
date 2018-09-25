@@ -1,0 +1,37 @@
+<view class='tip-txt'>为了保护您的账号安全，请绑定您的手机号</view>
+<form bindsubmit='submitTelphone'>
+  <view class='info'>
+    <view class='info-item'>
+      <text>手机号</text>
+      <input placeholder='您的手机号' type='number' placeholder-style='font-size:34rpx;color:#aaa;' name='telphone' maxlength='11' bindinput='listenTelphoneInput'></input>
+    </view>
+    <view class='info-item'>
+      <text>验证码</text>
+      <input placeholder='收到的验证码' placeholder-style='font-size:34rpx;color:#aaa;' name='verificationcode' maxlength='6' type='number'></input>
+      <view class='verificationcode' wx:if='{{!sending}}' catchtap='sendVerificationCode'>发送验证码</view>
+      <view class='verificationcode sending' wx:if='{{sending}}'>{{restTime}}秒后可再次发送</view>
+    </view>
+    <view class='info-item info-item2'>
+      <text>宝宝姓名</text>
+      <input placeholder='宝宝的姓名' placeholder-style='font-size:34rpx;color:#aaa;' name='babyname' maxlength='11' bindinput='listenTelphoneInput'></input>
+    </view>
+    <view class='info-item info-item2'>
+      <text>宝宝生日</text>
+      <picker mode="date" value="{{babyBirthday}}" bindchange="getBabyBirthday">
+        <view class="picker">
+          {{babyBirthday}}
+        </view>
+      </picker>
+    </view>
+    <view class='info-item info-item2'>
+      <text>宝宝性别</text>
+      <radio-group bindchange='getBabyGender'>
+        <radio class='gender-boy' value='boy' checked='checked'>男</radio>
+        <radio class='gender-girl' value='girl'>女</radio>
+      </radio-group>
+    </view>
+  </view>
+  <view class='ok-btn'>
+    <button formType='submit'>提交绑定</button>
+  </view>
+</form>

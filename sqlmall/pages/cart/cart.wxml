@@ -1,0 +1,100 @@
+<view wx:if='{{!hasGoods}}' class='empty'>
+  <text>购物车是空的</text>
+  <view catchtap='clickBuy'>去购物</view>
+</view>
+
+<view class='goods-wrapper' wx:if='{{hasGoods}}'>
+  <scroll-view scroll-y='true'>
+    <view class='edit'>
+      <view class='edit-choose'>
+        <text>思其乐网上商城</text>
+      </view>
+      <text class='edit-btn'>左滑可删除商品</text>
+    </view>
+    <block wx:for='{{cartGoodsList}}'>
+      <view class='activity' catchtap='clickActivity' data-ac-index='{{index}}'>
+        <view class='ac-title' hidden='{{item.mark === "default"}}'>
+          <view class='title-p1'>
+            <text>{{item.mark}}</text>
+            <text>{{item.topic}}</text>
+          </view>
+          <view class='title-p2' data-txt='{{item.text}}' catchtap='chooseZengpin'>
+            <text>{{item.text}}</text>
+            <image src='/images/icon/rg_arrow_red.png' lazy-load='true'></image>
+          </view>
+        </view>
+        <view class='ac-title default-ac-title' wx:if='{{item.mark === "default"}}'></view>
+        <block wx:for='{{item.list}}'>
+          <view class='goods-outer'>
+            <view class='{{item.soldOut ? "goods sold-out" : "goods"}}' style='{{item.style}}'>
+              <!-- <view class='choose-btn-solout ' wx:if='{{item.soldOut}}'>无货</view> -->
+              <view class='choose-btn'>
+                <image src='{{item.selected? "/images/icon/addr_checked.png" : "/images/icon/addr_unchecked.png"}}' data-goods-index='{{index}}' id='choose_btn'></image>
+              </view>
+              <view class='info' catchtap='goGoodsDetail' data-goods-id='{{item.id}}' bindtouchstart='touchStart' bindtouchend='touchEnd'>
+                <image class='goods-icon' src='{{item.imgUrl}}' lazy-load='true'></image>
+                <view>
+                  <view class='name-size'>
+                    <view class='goods-name'>{{item.name}}</view>
+                    <view class='goods-size'>{{item.size}}</view>
+                  </view>
+                  <view class='goods-price'>
+                    <text>¥</text>{{item.price}}
+                    <text class='sold-out-mark' wx:if='{{item.soldOut}}'>无货</text>
+                  </view>
+                </view>
+              </view>
+              <view class='add-btn-con'>
+                <view class='jian-hao'>
+                  <image hidden='{{item.count>1}}' lazy-load='true' src='/images/icon1/jianhao_gray.png'></image>
+                  <image id='jian_btn' data-goods-index='{{index}}' hidden='{{item.count<2}}' lazy-load='true' src='/images/icon1/jianhao_black.png'></image>
+                </view>
+                <text class='num'>{{item.count}}</text>
+                <view class='jia-hao'>
+                  <image id='jia_btn' data-goods-index='{{index}}' lazy-load='true' src='/images/icon1/add_black.png'></image>
+                </view>
+              </view>
+            </view>
+            <view class='del-btn' data-goods-id='{{item.id}}' catchtap='deleteGoods'>删除</view>
+          </view>
+        </block>
+        <block wx:for='{{item.giftList}}'>
+          <view class='goods-outer'>
+            <view class='gift-goods' catchtap='goGoodsDetail' style='{{item.style}}'>
+              <view class='gift-text'>
+                <text>赠品</text>
+              </view>
+              <view class='info' data-goods-id='{{item.id}}' bindtouchstart='touchGiftStart' bindtouchend='touchGiftEnd'>
+                <image class='goods-icon' src='{{item.imgUrl}}' lazy-load='true'></image>
+                <view>
+                  <view class='name-size'>
+                    <view class='goods-name'>{{item.name}}</view>
+                    <view class='goods-size'>{{item.size}}</view>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view class='del-btn' data-goods-id='{{item.id}}' catchtap='deleteGiftGoods'>删除</view>            
+          </view>
+        </block>
+      </view>
+    </block>
+  </scroll-view>
+  <view class='space-box'></view>
+</view>
+<view class='total-wrapper' wx:if='{{hasGoods}}'>
+  <view class='total-info'>
+    <view class='select-all' catchtap='selectAll'>
+      <image src='{{selectedAll ? "/images/icon/addr_checked.png" : "/images/icon/addr_unchecked.png"}}'></image>
+      <text>全选</text>
+    </view>
+    <view class='money-con'>
+      <view class='total-money'>
+        <text>合计:</text>¥{{totalMoney}}</view>
+      <view class='discount-money'>
+        <text>总额:</text>¥{{fullMoney}}
+        <text>立减:</text>¥{{discountMoney}}</view>
+    </view>
+  </view>
+  <view class='pay-btn' catchtap='clickPay'>去结算({{totalSelectedCount}})</view>
+</view>

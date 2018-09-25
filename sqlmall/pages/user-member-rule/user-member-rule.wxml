@@ -1,0 +1,13 @@
+<view class='tab'>
+  <view class='title'>积分规则</view>
+  <view class='item'>1.每消费1元积1分。</view>
+  <view class='item'>2.积分可抵扣余额或商品，请及时关注商城优惠活动。</view>
+  <view class='item'>3.积分有效期为两年。</view>  
+</view>
+<view class='tab'>
+  <view class='title'>会员规则</view>
+  <view class='item'>1.起始会员为青铜会员。</view>
+  <view class='item'>2.消费满200升级为白银会员。</view>
+  <view class='item'>3.消费满800升级为黄金会员。</view>
+  <view class='item'>4.消费满1600升级为钻石会员。</view>  
+</view>

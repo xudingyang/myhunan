@@ -1,0 +1,16 @@
+<view class='tip-txt'>请输入两次新密码</view>
+<form bindsubmit='submitTelphone'>
+  <view class='info'>
+    <view class='info-item'>
+      <text>输入密码</text>
+      <input placeholder='输入您要设置的密码' type='password' placeholder-style='font-size:34rpx;color:#aaa;' name='pwd1' maxlength='20'></input>
+    </view>
+     <view class='info-item'>
+      <text>再次输入密码</text>
+      <input placeholder='重复输入一遍密码' type='password' placeholder-style='font-size:34rpx;color:#aaa;' name='pwd2' maxlength='20'></input>
+    </view>
+  </view>
+  <view class='ok-btn'>
+    <button formType='submit'>提交密码</button>
+  </view>
+</form>

@@ -1,0 +1,303 @@
+<view>
+  <!-- 轮播图 carousel  -->
+  <view class='carousel'>
+    <swiper autoplay='true' interval='3000' circular='true' indicator-dots='true' indicator-color='rgba(0,0,0,.4)' indicator-active-color='#fff'>
+      <swiper-item>
+        <image src='/images/lunbo/lunbo1.jpg'></image>
+      </swiper-item>
+      <swiper-item>
+        <image src='/images/lunbo/lunbo2.jpg'></image>
+      </swiper-item>
+      <swiper-item>
+        <image src='/images/lunbo/lunbo1.jpg'></image>
+      </swiper-item>
+      <swiper-item>
+        <image src='/images/lunbo/lunbo1.jpg'></image>
+      </swiper-item>
+    </swiper>
+    <view class='search' catchtap='goSearchPage'>
+      <image src='/images/icon/search.png' class='search-icon'></image>
+      <text>搜索喜欢的商品</text>
+    </view>
+  </view>
+
+  <!-- 轮播图下的选项 -->
+  <view class='choose-wrapper'>
+    <view class='ch-box'>
+      <view class='ch-box-item' catchtap='goHotGoods'>
+        <image src='/images/icon/hot_goods.jpg'></image>
+        <text>热销</text>
+      </view>
+      <view class='ch-box-item' catchtap='goRecommendPage'>
+        <image src='/images/icon/recommend_goods.jpg'></image>
+        <text>推荐</text>
+      </view>
+      <view class='ch-box-item' catchtap='goActivityCenter'>
+        <image src='/images/icon/activity.jpg'></image>
+        <text>活动中心</text>
+      </view>
+    </view>
+    <view class='ch-box'>
+      <view class='ch-box-item' catchtap='goCouponPage'>
+        <image src='/images/icon/counpon_center.jpg'></image>
+        <text>优惠券</text>
+      </view>
+      <view class='ch-box-item' catchtap='goOrderCenter'>
+        <image src='/images/icon/order_center.jpg'></image>
+        <text>订单中心</text>
+      </view>
+      <view class='ch-box-item' catchtap='goUserCenter'>
+        <image src='/images/icon/user_center.jpg'></image>
+        <text>个人中心</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 品牌专题活动  -->
+  <block wx:for='{{topicArray}}'>
+    <view class='topic-wrapper'>
+    <view class='topic-title'>专题名称</view>
+    <view class='topic-con'>
+      <image class='top-banner-img' src='/images/lunbo/lunbo1.jpg'></image>
+      <scroll-view scroll-x='true'>
+        <view class='left-img-con'>
+          <view class='lf-con' catchtap='goGoodsDetail'>
+            <view>
+              <image src='/images/good/naifen1.jpg'></image>
+            </view>
+            <view>衣服内衣外衣大衣女士外衣男士外套羽绒服加绒加厚</view>
+            <view>
+              <text class='curr-price'>¥200</text>
+              <text class='activity-name'>满300减200</text>
+            </view>
+          </view>
+        </view>
+        <view class='right-img-con'>
+          <view class='right-img-con-bd'>
+            <view class='rg-con-item' catchtap='goGoodsDetail'>
+              <view>
+                <image src='/images/good/naifen1.jpg'></image>
+              </view>
+              <view>衣服内衣外衣大衣女士外衣男士外套羽绒服加绒加厚</view>
+              <view>
+                <text class='curr-price'>¥200</text>
+                <text class='activity-name'>满300减200</text>
+              </view>
+            </view>
+            <view class='rg-con-item'>
+              <view>
+                <image src='/images/good/yifu.jpg'></image>
+              </view>
+              <view>衣服内衣外衣大衣女士外衣男士外套羽绒服加绒加厚</view>
+              <view>
+                <text class='curr-price'>¥200</text>
+                <text class='activity-name'>满300减200</text>
+              </view>
+            </view>
+            <view class='rg-con-item'>
+              <view>
+                <image src='/images/good/yifu.jpg'></image>
+              </view>
+              <view>衣服内衣外衣大衣女士外衣男士外套羽绒服加绒加厚</view>
+              <view>
+                <text class='curr-price'>¥200</text>
+                <text class='activity-name'>满300减200</text>
+              </view>
+            </view>
+          </view>
+          <view class='right-img-con-bd'>
+            <view class='rg-con-item' catchtap='goGoodsDetail'>
+              <view>
+                <image src='/images/good/yifu.jpg'></image>
+              </view>
+              <view>衣服内衣外衣大衣女士外衣男士外套羽绒服加绒加厚</view>
+              <view>
+                <text class='curr-price'>¥200</text>
+                <text class='activity-name'>满300减200</text>
+              </view>
+            </view>
+            <view class='rg-con-item'>
+              <view>
+                <image src='/images/good/yifu.jpg'></image>
+              </view>
+              <view>衣服内衣外衣大衣女士外衣男士外套羽绒服加绒加厚</view>
+              <view>
+                <text class='curr-price'>¥200</text>
+                <text class='activity-name'>满300减200</text>
+              </view>
+            </view>
+            <view class='rg-item-last'>
+              <view>+22</view>
+              <text>查看全部单品</text>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+  </block>
+
+  <!-- <view class='topic-wrapper'>
+    <view class='topic-title'>专题名称</view>
+    <view class='topic-con'>
+      <image class='top-banner-img' src='/images/lunbo/lunbo1.jpg'></image>
+      <scroll-view scroll-x='true'>
+        <view class='left-img-con'>
+          <view class='lf-con'>
+            <view>
+              <image src='/images/good/yifu.jpg'></image>
+            </view>
+            <view>衣服内衣外衣大衣女士外衣男士外套羽绒服加绒加厚</view>
+            <view>
+              <text class='curr-price'>¥200</text>
+              <text class='activity-name'>满300减200</text>
+            </view>
+          </view>
+        </view>
+        <view class='right-img-con'>
+          <view class='right-img-con-bd'>
+            <view class='rg-con-item'>
+              <view>
+                <image src='/images/good/yifu.jpg'></image>
+              </view>
+              <view>衣服内衣外衣大衣女士外衣男士外套羽绒服加绒加厚</view>
+              <view>
+                <text class='curr-price'>¥200</text>
+                <text class='activity-name'>满300减200</text>
+              </view>
+            </view>
+            <view class='rg-con-item'>
+              <view>
+                <image src='/images/good/yifu.jpg'></image>
+              </view>
+              <view>衣服内衣外衣大衣女士外衣男士外套羽绒服加绒加厚</view>
+              <view>
+                <text class='curr-price'>¥200</text>
+                <text class='activity-name'>满300减200</text>
+              </view>
+            </view>
+            <view class='rg-con-item'>
+              <view>
+                <image src='/images/good/yifu.jpg'></image>
+              </view>
+              <view>衣服内衣外衣大衣女士外衣男士外套羽绒服加绒加厚</view>
+              <view>
+                <text class='curr-price'>¥200</text>
+                <text class='activity-name'>满300减200</text>
+              </view>
+            </view>
+          </view>
+          <view class='right-img-con-bd'>
+            <view class='rg-con-item'>
+              <view>
+                <image src='/images/good/yifu.jpg'></image>
+              </view>
+              <view>衣服内衣外衣大衣女士外衣男士外套羽绒服加绒加厚</view>
+              <view>
+                <text class='curr-price'>¥200</text>
+                <text class='activity-name'>满300减200</text>
+              </view>
+            </view>
+            <view class='rg-con-item'>
+              <view>
+                <image src='/images/good/yifu.jpg'></image>
+              </view>
+              <view>衣服内衣外衣大衣女士外衣男士外套羽绒服加绒加厚</view>
+              <view>
+                <text class='curr-price'>¥200</text>
+                <text class='activity-name'>满300减200</text>
+              </view>
+            </view>
+            <view class='rg-item-last'>
+              <view>+22</view>
+              <text>查看全部单品</text>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+
+  <view class='topic-wrapper'>
+    <view class='topic-title'>专题名称</view>
+    <view class='topic-con'>
+      <image class='top-banner-img' src='/images/lunbo/lunbo1.jpg'></image>
+      <scroll-view scroll-x='true'>
+        <view class='left-img-con'>
+          <view class='lf-con'>
+            <view>
+              <image src='/images/good/yifu.jpg'></image>
+            </view>
+            <view>衣服内衣外衣大衣女士外衣男士外套羽绒服加绒加厚</view>
+            <view>
+              <text class='curr-price'>¥200</text>
+              <text class='activity-name'>满300减200</text>
+            </view>
+          </view>
+        </view>
+        <view class='right-img-con'>
+          <view class='right-img-con-bd'>
+            <view class='rg-con-item'>
+              <view>
+                <image src='/images/good/yifu.jpg'></image>
+              </view>
+              <view>衣服内衣外衣大衣女士外衣男士外套羽绒服加绒加厚</view>
+              <view>
+                <text class='curr-price'>¥200</text>
+                <text class='activity-name'>满300减200</text>
+              </view>
+            </view>
+            <view class='rg-con-item'>
+              <view>
+                <image src='/images/good/yifu.jpg'></image>
+              </view>
+              <view>衣服内衣外衣大衣女士外衣男士外套羽绒服加绒加厚</view>
+              <view>
+                <text class='curr-price'>¥200</text>
+                <text class='activity-name'>满300减200</text>
+              </view>
+            </view>
+            <view class='rg-con-item'>
+              <view>
+                <image src='/images/good/yifu.jpg'></image>
+              </view>
+              <view>衣服内衣外衣大衣女士外衣男士外套羽绒服加绒加厚</view>
+              <view>
+                <text class='curr-price'>¥200</text>
+                <text class='activity-name'>满300减200</text>
+              </view>
+            </view>
+          </view>
+          <view class='right-img-con-bd'>
+            <view class='rg-con-item'>
+              <view>
+                <image src='/images/good/yifu.jpg'></image>
+              </view>
+              <view>衣服内衣外衣大衣女士外衣男士外套羽绒服加绒加厚</view>
+              <view>
+                <text class='curr-price'>¥200</text>
+                <text class='activity-name'>满300减200</text>
+              </view>
+            </view>
+            <view class='rg-con-item'>
+              <view>
+                <image src='/images/good/yifu.jpg'></image>
+              </view>
+              <view>衣服内衣外衣大衣女士外衣男士外套羽绒服加绒加厚</view>
+              <view>
+                <text class='curr-price'>¥200</text>
+                <text class='activity-name'>满300减200</text>
+              </view>
+            </view>
+            <view class='rg-item-last'>
+              <view>+22</view>
+              <text>查看全部单品</text>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </view> -->
+  <view class="loading-more" wx:if="{{!loadComplete}}">正在载入更多...</view>
+  <view class="loading-complete" wx:if="{{loadComplete}}">没有更多了</view>
+</view>

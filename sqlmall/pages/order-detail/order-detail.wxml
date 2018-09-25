@@ -1,0 +1,79 @@
+<view class='wrapper'>
+  <view class='item state'>
+    <text>订单状态:</text>{{state}}</view>
+  <view class='item'>
+    <text>订单编号:</text>34343434343434</view>
+  <view class='item'>
+    <text>下单时间:</text>2018-03-12 23:45:34</view>
+  <view class='pay-btn' catchtap='buyAgain'>再次购买</view>
+</view>
+<view class='wrapper'>
+  <view class='item1'>
+    <text>商品金额:</text>
+    <text class='money'>¥99.00</text>
+    <text class='pay-way'>（微信支付）</text>
+  </view>
+  <view class='item1'>
+    <text>收货地址:</text>
+    <text>圣诞节福利会计师的离开飞机上的离开房间爱上的李开复解释道拉科技发生的离开飞机上的离开房间施蒂利克</text>
+  </view>
+  <view class='item1'>
+    <text>收货人:</text>
+    <text class='person-name'>刘星星</text>
+    <text>13988887777</text>
+  </view>
+</view>
+<view class='wrapper wraper1'>
+  <view class='goods-list'>
+    <block wx:for='{{[1,2,3]}}'>
+      <view class='goods'>
+        <image src='/images/good/naifen1.jpg'></image>
+        <view class='goods-info'>
+          <view class='goods-name'>福建省李开复结束啦会计分录卡萨丁解放路卡萨丁解放路卡萨丁就分手了打卡机市解放路圣诞节疯狂老师的健康</view>
+          <view class='goods-size'>大段黄色是的对方水电费水电费水电费撒打发斯蒂芬三大发送到发送到发士大夫撒旦法师法士大夫撒地方撒打发士大夫撒旦</view>
+          <view class='goods-price'>
+            <text>¥</text>999.00
+            <text class='goods-count'>x 1</text>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class='gift-goods-list'>
+    <block wx:for='{{[1,2]}}'>
+      <view class='goods'>
+        <image src='/images/good/naifen1.jpg'></image>
+        <view class='goods-info'>
+          <view class='goods-name'>福建省李开复结束啦会计分录卡萨丁解放路卡萨丁解放路卡萨丁就分手了打卡机市解放路圣诞节疯狂老师的健康</view>
+          <view class='goods-size'>大段黄色是的对方水电费水电费水电费撒打发斯蒂芬三大发送到发送到发士大夫撒旦法师法士大夫撒地方撒打发士大夫撒旦</view>
+          <view class='goods-price'>
+            <text>赠品</text>
+            <text class='goods-count'>x 1</text>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+<view class='wrapper'>
+  <view class='item3'>
+    <text>商品总额</text>
+    <view>
+      <text>¥</text>888.32</view>
+  </view>
+  <view class='item3'>
+    <text>返现</text>
+    <view>-
+      <text>¥</text>333.30</view>
+  </view>
+  <view class='item3'>
+    <text>运费</text>
+    <view>+
+      <text>¥</text>8.00</view>
+  </view>
+  <view class='item4'>
+    <text>应付金额:</text>
+    <view>
+      <text>¥</text>456.00</view>
+  </view>
+</view>

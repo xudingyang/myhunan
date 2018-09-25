@@ -1,0 +1,29 @@
+<view class='title'>当前订单可以使用的优惠券如下:</view>
+
+<!-- start 优惠券列表  -->
+<!-- 待使用  -->
+<view class='counpon-list'>
+  <block wx:for='{{[1,2,3,4,4,4,4,4]}}'>
+    <view class='coupon'>
+      <view class='coupon-info'>
+        <view>
+          <view class='coupon-money daishiyong-color'>
+            <text>¥</text>
+            <text>30</text>
+          </view>
+          <view class='coupon-condition daishiyong-color'>满9999元可用</view>
+        </view>
+        <view>
+          <view class='coupon-name'>雀巢奶粉全品牌优惠各个地方广fdfdsfsdfds泛的券</view>
+          <view class='coupon-brand'>
+            <text>雅士利</text>
+            <text>雀巢</text>
+            <text>所有品牌</text>
+          </view>
+          <view class='use-date'>2018.03.07-2018.03.19</view>
+        </view>
+      </view>
+      <view class='use-coupon' catchtap='toUseCoupon'>使用</view>
+    </view>
+  </block>
+</view>

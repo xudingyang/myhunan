@@ -1,0 +1,73 @@
+<import src='user-login/user-login-template' />
+
+<view class='user-container'>
+
+  <view class='user-info-wrapper'>
+    <view class='user-info'>
+      <view class='avatar-con'>
+        <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
+      </view>
+      <view class='info-con'>
+        <view class='nick-name'>{{userInfo.nickName}}</view>
+        <view class='tel-num'>手机号:
+          <text>{{telNum ? telNum : "未绑定"}}</text>
+        </view>
+        <view class='level-info'>
+          <image wx:if='{{levelPic}}' src='{{levelPic}}'></image>
+          <text>{{levelName}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='tab-con safe-wrapper'>
+    <view bindtap='chognzhi'>
+      <text class='tx'>充值</text>
+      <view class='rg'>
+        <image class='rg-icon' src='/images/icon/rg_arrow.png'></image>
+      </view>
+    </view>
+  </view>
+
+  <view class='tab-con personal-info'>
+    <view bindtap='checkMyCounpon'>
+      <text class='tx'>可用积分</text>
+      <view class='rg'>
+        <text><text class='rg-num'>23</text>分</text>
+        <image class='rg-icon' src='/images/icon/rg_arrow.png'></image>
+      </view>
+    </view>
+    <view bindtap='checkMyCollection'>
+      <text class='tx'>账户余额</text>
+      <view class='rg'>
+        <text><text class='rg-num'>¥1800</text>元</text>
+        <image class='rg-icon' src='/images/icon/rg_arrow.png'></image>
+      </view>
+    </view>
+  </view>
+
+  <view class='tab-con safe-wrapper'>
+    <view bindtap='chognzhiRecord'>
+      <text class='tx'>余额使用记录</text>
+      <view class='rg'>
+        <image class='rg-icon' src='/images/icon/rg_arrow.png'></image>
+      </view>
+    </view>
+    <view bindtap='jfienRecord'>
+      <text class='tx'>积分记录</text>
+      <view class='rg'>
+        <image class='rg-icon' src='/images/icon/rg_arrow.png'></image>
+      </view>
+    </view>
+  </view>
+
+  <view class='tab-con'>
+    <view bindtap='checkMemberRule'>
+      <text class='tx'>积分及会员规则</text>
+      <view class='rg'>
+        <image class='rg-icon' src='/images/icon/rg_arrow.png'></image>
+      </view>
+    </view>
+  </view>
+
+</view>

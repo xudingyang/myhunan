@@ -1,0 +1,39 @@
+<view class='address-list'>
+  <block wx:for='{{addressList}}'>
+    <view class='address'>
+      <view class='info'>
+        <view class='name-tel'>
+          <text class='name'>{{item.name}}</text>
+          <text class='tel'>{{item.tel}}</text>
+        </view>
+        <view class='txt'>{{item.addressTxt}}</view>
+      </view>
+      <view class='oprate'>
+        <view class='choose' wx:if='{{!referer}}' data-index='{{index}}' catchtap='chooseAddress'>
+          <image src='{{item.active ? "/images/icon/addr_checked.png" : "/images/icon/addr_unchecked.png"}}'></image>
+          <text>选择该地址</text>
+        </view>
+        <view class='choose' wx:if='{{referer}}' data-index='{{index}}' catchtap='setDefaultAddress'>
+          <image src='{{item.isDefault ? "/images/icon/addr_checked.png" : "/images/icon/addr_unchecked.png"}}'></image>
+          <text>设为默认</text>
+        </view>
+        <view class='delete-edit'>
+          <view class='edit' catchtap='editAddress' data-index='{{index}}'>
+            <image src='/images/icon/edit.png'></image>
+            <text>编辑</text>
+          </view>
+          <view class='delete' catchtap='deleteAddress' data-index='{{index}}'>
+            <image src='/images/icon/delete.png'></image>
+            <text>删除</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+<view class='add-btn'>
+  <view class='add-txt' catchtap='goEditAddressPage'>
+    <image src='/images/icon/add_btn.png'></image>
+    <text>新建地址</text>
+  </view>
+</view>

@@ -1,0 +1,46 @@
+.info-item {
+  display: flex;
+  height: 100rpx;
+  align-items: center;
+  border-bottom: 1rpx solid #efefef;
+  padding: 0 20rpx;
+  position: relative;
+}
+.info-item > input {
+  width: 400rpx;
+  height: 80rpx;
+}
+.info-item > text {
+  flex: 0 0 160rpx;
+  width: 160rpx;
+  font-size: 34rpx;
+  color: #777;
+}
+.info-item .picker {
+   width: 400rpx; 
+  height: 90rpx;
+  display: flex; 
+  align-items: center; 
+}
+.gender-boy {
+  margin-right: 20px;
+}
+.ok-btn {
+  margin-top: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40rpx;
+}
+.ok-btn button {
+  height: 90rpx;
+  background: #f23030;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 2px;
+  font-size: 36rpx;
+  width: 100%;
+  border-radius: 8rpx;
+}

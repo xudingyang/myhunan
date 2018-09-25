@@ -1,0 +1,156 @@
+page {
+  background: #f5f5f5;
+}
+
+.title {
+  height: 1rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30rpx;
+  color: #777;
+}
+
+.input-con {
+  background: #fff;
+  display: flex;
+  height: 140rpx;
+  align-items: center;
+  font-size: 30rpx;
+  padding-left: 20rpx;
+}
+
+.input-con > text {
+  color: #838383;
+  width: 120rpx;
+  margin-right: 8px;
+}
+
+.input-con > input {
+  height: 80rpx;
+  width: 500rpx;
+  border-radius: 10rpx;
+  padding-left: 8px;
+  background: #efefef;
+}
+
+.btn-con {
+  margin-top: 50rpx;
+  height: 80rpx;
+  padding: 0 40rpx;
+}
+
+.btn-con > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8rpx;
+  width: 100%;
+  height: 100%;
+  background: #f23030;
+  color: #fff;
+  font-size: 36rpx;
+}
+
+.activity-con {
+  margin-top: 40rpx;
+}
+
+.ac-title {
+  margin-bottom: 20rpx;
+  height: 40rpx;
+  text-align: center;
+  font-size: 28rpx;
+}
+
+.ac-item {
+  font-size: 28rpx;
+  padding: 0 40rpx;
+}
+
+/* 下一步  */
+
+.step2-con {
+  background: #fff;
+}
+
+.step2-item {
+  font-size: 36rpx;
+  padding: 10rpx 20rpx 10rpx 50rpx;
+}
+
+.step2-item > text:nth-of-type(1) {
+  margin-right: 10px;
+}
+
+.step2-item:first-child {
+  color: #333;
+}
+
+.step2-item:last-child {
+  color: #838383;
+}
+
+.step2-btn {
+  margin-top: 60rpx;
+  height: 80rpx;
+  padding: 40rpx;
+}
+
+.step2-btn > text {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: #f23030;
+  border-radius: 10rpx;
+  font-size: 36rpx;
+}
+
+.step2-btn2 {
+  margin-top: 20rpx;
+}
+
+.step2-btn2 > text {
+  background: #fff;
+  border: 1rpx solid #838383;
+  color: #838383;
+}
+
+.step3 {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step3 .icon {
+  margin-top: 60rpx;
+}
+
+.step3 .text {
+  margin-top: 30rpx;
+  font-size: 34rpx;
+}
+
+.step3-btn {
+  box-sizing: border-box;
+  margin-top: 20rpx;
+  height: 160rpx;
+  display: flex;
+  align-items: center;
+}
+
+.back-txt {
+  background: #19c017;
+  color: #fff;
+  font-size: 36rpx;
+  border-radius: 10rpx;
+  width: 500rpx;
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px;
+}

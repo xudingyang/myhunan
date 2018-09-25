@@ -1,0 +1,81 @@
+<view class='tabs'>
+  <view class='{{tabApplyActive? "active tab" : "tab"}}' catchtap='clickApply'>售后申请</view>
+  <view class='{{tabRecordActive? "active tab" : "tab"}}' catchtap='clickRecord'>申请记录</view>
+</view>
+
+<view class='order-list' wx:if='{{tabApplyActive}}'>
+  <block wx:for='{{orders}}'>
+    <view class='order'>
+      <view class='order-number-time'>
+        <view class='order-number'>
+          <text class='tx1'>订单编号:</text>
+          <text>{{item.id}}</text>
+        </view>
+        <view class='order-time'>
+          <text class='tx1'>下单时间:</text>
+          <text>{{item.time}}</text>
+        </view>
+        <text class='shou-hou-btn' wx:if='{{!item.outOfDate}}' catchtap='applyShouHou'>申请售后</text>
+        <text class='out-of-date' wx:if='{{item.outOfDate}}'>已过售后期</text>
+      </view>
+      <view class='goods-list'>
+        <block wx:for='{{[1,2]}}'>
+          <view class='goods'>
+            <view class='goods-info'>
+              <image src='/images/good/naifen1.jpg'></image>
+              <view>
+                <view class='goods-name'>浇点水六块腹肌凉快圣诞节阿弗莱克涉及到法律考试大家福利卡圣诞节福利卡三等奖了房间爱的斯洛伐克静安寺砥砺奋进收到了</view>
+                <view class='goods-count'>数量:
+                  <text>2</text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </block>
+      </view>
+      <view class='zenmgpin-goods-list'>
+        <block wx:for='{{[2]}}'>
+          <view class='goods'>
+            <view class='goods-info'>
+              <image src='/images/good/naifen1.jpg'></image>
+              <view>
+                <view class='goods-name'>浇点水六块腹肌凉快圣诞节阿弗莱克涉及到法律考试大家福利卡圣诞节福利卡三等奖了房间爱的斯洛伐克静安寺砥砺奋进收到了</view>
+                <view class='goods-count'>数量:
+                  <text>2</text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </block>
+</view>
+
+<view class='record-list' wx:if='{{tabRecordActive}}'>
+  <block wx:for='{{records}}'>
+    <view class='record'>
+      <view class='record-number'>
+        <view>
+          <text>服务单号:</text>
+          <text>{{item.id}}</text>
+        </view>
+        <text>{{item.mark}}</text>
+      </view>
+      <view class='record-goods-con'>
+        <block wx:for='{{item.goods}}'>
+          <view class='record-goods'>
+            <image src='{{item.imgUrl}}'></image>
+            <view>{{item.name}}</view>
+          </view>
+        </block>
+      </view>
+      <view class='record-state'>
+        <text>当前状态:</text>
+        <view wx:if='{{item.state === "finished"}}' style='color:#1aad19'>已完成</view>
+        <view wx:if='{{item.state === "unfinished"}}' style='color:#f23030'>进行中</view>   
+        <view class='record-time'><text>提交时间:</text>{{item.time}}</view>     
+      </view>
+    </view>
+  </block>
+</view>

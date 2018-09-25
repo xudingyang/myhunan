@@ -1,0 +1,22 @@
+<view class='about-us'>
+  <view class='title'>关于我们</view>
+  <view class='introduction'>网上商城是一所卖奶粉为主的店铺，哈哈哈哈哈哈哈或或或或或或，网上商城是一所卖奶粉为主的店铺，哈哈哈哈哈哈哈或或或或或或网上商城是一所卖奶粉为主的店铺，哈哈哈哈哈哈哈或或或或或或网上商城是一所卖奶粉为主的店铺
+  </view>
+</view>
+<view class='contact-us'>
+  <view class='title'>联系我们</view>
+  <view class='contact-info'>
+    <view class='contact-item' wx:if='{{!!telphone}}'>
+      <text class='tx1'>电话:</text>
+      <text class='tx2 tel-num' bindtap='call' data-tel='{{telphone}}'>{{telphone}}</text>
+    </view>
+    <view class='contact-item' wx:if='{{!!cellphone}}'>
+      <text class='tx1'>手机:</text>
+      <text class='tx2 tel-num' bindtap='call' data-tel='{{cellphone}}'>{{cellphone}}</text>
+    </view>
+    <view class='contact-item' wx:if='{{!!address}}'>
+      <text class='tx1'>地址:</text>
+      <text class='tx2'>{{address}}</text>
+    </view>
+  </view>
+</view>

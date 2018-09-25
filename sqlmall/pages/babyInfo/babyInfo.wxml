@@ -1,0 +1,24 @@
+<form bindsubmit='submitTelphone'>
+  <view class='info-item'>
+    <text>宝宝姓名</text>
+    <input placeholder='宝宝的姓名' placeholder-style='font-size:34rpx;color:#aaa;' name='babyname' maxlength='11' bindinput='listenTelphoneInput' value='{{babyName}}'></input>
+  </view>
+  <view class='info-item'>
+    <text>宝宝生日</text>
+    <picker mode="date" value="{{babyBirthday}}" bindchange="getBabyBirthday">
+      <view class="picker">
+        {{babyBirthday}}
+      </view>
+    </picker>
+  </view>
+  <view class='info-item'>
+    <text>宝宝性别</text>
+    <radio-group bindchange='getBabyGender'>
+      <radio class='gender-boy' value='boy' checked='{{gender === "男"}}'>男</radio>
+      <radio class='gender-girl' value='girl' checked='{{gender === "女"}}'>女</radio>
+    </radio-group>
+  </view>
+  <view class='ok-btn'>
+    <button formType='submit'>确认信息</button>
+  </view>
+</form>

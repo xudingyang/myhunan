@@ -1,0 +1,270 @@
+<view class='tab-wrapper'>
+  <view catchtap='clickAllOrders' class='{{tabAllOrderActive? "tab active" : "tab"}}'>全部订单</view>
+  <view catchtap='clickNotPay' class='{{notPayActive? "tab active" : "tab"}}'>待付款</view>
+  <view catchtap='clickSending' class='{{sendingActive? "tab active" : "tab"}}'>待收货</view>
+  <view catchtap='clickWillSend' class='{{willSendActive? "tab active" : "tab"}}'>待发货</view>
+</view>
+
+<!-- 全部订单  -->
+<view class='order-list-wrapper' wx:if='{{tabAllOrderActive}}'>
+  <block wx:for='{{orders}}'>
+    <view class='order' data-state='{{item.state}}' catchtap='lookOrderDetail'>
+      <view class='order-number'>
+        <view>
+          <text>订单号:</text>{{item.orderNumber}}
+        </view>
+        <view>
+          <text wx:if='{{item.state==="notpay"}}'>支付剩余 {{item.restTime}}</text>
+          <!-- 只有处于取消状态的订单，才能删除  -->
+          <image wx:if='{{item.state==="hadcancel"}}' src='/images/icon/delete.png' data-order-id='{{item.orderNumber}}' catchtap='deleteOrder'></image>
+          <!-- 只有处于待发货状态的订单，才能退款。  -->
+          <text wx:if='{{item.state==="willsend" && !(item.refund===1)}}' data-order-id='{{item.orderNumber}}' catchtap='cancelOrder'>取消订单</text>
+          <text wx:if='{{item.state==="willsend" && item.refund === 1}}'>正在退款</text>
+        </view>
+      </view>
+      <view class='order-state-money'>
+        <view>状态:
+          <text class='order-state not-pay' wx:if='{{item.state==="notpay"}}'>待支付</text>
+          <text class='order-state' wx:if='{{item.state==="finished"}}'>已完成</text>
+          <text class='order-state' wx:if='{{item.state==="sending"}}'>待收货</text>
+          <text class='order-state' wx:if='{{item.state==="willsend"}}'>待发货</text>
+          <text class='order-state not-pay' wx:if='{{item.state==="hadcancel"}}'>已取消</text>
+        </view>
+        <view>总价:
+          <text class='order-money'>¥ {{item.totalMoney}}</text>
+        </view>
+        <text class='pay-btn' wx:if='{{item.state==="notpay"}}' catchtap='payOrder'>去支付</text>
+        <text class='pay-btn' wx:if='{{item.state==="finished"}}' catchtap='buyAgain'>再次购买</text>
+        <text class='pay-btn' wx:if='{{item.state==="sending"}}' catchtap='buyAgain'>再次购买</text>
+        <text class='pay-btn' wx:if='{{item.state==="willsend"}}' catchtap='buyAgain'>再次购买</text>
+        <text class='pay-btn' wx:if='{{item.state==="hadcancel"}}' catchtap='buyAgain'>再次购买</text>
+      </view>
+      <view class='goods-list'>
+        <block wx:for='{{item.goodsList}}'>
+          <view class='goods'>
+            <image lazy-load='true' src='{{item.imgUrl}}'></image>
+            <view>
+              <view class='goods-name'>{{item.name}}</view>
+              <view class='goods-count'>x {{item.count}}</view>
+            </view>
+          </view>
+        </block>
+      </view>
+      <view class='goods-list zp-goods-list'>
+        <block wx:for='{{item.giftGoodsList}}'>
+          <view class='goods'>
+            <image lazy-load='true' src='{{item.imgUrl}}'></image>
+            <view>
+              <view class='goods-name'>{{item.name}}</view>
+              <view class='goods-count'>
+                <text>x {{item.count}}</text>
+                <text>赠品</text>
+              </view>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </block>
+</view>
+<!-- 待付款订单  -->
+<view class='order-list-wrapper' wx:if='{{notPayActive}}'>
+  <block wx:for='{{notPayOrders}}'>
+    <view class='order' data-state='{{item.state}}' catchtap='lookOrderDetail'>
+      <view class='order-number'>
+        <view>
+          <text>订单号:</text>{{item.orderNumber}}
+        </view>
+        <view>
+          <text wx:if='{{item.state==="notpay"}}'>支付剩余 {{item.restTime}}</text>
+        </view>
+      </view>
+      <view class='order-state-money'>
+        <view>状态:
+          <text class='order-state not-pay' wx:if='{{item.state==="notpay"}}'>待支付</text>
+          <text class='order-state' wx:if='{{item.state==="finished"}}'>已完成</text>
+          <text class='order-state' wx:if='{{item.state==="sending"}}'>待收货</text>
+          <text class='order-state' wx:if='{{item.state==="willsend"}}'>待发货</text>
+          <text class='order-state not-pay' wx:if='{{item.state==="hadcancel"}}'>已取消</text>
+        </view>
+        <view>总价:
+          <text class='order-money'>¥ {{item.totalMoney}}</text>
+        </view>
+        <text class='pay-btn' wx:if='{{item.state==="notpay"}}' catchtap='payOrder'>去支付</text>
+        <text class='pay-btn' wx:if='{{item.state==="finished"}}' catchtap='buyAgain'>再次购买</text>
+        <text class='pay-btn' wx:if='{{item.state==="sending"}}' catchtap='buyAgain'>再次购买</text>
+        <text class='pay-btn' wx:if='{{item.state==="willsend"}}' catchtap='buyAgain'>再次购买</text>
+        <text class='pay-btn' wx:if='{{item.state==="hadcancel"}}' catchtap='buyAgain'>再次购买</text>
+      </view>
+      <view class='goods-list'>
+        <block wx:for='{{item.goodsList}}'>
+          <view class='goods'>
+            <image lazy-load='true' src='{{item.imgUrl}}'></image>
+            <view>
+              <view class='goods-name'>{{item.name}}</view>
+              <view class='goods-count'>x {{item.count}}</view>
+            </view>
+          </view>
+        </block>
+      </view>
+      <view class='goods-list zp-goods-list'>
+        <block wx:for='{{item.giftGoodsList}}'>
+          <view class='goods'>
+            <image lazy-load='true' src='{{item.imgUrl}}'></image>
+            <view>
+              <view class='goods-name'>{{item.name}}</view>
+              <view class='goods-count'>
+                <text>x {{item.count}}</text>
+                <text>赠品</text>
+              </view>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </block>
+</view>
+<!-- 待收货订单  -->
+<view class='order-list-wrapper' wx:if='{{sendingActive}}'>
+  <block wx:for='{{sendingOrders}}'>
+    <view class='order' data-state='{{item.state}}' catchtap='lookOrderDetail'>
+      <view class='order-number'>
+        <view>
+          <text>订单号:</text>{{item.orderNumber}}
+        </view>
+        <view>
+        </view>
+      </view>
+      <view class='order-state-money'>
+        <view>状态:
+          <text class='order-state not-pay' wx:if='{{item.state==="notpay"}}'>待支付</text>
+          <text class='order-state' wx:if='{{item.state==="finished"}}'>已完成</text>
+          <text class='order-state' wx:if='{{item.state==="sending"}}'>待收货</text>
+          <text class='order-state' wx:if='{{item.state==="willsend"}}'>待发货</text>
+          <text class='order-state not-pay' wx:if='{{item.state==="hadcancel"}}'>已取消</text>
+        </view>
+        <view>总价:
+          <text class='order-money'>¥ {{item.totalMoney}}</text>
+        </view>
+        <text class='pay-btn' wx:if='{{item.state==="notpay"}}' catchtap='payOrder'>去支付</text>
+        <text class='pay-btn' wx:if='{{item.state==="finished"}}' catchtap='buyAgain'>再次购买</text>
+        <text class='pay-btn' wx:if='{{item.state==="sending"}}' catchtap='buyAgain'>再次购买</text>
+        <text class='pay-btn' wx:if='{{item.state==="willsend"}}' catchtap='buyAgain'>再次购买</text>
+        <text class='pay-btn' wx:if='{{item.state==="hadcancel"}}' catchtap='buyAgain'>再次购买</text>
+      </view>
+      <view class='goods-list'>
+        <block wx:for='{{item.goodsList}}'>
+          <view class='goods'>
+            <image lazy-load='true' src='{{item.imgUrl}}'></image>
+            <view>
+              <view class='goods-name'>{{item.name}}</view>
+              <view class='goods-count'>x {{item.count}}</view>
+            </view>
+          </view>
+        </block>
+      </view>
+      <view class='goods-list zp-goods-list'>
+        <block wx:for='{{item.giftGoodsList}}'>
+          <view class='goods'>
+            <image lazy-load='true' src='{{item.imgUrl}}'></image>
+            <view>
+              <view class='goods-name'>{{item.name}}</view>
+              <view class='goods-count'>
+                <text>x {{item.count}}</text>
+                <text>赠品</text>
+              </view>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </block>
+</view>
+<!-- 待发货订单 -->
+<view class='order-list-wrapper' wx:if='{{willSendActive}}'>
+  <block wx:for='{{willSendOrders}}'>
+    <view class='order' data-state='{{item.state}}' catchtap='lookOrderDetail'>
+      <view class='order-number'>
+        <view>
+          <text>订单号:</text>{{item.orderNumber}}
+        </view>
+        <view>
+          <!-- 只有处于待发货状态的订单，才能退款。  -->
+          <text wx:if='{{item.state==="willsend" && !(item.refund===1)}}' data-order-id='{{item.orderNumber}}' catchtap='cancelOrder'>取消订单</text>
+          <text wx:if='{{item.state==="willsend" && item.refund === 1}}'>正在退款</text>
+        </view>
+      </view>
+      <view class='order-state-money'>
+        <view>状态:
+          <text class='order-state not-pay' wx:if='{{item.state==="notpay"}}'>待支付</text>
+          <text class='order-state' wx:if='{{item.state==="finished"}}'>已完成</text>
+          <text class='order-state' wx:if='{{item.state==="sending"}}'>待收货</text>
+          <text class='order-state' wx:if='{{item.state==="willsend"}}'>待发货</text>
+          <text class='order-state not-pay' wx:if='{{item.state==="hadcancel"}}'>已取消</text>
+        </view>
+        <view>总价:
+          <text class='order-money'>¥ {{item.totalMoney}}</text>
+        </view>
+        <text class='pay-btn' wx:if='{{item.state==="notpay"}}' catchtap='payOrder'>去支付</text>
+        <text class='pay-btn' wx:if='{{item.state==="finished"}}' catchtap='buyAgain'>再次购买</text>
+        <text class='pay-btn' wx:if='{{item.state==="sending"}}' catchtap='buyAgain'>再次购买</text>
+        <text class='pay-btn' wx:if='{{item.state==="willsend"}}' catchtap='buyAgain'>再次购买</text>
+        <text class='pay-btn' wx:if='{{item.state==="hadcancel"}}' catchtap='buyAgain'>再次购买</text>
+      </view>
+      <view class='goods-list'>
+        <block wx:for='{{item.goodsList}}'>
+          <view class='goods'>
+            <image lazy-load='true' src='{{item.imgUrl}}'></image>
+            <view>
+              <view class='goods-name'>{{item.name}}</view>
+              <view class='goods-count'>x {{item.count}}</view>
+            </view>
+          </view>
+        </block>
+      </view>
+      <view class='goods-list zp-goods-list'>
+        <block wx:for='{{item.giftGoodsList}}'>
+          <view class='goods'>
+            <image lazy-load='true' src='{{item.imgUrl}}'></image>
+            <view>
+              <view class='goods-name'>{{item.name}}</view>
+              <view class='goods-count'>
+                <text>x {{item.count}}</text>
+                <text>赠品</text>
+              </view>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </block>
+</view>
+
+<!-- 支付界面  -->
+<view class='pay-modal' wx:if='{{payModalShow}}'>
+  <view>
+    <view class='pay-modal-title'>请选择支付方式
+      <image catchtap='closePayModal' src='/images/icon/clear.png'></image>
+    </view>
+    <view class='pay-modal-wx' catchtap='wxPay'>微信支付</view>
+    <view class='pay-modal-card' catchtap='memberPay'>会员卡余额支付</view>
+  </view>
+</view>
+<!-- 余额支付弹出界面  -->
+<view class='pay-panel' wx:if='{{memberPwdPanelShow}}'>
+  <form bindsubmit='confirmmemberPwd'>
+    <view class='count-panel'>
+      <view class='pay-title'>
+        <image src='/images/icon/clear.png' catchtap='closeMemberPwdPanel'></image>
+        <text>请输入会员卡密码</text>
+      </view>
+      <view class='pay-money'>
+        <text>¥</text>2999</view>
+      <view class='pay-pwd'>
+        <text>密码</text>
+        <input focus='true' name='userpwd'></input>
+      </view>
+      <button formType='submit'>确认</button>
+    </view>
+  </form>
+</view>

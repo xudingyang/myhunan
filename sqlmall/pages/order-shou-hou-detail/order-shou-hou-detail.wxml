@@ -1,0 +1,85 @@
+<form bindsubmit='submitApply'>
+  <view class='telphone'>
+    <text>售后电话:</text>
+    <text catchtap='callPhone' data-tel='{{tel}}'>{{tel}}</text>
+    <text>(点击号码可直接拨号)</text>
+  </view>
+  <view class='shou-hou-mark'>
+    <view class='mark-title'>服务类型</view>
+    <view class='mark-con'>
+      <view class='{{tuiHuo? "active mark" : "mark"}}' catchtap='clickTuiHuo'>退货</view>
+      <view class='{{huanHuo? "active mark" : "mark"}}' catchtap='clickHuanHuo'>换货</view>
+      <view class='{{weiXiu? "active mark" : "mark"}}' catchtap='clickWeiXiu'>维修</view>
+    </view>
+  </view>
+  <view class='reason-wrapper'>
+    <view class='reason-title'>问题描述</view>
+    <view class='input-con'>
+      <textarea name='detailreason' placeholder='请您在此描述问题' maxlength='500' bindinput='listenTextarea'>
+      </textarea>
+      <view class='total-words'>{{reasonLength}}/500</view>
+    </view>
+  </view>
+  <view class='order'>
+    <view class='order-number-time'>
+      <view class='order-number'>
+        <text class='tx1'>订单编号:</text>
+        <text>23423322232</text>
+      </view>
+      <view class='order-time'>
+        <text class='tx1'>下单时间:</text>
+        <text>2018-03-12 23:56:34</text>
+      </view>
+    </view>
+    <view class='goods-list'>
+      <block wx:for='{{[1,2]}}'>
+        <view class='goods'>
+          <view class='goods-info'>
+            <image src='/images/good/naifen1.jpg'></image>
+            <view>
+              <view class='goods-name'>浇点水六块腹肌凉快圣诞节阿弗莱克涉及到法律考试大家福利卡圣诞节福利卡三等奖了房间爱的斯洛伐克静安寺砥砺奋进收到了</view>
+              <view class='goods-count'>数量:
+                <text>2</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+    <view class='zenmgpin-goods-list'>
+      <block wx:for='{{[2]}}'>
+        <view class='goods'>
+          <view class='goods-info'>
+            <image src='/images/good/naifen1.jpg'></image>
+            <view>
+              <view class='goods-name'>浇点水六块腹肌凉快圣诞节阿弗莱克涉及到法律考试大家福利卡圣诞节福利卡三等奖了房间爱的斯洛伐克静安寺砥砺奋进收到了</view>
+              <view class='goods-count'>数量:
+                <text>2</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class='person-info'>
+    <view class='person-name'>
+      <text>联系人:</text>
+      <input placeholder='填写联系人姓名' name='username' value='{{address.name}}'></input>
+    </view>
+    <view class='person-telphone'>
+      <text>联系电话:</text>
+      <input placeholder='填写联系电话' type='number' name='telphone' value='{{address.telphone}}'></input>
+    </view>
+    <view class='person-address'>
+      <text>联系地址:</text>
+      <input placeholder='填写联系人地址' name='address' value='{{address.addressTxt}}'></input>
+    </view>
+  </view>
+  <view class='tip-txt'>
+    提交申请后，客服可能与您电话沟通，请保持联系电话畅通
+  </view>
+  <view class='btn-con'>
+    <button form-type='submit'>提交</button>
+  </view>
+</form>

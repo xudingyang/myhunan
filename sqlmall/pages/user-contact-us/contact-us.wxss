@@ -1,0 +1,30 @@
+.about-us {
+  padding: 10rpx 20rpx;
+}
+.title {
+  font-size: 30rpx;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+.introduction {
+  text-indent: 2em;
+  font-size: 28rpx;
+  color: #666;
+}
+.contact-us {
+  font-size: 32rpx;  
+  margin-top: 10px;
+  padding: 10rpx 20rpx;
+}
+.contact-item {
+  margin-top: 10px;
+  font-size: 30rpx;
+}
+.tx1 {
+  color: #838383;
+  margin-right: 6px;
+}
+.tel-num {
+  text-decoration: underline;
+  color: blue;
+}

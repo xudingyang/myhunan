@@ -1,0 +1,14 @@
+<block wx:for='{{recordList}}'>
+  <view class='item' bindtap='orderDetail'>
+    <view class='reason'>
+      <view class='time'>
+        <text>消费时间:</text> 2017-12-29 23:34:23</view>
+      <view class='content'>
+        <text>订单编号:</text> 234987678923</view>
+    </view>
+    <view class='score-jia' wx:if='{{item.add}}'>+5000</view>
+    <view class='score-jian' wx:if='{{!item.add}}'>-500</view>
+  </view>
+</block>
+<view class="loading-more" wx:if="{{!loadComplete}}">正在载入更多...</view>
+<view class="loading-complete" wx:if="{{loadComplete}}">没有更多了</view>
