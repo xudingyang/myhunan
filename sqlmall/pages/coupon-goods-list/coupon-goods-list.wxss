@@ -3,10 +3,7 @@ page {
   display: flex;
   flex-direction: column;
 }
-
-
 /* 搜索结果列表 */
-
 .search-goods-result {
   flex: 1;
   display: flex;

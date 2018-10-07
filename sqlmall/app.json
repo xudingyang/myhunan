@@ -1,8 +1,7 @@
 {
-  "pages": [
-    "pages/coupon-goods-list/coupon-goods-list",
-    
+  "pages": [    
     "pages/home/home",    
+    "pages/coupon-goods-list/coupon-goods-list",    
     "pages/babyInfo/babyInfo",
     "pages/order-detail/order-detail",
     "pages/order-center/order-center",
